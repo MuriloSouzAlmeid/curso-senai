@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\bin\Debug\net7.0\validando-cadastro.exe
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\bin\Debug\net7.0\validando-cadastro.deps.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\bin\Debug\net7.0\validando-cadastro.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\bin\Debug\net7.0\validando-cadastro.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\bin\Debug\net7.0\validando-cadastro.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\obj\Debug\net7.0\validando-cadastro.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\obj\Debug\net7.0\validando-cadastro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\obj\Debug\net7.0\validando-cadastro.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\obj\Debug\net7.0\validando-cadastro.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\obj\Debug\net7.0\validando-cadastro.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\obj\Debug\net7.0\validando-cadastro.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\obj\Debug\net7.0\refint\validando-cadastro.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\obj\Debug\net7.0\validando-cadastro.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\obj\Debug\net7.0\validando-cadastro.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while_do-while\validando-cadastro\obj\Debug\net7.0\ref\validando-cadastro.dll

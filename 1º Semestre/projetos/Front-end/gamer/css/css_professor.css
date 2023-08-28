@@ -1,0 +1,124 @@
+/* Imports de fonts */
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Classes Genéricas */
+.layout-grid {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+body {
+    color: white;
+}
+
+.mostrar-menu{
+    left: 0 !important;
+}
+
+.mostrar-usuarios{
+    right: 0 !important;
+}
+
+/* Mobile First */
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    z-index: 100;
+    background-color: #1B1426;
+}
+
+header .header-top {
+    display: none;
+}
+
+header .header-bottom {
+    height: 60px;
+}
+
+header .logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 80vw;
+    height: calc(100vh - 60px);
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    transition: 0.75s;
+}
+
+header .header-bottom nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    color: white;
+    font-size: 15px;
+    font-family: Inter;
+    text-decoration: none;
+    border-bottom: 2px solid #F9AA01;
+}
+
+header .header-bottom nav a:last-of-type {
+    border-bottom: none;
+}
+
+header .header-bottom nav .midias-sociais {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+header .menu-usuarios {
+    position: fixed;
+    top: 60px;
+    right: -20vw;
+    width: 20vw;
+    height: 170px;
+
+    transition: right 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+}

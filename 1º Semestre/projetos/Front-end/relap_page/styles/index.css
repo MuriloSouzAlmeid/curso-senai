@@ -1,0 +1,230 @@
+.fundo-gradiente{
+    background-image: linear-gradient(to right, #C46BD6, #3927AF);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner-destaque{
+    padding: 7% 0 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner-destaque > div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.banner-destaque > div img{
+    width: 30px;
+    height: 30px;
+}
+
+.banner-destaque .seta-voltar{
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    left:20px;
+}
+
+.banner-destaque .seta-avancar{
+    border: 1px solid #8e7deb;
+    right: 20px;
+}
+
+.banner-destaque .notebook-banner{
+    position: absolute;
+    left: 7%;
+    bottom: 30px;
+    height: 80%;
+}
+
+.banner-destaque .banner-info{
+    display: flex;
+    gap: 25px;
+    width: 40%;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.banner-destaque .banner-info .descricao-banner{
+    font-size: 20px;
+    font-family: 'Roboto Medium';
+    color: white;
+    text-transform: uppercase;
+}
+
+.banner-destaque .banner-info .titulo-banner{
+    font-family: 'Roboto Bold';
+    font-size: 90px;
+    color: white;
+}
+
+.banner-destaque .banner-info .botao-banner{
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 30px;
+    background-color: #FFC300;
+    font-family: 'Roboto Regular';
+    font-size: 16px;
+    color: #fff;
+    border: none;
+}
+
+.banner-destaque .banner-info .botao-banner:hover{
+    width: 35%;
+    transition: 0.5s;
+}
+
+main .caracteristicas-site{
+    position: relative;
+    z-index: 100;
+    background-color: #FDF2FF;
+    padding: 80px 0;
+}
+
+main .caracteristicas-site .caracteristicas-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+main .caracteristicas-site .caracteristicas-flex > div{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-right: 7%;
+}
+
+main .caracteristicas-site .caracteristicas-flex > div img{
+    width: 30px;
+}
+
+main .caracteristicas-site .caracteristicas-flex > div .icone-menor{
+    width: 45px;
+}
+
+main .caracteristicas-site .caracteristicas-flex > div article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 3px;
+    gap: 10px;
+}
+
+main .caracteristicas-site .caracteristicas-flex > div article h2{
+    font-family: 'Roboto Medium';
+    font-size: 20px;
+}
+
+main .caracteristicas-site .caracteristicas-flex > div article p{
+    font-family: 'Roboto Regular';
+    font-size: 13px;
+    text-align: justify;
+}
+
+main .tipos-de-produtos{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+main .tipos-de-produtos .tipo-produtos-flex{
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .tipos-de-produtos .tipo-produtos-flex .titulo-tipo-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+main .tipos-de-produtos .tipo-produtos-flex .titulo-tipo-produto h3{
+    font-family: 'Roboto Medium';
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+main .tipos-de-produtos .tipo-produtos-flex .titulo-tipo-produto h2{
+    font-family: 'Roboto Bold';
+    display: flex;
+    font-size: 80px;
+}
+
+main .tipos-de-produtos .tipo-produtos-flex .titulo-tipo-produto p{
+    font-family: 'Roboto Regular';
+    text-align: center;
+}
+
+main .tipos-de-produtos .tipo-produtos-flex .carts-tipo-produto{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .tipos-de-produtos .tipo-produtos-flex .carts-tipo-produto > article{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main .tipos-de-produtos .tipo-produtos-flex .carts-tipo-produto > article figure{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .tipos-de-produtos .tipo-produtos-flex .carts-tipo-produto > article figure img{
+    height: 200px;
+    max-width: 100%;
+}
+
+main .tipos-de-produtos .tipo-produtos-flex .carts-tipo-produto > article .descricao-cart{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .tipos-de-produtos .tipo-produtos-flex .carts-tipo-produto > article .descricao-cart a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+main .produtos-em-destaque{
+    background-color: #FDF2FF;
+    padding: 40px 0 80px;
+}
+
+main .produtos-em-destaque .produtos-em-destaque-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+main .produtos-em-destaque .titulo-destaque h3{
+    font-family: 'Roboto Medium';
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+main .produtos-em-destaque .titulo-destaque h2{
+    font-family: 'Roboto Bold';
+    display: flex;
+    font-size: 80px;
+}

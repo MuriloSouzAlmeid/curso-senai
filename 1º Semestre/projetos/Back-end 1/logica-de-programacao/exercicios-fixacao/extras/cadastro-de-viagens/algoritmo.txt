@@ -1,0 +1,42 @@
+Efetuar login: 
+	Pedir ao usuário para preencher o nome de usuario e a senha
+		se forem iguais aos digitados anteriormente, mostrar menu de opções
+		Se não, mostrar login inválido e perguntar se deseja tentar novamente
+			se sim, efetuar login
+			se não: sair do programa
+			Caso as chances ultrapassem 5: sair do programa
+
+Começar Cadastrando um novo usuário
+	receber o nome de usuario do usuario
+	receber uma senha do usuario
+
+Se der tudo certo, perguntar se o usuário deseja logar na conta agora
+	Se sim: Efetura Login
+	Se não, fechar o programa
+
+Caso o login esteja certo mostrará um menu:
+	1) Cadastrar Passagens
+	2) Listar Passagens
+	3) Sair do programa
+
+Criar os vetores de Nome do passageiro, Origem, Destino, Data do voo
+
+Caso ele escolha cadastrar passagens:
+	Pedir o nome do passageiro: guaradar no vetor de nomes
+	Pedir a origem do voo: guaradar no vetor de origem
+	Pedir o destino do voo: guardar no vetor de destinos
+	Pedir o dia do voo
+	pedir o mês do voo
+	Pedir o ano do voo
+	Pedir a hora
+	Pedir o minuto
+	Guardar em uma variável de data var data = new DateTime(ano, mes, dia, hora, minuto, segundo)
+
+	Perguntar agora se ele deseja cadastrar uma nova viagem:
+		Se sim: Repetir o processo
+		Se não: voltar ao menu
+	
+Caso ele escolha listar passagens
+	Criar um foreach que vai listar o nome, origem, destino e data do voo que tiver o indice atual até o final dos vetores.
+
+Caso ele escolha Sair do programa finaliza o programa com Environment.Exit(0)

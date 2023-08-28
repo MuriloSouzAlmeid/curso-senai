@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\bin\Debug\net7.0\introducao_mvc.exe
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\bin\Debug\net7.0\introducao_mvc.deps.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\bin\Debug\net7.0\introducao_mvc.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\bin\Debug\net7.0\introducao_mvc.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\bin\Debug\net7.0\introducao_mvc.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\obj\Debug\net7.0\introducao_mvc.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\obj\Debug\net7.0\introducao_mvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\obj\Debug\net7.0\introducao_mvc.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\obj\Debug\net7.0\introducao_mvc.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\obj\Debug\net7.0\introducao_mvc.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\obj\Debug\net7.0\introducao_mvc.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\obj\Debug\net7.0\refint\introducao_mvc.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\obj\Debug\net7.0\introducao_mvc.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\obj\Debug\net7.0\introducao_mvc.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 2\MVC\introducao_mvc\obj\Debug\net7.0\ref\introducao_mvc.dll

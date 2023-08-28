@@ -1,0 +1,15 @@
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\bin\Debug\net7.0\teste.exe
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\bin\Debug\net7.0\teste.deps.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\bin\Debug\net7.0\teste.runtimeconfig.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\bin\Debug\net7.0\teste.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\bin\Debug\net7.0\teste.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\obj\Debug\net7.0\teste.csproj.AssemblyReference.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\obj\Debug\net7.0\teste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\obj\Debug\net7.0\teste.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\obj\Debug\net7.0\teste.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\obj\Debug\net7.0\teste.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\obj\Debug\net7.0\teste.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\obj\Debug\net7.0\refint\teste.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\obj\Debug\net7.0\teste.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\obj\Debug\net7.0\teste.genruntimeconfig.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\teste\obj\Debug\net7.0\ref\teste.dll

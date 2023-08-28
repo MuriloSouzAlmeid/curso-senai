@@ -1,0 +1,245 @@
+/* Imports - Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Quicksand&family=Titillium+Web:ital,wght@0,200;         1,600&display=swap');
+
+/* font-family: 'Kalam', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Titillium Web', sans-serif; */
+
+/* o asterísco é um seletor universal no CSS */
+
+
+/* Reset de propriedades de espaçameto padrão entre tags HTML */
+* {
+    margin: 0;
+    padding: 0;
+    /* faz com que as dimensões sejam contadas a partir da borda e não do conteúdo */
+    box-sizing: border-box;
+} 
+
+/* Formatação HTML */
+body {
+    /* a font-family altera a fonte em si, dando a primeira opção entre aspas e caso não seja possível estar utilizando tal             fonte então o siteirá carregar qualquer outra do sistema operacional do usuário com as características que estão após a             vírgula */
+    font-family: 'Quicksand', sans-serif;
+    /* define a cor da fonte */
+    color: grey;
+    background-color: #EDECED;
+}
+
+/* Centralização do Conteúdo  */
+
+.grid-layout{
+    /* define a lagura que a div irá ocupar na tag pai, no caso a header */
+    width: 85%;
+    /* define a margem que a div terá na tag pai, usado para seu posicionamento na tela (0 pra cima e baixo e auto para             esquerda e direita, sendo assim tudo ficará centralizado) 1º valor pra vertical e 2º pra horizental (sentido relógio) */
+    margin: 0 auto;
+    /* exemplo de shortlne (linha curta) serve para simplificar as propriedades lançando valores padrões para mais de uma           dimensão sem ter que escrever linhas a main   */
+    height: 100%;
+}
+
+/* Heaer */
+
+header{
+    background-color: #676767;
+    height: 90px;
+}
+
+header h1{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+header h1 #logo-ux{
+    font-family: 'Kalam', cursive;
+    /* Mexe na caixa alta ou baixa do texto */
+    text-transform: uppercase;
+    /* torna a fonte itálica */
+    font-style: italic;
+    /* define a espessura da fonte */
+    font-weight: 700;
+    /* define qual o tamanho da fonte */
+    font-size: 30px;
+}
+
+header .header-flex{
+    /* diz que a tela é flexível de acordo com o espaço na tela */
+    display: flex;
+    /* define a direção dos elementos distribuídos na tela, pode ser row (horizontal) ou column (vertical)  */
+    flex-direction: row;
+    /* define como os elementos serão justificados no espaço da tag podendo ser no início, meio ou fim ou ter espaços entre             eles   */
+    justify-content: space-between;
+    /* define o alinhamento dos itens na tag, funciona de maneira contrária ao justify-content sendo que se um estiver          alinhando no vertical, outro alinhará no horizontal e vice virsa  */
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Main */
+
+main .main-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5% auto;
+}
+
+/* Section */
+
+main .conteudo-principal{
+    width: 75%;
+    background-color: white;
+}
+
+/* Imagem Section */
+
+main #lapis{
+    width: 100%;
+}
+
+/* Texto da Section */
+
+main .conteudo-principal article{
+    display: flex;
+    flex-direction: column; 
+    text-align: justify;
+    padding: 2.5%;
+}
+
+/* Aside */
+
+main .barra-lateral{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+}
+
+main .barra-lateral article{
+    background-color: white;
+}
+
+/* Textos Aside */
+
+main .barra-lateral article h2{
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+main .barra-lateral hr{
+    color: transparent;
+    height: 0px;
+    border: 2px solid#EDECED;;
+    width: 100%;
+}
+
+main .barra-lateral label{
+    display: none;
+}
+
+main .buscar .busca-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px 20px;
+    gap: 15px;
+}
+
+main .buscar .busca-flex .input-buscar{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 30px;
+    border: 1px solid grey;
+    padding: 0 5px;
+}
+
+main .buscar .busca-flex input{
+    height: 80%;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+main .buscar .busca-flex button{
+    height: 30px;
+    width: 20%;
+    padding: 3px;
+    border: none;
+    background-color: #676767;
+}
+
+main .buscar .busca-flex button img{
+    width: 100%;
+    height: 100%;
+}
+
+main .barra-lateral .posts-anteriores .lista-posts-anteriores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-position: inside;
+    padding: 20px 20px;
+
+}
+main .inscrever .inscrever-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+main .inscrever .inscrever-flex p{
+    text-align: justify ;
+    width: 100%;
+}
+
+main .inscrever .inscrever-flex .input-inscrever{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 30px;
+    border: 1px solid grey;
+    padding: 0 5px;
+}
+
+main .inscrever .inscrever-flex input{
+    height: 80%;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+/* Footer */
+
+footer{
+    height: 70px;
+    background-color: #676767;
+}
+
+/* Alinhamento Footer */
+
+footer .footer-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Texto Footer */
+
+footer .copyright{
+    font-weight: 500;
+    color: white;
+}

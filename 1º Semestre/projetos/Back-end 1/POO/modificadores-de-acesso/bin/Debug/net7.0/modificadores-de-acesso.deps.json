@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "modificadores-de-acesso/1.0.0": {
+        "runtime": {
+          "modificadores-de-acesso.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "modificadores-de-acesso/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

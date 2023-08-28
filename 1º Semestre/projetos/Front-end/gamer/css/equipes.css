@@ -1,0 +1,382 @@
+/* Configurações Gerais Main */
+
+main #equipes{
+    background-image: url(../assets/images/fundo-equipes_mobile.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+
+    padding: 90px 0 120px;
+}
+
+main #equipes .fundo-formulario{
+    position: absolute;
+    top: 90px;
+    left: 5%;
+
+    width: 90%;
+    height: 494px;
+    backdrop-filter: blur(4px);
+}
+
+main #equipes .equipes-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Configuração Do Formulário */
+
+main #equipes .cadastro-de-equipes{
+    position: relative;
+    z-index: 150;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 150px;
+
+    padding: 42px 0 37px;
+
+    border: 1px solid transparent;
+    background: 
+    linear-gradient(to right bottom, rgba(27, 20, 38, 1) 0%, rgba(60, 3, 65, .38) 100%) padding-box,
+    linear-gradient(to right bottom, rgba(239, 239, 239, .50) 0%, rgba(239, 239, 239, .30) 25%, rgba(239, 239, 239, 0) 100%) border-box;
+    border-radius: 8px;
+    width: 100%;
+}
+
+main #equipes .cadastro-de-equipes .titulo-equipes{
+    color: white;
+    font-family: 'Titillium Web Black';
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+main #equipes .cadastro-de-equipes .sob-titulo{
+    width: 164px;
+    height: 0px;
+    border: 1px solid #F9AA01;
+
+    margin-top: 15px;
+}
+
+main #equipes .cadastro-de-equipes .campos-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 78px 0 47px;
+
+    gap: 35px;
+
+    width: 80%;
+}
+
+main #equipes .cadastro-de-equipes .campos-formulario .campo-id-equipe, main #equipes .cadastro-de-equipes .campos-formulario .campo-nome-equipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 20px;
+
+    border: 1px solid white;
+
+    width: 100%;
+    border-radius: 8px;
+
+    height: 40px;
+    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .50), rgba(239, 239, 239, 0));
+}
+
+main #equipes .cadastro-de-equipes .campos-formulario .campo-id-equipe input, main #equipes .cadastro-de-equipes .campos-formulario .campo-nome-equipe input{
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Titillium Web Regular';
+    font-size: 16px;
+}
+
+main #equipes .cadastro-de-equipes .campos-formulario .campo-id-equipe input::placeholder, main #equipes .cadastro-de-equipes .campos-formulario .campo-nome-equipe input::placeholder{
+    color: rgba(255, 255, 255, 0.80);
+}
+
+main #equipes .cadastro-de-equipes .campos-formulario .campo-imagem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+main #equipes .cadastro-de-equipes .campos-formulario .campo-imagem label{
+    color: black;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    padding: 10px 10px;
+    font-family: 'Titillium Web Bold';
+    font-size: 13px;
+    cursor: pointer;
+}
+
+main #equipes .cadastro-de-equipes .campos-formulario .campo-imagem input{
+    display: none;
+}
+
+main #equipes .cadastro-de-equipes .campos-formulario .campo-imagem p{
+    color: white;
+    font-family: 'Titillium Web Regular';
+    font-size: 10px;
+}
+
+main #equipes .cadastro-de-equipes .botao-cadastrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    width: 80%;
+    background-color: #F9AA01;
+    border-radius: 8px;
+}
+
+main #equipes .cadastro-de-equipes .botao-cadastrar input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+    color: black;
+    font-family: 'Titillium Web Bold';
+    font-size: 24px;
+}
+
+/* Configuração da Tabela */
+
+main #equipes .tabela-equipes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    gap: 30px;
+}
+
+/* Cabeçalho da Tabela */
+
+main #equipes .tabela-equipes .cabecalho-tabela{
+    display: flex;
+    width: 100%;
+}
+
+main #equipes .tabela-equipes .cabecalho-tabela tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    border-bottom: 3px solid #F9AA01;
+}
+
+main #equipes .tabela-equipes .cabecalho-tabela tr th{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9AA01;
+    font-family: 'Titillium Web Black';
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 8px #000000;
+    width: 100%;
+}
+
+/* Corpo Tabela */
+
+main #equipes .tabela-equipes .corpo-tabela{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    gap: 15px;
+}
+
+main #equipes .tabela-equipes .corpo-tabela > tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    height: 70px;
+
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 1) 0%, rgba(60, 3, 65, 0.38) 100%);
+    backdrop-filter: blur(10px);
+}
+
+main #equipes .tabela-equipes .corpo-tabela > tr td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 70%;
+
+    border-right: 3px solid #F9AA01;
+
+    font-family: 'Titillium Web Bold';
+    font-family: 20px;
+}
+
+main #equipes .tabela-equipes .corpo-tabela > tr td:last-of-type{
+    border-right: none;
+}
+
+main #equipes .tabela-equipes .corpo-tabela > tr td img{
+    width: 46px;
+    height: 32px;
+}
+
+main #equipes .tabela-equipes .corpo-tabela > tr td a{
+    width: 30px;
+    height: 34px;
+}
+
+main #equipes .tabela-equipes .corpo-tabela > tr td a svg{
+    width: 100%;
+    height: 100%;
+}
+
+main #equipes .tabela-equipes .corpo-tabela > tr td a:active svg path{
+    fill: #F9AA01;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    /* Configurações Gerais */
+
+    main #equipes{
+        background-image: url(../assets/images/fundo-equipes_desktop.png);
+        padding: 83px 0 60px;
+    }
+
+    /* Formulário Equipes */
+
+    main #equipes .fundo-formulario{
+        top: 83px;
+        left: 20%;
+    
+        width: 60%;
+        height: 525px;
+        backdrop-filter: blur(4px);
+    }
+
+    main #equipes .equipes-flex{
+        align-items: center;
+    }
+
+    main #equipes .cadastro-de-equipes{
+        width: 60%;
+        padding: 50px 0 45px;
+        margin-bottom: 210px;
+    }
+
+    main #equipes .cadastro-de-equipes .titulo-equipes{
+        font-size: 40px;
+    }
+
+    main #equipes .cadastro-de-equipes .sob-titulo{
+        margin-top: 8px;
+        width: 390px;
+    }
+
+    main #equipes .cadastro-de-equipes .campos-formulario{
+        margin: 70px 0 48px;
+        gap: 40px;
+        width: 70%;
+    }
+
+    main #equipes .cadastro-de-equipes .campos-formulario .campo-imagem label{
+        padding: 0;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 57%;
+        font-size: 24px;
+    }
+
+    main #equipes .cadastro-de-equipes .campos-formulario .campo-imagem p{
+        width: auto;
+        font-size: 16px;
+    }
+
+    main #equipes .cadastro-de-equipes .botao-cadastrar{
+        width: 30%;
+    }
+
+    /* Configuração da tabela */
+
+    main #equipes .tabela-equipes{
+        width: 60%;
+    }
+
+    main #equipes .tabela-equipes .cabecalho-tabela tr th{
+        font-size: 30px;
+    }
+
+    main #equipes .tabela-equipes .corpo-tabela > tr{
+        height: 125px;
+    }
+
+    main #equipes .tabela-equipes .corpo-tabela > tr:last-of-type{
+        display: none;
+    }
+
+    main #equipes .tabela-equipes .corpo-tabela > tr td{
+        font-size: 24px;
+    }
+
+    main #equipes .tabela-equipes .corpo-tabela > tr td img{
+        width: auto;
+        height: auto;
+    }
+
+    main #equipes .tabela-equipes .corpo-tabela > tr td a{
+        width: 40px;
+        height: 44px;
+    }
+    
+    main #equipes .tabela-equipes .corpo-tabela > tr td a svg{
+        width: 100%;
+        height: 100%;
+    }
+    
+    main #equipes .tabela-equipes .corpo-tabela > tr td a:hover svg path{
+        fill: #F9AA01;
+    }
+
+}

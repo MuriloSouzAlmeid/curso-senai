@@ -1,0 +1,745 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\gamer-fullstack.bundle.scp.css",
+      "PackagePath": "staticwebassets\\gamer-fullstack.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\Banner_Login.png",
+      "PackagePath": "staticwebassets\\assets\\Banner_Login.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\Botao_voltar_ao_topo.svg",
+      "PackagePath": "staticwebassets\\assets\\Botao_voltar_ao_topo.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\botao-editar.png",
+      "PackagePath": "staticwebassets\\assets\\botao-editar.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\controle-icone.png",
+      "PackagePath": "staticwebassets\\assets\\controle-icone.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\envelope-icon.png",
+      "PackagePath": "staticwebassets\\assets\\envelope-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\facebook-yellow.svg",
+      "PackagePath": "staticwebassets\\assets\\facebook-yellow.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\facebook.svg",
+      "PackagePath": "staticwebassets\\assets\\facebook.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\Inter-VariableFont_slnt,wght.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\Inter-VariableFont_slnt,wght.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\OFL.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\README.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\README.txt"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Black.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Light.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Medium.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Thin.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Quicksand\\OFL.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Quicksand\\Quicksand-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\Quicksand-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Quicksand\\README.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\README.txt"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Quicksand\\static\\Quicksand-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\static\\Quicksand-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Quicksand\\static\\Quicksand-Light.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\static\\Quicksand-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Quicksand\\static\\Quicksand-Medium.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\static\\Quicksand-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Quicksand\\static\\Quicksand-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\static\\Quicksand-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Quicksand\\static\\Quicksand-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\static\\Quicksand-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\OFL.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Black.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Italic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Light.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fundo-jogadores-mobile.png",
+      "PackagePath": "staticwebassets\\assets\\fundo-jogadores-mobile.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\fundo-login.png",
+      "PackagePath": "staticwebassets\\assets\\fundo-login.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\go-to-top.png",
+      "PackagePath": "staticwebassets\\assets\\go-to-top.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\green-play.svg",
+      "PackagePath": "staticwebassets\\assets\\green-play.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\instagram-yellow.svg",
+      "PackagePath": "staticwebassets\\assets\\instagram-yellow.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\instagram.svg",
+      "PackagePath": "staticwebassets\\assets\\instagram.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\joystick-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\joystick-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\joystick-prof-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\joystick-prof-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\linkedin-yellow.svg",
+      "PackagePath": "staticwebassets\\assets\\linkedin-yellow.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\linkedin.svg",
+      "PackagePath": "staticwebassets\\assets\\linkedin.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\logotipo-gamer.png",
+      "PackagePath": "staticwebassets\\assets\\logotipo-gamer.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\logotipo-gamer.svg",
+      "PackagePath": "staticwebassets\\assets\\logotipo-gamer.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\market-icon.png",
+      "PackagePath": "staticwebassets\\assets\\market-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\menu-hamburger.svg",
+      "PackagePath": "staticwebassets\\assets\\menu-hamburger.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\menu-points.png",
+      "PackagePath": "staticwebassets\\assets\\menu-points.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\phone-icon.png",
+      "PackagePath": "staticwebassets\\assets\\phone-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\search-icon.png",
+      "PackagePath": "staticwebassets\\assets\\search-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\search-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\search-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\trash.png",
+      "PackagePath": "staticwebassets\\assets\\trash.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\user-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\user-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\vector-key.svg",
+      "PackagePath": "staticwebassets\\assets\\vector-key.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\assets\\vector-user.svg",
+      "PackagePath": "staticwebassets\\assets\\vector-user.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\css\\equipes.css",
+      "PackagePath": "staticwebassets\\css\\equipes.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\css\\header-footer.css",
+      "PackagePath": "staticwebassets\\css\\header-footer.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\css\\jogadores.css",
+      "PackagePath": "staticwebassets\\css\\jogadores.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\css\\nao-logado.css",
+      "PackagePath": "staticwebassets\\css\\nao-logado.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\Background-Login.png",
+      "PackagePath": "staticwebassets\\images\\Background-Login.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\Banner_Liga-Game-Mobile.png",
+      "PackagePath": "staticwebassets\\images\\Banner_Liga-Game-Mobile.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\Banner_Liga-Game.png",
+      "PackagePath": "staticwebassets\\images\\Banner_Liga-Game.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\Card-FIFA.png",
+      "PackagePath": "staticwebassets\\images\\Card-FIFA.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\Game-CS-GO.png",
+      "PackagePath": "staticwebassets\\images\\Game-CS-GO.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\Game-FIFA.png",
+      "PackagePath": "staticwebassets\\images\\Game-FIFA.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\background-equipes-mobile.png",
+      "PackagePath": "staticwebassets\\images\\background-equipes-mobile.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\background-jogadores.png",
+      "PackagePath": "staticwebassets\\images\\background-jogadores.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\background-login-mobile.png",
+      "PackagePath": "staticwebassets\\images\\background-login-mobile.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\backgroung_footer.png",
+      "PackagePath": "staticwebassets\\images\\backgroung_footer.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\backgrund_notícias-mobile.png",
+      "PackagePath": "staticwebassets\\images\\backgrund_notícias-mobile.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\backgrund_notícias.png",
+      "PackagePath": "staticwebassets\\images\\backgrund_notícias.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\fundo-equipes_desktop.png",
+      "PackagePath": "staticwebassets\\images\\fundo-equipes_desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\fundo-footer_desktop.png",
+      "PackagePath": "staticwebassets\\images\\fundo-footer_desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\fundo-jogadores_desktop.png",
+      "PackagePath": "staticwebassets\\images\\fundo-jogadores_desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\img-nao-logado.png",
+      "PackagePath": "staticwebassets\\images\\img-nao-logado.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\kiljoy.png",
+      "PackagePath": "staticwebassets\\images\\kiljoy.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\lade-lol.png",
+      "PackagePath": "staticwebassets\\images\\lade-lol.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\noticia1.png",
+      "PackagePath": "staticwebassets\\images\\noticia1.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\noticia2.png",
+      "PackagePath": "staticwebassets\\images\\noticia2.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\noticia3.png",
+      "PackagePath": "staticwebassets\\images\\noticia3.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\noticia4.png",
+      "PackagePath": "staticwebassets\\images\\noticia4.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\noticia5.png",
+      "PackagePath": "staticwebassets\\images\\noticia5.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\noticia6.png",
+      "PackagePath": "staticwebassets\\images\\noticia6.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\noticia7.png",
+      "PackagePath": "staticwebassets\\images\\noticia7.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\images\\noticia8.png",
+      "PackagePath": "staticwebassets\\images\\noticia8.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\0_-p9KdeOq6kbXpwuf.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\0_-p9KdeOq6kbXpwuf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\1ecde018e863e2aaee31f00a23378c35.jpe",
+      "PackagePath": "staticwebassets\\img\\Equipe\\1ecde018e863e2aaee31f00a23378c35.jpe"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\47d147a4bac07fc7de08c58a0d12f000.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\47d147a4bac07fc7de08c58a0d12f000.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\932500.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\932500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\Amarelo-limão-.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\Amarelo-limão-.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\BLEACH-Thousand-Year-Blood-War-thumb.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\BLEACH-Thousand-Year-Blood-War-thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\Bleach-Thousand-Year-Blood-War-Disney-Plus.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\Bleach-Thousand-Year-Blood-War-Disney-Plus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\FAIRY-TAIL.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\FAIRY-TAIL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\attack-on-titan-shingeki-no-kyojin-final-season-anime_CDL_1280x720_01.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\attack-on-titan-shingeki-no-kyojin-final-season-anime_CDL_1280x720_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\background-5035258_1280.webp",
+      "PackagePath": "staticwebassets\\img\\Equipe\\background-5035258_1280.webp"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\blob_an4p.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\blob_an4p.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\busco_romance.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\busco_romance.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\f5d0f04e85a224493fe9caa2e59740811630901421-main.webp",
+      "PackagePath": "staticwebassets\\img\\Equipe\\f5d0f04e85a224493fe9caa2e59740811630901421-main.webp"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\imagem_2022_07_25_185343600__1bj4u6t0v-1.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\imagem_2022_07_25_185343600__1bj4u6t0v-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\imagem_padrao.png",
+      "PackagePath": "staticwebassets\\img\\Equipe\\imagem_padrao.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\images.jfif",
+      "PackagePath": "staticwebassets\\img\\Equipe\\images.jfif"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\images.png",
+      "PackagePath": "staticwebassets\\img\\Equipe\\images.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\one-piece-2.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\one-piece-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\re-zero-poster.webp",
+      "PackagePath": "staticwebassets\\img\\Equipe\\re-zero-poster.webp"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\the-god-of-high-school-thumb.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\the-god-of-high-school-thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\thumb-1920-975999.png",
+      "PackagePath": "staticwebassets\\img\\Equipe\\thumb-1920-975999.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\thumb_155904889430781 (1).jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\thumb_155904889430781 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\thumb_155904889430781.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipe\\thumb_155904889430781.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\Equipe\\tipo-celular.png",
+      "PackagePath": "staticwebassets\\img\\Equipe\\tipo-celular.png"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\icones\\icone_editar.svg",
+      "PackagePath": "staticwebassets\\img\\icones\\icone_editar.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\img\\icones\\icone_lixo.svg",
+      "PackagePath": "staticwebassets\\img\\icones\\icone_lixo.svg"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.gamer-fullstack.props",
+      "PackagePath": "build\\gamer-fullstack.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.gamer-fullstack.props",
+      "PackagePath": "buildMultiTargeting\\gamer-fullstack.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.gamer-fullstack.props",
+      "PackagePath": "buildTransitive\\gamer-fullstack.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.gamer-fullstack.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

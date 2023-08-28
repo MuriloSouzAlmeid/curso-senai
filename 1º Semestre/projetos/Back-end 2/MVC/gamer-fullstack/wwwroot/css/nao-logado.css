@@ -1,0 +1,257 @@
+/* Desktop First */
+main .nao-logado{
+    padding: 25px 0 40px;
+    background-color: #F9AA01;
+}
+
+main .nao-logado .nao-logado-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .nao-logado .titulo-nao-logado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2px;
+}
+
+main .nao-logado .titulo-nao-logado h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: TitilliumWeb-Black;
+    font-size: 1.8rem;
+    color: black;
+}
+
+main .nao-logado .titulo-nao-logado hr{
+    width: 20%;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.nao-logado .conteudo-nao-logado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nao-logado .conteudo-nao-logado .img-nao-logado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 400px;
+}
+
+.nao-logado .conteudo-nao-logado .img-nao-logado img{
+    margin-left: 20%;
+    height: 95%;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 300px;
+    justify-content: space-between;
+    padding: 40px 27px;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado .titulo-descricao{
+    display: flex;
+    justify-content: center;
+    font-family: TitilliumWeb-Bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado{
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-family: Quicksand-Regular;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .img-controle-nao-logado{
+    width: 30%;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .img-controle-nao-logado img{
+    width: 100%;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 63%;
+    padding: 3.75% 0 4%;
+    margin-right: 3%;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .informacoes-escolha{
+    width: 95%;
+    text-align: center;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .botoes-nao-logado{
+    align-self: center;
+    display: flex;
+    gap: 10px;
+    padding: 5px 20px;
+    width: 100%;
+    font-family: Quicksand-SemiBold;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .botoes-nao-logado p{
+    display: flex;
+    align-items: center;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .botoes-nao-logado a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 7px;
+    width: 100%;
+    padding: 5px 0;
+    cursor: pointer;
+    color: black;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .botoes-nao-logado a:first-of-type{
+    background-color: #F9AA01;
+}
+
+.nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .botoes-nao-logado a:last-of-type{
+    background-color: #D9D9D9;
+}
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 991px){
+    .container-grid{
+        max-width: 992px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    main .nao-logado{
+        padding-bottom: 70px;
+    }
+    main .nao-logado .titulo-nao-logado h2{
+        font-size: 1.2rem;
+    }
+
+    main .nao-logado .titulo-nao-logado hr{
+        width: 40%;
+    }
+
+    .nao-logado .conteudo-nao-logado{
+        position: relative;
+        justify-content: center;
+    }
+
+    .nao-logado .conteudo-nao-logado .img-nao-logado{
+        width: 100%;
+    }
+
+    .nao-logado .conteudo-nao-logado .img-nao-logado img{
+        margin-left: 0;
+        margin-right: 18%;
+    }
+
+    /* Quadrado roxo */
+
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado{
+        position: absolute;
+        bottom: -15px;
+        right: 5px;
+    }
+
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado{
+        width: 80%;
+        height: auto;
+        /* justify-content: space-between; */
+        padding: 20px 10px;
+        gap: 5px;
+    }
+    
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado .titulo-descricao{
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+    
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .img-controle-nao-logado{
+        width: 33%;
+    }
+    
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario{
+        width: 100%;
+        padding: 0;
+        margin-right: 0;
+        gap: 18px;
+    }
+    
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .informacoes-escolha{
+        width: 100%;
+    }
+    
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .botoes-nao-logado{
+        align-self: center;
+        display: flex;
+        gap: 8px;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .botoes-nao-logado p{
+        display: flex;
+        align-items: center;
+    }
+    
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .botoes-nao-logado a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+        text-decoration: none;
+        border-radius: 7px;
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+        color: black;
+    }
+    
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .botoes-nao-logado a:first-of-type{
+        background-color: #F9AA01;
+    }
+    
+    .nao-logado .conteudo-nao-logado .descricao-nao-logado .informacoes-nao-logado .escolha-usuario .botoes-nao-logado a:last-of-type{
+        background-color: #D9D9D9;
+        text-align: center;
+    }
+}

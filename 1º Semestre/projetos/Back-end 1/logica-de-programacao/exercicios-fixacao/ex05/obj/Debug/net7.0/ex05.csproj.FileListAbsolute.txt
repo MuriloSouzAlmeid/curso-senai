@@ -1,0 +1,15 @@
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\bin\Debug\net7.0\ex05.exe
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\bin\Debug\net7.0\ex05.deps.json
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\bin\Debug\net7.0\ex05.runtimeconfig.json
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\bin\Debug\net7.0\ex05.dll
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\bin\Debug\net7.0\ex05.pdb
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\obj\Debug\net7.0\ex05.csproj.AssemblyReference.cache
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\obj\Debug\net7.0\ex05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\obj\Debug\net7.0\ex05.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\obj\Debug\net7.0\ex05.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\obj\Debug\net7.0\ex05.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\obj\Debug\net7.0\ex05.dll
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\obj\Debug\net7.0\refint\ex05.dll
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\obj\Debug\net7.0\ex05.pdb
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\obj\Debug\net7.0\ex05.genruntimeconfig.cache
+C:\Users\muril\OneDrive\Área de Trabalho\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex05\obj\Debug\net7.0\ref\ex05.dll

@@ -1,0 +1,14 @@
+.descricao-personagem::-webkit-scrollbar{
+    width: 12px;
+}
+
+.descricao-personagem::-webkit-scrollbar-track{
+    background-color: #f1e9e9;
+    border-radius: 10px;
+}
+
+.descricao-personagem::-webkit-scrollbar-thumb{
+    background-color: #582965;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}

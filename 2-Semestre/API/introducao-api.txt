@@ -1,0 +1,72 @@
+API: faz a ponte entre o front-end e back-end com requests e responses
+
+request: é a requisição de processos e dados que o front-end faz ao back-end
+response: são as ações realizadas e as respostas obtidas que o back-end manda para o front-end
+
+rest: cojunto de regras que utilizamos dentro de uma API (padronização de sistemas que facilita a cpmunicação entre eles) - um exemplo é o formato json (scripts com requisições e respostas usando "chave: valor", sendo as propriedades do objeto)
+outra rest é a utilização de métodos HTTP para fazer os processos: exemplos são (POST, GET, DELETE, PUT) e etc...
+
+restfull: uma API que segue todos os padrões rest se tornando a "melhor"
+
+json: formado da resposta {}
+ex: {					{
+	atributo/chave: valor			nomePessoa: Murilo
+    }						idadePessoa: 17
+					}
+
+array de respostas [{}]
+[
+   {
+      NomePessoa: Murilo
+      IdadePessoa: 17
+   },
+   {
+      NomePessoa: Andréia
+      IdadePessoa: 40
+   }
+]
+
+GET: otem/retorna apenas dados que forem solicitados SELECT ou Listar();
+POST: isere dados ISERT ou Login(); Cadastrar();
+PUT: modifica dados UPDATE ou Aualizar(); Editar();
+DELETE: deleta dads DELETE ou DELETAR();
+PATCH: atualiza apenas alguns dados de um registro.
+
+Tudo isso é um CRUD (Create, Read, Update, Delete)
+
+Design Pattern - Padrão de Projeto: Reposiory Pattern - que se utiliza de repositórios em 4 camadas
+
+Domains (domínios) - Models = classe e regras de negócios
+Controllers (controladores) - Controller = Ligação entre a Model e View (o controller faz parte da API), métodos controladores, recebe as requisições do cliente.
+Interface (interfaces) - View = visual, front end além de fazer o papel de CRUD com os formulários
+Repositories (repositórios) - lida com o processamento de dados da aplicação
+
+explicação do professor pq eu não entendi porra nenhuma
+Domains: definição das classes - propriedades
+Controllers: métodos controladores - autenticação e autorização
+Interface: definição dos métodos obrigatórios - contrato
+Repositories: implementação dos métodos - regras de negócios
+
+solução no visual studio: pode conter 1 ou mais projetos - um pacote com vários projetos
+
+Data notation: faz uma validação a uma propriedade no domains - coloca-se em cima das propriedades
+
+endpoint = url
+
+status code: código de mensagem dependendo do resultado da requisição - dividido em 3 níveis
+nível 200: caso ocorra tudo certo na requisição
+nível 400: caso ocorra um erro na requisição
+nível 500: não conseguiu acessar o servidor para fazer a requisição
+
+fluxo da aplicação:
+client(front-end) <-> Controller(endpoint) <-> Repository(métodos/conexão com o bd) <-> Domain(bd)
+Repository <-> Interface(métodos pré definidos)
+
+Controller -> controla as requests, rotas e métodos Http que serão utilizados
+
+Recordação:
+Repository Pattern - Padrão repositório
+	Domain - Classes
+	Interface - Contrato/métodos
+	Repository - Lógica/implementação dos métodos
+	Controller - Endpoints/rotas

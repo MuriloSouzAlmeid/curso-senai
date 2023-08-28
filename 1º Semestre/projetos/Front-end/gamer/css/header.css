@@ -1,0 +1,343 @@
+/* Configurações Gerais do Header */
+
+header{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100000000000000;
+    background-color: #1B1426;
+    color: white;
+}
+
+header .header-top{
+    display: none;
+}
+
+header .contatos p{
+    padding-left: 20px;
+}
+
+header .contatos .telefone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 2px solid #F9AA01;
+    padding: 32px 0;
+    width: 100%;
+}
+
+header .contatos .email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 32px 0;
+    width: 100%;
+}
+
+/* Configuração da seção de cima do Header */
+
+header .header-top .redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+
+/* Configurando a seção de baixo do Header */
+
+header .header-bottom{
+    height: 60px;
+}
+
+header .header-bottom .header-bottom-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Configurando Menu de Navegação (Menu Hamburger) */
+
+header .header-bottom .menu{
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    z-index: 101;
+
+    /* Adiciona uma transição em uma tag */
+    transition: left 0.75s;
+
+    /* Desconta o valor do header na altura da nav para se ajustar totalmente a tela */
+    height: calc(100vh - 60px);
+    
+
+    /* Faz um efeito gradiente em linear passando os valores da direção, e as cores presentes no gradiente */
+    background-image: linear-gradient(168.74deg, rgba(27, 20, 38, 0.7) 0%, rgba(27, 20, 38, 0.4) 100%);
+    
+    /* Cria o efeito de borrado do glassmorsphims passando qual o tipo de filtro do background e quanto de parâmetro em valor */
+    backdrop-filter: blur(45px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .header-bottom #logo_gamer{
+    width: 97px;
+    height: 25px;
+}
+
+header .menu p{
+    color: white;
+    font-family: 'Inter';
+    font-size: 15px;
+}
+
+header .menu .menu-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    border-bottom: 2px solid #F9AA01;
+}
+
+header .header-bottom .menu .contatos-menu{
+    width: 100%;
+}
+
+header .header-bottom .menu .contatos-menu p{
+    padding-left: 20px;
+}
+
+header .contatos-menu .telefone-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 2px solid #F9AA01;
+    padding: 32px 0;
+    width: 100%;
+}
+
+header .contatos-menu .email-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 32px 0;
+    width: 100%;
+}
+
+header .menu .menu-flex a{
+    padding: 32px 0;
+    text-decoration: none;
+}
+
+header .menu .redes-sociais{
+    position: absolute;
+    top: 83vh;
+
+    display: flex;
+    justify-content: center;
+
+    /* Propriedade Flex: gap, funciona como uma maneira de definir valores para espaçamento entre os elementos de uma tag que tenha display flex. A propriedade funciona ao declara-la e depois informar o valor depois Ex: gap: 20px;  */
+    gap: 30px;
+
+    width: 100%;
+}
+
+/* Configurando Menu Perfil (Três Pontinhos) */
+
+header .header-bottom .menu-perfil{
+    position: fixed;
+    top: 60px;
+    right: -19vw;
+    width: 19vw;
+    height: 28vh;
+
+    transition: right 0.5s;
+
+    background: linear-gradient(168.74deg, rgba(27, 20, 38, 0.7) 0%, rgba(27, 20, 38, 0.4) 100%);
+    
+    backdrop-filter: blur(45px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .menu-perfil .menu-perfil-flex{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .menu-perfil .menu-perfil-flex a{
+    text-decoration: none;
+}
+
+header .menu-perfil .menu-perfil-flex a svg{
+    width: 24px;
+    height: 24px;
+}
+
+header .menu-perfil .menu-perfil-flex a:active svg path{
+    fill: #F9AA01;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1440px){
+    /* Header */
+
+    header{
+        position: static;
+        width: 100%;
+    }
+
+    /* Header Top */
+
+    header .header-top{
+        display: block;
+        height: 50px;
+        border-bottom: 1px solid #F9AA01;
+    }
+
+    header .header-top .header-top-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .header-top .contatos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 400px;
+    }
+
+    header .header-top .contatos p{
+        font-family: 'Inter';
+        font-size: 14px;
+    }
+
+    header .header-top .contatos .telefone{
+        border-bottom: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    header .header-top .contatos .email{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    header .header-top .redes-sociais{
+        width: 134px;
+    }
+
+    header .header-top .redes-sociais a{
+        text-decoration: none;
+    }
+
+    header .header-top .redes-sociais a svg{
+        width: 24px;
+        height: 24px;
+    }
+
+    header .header-top .redes-sociais a svg:hover path{
+        fill: #F9AA01;
+    }
+
+    /* Esconde os elementos desnecessários do header */
+    header .header-bottom .menu-hamburger, 
+    header .header-bottom .menu-pontinhos,
+    header .header-bottom .menu .contatos-menu,
+    header .header-bottom .menu .redes-sociais {
+        display: none;
+    }
+
+    /* Header Bottom */
+
+    header .header-bottom{
+        height: 90px;
+    }
+
+    header .header-bottom #logo_gamer{
+        width: 139px;
+        height: 40px;
+        margin-left: 20px;
+    }
+
+    header .header-bottom .menu{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 480px;
+        background-image: none;
+        background-color: transparent;
+    }
+
+    header .header-bottom .menu .menu-flex{
+        border-bottom: none;
+        height: 100%;
+    }
+
+    header .header-bottom .menu .menu-flex a{
+        text-decoration: none;
+    }
+
+    header .header-bottom .menu .menu-flex p:hover{
+        color: #F9AA01;
+    }
+
+    header .header-bottom .menu-perfil{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        width: 134px;
+        background-color: none;
+    }
+
+    header .header-bottom .menu-perfil .menu-perfil-flex{
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .menu-perfil .menu-perfil-flex a svg:hover path{
+        fill: #F9AA01;
+    }
+}

@@ -1,0 +1,391 @@
+/* Footer */
+
+footer{
+    background-image: url(../assets/images/fundo-footer_mobile.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Degradê Footer */
+
+footer .transicao-footer{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    height: 240px;
+    width: 100%;
+
+    background-image: linear-gradient(to bottom,  #000000 0%, #000002 10%, rgba(67, 3, 99, 0.03) 60%);
+}
+
+/* Configurações Gerais Footer */
+
+footer .footer-flex{
+    display: flex;
+    flex-direction: column;
+
+    padding: 120px 0 50px;
+}
+
+footer .sob-titulo{
+    width: 115px;
+    border: 2px solid #F9AA01;
+}
+
+/* Seção Sobre Gamer */
+
+footer .sobre-gamer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+footer .sobre-gamer .logo-footer{
+    width: 98px;
+    height: 27px;
+    margin-bottom: 45px;
+}
+
+footer .sobre-gamer .logo-footer img{
+    width: 100%;
+    height: 100%;
+}
+
+footer .sobre-gamer .descricao-gamer{
+    color: white;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    text-align: justify;
+
+    margin-bottom: 78px;
+}
+
+footer .sobre-gamer .redes-sociais-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 115px;
+}
+
+footer .sobre-gamer.redes-sociais-footer a{
+    text-decoration: none;
+}
+
+/* Seção Links Úteis */
+
+footer .links-uteis{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+footer .links-uteis .titulo-links-uteis{
+    color: white;
+    font-family: 'Titillium Web Black';
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+footer .links-uteis .navbar-footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    gap: 33px;
+
+    margin-top: 38px;
+}
+
+footer .links-uteis .navbar-footer .topico{
+    width: 15px;
+    height: 2px;
+    border-bottom: 2px solid #F9AA01;
+}
+
+footer .links-uteis .navbar-footer > div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 26%;
+
+    gap: 5px;
+}
+
+footer .links-uteis .navbar-footer  a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Titillium Web Bold';
+    font-size: 16px;
+}
+
+/* Seção Contatos Footer */
+
+footer .contatos-footer{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-bottom: 105px;
+}
+
+footer .contatos-footer .titulo-contatos-footer{
+    color: white;
+    font-family: 'Titillium Web Black';
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+footer .contatos-footer .info-contatos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+    gap: 20px;
+}
+
+footer .contatos-footer .info-contatos > div{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Configurando os Títulos da Info-contatos */
+
+footer .contatos-footer .info-contatos .localizacao-footer .titulo-localizacao, footer .contatos-footer .info-contatos .email-footer .titulo-email, footer .contatos-footer .info-contatos .telefone-footer .titulo-telefone{
+    color: #F9AA01;
+    font-family: 'Titillium Web Bold';
+    font-size: 16px;
+}
+
+/* Configurando os Parágrafos da Info-contatos */
+
+footer .contatos-footer .info-contatos .localizacao-footer .texto-localizacao, footer .contatos-footer .info-contatos .email-footer .texto-email, footer .contatos-footer .info-contatos .telefone-footer .texto-telefone{
+    color: white;
+    font-family: 'Titillium Web Bold';
+    font-size: 16px;
+}
+
+/* Seção Receber Notícias */
+
+footer .receber-noticias{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+footer .receber-noticias .titulo-receber-noticias{
+    color: white;
+    font-family: 'Titillium Web Black';
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+/* Formatação do Formulário de Receber Notícias */
+
+footer .receber-noticias .formulario-footer{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 55px;
+    gap: 20px;
+    width: 100%;
+}
+
+footer .receber-noticias .formulario-footer label{
+    display: none;
+}
+
+footer .receber-noticias .formulario-footer .campo-email-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    border: 1px solid white;
+    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .50), rgba(239, 239, 239, 0));
+    height: 40px;
+
+    /* padding: 0 6.5px; */
+
+    width: 100%;
+}
+
+footer .receber-noticias .formulario-footer .campo-email-footer input{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    color: #fff;
+    font-family: 'Titillium Web Regular';
+    font-size: 16px;
+    height: 80%;
+}
+
+footer .receber-noticias .formulario-footer .campo-email-footer input::placeholder{
+    font-family: 'Titillium Web Regular';
+    font-size: 16px;
+    color: white;
+}
+
+footer .receber-noticias .formulario-footer .enviar-noticias{
+    background-color: #F9AA01;
+    border: none;
+    color: black;
+    height: 40px;
+    border-radius: 8px;
+    width: 100%;
+
+    font-family: 'Titillium Web Bold';
+    font-size: 24px;
+}
+
+/* Configurando o Copyright */
+
+footer .footer-flex .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 175px;
+
+}
+
+footer .footer-flex .copyright p{
+    font-family: 'Titillium Web Regular';
+    font-size: 16px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    
+    /* Configurações Gerais Footer */
+
+    footer{
+        background-image: url(../assets/images/fundo-footer_desktop.png);
+    }
+
+    footer .transicao-footer{
+        top: -20px;
+        height: 150px;
+        width: 100%;
+    }
+
+    footer .sob-titulo{
+        width: 102px;
+    }
+
+    footer .footer-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* gap: 100px; */
+        padding: 110px 0 50px;
+    }
+
+    footer .footer-flex > div{
+        width: 20%;
+    }
+
+    /* Informações do Footer */
+
+    footer .sobre-gamer{
+        align-items: center;
+    }
+
+    footer .sobre-gamer .logo-footer{
+        width: 196px;
+        height: 51px;
+        margin-bottom: 32px;
+    }
+
+    footer .sobre-gamer .descricao-gamer{
+        font-size: 16px;
+        margin-bottom: 66px;
+    }
+
+    footer .sobre-gamer .redes-sociais-footer{
+        margin-bottom: 0;
+    }
+
+    /* Links Úteis do Footer */
+
+    footer .links-uteis{
+        margin-bottom: 0;
+    }
+
+    footer .links-uteis .navbar-footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .links-uteis .navbar-footer{
+        gap: 22px;
+        margin-top: 28px;
+    }
+
+    footer .links-uteis .navbar-footer > div{
+        width: 100%;
+        gap: 10px;
+    }
+
+    /* Contatos do Footer */
+
+    footer .contatos-footer{
+        margin-bottom: 0;
+    }
+
+    footer .contatos-footer .info-contatos{
+        margin-top: 28px;
+    }
+
+    /* Receber Notícias Footer */
+
+    footer .receber-noticias .formulario-footer{
+        margin-top: 50px;
+    }
+
+    /* Copyright do Footer */
+
+    footer .footer-flex .copyright{
+        margin-top: 72px;
+    }
+
+}

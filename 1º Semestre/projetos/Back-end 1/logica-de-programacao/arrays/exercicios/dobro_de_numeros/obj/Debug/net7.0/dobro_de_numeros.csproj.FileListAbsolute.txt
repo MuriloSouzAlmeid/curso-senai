@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\bin\Debug\net7.0\dobro_de_numeros.exe
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\bin\Debug\net7.0\dobro_de_numeros.deps.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\bin\Debug\net7.0\dobro_de_numeros.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\bin\Debug\net7.0\dobro_de_numeros.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\bin\Debug\net7.0\dobro_de_numeros.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\obj\Debug\net7.0\dobro_de_numeros.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\obj\Debug\net7.0\dobro_de_numeros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\obj\Debug\net7.0\dobro_de_numeros.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\obj\Debug\net7.0\dobro_de_numeros.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\obj\Debug\net7.0\dobro_de_numeros.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\obj\Debug\net7.0\dobro_de_numeros.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\obj\Debug\net7.0\refint\dobro_de_numeros.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\obj\Debug\net7.0\dobro_de_numeros.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\obj\Debug\net7.0\dobro_de_numeros.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\arrays\exercicios\dobro_de_numeros\obj\Debug\net7.0\ref\dobro_de_numeros.dll

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários</title>
+    </head>
+    <body>
+        <h1>Aula de Formulários</h1>
+
+        <!-- o parâmetro action serve para informar para qual arquivos os dados coletados irão -->
+        <form action="#">
+            <label for="nome">Nome:</label> <br>
+            <!-- o atributo placeholder é um falso value, servindo como uma dica ao usuario -->
+            <input type="text" id="nome" placeholder="Digite aqui seu nome">
+            <br> <br>
+
+            <label for="idade">Idade</label> <br>
+            <input type="number" id="idade" placeholder="Informe aqui a sua idade">
+            <br> <br>
+
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" placeholder="Digite aqui o seu email">
+            <br> <br>
+
+            <label for="senha">Senha</label> <br>
+            <input type="password" id="senha" placeholder="Digite aqui a sua senha"> <button type="button" onclick="mostraSenha()">:)</button>
+            <br> <br>
+
+            <label for="estado">Estado</label> <br>
+            <select id="estado">
+                <option value="">Escolha</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+            </select>
+            <br> <br> <br>
+
+            <button onclick="mostraValores()" type="button">Enviar</button>
+        </form>
+
+        <script>
+            function mostraValores() {
+                let nome = document.getElementById("nome").value;
+                let idade = document.getElementById("idade").value;
+                let email = document.getElementById("email").value;
+                let senha = document.getElementById("senha").value;
+                let estado = document.getElementById("estado").value;
+
+                if (nome == "" || idade == "" || estado == "" || senha == "") {
+                    alert("Preencha os campos corretamente!")
+                } else {
+                     alert(`Nome: ${nome}, Idade: ${idade}, Senha: ${senha}, Estado: ${estado}`);
+                }
+            }
+
+            let senhaExibida = "false";
+
+            function mostraSenha() {
+                if (senhaExibida == "false"){
+                    document.getElementById("senha").type = "text"
+                    senhaExibida = "true"
+                }else {
+                document.getElementById("senha").type = "password"
+                senhaExibida = "false"
+            }
+            } 
+        </script>
+    </body>
+</html>

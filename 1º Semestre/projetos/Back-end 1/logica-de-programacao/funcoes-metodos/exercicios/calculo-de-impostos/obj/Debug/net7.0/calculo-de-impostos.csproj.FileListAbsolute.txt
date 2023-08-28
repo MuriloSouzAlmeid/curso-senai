@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\bin\Debug\net7.0\calculo-de-impostos.exe
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\bin\Debug\net7.0\calculo-de-impostos.deps.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\bin\Debug\net7.0\calculo-de-impostos.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\bin\Debug\net7.0\calculo-de-impostos.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\bin\Debug\net7.0\calculo-de-impostos.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\obj\Debug\net7.0\calculo-de-impostos.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\obj\Debug\net7.0\calculo-de-impostos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\obj\Debug\net7.0\calculo-de-impostos.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\obj\Debug\net7.0\calculo-de-impostos.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\obj\Debug\net7.0\calculo-de-impostos.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\obj\Debug\net7.0\calculo-de-impostos.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\obj\Debug\net7.0\refint\calculo-de-impostos.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\obj\Debug\net7.0\calculo-de-impostos.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\obj\Debug\net7.0\calculo-de-impostos.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\funcoes-metodos\exercicios\calculo-de-impostos\obj\Debug\net7.0\ref\calculo-de-impostos.dll

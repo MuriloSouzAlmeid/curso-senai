@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\bin\Debug\net7.0\anos_e_semanas.exe
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\bin\Debug\net7.0\anos_e_semanas.deps.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\bin\Debug\net7.0\anos_e_semanas.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\bin\Debug\net7.0\anos_e_semanas.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\bin\Debug\net7.0\anos_e_semanas.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\obj\Debug\net7.0\anos_e_semanas.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\obj\Debug\net7.0\anos_e_semanas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\obj\Debug\net7.0\anos_e_semanas.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\obj\Debug\net7.0\anos_e_semanas.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\obj\Debug\net7.0\anos_e_semanas.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\obj\Debug\net7.0\anos_e_semanas.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\obj\Debug\net7.0\refint\anos_e_semanas.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\obj\Debug\net7.0\anos_e_semanas.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\obj\Debug\net7.0\anos_e_semanas.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\conversao_idade\anos_e_semanas\obj\Debug\net7.0\ref\anos_e_semanas.dll

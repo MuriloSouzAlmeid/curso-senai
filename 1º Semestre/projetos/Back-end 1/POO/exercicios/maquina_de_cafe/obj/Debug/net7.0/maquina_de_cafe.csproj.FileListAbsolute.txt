@@ -1,0 +1,15 @@
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\bin\Debug\net7.0\maquina_de_cafe.exe
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\bin\Debug\net7.0\maquina_de_cafe.deps.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\bin\Debug\net7.0\maquina_de_cafe.runtimeconfig.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\bin\Debug\net7.0\maquina_de_cafe.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\bin\Debug\net7.0\maquina_de_cafe.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\obj\Debug\net7.0\maquina_de_cafe.csproj.AssemblyReference.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\obj\Debug\net7.0\maquina_de_cafe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\obj\Debug\net7.0\maquina_de_cafe.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\obj\Debug\net7.0\maquina_de_cafe.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\obj\Debug\net7.0\maquina_de_cafe.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\obj\Debug\net7.0\maquina_de_cafe.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\obj\Debug\net7.0\refint\maquina_de_cafe.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\obj\Debug\net7.0\maquina_de_cafe.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\obj\Debug\net7.0\maquina_de_cafe.genruntimeconfig.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\maquina_de_cafe\obj\Debug\net7.0\ref\maquina_de_cafe.dll

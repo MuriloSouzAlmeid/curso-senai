@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\bin\Debug\net7.0\validacao-senha.exe
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\bin\Debug\net7.0\validacao-senha.deps.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\bin\Debug\net7.0\validacao-senha.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\bin\Debug\net7.0\validacao-senha.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\bin\Debug\net7.0\validacao-senha.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\obj\Debug\net7.0\validacao-senha.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\obj\Debug\net7.0\validacao-senha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\obj\Debug\net7.0\validacao-senha.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\obj\Debug\net7.0\validacao-senha.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\obj\Debug\net7.0\validacao-senha.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\obj\Debug\net7.0\validacao-senha.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\obj\Debug\net7.0\refint\validacao-senha.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\obj\Debug\net7.0\validacao-senha.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\obj\Debug\net7.0\validacao-senha.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\estrutura-de-repeticao\exercicios\while\validacao-senha\obj\Debug\net7.0\ref\validacao-senha.dll

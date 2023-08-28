@@ -1,0 +1,67 @@
+Algoritmos.
+
+1) Gerenciando o Orçamento:
+	Receber o Salário 
+	Receber o Total Gasto
+	Verificar se o salário é maior que o total gasto
+		Se sim: Informar que o gasto está dentro do orçamento.
+		Se não: Informar que o orçamento estourou.
+	Fim Do Programa
+
+
+2) Time Vencedor
+	Recebe o número de gols do primeiro time
+	Recebe o número de gols do segundo time
+	Verificar a diferença no saldo de gols
+		Se o primeiro for maior que o segundo: O primeiro time venceu
+		Se o primeiro for o menor que o segundo: o segundo time venceu
+		Se o número de gols fore os mesmos: O jogo terminou empatado.
+	Fim do programa
+
+
+3) Tipo de Triângulo
+	Receber a medida do primeiro lado do triângulo
+	Receber a medida do segundo lado do triângulo
+	Receber a medida do terceiro lado do triângulo
+	Comparar os tamanhos dos lados:
+		Se os três lados forem iguais: é um triângulo equilátero
+		Se apenas dois lados forem iguais: é um triângulo isóceles
+		Se nenhum lado for igual: é um triângulo escaleno
+	Fim do programa.
+
+
+4) Validação da Senha
+	Definir qual a senha cert-> 1234
+	Guardar essa senha em uma variável
+	Receber a senha digitada pelo usuário
+	Comparar as duas senhas
+		Se as senhas forem iguais: ACESSO PERMITIDO
+		Se as senhas forem diferentes: ACESSO NEGADO
+	Fim do Programa
+
+
+5) Custo das Maçãs
+	Definir o preço normal das maçãs -> 0,30
+	Definir o preço promocional das maçãs -> 0,25
+	Receber a quantidade de maçãs compradas pelo usuário
+	Analisar a quantidade comprada
+		Se a quantidade for menor que 12 unidades: vender pelo preço normal
+		Se a quantidade for maior ou igual a 12 unidade: vender pelo preço promocional
+	Fim do Programa
+
+ 
+6) Aprovado ou Reprovado
+	Receber a primeira nota do aluno
+	Receber a segunda nota do aluno
+	receber a terceira nota do aluno
+	Receber o total de dias letivos de aula que o aulono teve nesse bimestre
+	Receber o total de faltas do aluno nesse bimestre
+	Calcular a média entre as notas
+	Calcular a quantidade máxima de faltas que o aluno pode ter (25%)
+	Analisar essas informações:
+		Se o número de faltas do aluno for maior do que as faltas máximas permitidas (25%): o aluno está reprovado
+		Se o número de faltas do aluno for menor do que as faltas máximas permitidas (25%) faça
+			Se a média do aluno for maior que 7: O aluno está aprovado
+			Se a média do aluno for menor ou igual a 7 e maior ou igual a 3: o aluno tem direito a uma avaliação de recuperação
+			A média será menor que 3: o aluno está reprovado
+	Fim do programa 

@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\bin\Debug\net7.0\Fibonacci.exe
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\bin\Debug\net7.0\Fibonacci.deps.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\bin\Debug\net7.0\Fibonacci.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\bin\Debug\net7.0\Fibonacci.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\bin\Debug\net7.0\Fibonacci.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\obj\Debug\net7.0\Fibonacci.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\obj\Debug\net7.0\Fibonacci.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\obj\Debug\net7.0\Fibonacci.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\obj\Debug\net7.0\Fibonacci.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\obj\Debug\net7.0\Fibonacci.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\obj\Debug\net7.0\Fibonacci.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\obj\Debug\net7.0\refint\Fibonacci.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\obj\Debug\net7.0\Fibonacci.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\obj\Debug\net7.0\Fibonacci.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\atividade_06-04\Fibonacci\obj\Debug\net7.0\ref\Fibonacci.dll

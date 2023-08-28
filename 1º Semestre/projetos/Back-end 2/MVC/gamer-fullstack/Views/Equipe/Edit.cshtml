@@ -1,0 +1,47 @@
+@model Equipe
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<link rel="stylesheet" href="~/css/equipes.css">
+
+@if (ViewBag.UserName == null)
+{
+    <h2>Para continuar a partir daqui você deve estar logado!</h2>
+    <h3>Você pode se logar <a asp-area="" asp-controller="Login" asp-action="Index">Clicando Aqui</a></h3>
+}
+else
+{
+
+@* MAIN  *@
+    <main>
+
+        <section class=" cadastro-equipes">
+            <div class="container-grid equipes-flex">
+            <form id="form" method="post" action="@Url.Action("Atualizar")" class="frm-cad-equipe" enctype="multipart/form-data">
+                <div class="cadequipe-titulo">
+                    <h1>Cadastro de Equipes</h1>
+                    <hr>
+                </div>
+
+                <input class="campo-entrada" type="hidden" value="@ViewBag.Equipe.IdEquipe" id="idEquipe" name="IdEquipe">
+                <input class="campo-entrada" type="text" value="@ViewBag.Equipe.NomeEquipe" required name="Nome">
+                <label class="foto" for="foto-file">
+                    <input  type="file" id="foto-file" name="Imagem">
+                </label>
+                
+                <button type="submit" >Atualizar</button>
+                
+                
+                
+                 @* <select class="equipeid" id="equipeid">
+                    <option value="">Selecione uma Equipe</option>
+                    <option value="x">Equipe X</option>
+                    <option value="y">Equipe Y</option>
+                </select>  *@
+            </form>
+            </div>
+        </section>
+    </main>
+}

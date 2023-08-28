@@ -1,0 +1,15 @@
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\bin\Debug\net7.0\polimorfismo.exe
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\bin\Debug\net7.0\polimorfismo.deps.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\bin\Debug\net7.0\polimorfismo.runtimeconfig.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\bin\Debug\net7.0\polimorfismo.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\bin\Debug\net7.0\polimorfismo.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\obj\Debug\net7.0\polimorfismo.csproj.AssemblyReference.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\obj\Debug\net7.0\polimorfismo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\obj\Debug\net7.0\polimorfismo.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\obj\Debug\net7.0\polimorfismo.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\obj\Debug\net7.0\polimorfismo.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\obj\Debug\net7.0\polimorfismo.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\obj\Debug\net7.0\refint\polimorfismo.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\obj\Debug\net7.0\polimorfismo.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\obj\Debug\net7.0\polimorfismo.genruntimeconfig.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\polimorfismo\obj\Debug\net7.0\ref\polimorfismo.dll

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <div id="voltar-cima">
+        <a href="#inicio">
+           <figure>
+                <img src="assets/images/voltar_cima.png" alt="Seta amarela de voltar para cima">
+            </figure> 
+        </a>
+        
+    </div>
+    
+    <body>
+        <div class="espaco-cima" id="inicio"></div>
+        <header>
+            <figure class="logotipo-lp">
+                <img src="assets/images/icones/logotipo-lp.svg" alt="Logotipo do site Landing Page">
+            </figure>
+            <div class="container header-flex">
+                <nav id="menu-navegacao" class="nav-flex">
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#info">Desafios</a>
+                    <a href="#endereco">Endereço</a>
+                </nav>
+                <img id="menu-lateral" onclick="mostrarMenu()" src="assets/images/icones/menu_lateral.svg" alt="Menu Lateral Hamburguer">
+            </div>
+        </header>
+        <main>
+            <section id="banner-destaque">
+                <div class="container">
+                    <article class="informacoes-banner banner-flex">
+                        <h1 class="titulo-banner">Desenvolvimento<br>de sistemas 2023</h1>
+                        <p class="subtitulo-banner">Senai Informática</p>
+                        <figure>
+                            <a href="#sobre">
+                                <img id="mouse" src="assets/images/mouse.svg" alt="Mouse Botão">
+                            </a>
+                        </figure>
+                    </article>
+                </div>
+            </section>
+            <section id="sobre">
+                <div class="container">
+                    <h2 class="titulo-sobre">Sobre os projetos</h2>
+                    <div class="sobre-flex">
+                        <figure>
+                            <img id="img-sobre" src="assets/images/imagem-seção-sobre.png" alt="Imagem de uma reunião com um palestrante, traje social conversando com 4 pessoas sentadas">
+                        </figure>
+                        <article class="informacoes-sobre">
+                            <p id="participantes-texto">Participantes</p>
+                            <h3 class="subtitulo-sobre">Mais de 80 alunos<br>organizados em 16 grupos</h3>
+                            <p id="descricao-sobre">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repellat in, perferendis, ducimus magnam molestias sint reiciendis magni ut et recusandae quis vel repellendus? Delectus itaque placeat exercitationem expedita consequuntur.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, eum officiis eos natus at numquam aut reprehenderit, cupiditate culpa earum perferendis laborum sunt dolor laudantium architecto, dolore fuga ratione exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eum expedita nostrum assumenda quos modi velit maiores eaque adipisci</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="info">
+                <div class="info-flex container">
+                    <article class="cart-flex">
+                        <h3>Local</h3>
+                        <div class="cart-info">
+                            <p>São Paulo</p>
+                        </div>
+                    </article>
+                    <article class="cart-flex">
+                        <h3>Duração</h3>
+                        <div class="cart-info">
+                            <p>90 Dias</p>
+                        </div>
+                    </article>
+                    <article class="cart-flex">
+                        <h3>Desafios</h3>
+                        <div class="cart-info">
+                            <p>+30 Desafios</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section id="endereco">
+                <div class="container footer-flex">
+                    <div class="endereco-flex">
+                        <h2 class="titulo-endereco">Endereço:</h2>
+                        <div class="info-endereco-flex">
+                            <p class="info-endereco">Alameda Barão de Limeira, 539<br>Santa Cecilia, São Paulo - SP<br>CEP: 01202-001</p>
+                            <img id="mapa" src="assets/images/mapa.png" alt="Endereco Senai Informática Santa Cecília">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <div class="direitos-flex">
+                <p>Copyright &#169; 2020 - Escola senai de informática<br>Desenvolvido Por Murilo Souza Almeida</p>
+            </div>
+        </footer>
+
+
+
+
+        <script>
+            function mostrarMenu(){
+                document.getElementById("menu-navegacao").classList.toggle("mostrar-menu");
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Alt + Shift + seta pra baixo (duplica tag) -->

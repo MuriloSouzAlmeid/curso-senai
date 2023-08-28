@@ -1,0 +1,362 @@
+/* Formatações Gerais */
+
+main #jogadores{
+    padding: 88px 0 116px;
+    background-image: url(../assets/images/fundo-jogadores_mobile.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+main #jogadores .fundo-borrado{
+    width: 90%;
+    height: 625px;
+    position: absolute;
+    backdrop-filter: blur(4px);
+    top: 88px;
+    left: 5%;
+}
+
+main #jogadores .jogadores-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 190px;
+}
+
+/* Formatações do Formulário de Cadastro de Jogadores */
+
+main #jogadores .formulario-jogadores{
+    position: relative;
+    z-index: 153;
+    border: 1px solid white;
+    padding: 25px 0 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, .38) 100%);
+
+    border-radius: 8px;
+}
+
+main #jogadores .formulario-jogadores .titulo-jogadores{
+    text-align: center;
+    color: white;
+    font-family: 'Titillium Web Black';
+    font-size: 28px;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+main #jogadores .formulario-jogadores .sob-titulo{
+    border: 2px solid #F9AA01;
+    height: 0px;
+    width: 162px;
+
+    margin-top: 6px;
+}
+
+main #jogadores .formulario-jogadores .campos-formulario{
+    width: 80%;
+    margin: 65px 0 55px;
+    gap: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #jogadores .formulario-jogadores .campos-formulario > div{
+    width: 100%;
+    padding: 0 7.5%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient();
+    border-radius: 8px;
+    border: 1px solid white;
+    background: linear-gradient(to right bottom, rgba(239, 239, 239, .50), rgba(239, 239, 239, 0));
+}
+
+main #jogadores .formulario-jogadores .campos-formulario > div input{
+    width: 100%;
+    height: 90%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255);
+    font-family: 'Titillium Web Regular';
+    font-size: 16px;
+}
+
+main #jogadores .formulario-jogadores .campos-formulario > div input::placeholder{
+    color: rgba(255, 255, 255, 0.90);
+}
+
+main #jogadores .formulario-jogadores .campos-formulario .campo-selecao-equipe .selecao-equipe{
+    color: rgba(255, 255, 255);
+    font-family: 'Titillium Web Regular';
+    font-size: 16px;
+}
+
+main #jogadores .formulario-jogadores .campos-formulario .campo-selecao-equipe .botao-selecionar{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 40px;
+}
+
+main #jogadores .formulario-jogadores .campos-formulario .campo-selecao-equipe .botao-selecionar a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main #jogadores .formulario-jogadores .campos-formulario .campo-selecao-equipe .botao-selecionar svg{
+    height: 10px;
+    width: 15px;
+}
+
+main #jogadores .formulario-jogadores .campos-formulario .campo-selecao-equipe .botao-selecionar a:active svg path{
+    fill: #F9AA01;
+}
+
+main #jogadores .formulario-jogadores .botao-cadastrar-jogador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 40px;
+    background-color: #F9AA01;
+    border-radius: 8px;
+}
+
+main #jogadores .formulario-jogadores .botao-cadastrar-jogador input{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-family: 'Titillium Web Bold';
+    font-size: 24px;
+}
+
+/* Formatação da tabela de Jogadores cadastrados */
+
+main #jogadores .tabela-jogadores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 33px;
+}
+
+main #jogadores .tabela-jogadores .cabecalho-tabela{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 3px solid #F9AA01;
+}
+
+main #jogadores .tabela-jogadores .cabecalho-tabela .titulos-tabela{
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+main #jogadores .tabela-jogadores .cabecalho-tabela .titulos-tabela th{
+    color: #F9AA01;
+    font-family: 'Titillium Web Black';
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 8px #000000;
+}
+
+main #jogadores .tabela-jogadores .cabecalho-tabela .titulos-tabela .espaco-titulos{
+    margin-right: 15%;
+}
+
+main #jogadores .tabela-jogadores .corpo-tabela{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+main #jogadores .tabela-jogadores .corpo-tabela tr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    border-radius: 8px;
+    padding: 0 5%;
+    border: 1px solid white;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 1), rgb(60, 3, 65, 0.38));
+    backdrop-filter: blur(10px);
+}
+
+main #jogadores .tabela-jogadores .corpo-tabela tr td{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Titillium Web Bold';
+    font-family: 20px;
+    width: auto;
+    height: 70%;
+    padding-left: 15px;
+    border-left: 3px solid #F9AA01;
+    color: white;
+}
+
+main #jogadores .tabela-jogadores .corpo-tabela tr td:first-of-type{
+    padding-left: 0;
+    border-left: none;
+}
+
+main #jogadores .tabela-jogadores .corpo-tabela tr td a{
+    width: 30px;
+    height: 34px;
+}
+
+main #jogadores .tabela-jogadores .corpo-tabela tr td a svg{
+    width: 100%;
+    height: 100%;
+}
+
+main #jogadores .tabela-jogadores .corpo-tabela tr td a:active svg path{
+    fill: #F9AA01;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade Para Desktop */
+
+@media screen and (min-width: 1440px){
+    /* Formatações gerais */
+
+    main #jogadores{
+        background-image: url(../assets/images/fundo-jogadores_desktop.png);
+        padding: 83px 0 70px;
+    }
+
+    main #jogadores .jogadores-flex{
+        gap: 62px;
+    }
+
+    /* Formatação Do Formulário de cadastro de jogadores */
+
+    main #jogadores .formulario-jogadores, main #jogadores .tabela-jogadores{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    main #jogadores .formulario-jogadores{
+        padding: 50px 0 47px;
+    }
+
+    main #jogadores .formulario-jogadores .titulo-jogadores{
+        font-size: 40px;
+    }
+
+    main #jogadores .formulario-jogadores .sob-titulo{
+        width: 390px;
+        margin-top: 10px;
+    }
+
+    main #jogadores .formulario-jogadores .campos-formulario{
+        width: 70%;
+        gap: 38px;
+        margin: 65px 0 42px;
+    }
+
+    main #jogadores .formulario-jogadores .campos-formulario > div{
+        padding: 0 3.5%;
+    }
+
+    main #jogadores .formulario-jogadores .campos-formulario .campo-selecao-equipe .botao-selecionar a:hover svg path{
+        fill: #F9AA01;
+    }
+
+    main #jogadores .formulario-jogadores .botao-cadastrar-jogador{
+        width: 30%;
+    }
+
+    /* Formatação da Tabela de exibição de dados de Jogadores Cadastrados */
+
+    main #jogadores .tabela-jogadores{
+        gap: 26px;
+    }
+
+    main #jogadores .tabela-jogadores .cabecalho-tabela{
+        padding-bottom: 10px;
+    }
+
+    main #jogadores .tabela-jogadores .cabecalho-tabela .titulos-tabela{
+        gap: 80px;
+    }
+
+    main #jogadores .tabela-jogadores .cabecalho-tabela .titulos-tabela th{
+        font-size: 30px;
+    }
+
+    main #jogadores .tabela-jogadores .cabecalho-tabela .titulos-tabela .espaco-titulos{
+        margin-right: 10%;
+    }
+
+    main #jogadores .tabela-jogadores .corpo-tabela tr{
+        justify-content: space-between;
+        gap: 60px;
+        height: 125px;
+    }
+
+    main #jogadores .tabela-jogadores .corpo-tabela tr:last-of-type{
+        display: none;
+    }
+
+    main #jogadores .tabela-jogadores .corpo-tabela tr td{
+        font-size: 24px;
+        padding-left: 30px;
+    }
+    
+    main #jogadores .tabela-jogadores .corpo-tabela tr .espaco-tabela{
+        margin-right: 10%;
+    }
+
+    main #jogadores .tabela-jogadores .corpo-tabela tr td:last-of-type{
+        padding-left: 40px;
+    }
+
+    main #jogadores .tabela-jogadores .corpo-tabela tr td a{
+        width: 40px;
+        height: 44px;
+    }
+
+    main #jogadores .tabela-jogadores .corpo-tabela tr td a:hover svg path{
+        fill: #F9AA01;
+    }
+
+}

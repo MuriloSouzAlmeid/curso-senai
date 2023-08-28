@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\bin\Debug\net7.0\ex01.exe
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\bin\Debug\net7.0\ex01.deps.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\bin\Debug\net7.0\ex01.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\bin\Debug\net7.0\ex01.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\bin\Debug\net7.0\ex01.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\obj\Debug\net7.0\ex01.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\obj\Debug\net7.0\ex01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\obj\Debug\net7.0\ex01.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\obj\Debug\net7.0\ex01.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\obj\Debug\net7.0\ex01.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\obj\Debug\net7.0\ex01.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\obj\Debug\net7.0\refint\ex01.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\obj\Debug\net7.0\ex01.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\obj\Debug\net7.0\ex01.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\logica-de-programacao\exercicios-fixacao\ex01\obj\Debug\net7.0\ref\ex01.dll

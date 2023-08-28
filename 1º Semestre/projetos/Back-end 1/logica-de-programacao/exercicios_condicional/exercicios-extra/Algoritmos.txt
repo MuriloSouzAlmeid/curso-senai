@@ -1,0 +1,67 @@
+Exercícios Extras de Estrutura Condicional
+
+1) Data de aniversário válida
+	Receber o Dia do aniversário da pessoa
+	Receber o Mês do aniversário da pessoa
+	Receber o Ano do aniversário da pessoa
+	Analisar o dia que a pessoa informou
+		Se o número for menor que 1 ou maior que 31: dia inválido
+	Analisar o mês que a pessoa informou
+		Se o número for menor que 1 ou maior que 12: mês inválido
+	Analisar o ano que a pessoa informou
+		Se o número for menor que 1 ou maior que o ano atual: ano inválido
+	Informar ao usuário:
+		Se não houver nenhum erro: sua data de nascimento é valida
+		Sehouver erro na condicional: sua data é inválida pois (informar se é o dia, mês ou ano que está errado)
+	Fim do programa
+
+
+2) Qual o número é maior e qual é menor.
+	Receber o primeiro número
+	Receber o segundo número
+	Receber o terceiro número
+	Analisar qual desses números é o maior
+		Guardar esse número em uma variável
+	Analisar qual desses números é o menor
+		Guardar esse número em uma variável
+	Informar ao usuário qual é o maior e qual é o menor
+	Fim do Programa.
+
+
+3) Medidas de uma Circunferência
+	Receba o raio da circunferência
+	Calcule o diâmetro da circunferência: 2 * raio
+	Calcule o comprimento da circunferência: 2 * pi * raio
+	Calcule a área da circunferência: pi * raio ao quadrado
+	Imprima os resultados para o usuário
+	Fim do Programa.
+
+
+4) Culpado ou Inocente?
+	Criar um contador com o valor inicial de 0
+	Perguntar se o usuário telefonou para a vítima
+		Se sim: adicionar um valor de 1 o contador
+	Perguntar se o usuário esteve no local do crime
+		Se sim: adicionar um valor de 1 o contador
+	Perguntar se o usuário mora perto da vítima
+		Se sim: adicionar um valor de 1 o contador
+	Perguntar se o usuário devia dinheiro para a vítima
+		Se sim: adicionar um valor de 1 ao contador
+	Perguntar se o usuário já trabalhou com a vítima
+		Se sim: adicionar um valor de 1 ao contador
+	Analisar o valor do contador
+		Se foi igual a 5: culpado
+		Se for maior ou igul a 3: cumplice
+		Se for igual a 2: suspeito
+		Se não for nenhum dos casos: inocente
+	Fim do Programa.
+
+	
+5) Vogal ou Consoante?
+	Receber uma letra do teclado do usuário
+	Analisar a letra digitada
+		Se ela for igual a ""(vazio): letra não digitada, tente novamente
+		Se ela for igual a "a" ou "e" ou "i" ou "o" ou "u": é vogal
+		Se ela for diferente de "a" ou "e" ou "i" ou "o" ou "u": é consoante
+	Fim do Programa?
+

@@ -1,0 +1,114 @@
+/* Importação de Fontes */
+@font-face {
+    font-family: 'Titillium Web Regular';
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Titillium Web Bold';
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Titillium Web Black';
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../assets/fonts/Inter/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'QuickSand';
+    src: url(../assets/fonts/Quicksand/Quicksand-Regular.ttf);
+}
+
+/* Resert de Dimensões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Formatações Gerais HTML */
+
+main{
+    margin-top: 60px;
+}
+
+.container{
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.abrir-navbar{
+    left: 0vw !important;
+}
+
+.abrir-perfil{
+    right: 0 !important;
+}
+
+.ativo{
+    color: #F9AA01;
+    
+}
+
+.ativo svg path{
+    fill: #F9AA01;
+}
+
+.voltar-pra-cima{
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    width: 40px;
+    height: 35px;
+    background-color: #F9AA01;
+    border-radius: 8px;
+    z-index: 111000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voltar-pra-cima a{
+    width: 100%;
+    height: 100%;
+
+    padding: 7px;
+}
+
+.voltar-pra-cima a img{
+    width: 100%;
+    height: 100%;
+}
+
+.espaco-topo{
+    width: 100%;
+    height: 00000000000000000000000000.1px;
+    background-color: #1B1426;
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    /* Configurações Gerais */
+
+    /* Ajusta a classe container */
+    .container{
+        max-width: 1440px;
+        width: 90%;
+    }
+
+    /* Dá o espaçamento corretamente no header */
+
+    main{
+        margin-top: 0;
+    }
+}

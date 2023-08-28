@@ -1,0 +1,108 @@
+@* Serve como um using no c# *@
+@model Equipe;
+@using Microsoft.AspNetCore.Mvc;
+
+@* Configurações de Header *@
+@{
+    ViewData["TiTle"] = "Equipes";
+}
+
+<link rel="stylesheet" href="~/css/equipes.css">
+<link rel="stylesheet" href="~/css/nao-logado.css">
+
+
+@if(ViewBag.UserName == null){
+    
+   <main>
+        <section>
+            <div class="nao-logado">
+                <div class="container-grid nao-logado-flex">
+                    <div class="titulo-nao-logado">
+                        <h2>Usuário não logado</h2>
+                            <hr>
+                    </div>
+                    <div class="conteudo-nao-logado">
+                        <div class="img-nao-logado">
+                            <img src="~/images/img-nao-logado.png" alt="">
+                        </div>
+                        <div class="descricao-nao-logado">
+                            <h3 class="titulo-descricao">Navegação pausada!</h3>
+                            <div class="informacoes-nao-logado">
+                                <div class="img-controle-nao-logado">
+                                    <img src="~/assets/controle-icone.png" alt="">
+                                </div>
+                                <div class="escolha-usuario">
+                                    <p class="informacoes-escolha">para ter acesso a às funcionalidades completas do site você precisa estar logado na
+                                        plataforma.</p>
+                                    <div class="botoes-nao-logado">
+                                        <a asp-controller="Login" asp-action="Index">Fazer login</a>
+                                        <p>ou</p>
+                                        <a asp-controller="Home" asp-action="Index">Voltar ao início</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+}else{
+@* MAIN  *@
+    <main>
+
+        <section class="cadastro-equipes">
+            <div class="container-grid equipes-flex">
+            <form id="form" method="post" action="@Url.Action("Cadastrar")" class="frm-cad-equipe" enctype="multipart/form-data">
+                <div class="cadequipe-titulo">
+                    <h1>Cadastro de Equipes</h1>
+                    <hr>
+                </div>
+
+                @* <input class="campo-entrada" type="number" id="idEquipe" placeholder="Digite o Id da sua equipe:"> *@
+                <input class="campo-entrada" type="text" placeholder="Digite o nome da sua equipe:" required name="Nome">
+                <label class="foto" for="foto-file">
+                    <input  type="file" id="foto-file" name="Imagem">
+                </label>
+                
+                <button type="submit" >Cadastro</button>
+                
+                
+                
+                 @* <select class="equipeid" id="equipeid">
+                    <option value="">Selecione uma Equipe</option>
+                    <option value="x">Equipe X</option>
+                    <option value="y">Equipe Y</option>
+                </select>  *@
+            </form>
+
+            @* TABELA CADASTRO DE EQUIPES  *@
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Foto</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(Equipe e in ViewBag.Equipe){
+                        <tr>
+                        <td>@e.IdEquipe</td>
+                        <td>@e.NomeEquipe</td>
+                        <td><img class="img-equipe" src="~/img/Equipe/@e.ImagemEquipe" alt=""></td>
+                        <td style="display: flex; gap: 10px;">
+                            <a asp-controller="Equipe" asp-action="Excluir" asp-route-id="@e.IdEquipe"><img class="yellow-trash" src="~/assets/trash.png" alt=""></a>
+                            <a asp-controller="Equipe" asp-action="Editar" asp-route-id="@e.IdEquipe"><img class="botao-editar" src="~/assets/botao-editar.png" alt=""></a>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+            </div>
+        </section>
+    </main>
+}

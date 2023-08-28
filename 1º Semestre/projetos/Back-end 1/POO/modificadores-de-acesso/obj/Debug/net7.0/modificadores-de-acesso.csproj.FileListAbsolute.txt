@@ -1,0 +1,15 @@
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\bin\Debug\net7.0\modificadores-de-acesso.exe
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\bin\Debug\net7.0\modificadores-de-acesso.deps.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\bin\Debug\net7.0\modificadores-de-acesso.runtimeconfig.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\bin\Debug\net7.0\modificadores-de-acesso.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\bin\Debug\net7.0\modificadores-de-acesso.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\obj\Debug\net7.0\modificadores-de-acesso.csproj.AssemblyReference.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\obj\Debug\net7.0\modificadores-de-acesso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\obj\Debug\net7.0\modificadores-de-acesso.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\obj\Debug\net7.0\modificadores-de-acesso.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\obj\Debug\net7.0\modificadores-de-acesso.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\obj\Debug\net7.0\modificadores-de-acesso.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\obj\Debug\net7.0\refint\modificadores-de-acesso.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\obj\Debug\net7.0\modificadores-de-acesso.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\obj\Debug\net7.0\modificadores-de-acesso.genruntimeconfig.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\modificadores-de-acesso\obj\Debug\net7.0\ref\modificadores-de-acesso.dll

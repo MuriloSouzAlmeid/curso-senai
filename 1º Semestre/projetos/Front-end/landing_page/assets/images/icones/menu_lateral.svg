@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960" width="48" height="48">
+	<title>menu_lateral-svg</title>
+	<defs>
+		<image  width="720" height="480" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtAAAAHgAQMAAAC2C8jvAAAAAXNSR0IB2cksfwAAAAZQTFRF////////VXz1bAAAAAJ0Uk5T/wDltzBKAAAAmklEQVR4nO3YMQ0AAAzDsPEnvVHoU2mHA8AAMiNJkiRJkiRJittaaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQa/Y2WJEmSJEmSJOUVdy0ajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUY/oyVJkiRJkiRJcQejuxSwz23+uAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Layer" href="#img1" x="120" y="240"/>
+</svg>

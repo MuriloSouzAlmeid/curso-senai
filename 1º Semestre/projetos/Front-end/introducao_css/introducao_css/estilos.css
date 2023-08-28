@@ -1,0 +1,24 @@
+body{
+    background-color: greenyellow;
+}
+
+p{
+    color: darkblue;
+}
+
+.paragrafo{
+    background-color: yellow;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+#segundo_paragrafo{
+    background-color: cyan;
+    color: brown;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+}

@@ -1,0 +1,138 @@
+<<<<<<< HEAD
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.exe
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.deps.json
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.runtimeconfig.json
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.AssemblyReference.cache
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfoInputs.cache
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfo.cs
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.CoreCompileInputs.cache
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\refint\Projeto_loja_virtual.dll
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.genruntimeconfig.cache
+C:\Users\Predo Gabirel\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\ref\Projeto_loja_virtual.dll
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.AssemblyReference.cache
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\refint\Projeto_loja_virtual.dll
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.exe
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.deps.json
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.runtimeconfig.json
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.genruntimeconfig.cache
+C:\Users\muril\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\ref\Projeto_loja_virtual.dll
+=======
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.exe
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.deps.json
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.runtimeconfig.json
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.AssemblyReference.cache
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfoInputs.cache
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfo.cs
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.CoreCompileInputs.cache
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\refint\Projeto_loja_virtual.dll
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.genruntimeconfig.cache
+C:\Users\42470848873\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\ref\Projeto_loja_virtual.dll
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.exe
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.deps.json
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.runtimeconfig.json
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.AssemblyReference.cache
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfoInputs.cache
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfo.cs
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.CoreCompileInputs.cache
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\refint\Projeto_loja_virtual.dll
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.genruntimeconfig.cache
+C:\Users\fytho\OneDrive\Área de Trabalho\Projeto_loja_virtual\obj\Debug\net7.0\ref\Projeto_loja_virtual.dll
+C:\Users\User\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.exe
+C:\Users\User\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.deps.json
+C:\Users\User\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.runtimeconfig.json
+C:\Users\User\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\User\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\User\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfo.cs
+C:\Users\User\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\User\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\refint\Projeto_loja_virtual.dll
+C:\Users\User\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\User\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.genruntimeconfig.cache
+C:\Users\User\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\ref\Projeto_loja_virtual.dll
+>>>>>>> origin/pedrohenrique
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.exe
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.deps.json
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.runtimeconfig.json
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\refint\Projeto_loja_virtual.dll
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\ref\Projeto_loja_virtual.dll
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.exe
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.deps.json
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.runtimeconfig.json
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.AssemblyReference.cache
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfoInputs.cache
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfo.cs
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.CoreCompileInputs.cache
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\refint\Projeto_loja_virtual.dll
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.genruntimeconfig.cache
+C:\Users\46633783825\Desktop\Projeto_loja_virtual\obj\Debug\net7.0\ref\Projeto_loja_virtual.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.exe
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.deps.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.runtimeconfig.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.AssemblyReference.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\refint\Projeto_loja_virtual.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.genruntimeconfig.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\ref\Projeto_loja_virtual.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.exe
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.deps.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\bin\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\refint\Projeto_loja_virtual.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\Projeto_loja_virtual.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\projeto_loja_virtual\obj\Debug\net7.0\ref\Projeto_loja_virtual.dll

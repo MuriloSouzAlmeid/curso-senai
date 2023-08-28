@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\bin\Debug\net7.0\listas-objetos.exe
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\bin\Debug\net7.0\listas-objetos.deps.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\bin\Debug\net7.0\listas-objetos.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\bin\Debug\net7.0\listas-objetos.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\bin\Debug\net7.0\listas-objetos.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\obj\Debug\net7.0\listas-objetos.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\obj\Debug\net7.0\listas-objetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\obj\Debug\net7.0\listas-objetos.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\obj\Debug\net7.0\listas-objetos.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\obj\Debug\net7.0\listas-objetos.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\obj\Debug\net7.0\listas-objetos.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\obj\Debug\net7.0\refint\listas-objetos.dll
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\obj\Debug\net7.0\listas-objetos.pdb
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\obj\Debug\net7.0\listas-objetos.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso_senai\1º Semestre\projetos\Back-end 1\POO\listas-objetos\obj\Debug\net7.0\ref\listas-objetos.dll

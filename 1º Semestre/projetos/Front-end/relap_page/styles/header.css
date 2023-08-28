@@ -1,0 +1,98 @@
+header{
+    height: 100%;
+    padding: 15px 0;
+}
+
+header .header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+}
+
+header .logo-relap{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Roboto Medium';
+    font-size: 45px;
+    letter-spacing: 0.05em;
+}
+
+header .campo-pesquisar{
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 3px;
+}
+
+header .campo-pesquisar .campo-pesquisar-input{
+    outline: none;
+    background: transparent;
+    color: black;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+header .campo-pesquisar .campo-pesquisar-input::placeholder{
+    color: rgba(92, 88, 88, 0.8);
+}
+
+header .navbar-flex{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+header .navbar-flex a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Regular';
+    font-size: 13px;
+}
+
+header .icones-flex{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+header .icones-flex .box-icone{
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid #8e7deb;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .icones-flex .box-icone .info-icone{
+    position: absolute;
+    top: 0;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: #B874E5;
+}
+
+header .icones-flex .box-icone .info-icone p{
+    color: white;
+    font-family: 'Roboto Regular';
+    font-size: 10px;
+}
+
+header .icones-flex .box-icone img{
+    width: 20px;
+    height: 20px;
+}

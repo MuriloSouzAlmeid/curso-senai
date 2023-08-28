@@ -1,0 +1,110 @@
+@model Jogador;
+
+@{
+    ViewData["Title"] = "Página de Jogadores";
+}
+
+
+@if (ViewBag.UserName == null)
+{
+    <link rel="stylesheet" href="~/css/nao-logado.css">
+    <main>
+        <section class="nao-logado">
+            <div class="container-grid nao-logado-flex">
+                <div class="titulo-nao-logado">
+                    <h2>Usuário não logado</h2>
+                    <hr>
+                </div>
+                <div class="conteudo-nao-logado">
+                    <div class="img-nao-logado">
+                        <img src="~/images/img-nao-logado.png" alt="">
+                    </div>
+                    <div class="descricao-nao-logado">
+                        <h3 class="titulo-descricao">Navegação pausada!</h3>
+                        <div class="informacoes-nao-logado">
+                            <div class="img-controle-nao-logado">
+                                <img src="~/assets/controle-icone.png" alt="">
+                            </div>
+                            <div class="escolha-usuario">
+                                <p class="informacoes-escolha">para ter acesso a às funcionalidades completas do site você
+                                    precisa estar logado na
+                                    plataforma.</p>
+                                <div class="botoes-nao-logado">
+                                    <a asp-controller="Login" asp-action="Index">Fazer login</a>
+                                    <p>ou</p>
+                                    <a asp-controller="Home" asp-action="Index">Voltar ao início</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+}
+else
+{
+
+    <link rel="stylesheet" href="~/css/jogadores.css">
+    <main>
+
+        <section class="cadastro-equipes">
+            <div class="container-grid equipes-flex">
+
+            <form action="@Url.Action("Cadastrar")" method="post" class="frm-cad-equipe" enctype="multipart/form-data">
+                <div class="cadequipe-titulo">
+                    <h1>Cadastro de Jogadores</h1>
+                    <hr>
+                </div>
+
+                <input class="campo-entrada" name="Nome" type="text" id="nome-jogador"
+                    placeholder="Digite o nome do Jogador:">
+                <input class="campo-entrada" name="Email" type="email" id="email-jogador"
+                    placeholder="Digite o Email do Jogador:">
+                <input class="campo-entrada" name="Senha" type="password" id="senha" placeholder="Digite a Senha:">
+                <select class="campo-entrada" id="equipe-select" name="Equipe">
+                    <option value="0">Selecione uma Equipe</option>
+                    @foreach (Equipe e in ViewBag.Equipe)
+                    {
+                        <option value="@e.IdEquipe">@e.NomeEquipe</option>
+                    }
+                </select>
+                <button type="submit">Cadastrar</button>
+
+
+
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Equipe</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Jogador j in ViewBag.Jogador)
+                    {
+                        <tr>
+                            <td>@j.IdJogador</td>
+                            <td>@j.NomeJogador</td>
+                            <td>
+                                <img class="img-equipe-jogador" src="~/img/Equipe/@j.Equipe.ImagemEquipe">
+                            </td>
+                            <td style="display: flex; gap: 10px;">
+                                <a asp-controller="Jogador" asp-action="Excluir" asp-route-id="@j.IdJogador"><img
+                                        class="yellow-trash" src="~/assets/trash.png" alt=""></a>
+                                <a asp-controller="Jogador" asp-action="Editar" asp-route-id="@j.IdJogador"><img
+                                        class="botao-editar" src="~/assets/botao-editar.png" alt=""></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            </div>
+        </section>
+    </main>
+}

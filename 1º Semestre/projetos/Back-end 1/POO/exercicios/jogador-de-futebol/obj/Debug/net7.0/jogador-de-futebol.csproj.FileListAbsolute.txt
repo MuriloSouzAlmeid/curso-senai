@@ -1,0 +1,15 @@
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\bin\Debug\net7.0\jogador-de-futebol.exe
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\bin\Debug\net7.0\jogador-de-futebol.deps.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\bin\Debug\net7.0\jogador-de-futebol.runtimeconfig.json
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\bin\Debug\net7.0\jogador-de-futebol.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\bin\Debug\net7.0\jogador-de-futebol.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\obj\Debug\net7.0\jogador-de-futebol.csproj.AssemblyReference.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\obj\Debug\net7.0\jogador-de-futebol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\obj\Debug\net7.0\jogador-de-futebol.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\obj\Debug\net7.0\jogador-de-futebol.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\obj\Debug\net7.0\jogador-de-futebol.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\obj\Debug\net7.0\jogador-de-futebol.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\obj\Debug\net7.0\refint\jogador-de-futebol.dll
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\obj\Debug\net7.0\jogador-de-futebol.pdb
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\obj\Debug\net7.0\jogador-de-futebol.genruntimeconfig.cache
+C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso_senai\1º Semestre\projetos\Back-end 1\POO\exercicios\jogador-de-futebol\obj\Debug\net7.0\ref\jogador-de-futebol.dll

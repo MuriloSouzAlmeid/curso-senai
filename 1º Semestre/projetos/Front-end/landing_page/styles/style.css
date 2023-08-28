@@ -1,0 +1,632 @@
+/* Importação De Fontes */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Courier New';
+    src: url(../assets/fonts/courier-new/courier-new.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../assets/fonts/Open_Sans/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'ABeeZee';
+    src: url(../assets/fonts/ABeeZee/ABeeZee-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: url(../assets/fonts/Abel/Abel-Regular.ttf);
+}
+
+/* Reset de dimensões */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop First */
+
+.espaco-cima{
+    width: 100%;
+    height: 0.00000000000000000000000000000000000000000000001px;
+}
+
+header{
+    position: relative;
+}
+
+header #menu-lateral{
+    display: none;
+}
+
+header .logotipo-lp{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    border: dashed 3px white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    height: 80px;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: rotate(-10deg);
+} 
+
+header .logotipo-lp img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ==== Formatações Gerais HTML ==== */
+body{
+    background-color: #080324;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1520px;
+}
+
+#voltar-cima{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    background-color: #F9003D;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#voltar-cima img{
+    width: 100%;
+    height: 100%;
+}
+
+#voltar-cima:hover{
+    background-color: #e6073f;
+}
+
+/* ==== Header Gerais ==== */
+
+header{
+    height: 60px;
+    background-color: #F9003D;
+}
+
+header .header-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* ==== Header Nav ==== */
+
+header nav{
+    width: 45%;
+}
+
+header .nav-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a{
+    border-radius: 10px;
+    padding:10px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header nav a:hover{
+    background-color: white;
+    color: #F9003D;
+}
+
+/* ==== Main ==== */
+
+/* ==== Banner Destaque ==== */
+
+main #banner-destaque{
+    width: 100%;
+    height: 765px;
+
+    /* caminho da imagem */
+    background-image: url(../assets/images/imagem-fundo-banner.png);
+    /* largura da imagem (cover define  largura 100% e altura automática) */
+    background-size: cover;
+    /* a imagem pode repitir ou não (no caso no-repet é não) */
+    background-repeat: no-repeat;
+    /* que se posicione de baixo pra cima para não cortar a imagem */
+    background-position: bottom;
+}
+
+main .informacoes-banner{
+    width: 44.75%;
+    padding-top: 17%;
+}
+
+main .banner-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+main .informacoes-banner .titulo-banner{
+    padding-bottom: 10px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 96px;
+    font-weight: 400;
+    border-bottom: 1px solid #FFAF00;
+}
+
+main .informacoes-banner .subtitulo-banner{
+    margin-top: 25px;
+    font-size: 53px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Courier New', serif;
+    color: #F9003D;
+}
+
+main .informacoes-banner #mouse{
+    margin-top: 40px;
+}
+
+/* ==== Seção Sobre ==== */
+
+main #sobre{
+    height: 800px;
+}
+
+main .titulo-sobre{
+    padding-top: 64px;
+    color: #F9003D;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+main .sobre-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+main .subtitulo-sobre{
+    color: #FFAF00;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+main .informacoes-sobre{
+    display: flex;
+    flex-direction: column;
+    width: 592px;
+}
+
+main .informacoes-sobre #participantes-texto{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+main .informacoes-sobre #descricao-sobre{
+    text-align: justify;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* ===== Desafios ==== */
+
+main #info{
+    width: 100%;
+    background-image: url(../assets/images/imagem-fundo-info.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+main #info .info-flex{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .info-flex h3{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+main .info-flex .cart-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 3% auto 4%;
+}
+
+main .info-flex .cart-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 289px;
+    height: 100px;
+    border: 2px solid #A259F7;
+}
+
+main .info-flex .cart-info p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: 600;
+    color: #A259F7;
+}
+
+/* ==== Footer ==== */
+
+/* ==== Endereço ==== */
+
+footer #endereco{
+    width: 100%;
+    height: 560px;
+    background-image: url(../assets/images/imagem-fundo-endereco.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+footer .footer-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #endereco .endereco-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    width: 66%;
+}
+
+footer .endereco-flex .titulo-endereco{
+    color: #FFAF00;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+footer .endereco-flex .info-endereco-flex{
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #010010;
+    border: 2px solid #340B65;
+    height: 204px;
+    width: 100%;
+}
+
+footer .info-endereco-flex .info-endereco{
+    color: #A259F7;
+    padding-left: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: justify;
+}
+
+footer .info-endereco-flex #mapa{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+/* ==== Direitos ==== */
+
+footer .direitos-flex{
+    height: 100%;
+    background-color: #F9003D;
+    height: 90px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .direitos-flex p{
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Screen */
+
+@media screen and (max-width: 767px) {
+
+    /* Formatações Gerais Para Mobile */
+
+    .container{
+        width: 90%;
+    }
+
+    #voltar-cima{
+        height: 40px;
+        width: 40px;
+    }
+
+    /* Header Mobile */
+
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    header .logotipo-lp{
+        left: 20px;
+        top: 20px;
+        padding: 10px 15px;
+        height: 60px;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+        transform: rotate(-10deg);
+    } 
+
+    header #menu-navegacao {
+        position: fixed;
+        top: 60px;
+        right: -40vw;
+        width: 40vw;
+        height: 80vh;
+        max-width: 360px;
+        padding: 50px 0;
+        transition: right 0.5s;
+
+        background-color: #F9003D;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header #menu-navegacao a{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 120px;
+        border-right: 2px dashed white;
+        border-radius: 0;
+        padding: 5px 20px;
+        font-size: 22px;
+    }
+
+    header #menu-lateral{
+        display: block;
+    }
+
+    header .mostrar-menu{
+        right: 0 !important;
+    }
+
+    /* Banner Destaque Mobile */
+
+    main #banner-destaque{
+        margin-top: 60px;
+        background-position: center right;
+        height: 500px;
+    }
+
+    main #banner-destaque .informacoes-banner{
+        padding-top: 20%;
+        width: 100%;
+    }
+
+    main .informacoes-banner .titulo-banner{
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 40px;
+        font-weight: 400;
+        border-bottom: none;   
+    }
+
+    main .informacoes-banner .subtitulo-banner{
+        width: 100%;
+        font-size: 53px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: 'ABeeZee', serif;
+        color: #F9003D;
+    }
+
+    main .informacoes-banner #mouse{
+        display: none;
+    }
+
+    /* Seção Sobre Mobile */
+
+    main #sobre{
+        width: 100%;
+        height: 1110px;
+    }
+    
+    main .titulo-sobre{
+        padding-top: 45px;
+        color: #F9003D;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 35px;
+        font-weight: 400;
+    }
+    
+    main .sobre-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    main .sobre-flex #img-sobre{
+        width: 100%;
+    }
+    
+    main .informacoes-sobre{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main .informacoes-sobre .subtitulo-sobre{
+        margin: 25px 0;
+        color: #FFAF00;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    
+    main .informacoes-sobre #participantes-texto{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+    }
+    
+    main .informacoes-sobre #descricao-sobre{
+        text-align: justify;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
+
+    /* Section Info */
+
+    main #info{
+        background-image: none;
+        padding: 20px 0;
+    }
+
+    main #info .info-flex{
+        flex-direction: column;
+    }
+
+    /* Footer Mobile */
+
+    footer #endereco{
+        height: 600px;
+    }
+
+    footer #endereco .endereco-flex{
+        width: 100%;
+    }
+
+    footer .endereco-flex .titulo-endereco{
+        font-size: 40px;
+    }
+
+    footer .endereco-flex .info-endereco-flex{
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 40px;
+        height: 428px;
+    }
+
+    footer .info-endereco-flex .info-endereco{
+        padding-left: 0;
+        font-family: 'Abel';
+        font-size: 24px;
+        text-align: start;
+    }
+
+    footer .info-endereco-flex #mapa{
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+}
