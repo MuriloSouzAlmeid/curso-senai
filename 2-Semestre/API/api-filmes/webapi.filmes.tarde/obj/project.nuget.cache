@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qf+zT1OBadx765/QZluYEz9CXtRZB13INMMUWyaV+DGDFlsIsW3WwElNspaqWOuv43UXM4ZPpOGaIXgQ4ZXL5w==",
+  "dgSpecHash": "ktLpc2oGMCq8n6/yKCXA76lgHP/HGVWTM1JmfEC/f4Y2HxfislI/1uWSl1a7EM5N7VC8zs/P0jVVdms3b7Ozkg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\47015003805\\Desktop\\aulas\\curso-senai\\2-Semestre\\API\\api-filmes\\webapi.filmes.tarde\\webapi.filmes.tarde.csproj",
+  "projectFilePath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\API\\api-filmes\\webapi.filmes.tarde\\webapi.filmes.tarde.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\47015003805\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\47015003805\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

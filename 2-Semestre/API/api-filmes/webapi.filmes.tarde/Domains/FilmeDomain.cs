@@ -13,6 +13,7 @@ namespace webapi.filmes.tarde.Domains
         public string? Titulo { get; set; }
 
         //Referêcia para a classe Genero (GeneroDomain) - para Filme "enxergar" gênero
+        public int IdGenero { get; set; }
         public GeneroDomain? Genero { get; set; }
 
         //Construtor para instanciar o objeto de gênero

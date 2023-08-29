@@ -61,7 +61,7 @@ namespace webapi.filmes.tarde.Controllers
 
                 if (filme == null)
                 {
-                    return StatusCode(404, this.IdNaoEncontrado);
+                    return NotFound(this.IdNaoEncontrado);
                 }
                 else
                 {
@@ -104,7 +104,7 @@ namespace webapi.filmes.tarde.Controllers
                 FilmeDomain filme = _filmeRepository.BurcarPorId(id);
 
                 if(filme == null) {
-                    return StatusCode(404, this.IdNaoEncontrado);
+                    return NotFound(this.IdNaoEncontrado);
                 }
                 else { 
 
@@ -150,7 +150,7 @@ namespace webapi.filmes.tarde.Controllers
 
                 if (filmeBuscado == null)
                 {
-                    return StatusCode(404, this.IdNaoEncontrado);
+                    return NotFound(this.IdNaoEncontrado);
                 }
                 else
                 {

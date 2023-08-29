@@ -1,4 +1,6 @@
-﻿using System.Data.SqlClient;
+﻿// Ctrl + kd -> identa o código
+
+using System.Data.SqlClient;
 using webapi.filmes.tarde.Domains;
 using webapi.filmes.tarde.Interfaces;
 
@@ -10,7 +12,7 @@ namespace webapi.filmes.tarde.Repositories
     public class FilmeRepository : IFilmeRepository
     {
         // Senai
-            private string StringConexao = "Data Source = NOTE16-S15; Initial Catalog = Filmes_Tarde; User Id = sa; Pwd = Senai@134";
+        private string StringConexao = "Data Source = NOTE16-S15; Initial Catalog = Filmes_Tarde; User Id = sa; Pwd = Senai@134";
         //Casa:
         //private string StringConexao = "Data Source = NOTEBOOKFAMILIA; Initial Catalog = Filmes; User Id = sa; Pwd = Murilo12$";
 
@@ -21,13 +23,13 @@ namespace webapi.filmes.tarde.Repositories
         /// <param name="_filmeAtualizado">Objeto com as novas informações do filme</param>
         public void AtualizarPelaUrl(int _idFilme, FilmeDomain _filmeAtualizado)
         {
-            using(SqlConnection con = new SqlConnection(StringConexao))
+            using (SqlConnection con = new SqlConnection(StringConexao))
             {
                 string QueryUptadeByUrl = "UPDATE Filme SET Filme.IdGenero = @IdGenero, Filme.Titulo = @Titulo WHERE Filme.IdFilme = @IdFilme;";
 
                 con.Open();
 
-                using(SqlCommand cmd = new SqlCommand(QueryUptadeByUrl, con))
+                using (SqlCommand cmd = new SqlCommand(QueryUptadeByUrl, con))
                 {
                     cmd.Parameters.AddWithValue("@IdGenero", _filmeAtualizado.Genero.IdGenero);
                     cmd.Parameters.AddWithValue("@Titulo", _filmeAtualizado.Titulo);
@@ -45,13 +47,13 @@ namespace webapi.filmes.tarde.Repositories
         /// <param name="_filmeAtualizado">Objeto com as novas informações do filme</param>
         public void AtualizarPeloCorpo(FilmeDomain _filmeAtualizado)
         {
-            using(SqlConnection con = new SqlConnection(StringConexao))
+            using (SqlConnection con = new SqlConnection(StringConexao))
             {
                 string QueryUptade = "UPDATE Filme SET Filme.IdGenero = @IdGenero, Filme.Titulo = @Titulo WHERE Filme.IdFilme = @IdFilme;";
 
                 con.Open();
 
-                using(SqlCommand cmd = new SqlCommand(QueryUptade, con))
+                using (SqlCommand cmd = new SqlCommand(QueryUptade, con))
                 {
                     cmd.Parameters.AddWithValue("@IdGenero", _filmeAtualizado.Genero.IdGenero);
                     cmd.Parameters.AddWithValue("@Titulo", _filmeAtualizado.Titulo);
@@ -88,6 +90,7 @@ namespace webapi.filmes.tarde.Repositories
                     {
                         filme.IdFilme = Convert.ToInt32(leitor["IdFilme"]);
                         filme.Titulo = Convert.ToString(leitor["Titulo"]);
+                        filme.IdGenero = Convert.ToInt32(leitor["IdGenero"]);
                         filme.Genero.IdGenero = Convert.ToInt32(leitor["IdGenero"]);
                         filme.Genero.Nome = Convert.ToString(leitor["Nome"]);
 
@@ -104,13 +107,13 @@ namespace webapi.filmes.tarde.Repositories
         /// <param name="_novoFilme">Objeto contendo as informações do filme a ser cadastrado</param>
         public void CadastrarFilme(FilmeDomain _novoFilme)
         {
-            using(SqlConnection con = new SqlConnection(StringConexao))
+            using (SqlConnection con = new SqlConnection(StringConexao))
             {
                 string QueryInsert = "INSERT INTO Filme (IdGenero,Titulo) VALUES (@IdGenero, @Titulo)";
 
                 con.Open();
 
-                using(SqlCommand cmd = new SqlCommand(QueryInsert, con))
+                using (SqlCommand cmd = new SqlCommand(QueryInsert, con))
                 {
                     cmd.Parameters.AddWithValue("@IdGenero", _novoFilme.Genero.IdGenero);
                     cmd.Parameters.AddWithValue("@Titulo", _novoFilme.Titulo);
@@ -126,7 +129,7 @@ namespace webapi.filmes.tarde.Repositories
         /// <param name="_idFilme">Id do filme a ser deletado</param>
         public void DeletarFilme(int _idFilme)
         {
-            using(SqlConnection con = new SqlConnection(StringConexao))
+            using (SqlConnection con = new SqlConnection(StringConexao))
             {
                 string QueryDelete = "DELETE Filme WHERE Filme.IdFilme = @Id";
 
@@ -167,6 +170,7 @@ namespace webapi.filmes.tarde.Repositories
                         {
                             IdFilme = Convert.ToInt32(leitor["IdFilme"]),
                             Titulo = Convert.ToString(leitor["Titulo"]),
+                            IdGenero = Convert.ToInt32(leitor["IdGenero"])
                         };
 
                         filme.Genero.IdGenero = Convert.ToInt32(leitor["IdGenero"]);
