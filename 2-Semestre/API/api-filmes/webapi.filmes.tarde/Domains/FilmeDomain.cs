@@ -17,9 +17,6 @@ namespace webapi.filmes.tarde.Domains
         public GeneroDomain? Genero { get; set; }
 
         //Construtor para instanciar o objeto de gênero
-        public FilmeDomain()
-        {
-            Genero = new GeneroDomain();
-        }
+        public FilmeDomain(){}
     }
 }

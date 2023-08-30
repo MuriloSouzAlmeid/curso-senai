@@ -95,6 +95,14 @@
             <param name="_genero">Objeto com as novas informações do gênero a ser atualizado</param>
             <returns></returns>
         </member>
+        <member name="M:webapi.filmes.tarde.Controllers.UsuarioController.Get(System.String,System.String)">
+            <summary>
+            Método para logar um usuário
+            </summary>
+            <param name="email">email do usuário</param>
+            <param name="senha">senha do usuário</param>
+            <returns></returns>
+        </member>
         <member name="T:webapi.filmes.tarde.Domains.FilmeDomain">
             <summary>
             Classe que representa a entidade(tabela) Filme
@@ -191,6 +199,11 @@
             Método responsável por deletar um gênero existente
             </summary>
             <param name="_id">Id do ojeto a ser deletado</param>
+        </member>
+        <member name="T:webapi.filmes.tarde.Interfaces.IUsuarioRepository">
+            <summary>
+            Interface responsável pelos métodos de Usuario
+            </summary>
         </member>
         <member name="T:webapi.filmes.tarde.Repositories.FilmeRepository">
             <summary>

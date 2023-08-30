@@ -71,7 +71,6 @@ namespace webapi.filmes.tarde.Repositories
         /// <returns>O objeto contendo o filme buscado</returns>
         public FilmeDomain BurcarPorId(int _idFilme)
         {
-            FilmeDomain filme = new FilmeDomain();
 
             using (SqlConnection con = new SqlConnection(StringConexao))
             {
@@ -88,12 +87,18 @@ namespace webapi.filmes.tarde.Repositories
 
                     if (leitor.Read())
                     {
-                        filme.IdFilme = Convert.ToInt32(leitor["IdFilme"]);
-                        filme.Titulo = Convert.ToString(leitor["Titulo"]);
-                        filme.IdGenero = Convert.ToInt32(leitor["IdGenero"]);
-                        filme.Genero.IdGenero = Convert.ToInt32(leitor["IdGenero"]);
-                        filme.Genero.Nome = Convert.ToString(leitor["Nome"]);
+                        FilmeDomain filme = new FilmeDomain()
+                        {
+                            IdFilme = Convert.ToInt32(leitor["IdFilme"]),
+                            Titulo = Convert.ToString(leitor["Titulo"]),
+                            IdGenero = Convert.ToInt32(leitor["IdGenero"]),
+                            Genero = new GeneroDomain()
+                            {
+                                IdGenero = Convert.ToInt32(leitor["IdGenero"]),
+                                Nome = Convert.ToString(leitor["Nome"])
+                            }
 
+                        };
                         return filme;
                     }
                 }
@@ -170,11 +175,13 @@ namespace webapi.filmes.tarde.Repositories
                         {
                             IdFilme = Convert.ToInt32(leitor["IdFilme"]),
                             Titulo = Convert.ToString(leitor["Titulo"]),
-                            IdGenero = Convert.ToInt32(leitor["IdGenero"])
+                            IdGenero = Convert.ToInt32(leitor["IdGenero"]),
+                            Genero = new GeneroDomain()
+                            {
+                                IdGenero = Convert.ToInt32(leitor["IdGenero"]),
+                                Nome = Convert.ToString(leitor["Nome"])
+                            }
                         };
-
-                        filme.Genero.IdGenero = Convert.ToInt32(leitor["IdGenero"]);
-                        filme.Genero.Nome = Convert.ToString(leitor["Nome"]);
 
                         listaDeFilmes.Add(filme);
                     }
