@@ -95,12 +95,11 @@
             <param name="_genero">Objeto com as novas informações do gênero a ser atualizado</param>
             <returns></returns>
         </member>
-        <member name="M:webapi.filmes.tarde.Controllers.UsuarioController.Get(System.String,System.String)">
+        <member name="M:webapi.filmes.tarde.Controllers.UsuarioController.Post(webapi.filmes.tarde.Domains.UsuarioDomain)">
             <summary>
             Método para logar um usuário
             </summary>
-            <param name="email">email do usuário</param>
-            <param name="senha">senha do usuário</param>
+            <param name="usuario">Objeto com as informações de login do usuário</param>
             <returns></returns>
         </member>
         <member name="T:webapi.filmes.tarde.Domains.FilmeDomain">

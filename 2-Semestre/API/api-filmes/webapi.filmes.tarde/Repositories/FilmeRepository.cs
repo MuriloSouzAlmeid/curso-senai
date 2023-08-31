@@ -55,7 +55,7 @@ namespace webapi.filmes.tarde.Repositories
 
                 using (SqlCommand cmd = new SqlCommand(QueryUptade, con))
                 {
-                    cmd.Parameters.AddWithValue("@IdGenero", _filmeAtualizado.Genero.IdGenero);
+                    cmd.Parameters.AddWithValue("@IdGenero", _filmeAtualizado.IdGenero);
                     cmd.Parameters.AddWithValue("@Titulo", _filmeAtualizado.Titulo);
                     cmd.Parameters.AddWithValue("@IdFilme", _filmeAtualizado.IdFilme);
 
@@ -120,7 +120,7 @@ namespace webapi.filmes.tarde.Repositories
 
                 using (SqlCommand cmd = new SqlCommand(QueryInsert, con))
                 {
-                    cmd.Parameters.AddWithValue("@IdGenero", _novoFilme.Genero.IdGenero);
+                    cmd.Parameters.AddWithValue("@IdGenero", _novoFilme.IdGenero);
                     cmd.Parameters.AddWithValue("@Titulo", _novoFilme.Titulo);
 
                     cmd.ExecuteNonQuery();

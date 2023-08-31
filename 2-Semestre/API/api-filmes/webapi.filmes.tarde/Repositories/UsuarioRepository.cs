@@ -11,13 +11,12 @@ namespace webapi.filmes.tarde.Repositories
         //Casa:
         //private string StringConexao = "Data Source = NOTEBOOKFAMILIA; Initial Catalog = Filmes; User Id = sa; Pwd = Murilo12$";
 
+
         public UsuarioDomain LoginUsuario(string email, string senha)
         {
             using (SqlConnection con = new SqlConnection(StringConexao))
             {
-                string QuerySelectLogin = "SELECT * FROM Usuario WHERE Usuario.Email = @Email AND Usuario.Senha = @Senha";
-
-                SqlDataReader leitor;
+                string QuerySelectLogin = "SELECT IdUsuario,Nome,Email,Permissao FROM Usuario WHERE Usuario.Email = @Email AND Usuario.Senha = @Senha";
 
                 con.Open();
 
@@ -26,7 +25,7 @@ namespace webapi.filmes.tarde.Repositories
                     cmd.Parameters.AddWithValue("@Email", email);
                     cmd.Parameters.AddWithValue("@Senha", senha);
 
-                    leitor = cmd.ExecuteReader();
+                    SqlDataReader leitor = cmd.ExecuteReader();
 
                     if (leitor.Read())
                     {
@@ -35,7 +34,6 @@ namespace webapi.filmes.tarde.Repositories
                             IdUsuario = Convert.ToInt32(leitor["IdUsuario"]),
                             Nome = Convert.ToString(leitor["Nome"]),
                             Email = Convert.ToString(leitor["Email"]),
-                            Senha = Convert.ToString(leitor["Senha"]),
                         };
 
                         usuario.Permissao = Convert.ToInt32(leitor["Permissao"]) == 1 ? "Administrador" : "Usúario Comun";
