@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Cryptography.X509Certificates;
 using webapi.filmes.tarde.Domains;
@@ -45,6 +46,7 @@ namespace webapi.filmes.tarde.Controllers
         /// <returns>Lista de generos e um StatusCode</returns>
 
         [HttpGet]
+        [Authorize]//Precisa estar autentificado(logado) e ser autorizado(tipo de permissão) para acessar a rota
         public IActionResult Get()
         {
             try

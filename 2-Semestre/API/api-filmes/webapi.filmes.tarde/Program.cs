@@ -74,11 +74,44 @@ builder.Services.AddSwaggerGen(options =>
         }*/
     });
 
-    //Configura o Swagger para usar o arquivo XML
+    //Configura o Swagger para usar o arquivo XML gerado
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
-});
 
+    //Configura para adicionar tokens de e autenticação e autorização nas requisições pelo swagger
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+
+        //Define como o valor do token será passado pelo swagger
+        Description = "Velue: Bearer TokenJWT"
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                } 
+            },
+
+            new string[]
+            {
+
+            }
+        }
+
+        
+    });
+});
 
 //Instancia o builder da aplicação
 var app = builder.Build();
