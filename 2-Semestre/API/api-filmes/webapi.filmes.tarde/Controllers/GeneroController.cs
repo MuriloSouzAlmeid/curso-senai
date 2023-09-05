@@ -25,6 +25,8 @@ namespace webapi.filmes.tarde.Controllers
     /// Route: Define que o tipo de resposta da api é JSON
     /// </summary>
     [Produces("application/json")]
+
+    [Authorize]//Precisa estar autentificado(logado) e ser autorizado(tipo de permissão) para acessar a rota
     public class GeneroController : ControllerBase
     {
         /// <summary>
@@ -46,7 +48,6 @@ namespace webapi.filmes.tarde.Controllers
         /// <returns>Lista de generos e um StatusCode</returns>
 
         [HttpGet]
-        [Authorize]//Precisa estar autentificado(logado) e ser autorizado(tipo de permissão) para acessar a rota
         public IActionResult Get()
         {
             try
@@ -100,6 +101,7 @@ namespace webapi.filmes.tarde.Controllers
         /// <param name="genero">Ojeto recebido da requisição</param>
         /// <returns>Status code e mensagen a ser exibida</returns>
         [HttpPost]
+        [Authorize(Roles = "Administrador")]//Para especificar quais tipos de usuário que podem acessar essa rota (caso eu queira colcar para mais de um tipo separamos por vírgula. Seria então Roles = "1,2,..."
         public IActionResult Post(GeneroDomain genero)
         {
             try

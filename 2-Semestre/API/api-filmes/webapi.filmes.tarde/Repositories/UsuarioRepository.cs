@@ -36,7 +36,7 @@ namespace webapi.filmes.tarde.Repositories
                             Email = Convert.ToString(leitor["Email"]),
                         };
 
-                        usuario.Permissao = Convert.ToInt32(leitor["Permissao"]) == 1 ? "Administrador" : "Usúario Comun";
+                        usuario.Permissao = Convert.ToInt32(leitor["Permissao"]) == 1 ? "Administrador" : "Comun";
 
                         return usuario;
                     }

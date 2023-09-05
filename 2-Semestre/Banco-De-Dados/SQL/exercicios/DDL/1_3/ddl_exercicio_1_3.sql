@@ -17,7 +17,9 @@ CREATE TABLE Clinica(
 CREATE TABLE Veterinario(
 	IdVeterinario INT PRIMARY KEY IDENTITY,
 	IdClinica INT FOREIGN KEY REFERENCES Clinica(IdClinica) NOT NULL,
-	NomeVeterinario VARCHAR(30) NOT NULL
+	NomeVeterinario VARCHAR(30) NOT NULL,
+	CRM VARCHAR(9) NOT NULL UNIQUE,
+	EstadoVeterinario CHAR(2) NOT NULL
 );
 
 CREATE TABLE TipoPet(

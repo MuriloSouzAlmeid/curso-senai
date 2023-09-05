@@ -10,7 +10,9 @@ CREATE TABLE Permissao(
 CREATE TABLE Usuario(
 	IdUsuario INT PRIMARY KEY IDENTITY,
 	IdPermissao INT FOREIGN KEY REFERENCES Permissao(IdPermissao) NOT NULL,
-	NomeUsuario VARCHAR(30) NOT NULL
+	NomeUsuario VARCHAR(30) NOT NULL,
+	EmailUsuario VARCHAR(100) NOT NULL UNIQUE,
+	SenhaUsuario VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE Empresa(
@@ -23,11 +25,8 @@ CREATE TABLE Empresa(
 CREATE TABLE Plataforma(
 	IdPlataforma INT PRIMARY KEY IDENTITY,
 	IdEmpresa INT FOREIGN KEY REFERENCES Empresa(IdEmpresa) NOT NULL,
-	NomePlataforma VARCHAR(25) NOT NULL
+	NomePlataforma VARCHAR(100) NOT NULL
 );
-
---Alterar o tipo de dado de uma coluna
-ALTER TABLE Plataforma ALTER COLUMN NomePlataforma VARCHAR(100);
 
 CREATE TABLE [Login](
 	IdLogin INT PRIMARY KEY IDENTITY,
