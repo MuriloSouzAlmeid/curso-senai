@@ -41,9 +41,9 @@ namespace webapi.filmes.tarde.Controllers
                 }
                 else
                 {
-                    //Caso encontre o usuário buscado, prosegue para a criação do tolten
+                    //Caso encontre o usuário buscado, prosegue para a criação do toten
 
-                    //1 - Definir as informações/clains que serão fornecidos no tolken (Payload)
+                    //1 - Definir as informações/clains que serão fornecidos no token (Payload)
                     var claims = new[]
                     {
                         //formato da claim(tipo, valor) - parece o parameters
@@ -67,7 +67,7 @@ namespace webapi.filmes.tarde.Controllers
 
                     //2 - Defenir a chave de acesso ao token
                     //chave de segurança simétrica - a mesma chave que codifica a mensagem é a responsável por decodificá-la
-                    //o segredoda chave está dentro do GetBytes() como um parâmetro em string
+                    //o segredo da chave está dentro do GetBytes() como um parâmetro em string
                     var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("filmes-chave-autenticacao-webapi-dev"));
 
                     //3 - Definir as credenciais (tipo de algorítimo que vou usar) do token - (Heder)

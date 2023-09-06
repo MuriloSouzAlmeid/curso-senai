@@ -30,7 +30,7 @@ builder.Services.AddAuthentication(options =>
         ValidateLifetime = true,
 
         //Forma de criptografia e a validação da chave de autenticação
-        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("inlock-chave-autenticacao-webApi")),
+        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("inlock-games-chave-autenticacao-webApi")),
 
         //Valida o tempo de expiração do token
         ClockSkew = TimeSpan.FromMinutes(20),
