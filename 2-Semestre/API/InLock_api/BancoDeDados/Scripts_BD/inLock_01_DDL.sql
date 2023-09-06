@@ -1,7 +1,17 @@
-CREATE  DATABASE InLock_games_tarde;
+--Senai
+--CREATE  DATABASE InLock_games_tarde;
+--GO
+
+--Casa
+CREATE DATABASE InLock_Games;
 GO
 
-USE InLock_games_tarde;
+--Senai
+--USE InLock_games_tarde;
+--GO
+
+--Casa
+USE InLock_Games;
 GO
 
 CREATE TABLE Estudio

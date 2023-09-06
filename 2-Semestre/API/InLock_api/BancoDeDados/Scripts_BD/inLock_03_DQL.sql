@@ -1,4 +1,10 @@
-USE InLock_games_tarde;
+--Senai
+--USE InLock_games_tarde;
+--GO
+
+--Casa
+USE InLock_Games;
+GO
 
 SELECT * FROM TiposUsuario;
 
