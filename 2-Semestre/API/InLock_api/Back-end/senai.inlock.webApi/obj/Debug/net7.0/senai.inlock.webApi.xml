@@ -51,12 +51,41 @@
             </summary>
             <returns>Status code da requisição</returns>
         </member>
+        <member name="M:senai.inlock.webApi.Controllers.JogoController.GetById(System.Int32)">
+            <summary>
+            Rota responsável por buscar determinado jogo por seu id
+            </summary>
+            <param name="id">Id do jogo a ser buscado</param>
+            <returns>StatusCode da requisição junto de um objeto contendo as informações do jogo buscado</returns>
+        </member>
         <member name="M:senai.inlock.webApi.Controllers.JogoController.Post(senai.inlock.webApi.Domains.JogoDomain)">
             <summary>
             Rota responsável por cadastrar um novo jogo na tabela Jogo
             </summary>
             <param name="novoJogo">Objeto contendo as informações do jogo que será cadastrado</param>
             <returns>Status code da requisição</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.JogoController.Delete(System.Int32)">
+            <summary>
+            Rota responsável por deletar determinado jogo pelo seu id
+            </summary>
+            <param name="id">Id do jogo a ser deletado</param>
+            <returns>StatusCode da requisição</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.JogoController.PutByBody(senai.inlock.webApi.Domains.JogoDomain)">
+            <summary>
+            Rota responsável por atualizar determinado jogo recebendo as informações pelo corpo da requisição
+            </summary>
+            <param name="jogoAtualizado">Objeto contendo o id e as novas informações do jogo a ser atualizado</param>
+            <returns>StatusCode da requisição</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.JogoController.PutByUrl(System.Int32,senai.inlock.webApi.Domains.JogoDomain)">
+            <summary>
+            Rota responsável por atualizar um jogo com seu id passado pela url e suas novas informações passadas pelo corpo da requisição
+            </summary>
+            <param name="id">Id do jogo a ser atualizado</param>
+            <param name="jogoAtualizado">Objeto contendo as novas informações do jogo a serem atualizadas</param>
+            <returns>StatusCode da requisição</returns>
         </member>
         <member name="M:senai.inlock.webApi.Controllers.UsuarioController.Login(senai.inlock.webApi.Domains.UsuarioDomain)">
             <summary>
