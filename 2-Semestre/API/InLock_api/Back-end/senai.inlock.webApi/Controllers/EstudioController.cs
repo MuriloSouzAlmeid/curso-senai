@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai.inlock.webApi.Domains;
 using senai.inlock.webApi.Interfaces;
@@ -12,6 +13,8 @@ namespace senai.inlock.webApi.Controllers
     [ApiController]
     //deine que as requisições e respostas passadas pelo corpo da rota serão em formato json
     [Produces("application/json")]
+    //define que precisa estar autenticado para acessar as rotas presentes neste controller
+    [Authorize]
     public class EstudioController : ControllerBase
     {
         //instancia o objeto que conterá os métodos necessários para a rota
