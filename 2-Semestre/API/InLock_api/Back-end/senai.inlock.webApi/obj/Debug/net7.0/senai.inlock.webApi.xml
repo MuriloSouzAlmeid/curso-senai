@@ -10,6 +10,41 @@
             </summary>
             <returns>Status code da requisição e a lista dos estúdios</returns>
         </member>
+        <member name="M:senai.inlock.webApi.Controllers.EstudioController.GetById(System.Int32)">
+            <summary>
+            Rota responsável por buscar determinado estúdio pelo seu id
+            </summary>
+            <param name="id">Id do estúdio a ser buscado</param>
+            <returns>O objeto com as informações do estúdio buscado</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.EstudioController.Post(senai.inlock.webApi.Domains.EstudioDomain)">
+            <summary>
+            Rota responsável por cadastrar um novo estúdio no banco de dados
+            </summary>
+            <returns>Statuscode da requisição</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.EstudioController.DeleteById(System.Int32)">
+            <summary>
+            Rota responsável por deletar determinado estúdio do banco de dados por seu id
+            </summary>
+            <param name="id">Id do estúdio a ser deletado</param>
+            <returns>Statuscode da requisição</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.EstudioController.PutByBody(senai.inlock.webApi.Domains.EstudioDomain)">
+            <summary>
+            Rota responsável por atualizar as informações de um estúdio pelo corpo da requisição
+            </summary>
+            <param name="estudioAtualizado">Objeto contendo o id e as novas informações do estúdio a ser atualizado</param>
+            <returns>Statuscod da requisição</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.EstudioController.PutByUrl(System.Int32,senai.inlock.webApi.Domains.EstudioDomain)">
+            <summary>
+            Rota responsável por atualizar as informações de um estúdio por seu id passado pela url
+            </summary>
+            <param name="id">id do estúdio a ser atualizado</param>
+            <param name="estudioAtualizado">Objeto contendo as novas informações do estúdio a ser atualizado</param>
+            <returns>Statuscode da requisição</returns>
+        </member>
         <member name="M:senai.inlock.webApi.Controllers.JogoController.GetAll">
             <summary>
             Rota responsável por listar todos os jogos cadastrados em uma tabela

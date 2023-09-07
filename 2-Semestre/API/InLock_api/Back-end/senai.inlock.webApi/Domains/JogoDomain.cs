@@ -24,8 +24,6 @@ namespace senai.inlock.webApi.Domains
         [Required(ErrorMessage = "O valor do jogo é obrigatório")]
         public decimal Valor { get; set; }
 
-
-        //Referência à classe EstudioDomain
-        public EstudioDomain? Estudio { get; set; }
+        public string? Estudio { get; set; }
     }
 }

@@ -79,21 +79,21 @@ namespace senai.inlock.webApi.Repositories
         /// <returns>Objeto com as informações do estúdio buscado</returns>
         public EstudioDomain BuscarEstudioPorId(int _id)
         {
+            //instancia o objeto que irá receber as informações do leitor
+            EstudioDomain estudio = new EstudioDomain();
+
             //recurso para conectar ao banco de dados
             using (SqlConnection con = new SqlConnection(StringConexao))
             {
-                //instancia o objeto que irá receber as informações do leitor
-                EstudioDomain estudio = new EstudioDomain();
-
                 //comando que será executado
-                string QuerySelectById = "SELECT * FROM Estudio WHERE IdEstudio = @Id;";
-
-                //abre a conexão com o banco de dados
-                con.Open();
+                string QuerySelectById = "SELECT * FROM Estudio WHERE IdEstudio = @Id;";                
 
                 //recurso para executar o comando no banco de dados
                 using (SqlCommand cmd = new SqlCommand(QuerySelectById,con))
                 {
+                    //abre a conexão com o banco de dados
+                    con.Open();
+
                     //substitui as variáveis no comando SQL (SqlInjection)
                     cmd.Parameters.AddWithValue("@Id", _id);
 
@@ -106,6 +106,7 @@ namespace senai.inlock.webApi.Repositories
                         //atribui as informações no leitor para o objeto
                         estudio.IdEstudio = Convert.ToInt32(leitor["IdEstudio"]);
                         estudio.Nome = Convert.ToString(leitor["Nome"]);
+                        estudio.Jogos = new List<JogoDomain>();
                     }
                     //caso o leitor não possua informação nenhuma
                     else
@@ -115,7 +116,45 @@ namespace senai.inlock.webApi.Repositories
                 }
             }
 
+            using (SqlConnection con2 = new SqlConnection(StringConexao))
+            {
+                //comando para trazer todos os jogos que pertencem ao estúdio buscado
+                string QuerySelectJogo = "SELECT IdJogo,Jogo.Nome AS NomeJogo,Estudio.Nome AS NomeEstudio,Jogo.IdEstudio AS IdEstudio,Descricao,DataLancamento,Valor FROM Jogo INNER JOIN Estudio ON Jogo.IdEstudio = Estudio.IdEstudio WHERE Jogo.IdEstudio = @Id;";
 
+                //recurso que cria uma segunda conexão com o banco de dados para o comando na tabela jogos
+                using (SqlCommand cmd2 = new SqlCommand(QuerySelectJogo, con2))
+                {
+                    //abre a conexão com o banco de dados
+                    con2.Open();
+
+                    //substitui a variável no comando SQL (SqlInjection)
+                    cmd2.Parameters.AddWithValue("@Id", _id);
+
+                    //executa o comando e armazena em um leitor de dados
+                    SqlDataReader leitor2 = cmd2.ExecuteReader();
+
+                    //verifica se há jogos no leitor e se houver atribui à lista de jogos do estudio buscado anteriormente
+                    while (leitor2.Read())
+                    {
+                        //instancia o objeto que cinterá as informações dos jogos armazenados no leitor2
+                        JogoDomain jogo = new JogoDomain()
+                        {
+                            IdJogo = Convert.ToInt32(leitor2["IdJogo"]),
+                            IdEstudio = Convert.ToInt32(leitor2["IdEstudio"]),
+                            Nome = Convert.ToString(leitor2["NomeJogo"]),
+                            Descricao = Convert.ToString(leitor2["Descricao"]),
+                            DataLancamento = Convert.ToString(leitor2["DataLancamento"]),
+                            Valor = Convert.ToDecimal(leitor2["Valor"]),
+                            Estudio = Convert.ToString(leitor2["NomeEstudio"])
+                        };
+                        //adiciona o jogo buscado para a lista de jogos do estúdio buscado anteriormente
+                        estudio.Jogos.Add(jogo);
+                    }
+                }
+            }
+
+            //retorna o estúdio buscado
+            return estudio;
         }
 
         /// <summary>
@@ -128,7 +167,7 @@ namespace senai.inlock.webApi.Repositories
             using (SqlConnection con = new SqlConnection(StringConexao))
             {
                 //comando que será executado
-                string QueryInsert = "INSERT INTO Estudio (Nome) VALEUS (@Nome);";
+                string QueryInsert = "INSERT INTO Estudio (Nome) VALUES (@Nome);";
 
                 //abre a conexão com o banco de dados
                 con.Open();
@@ -216,7 +255,7 @@ namespace senai.inlock.webApi.Repositories
             using (SqlConnection con2 = new SqlConnection(StringConexao))
             {
                 //comando que será executado para busca de jogos no banco de dados
-                string QuerySelectJogos = "SELECT * FROM Jogo;";
+                string QuerySelectJogos = "SELECT IdJogo,Jogo.Nome AS NomeJogo,Estudio.Nome AS NomeEstudio,Jogo.IdEstudio AS IdEstudio,Descricao,DataLancamento,Valor FROM Jogo INNER JOIN Estudio ON Jogo.IdEstudio = Estudio.IdEstudio;";
 
                 //abre a conexao com o banco de dados
                 con2.Open();
@@ -240,10 +279,11 @@ namespace senai.inlock.webApi.Repositories
                                 {
                                     IdJogo = Convert.ToInt32(leitor2["IdJogo"]),
                                     IdEstudio = Convert.ToInt32(leitor2["IdEstudio"]),
-                                    Nome = Convert.ToString(leitor2["Nome"]),
+                                    Nome = Convert.ToString(leitor2["NomeJogo"]),
                                     Descricao = Convert.ToString(leitor2["Descricao"]),
                                     DataLancamento = Convert.ToString(leitor2["DataLancamento"]),
-                                    Valor = Convert.ToDecimal(leitor2["Valor"])
+                                    Valor = Convert.ToDecimal(leitor2["Valor"]),
+                                    Estudio = Convert.ToString(leitor2["NomeEstudio"])
                                 };
 
                                 //adiciona o jogo a lista de jogos do estúdio que está sendo percorrido atualmente

@@ -119,12 +119,7 @@ namespace senai.inlock.webApi.Repositories
                             Descricao = Convert.ToString(leitor["Descricao"]),
                             DataLancamento = Convert.ToString(leitor["DataLancamento"]),
                             Valor = Convert.ToDecimal(leitor["Valor"]),
-                            //atribui as informações do estúdio ao objeto
-                            Estudio = new EstudioDomain()
-                            {
-                                IdEstudio = Convert.ToInt32(leitor["IdEstudio"]),
-                                Nome = Convert.ToString(leitor["NomeEstudio"])
-                            }
+                            Estudio = Convert.ToString(leitor["NomeEstudio"])
                         };
 
                         //salva esse objeto na lista antes de reiniciar o laço

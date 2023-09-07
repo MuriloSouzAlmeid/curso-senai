@@ -79,5 +79,125 @@ namespace senai.inlock.webApi.Controllers
                 return BadRequest(erro.Message);
             }
         }
+
+        /// <summary>
+        /// Rota responsável por cadastrar um novo estúdio no banco de dados
+        /// </summary>
+        /// <returns>Statuscode da requisição</returns>
+        [HttpPost]
+        //define que apenas administradores poderão acessar esta rota
+        [Authorize(Roles = "2")]
+        public IActionResult Post(EstudioDomain estudio)
+        {
+            try
+            {
+                _estudioRepository.CadastrarEstudio(estudio);
+
+                return Ok("Estúdio cadastrado com sucesso");
+            }
+            catch (Exception erro)
+            {
+                return BadRequest(erro.Message);
+            }
+        }
+
+        /// <summary>
+        /// Rota responsável por deletar determinado estúdio do banco de dados por seu id
+        /// </summary>
+        /// <param name="id">Id do estúdio a ser deletado</param>
+        /// <returns>Statuscode da requisição</returns>
+        [HttpDelete("{id}")]
+        //deine que apenas administradores poserão acessar esta rota
+        [Authorize(Roles = "2")]
+        public IActionResult DeleteById(int id)
+        {
+            try
+            {
+                //verifica se há algum estudio cadastrado com o id informado
+                EstudioDomain estudioBuscado = _estudioRepository.BuscarEstudioPorId(id);
+
+                //caso éxista um estúdio com o id informado deleta o estúdio
+                if (estudioBuscado != null)
+                {
+                    //deleta o estúdio passando o id do mesmo como parâmetro
+                    _estudioRepository.DeletarEstudio(id);
+
+                    //retorna statuscode Ok com a mensagem bem sucedida
+                    return Ok("Estúdio deletado com sucesso");
+                }
+                //caso não exista estúdio com o id informado
+                else
+                {
+                    //retorna statuscode NotFound com a mensagem de fracasso
+                    return NotFound("Não existe estúdio cadastrado com o id informado");
+                }
+            }
+            //caso ocorra algum erro
+            catch (Exception erro)
+            {
+                //retirna o status code de requisição ruim e a mensagem do erro
+                return BadRequest(erro.Message);
+            }
+        }
+
+        /// <summary>
+        /// Rota responsável por atualizar as informações de um estúdio pelo corpo da requisição
+        /// </summary>
+        /// <param name="estudioAtualizado">Objeto contendo o id e as novas informações do estúdio a ser atualizado</param>
+        /// <returns>Statuscod da requisição</returns>
+        [HttpPut]
+        [Authorize(Roles = "2")]
+        public IActionResult PutByBody(EstudioDomain estudioAtualizado)
+        {
+            try
+            {
+                EstudioDomain estudioBuscado = _estudioRepository.BuscarEstudioPorId(estudioAtualizado.IdEstudio);
+
+                if (estudioBuscado != null)
+                {
+                    _estudioRepository.AtualizarEstudioPeloCorpo(estudioAtualizado);
+
+                    return Ok("Estúdio atualizado com sucesso");
+                }
+                else
+                {
+                    return NotFound("Não existe estúdio cadastrado com o id informado");
+                }
+            }catch(Exception erro)
+            {
+                return BadRequest(erro.Message);
+            }
+        }
+
+        /// <summary>
+        /// Rota responsável por atualizar as informações de um estúdio por seu id passado pela url
+        /// </summary>
+        /// <param name="id">id do estúdio a ser atualizado</param>
+        /// <param name="estudioAtualizado">Objeto contendo as novas informações do estúdio a ser atualizado</param>
+        /// <returns>Statuscode da requisição</returns>
+        [HttpPut("{id}")]
+        [Authorize(Roles = "2")]
+        public IActionResult PutByUrl(int id, EstudioDomain estudioAtualizado)
+        {
+            try
+            {
+                EstudioDomain estudioBuscado = _estudioRepository.BuscarEstudioPorId(id);
+
+                if (estudioBuscado != null)
+                {
+                    _estudioRepository.AtualizarEstudioPorUrl(id,estudioAtualizado);
+
+                    return Ok("Estúdio atualizado com sucesso");
+                }
+                else
+                {
+                    return NotFound("Não existe estúdio cadastrado com o id informado");
+                }
+            }
+            catch (Exception erro)
+            {
+                return BadRequest(erro.Message);
+            }
+        }
     }
 }
