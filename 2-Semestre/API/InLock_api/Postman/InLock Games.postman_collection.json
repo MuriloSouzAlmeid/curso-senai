@@ -255,6 +255,37 @@
 					"response": []
 				},
 				{
+					"name": "Buscar Jogo Por Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxIiwiZW1haWwiOiJjbGllbnRlQGNsaWVudGUuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTY5NDA1MjMwOCwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFwaSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBcGkifQ.-tju4MBrBctglXYzlMWsGUdf3Rzv44XmbAh9IfbPtUo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5006/api/jogo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5006",
+							"path": [
+								"api",
+								"jogo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Cadastrar Jogo",
 					"request": {
 						"auth": {
@@ -288,6 +319,116 @@
 							"path": [
 								"api",
 								"jogo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Jogo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxIiwiZW1haWwiOiJjbGllbnRlQGNsaWVudGUuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTY5NDA1MjMwOCwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFwaSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBcGkifQ.-tju4MBrBctglXYzlMWsGUdf3Rzv44XmbAh9IfbPtUo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5006/api/jogo/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5006",
+							"path": [
+								"api",
+								"jogo",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Jogo Pelo Corpo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxIiwiZW1haWwiOiJjbGllbnRlQGNsaWVudGUuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTY5NDA1MjMwOCwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFwaSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBcGkifQ.-tju4MBrBctglXYzlMWsGUdf3Rzv44XmbAh9IfbPtUo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idjogo\": 0,\r\n    \"idestudio\": 0,\r\n    \"nome\": \"\",\r\n    \"descricao\": \"\",\r\n    \"datalancamento\": \"\",\r\n    \"valor\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5006/api/jogo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5006",
+							"path": [
+								"api",
+								"jogo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Jogo Pela Url",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxIiwiZW1haWwiOiJjbGllbnRlQGNsaWVudGUuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTY5NDA1MjMwOCwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFwaSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBcGkifQ.-tju4MBrBctglXYzlMWsGUdf3Rzv44XmbAh9IfbPtUo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idestudio\": 0,\r\n    \"nome\": \"\",\r\n    \"descricao\": \"\",\r\n    \"datalancamento\": \"\",\r\n    \"valor\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5006/api/jogo/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5006",
+							"path": [
+								"api",
+								"jogo",
+								"2"
 							]
 						}
 					},
