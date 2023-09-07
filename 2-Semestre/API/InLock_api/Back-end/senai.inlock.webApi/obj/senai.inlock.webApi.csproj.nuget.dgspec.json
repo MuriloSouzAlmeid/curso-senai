@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\api-filmes\\webapi.filmes.tarde\\webapi.filmes.tarde.csproj": {}
+    "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\InLock_api\\Back-end\\senai.inlock.webApi\\senai.inlock.webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\api-filmes\\webapi.filmes.tarde\\webapi.filmes.tarde.csproj": {
+    "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\InLock_api\\Back-end\\senai.inlock.webApi\\senai.inlock.webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\api-filmes\\webapi.filmes.tarde\\webapi.filmes.tarde.csproj",
-        "projectName": "webapi.filmes.tarde",
-        "projectPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\api-filmes\\webapi.filmes.tarde\\webapi.filmes.tarde.csproj",
+        "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\InLock_api\\Back-end\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
+        "projectName": "senai.inlock.webApi",
+        "projectPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\InLock_api\\Back-end\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
         "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\api-filmes\\webapi.filmes.tarde\\obj\\",
+        "outputPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\InLock_api\\Back-end\\senai.inlock.webApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,7 +59,7 @@
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[6.32.2, )"
+              "version": "[6.32.3, )"
             }
           },
           "imports": [
