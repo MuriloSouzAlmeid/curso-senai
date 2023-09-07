@@ -47,5 +47,37 @@ namespace senai.inlock.webApi.Controllers
                 return BadRequest(erro.Message);
             }
         }
+
+        /// <summary>
+        /// Rota responsável por buscar determinado estúdio pelo seu id
+        /// </summary>
+        /// <param name="id">Id do estúdio a ser buscado</param>
+        /// <returns>O objeto com as informações do estúdio buscado</returns>
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            try
+            {
+                //instancia um objeto recebendo o valor do método de buscar por id
+                EstudioDomain estudio = _estudioRepository.BuscarEstudioPorId(id);
+
+                //verifica se o objeto retornado é válido ou nulo
+                if (estudio != null)
+                {
+                    //caso o objeto buscado seja válido retorna um statuscode Ok(200) com o objeto encontrado
+                    return Ok(estudio);
+                }
+                else
+                {
+                    //caso o objeto encontrado seja nulo retorna um statuscode NotFound(404) com a mensagem dizendo que o objeto não foi encontrado
+                    return NotFound("O estúdio com o id informado não foi encontrado.");
+                }
+
+            }catch(Exception erro)
+            {
+                //caso de algum erro retorna uma request ruim informando também qual o erro que deu
+                return BadRequest(erro.Message);
+            }
+        }
     }
 }

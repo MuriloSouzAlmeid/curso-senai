@@ -21,7 +21,26 @@ namespace senai.inlock.webApi.Repositories
         /// <param name="estudioAtualizado">Objeto contendo o id do estúdio a ser atualizado e suas novas informações</param>
         public void AtualizarEstudioPeloCorpo(EstudioDomain estudioAtualizado)
         {
-            throw new NotImplementedException();
+            //recurso para criar uma conxão com o banco de dados
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                //comando que será executado
+                string QueryUpdate = "UPDATE Estudio SET Nome = @Nome WHERE IdEstudio = @Id;";
+
+                //inicia a conexão com o banco de dados
+                con.Open();
+
+                //recurso para executar o comando SQL no banco de dados
+                using (SqlCommand cmd = new SqlCommand(QueryUpdate,con)) 
+                {
+                    //substitui as variáveis no comando SQL (SqlInjection)
+                    cmd.Parameters.AddWithValue("@Nome", estudioAtualizado.Nome);
+                    cmd.Parameters.AddWithValue("@Id", estudioAtualizado.IdEstudio);
+
+                    //executa o comando
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
 
         /// <summary>
@@ -31,7 +50,26 @@ namespace senai.inlock.webApi.Repositories
         /// <param name="estudioAtualizado">Objeto contendo as novas informações do estúdio</param>
         public void AtualizarEstudioPorUrl(int _id, EstudioDomain estudioAtualizado)
         {
-            throw new NotImplementedException();
+            //recurso para criar a conexão com o banco de dados
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                //comando que será executado
+                string QueryUpdateByUrl = "UPDATE Estudio SET Nome = @Nome WHERE IdEstudio = @Id;";
+
+                //inicia a conexão com o banco de dados
+                con.Open();
+
+                //recurso para executar o comando SQL no banco de dados
+                using (SqlCommand cmd = new SqlCommand(QueryUpdateByUrl,con))
+                {
+                    //substitui as variáveis no SQL (SqlInjection)
+                    cmd.Parameters.AddWithValue("@Nome",estudioAtualizado.Nome);
+                    cmd.Parameters.AddWithValue("@Id",_id);
+
+                    //executa o comando
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
 
         /// <summary>
@@ -41,7 +79,43 @@ namespace senai.inlock.webApi.Repositories
         /// <returns>Objeto com as informações do estúdio buscado</returns>
         public EstudioDomain BuscarEstudioPorId(int _id)
         {
-            throw new NotImplementedException();
+            //recurso para conectar ao banco de dados
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                //instancia o objeto que irá receber as informações do leitor
+                EstudioDomain estudio = new EstudioDomain();
+
+                //comando que será executado
+                string QuerySelectById = "SELECT * FROM Estudio WHERE IdEstudio = @Id;";
+
+                //abre a conexão com o banco de dados
+                con.Open();
+
+                //recurso para executar o comando no banco de dados
+                using (SqlCommand cmd = new SqlCommand(QuerySelectById,con))
+                {
+                    //substitui as variáveis no comando SQL (SqlInjection)
+                    cmd.Parameters.AddWithValue("@Id", _id);
+
+                    //executa o comando e armazena as informações obtidas em um leitor de dados
+                    SqlDataReader leitor = cmd.ExecuteReader();
+
+                    //verifica se o leitor recebeu alguma informação
+                    if (leitor.Read())
+                    {
+                        //atribui as informações no leitor para o objeto
+                        estudio.IdEstudio = Convert.ToInt32(leitor["IdEstudio"]);
+                        estudio.Nome = Convert.ToString(leitor["Nome"]);
+                    }
+                    //caso o leitor não possua informação nenhuma
+                    else
+                    {
+                        return null;
+                    }
+                }
+            }
+
+
         }
 
         /// <summary>
@@ -50,7 +124,25 @@ namespace senai.inlock.webApi.Repositories
         /// <param name="novoEstudio">Objeto contendo as informações do estúdio a ser cadastrado</param>
         public void CadastrarEstudio(EstudioDomain novoEstudio)
         {
-            throw new NotImplementedException();
+            //recurso para fazer a conexão com o banco de dados
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                //comando que será executado
+                string QueryInsert = "INSERT INTO Estudio (Nome) VALEUS (@Nome);";
+
+                //abre a conexão com o banco de dados
+                con.Open();
+
+                //recurso para executar o comando
+                using (SqlCommand cmd = new SqlCommand(QueryInsert, con))
+                {
+                    //substitui as variáveis no comando SQL (SqlInjection)
+                    cmd.Parameters.AddWithValue("@Nome", novoEstudio.Nome);
+
+                    //executa o comando
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
 
         /// <summary>
@@ -59,7 +151,25 @@ namespace senai.inlock.webApi.Repositories
         /// <param name="_id">Id do estúdio a ser deletado</param>
         public void DeletarEstudio(int _id)
         {
-            throw new NotImplementedException();
+            //recurso para criar uma conexão com o banco de dados
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                //comando que será executado
+                string QueryDelete = "DELETE FROM Estudio WHERE IdEstudio = @Id;";
+
+                //abre(inicia) a conexão com o banco de dados
+                con.Open();
+
+                //recurso para executar o comando SQL no banco de dados
+                using (SqlCommand cmd = new SqlCommand(QueryDelete,con))
+                {
+                    //substitui as variáveis no comando SQL (SqlInjection)
+                    cmd.Parameters.AddWithValue("@Id",_id);
+
+                    //executa o comando
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
 
         /// <summary>
