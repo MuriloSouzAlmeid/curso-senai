@@ -12,9 +12,9 @@ namespace senai.inlock.webApi.Repositories
     {
         //String de conexão
         //Senai
-        //private string StringConexao = "Data Source = NOTE16-S15; Initial Catalog = InLock_games_tarde; User Id = sa; Pwd = Senai@134";
+        private string StringConexao = "Data Source = NOTE16-S15; Initial Catalog = InLock_games_tarde; User Id = sa; Pwd = Senai@134";
         //Casa
-        private string StringConexao = "Data Source = NOTEBOOKFAMILIA; Initial Catalog = InLock_Games; User Id = sa; Pwd = Murilo12$";
+        //private string StringConexao = "Data Source = NOTEBOOKFAMILIA; Initial Catalog = InLock_Games; User Id = sa; Pwd = Murilo12$";
 
         /// <summary>
         /// Método para verificar se um usuário está cadastrado no banco de dados

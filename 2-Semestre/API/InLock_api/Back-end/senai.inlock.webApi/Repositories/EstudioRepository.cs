@@ -11,9 +11,9 @@ namespace senai.inlock.webApi.Repositories
     {
         //String de conexão com o banco de dados contendo informações do servidor, banco de dados e login de usuário
         //Senai
-        //private string StringConexao = "Data Source = NOTE16-S15; Initial Catalog = InLock_games_tarde; User Id = sa; Pwd = Senai@134";
+        private string StringConexao = "Data Source = NOTE16-S15; Initial Catalog = InLock_games_tarde; User Id = sa; Pwd = Senai@134";
         //Casa
-        private string StringConexao = "Data Source = NOTEBOOKFAMILIA; Initial Catalog = InLock_Games; User Id = sa; Pwd = Murilo12$";
+        //private string StringConexao = "Data Source = NOTEBOOKFAMILIA; Initial Catalog = InLock_Games; User Id = sa; Pwd = Murilo12$";
 
         /// <summary>
         /// Método para atualizar determinado estúdio passando as inormações pelo corpo da requisição
@@ -31,7 +31,7 @@ namespace senai.inlock.webApi.Repositories
                 con.Open();
 
                 //recurso para executar o comando SQL no banco de dados
-                using (SqlCommand cmd = new SqlCommand(QueryUpdate,con)) 
+                using (SqlCommand cmd = new SqlCommand(QueryUpdate, con))
                 {
                     //substitui as variáveis no comando SQL (SqlInjection)
                     cmd.Parameters.AddWithValue("@Nome", estudioAtualizado.Nome);
@@ -60,11 +60,11 @@ namespace senai.inlock.webApi.Repositories
                 con.Open();
 
                 //recurso para executar o comando SQL no banco de dados
-                using (SqlCommand cmd = new SqlCommand(QueryUpdateByUrl,con))
+                using (SqlCommand cmd = new SqlCommand(QueryUpdateByUrl, con))
                 {
                     //substitui as variáveis no SQL (SqlInjection)
-                    cmd.Parameters.AddWithValue("@Nome",estudioAtualizado.Nome);
-                    cmd.Parameters.AddWithValue("@Id",_id);
+                    cmd.Parameters.AddWithValue("@Nome", estudioAtualizado.Nome);
+                    cmd.Parameters.AddWithValue("@Id", _id);
 
                     //executa o comando
                     cmd.ExecuteNonQuery();
@@ -86,10 +86,10 @@ namespace senai.inlock.webApi.Repositories
             using (SqlConnection con = new SqlConnection(StringConexao))
             {
                 //comando que será executado
-                string QuerySelectById = "SELECT * FROM Estudio WHERE IdEstudio = @Id;";                
+                string QuerySelectById = "SELECT * FROM Estudio WHERE IdEstudio = @Id;";
 
                 //recurso para executar o comando no banco de dados
-                using (SqlCommand cmd = new SqlCommand(QuerySelectById,con))
+                using (SqlCommand cmd = new SqlCommand(QuerySelectById, con))
                 {
                     //abre a conexão com o banco de dados
                     con.Open();
@@ -108,47 +108,48 @@ namespace senai.inlock.webApi.Repositories
                         estudio.Nome = Convert.ToString(leitor["Nome"]);
                         estudio.Jogos = new List<JogoDomain>();
                     }
+
+                    //criando o resurso de con2 dentro do con (não sabia que podia)
+                    using (SqlConnection con2 = new SqlConnection(StringConexao))
+                    {
+                        //comando para trazer todos os jogos que pertencem ao estúdio buscado
+                        string QuerySelectJogo = "SELECT IdJogo,Jogo.Nome AS NomeJogo,Estudio.Nome AS NomeEstudio,Jogo.IdEstudio AS IdEstudio,Descricao,DataLancamento,Valor FROM Jogo INNER JOIN Estudio ON Jogo.IdEstudio = Estudio.IdEstudio WHERE Jogo.IdEstudio = @Id;";
+
+                        //recurso que cria uma segunda conexão com o banco de dados para o comando na tabela jogos
+                        using (SqlCommand cmd2 = new SqlCommand(QuerySelectJogo, con2))
+                        {
+                            //abre a conexão com o banco de dados
+                            con2.Open();
+
+                            //substitui a variável no comando SQL (SqlInjection)
+                            cmd2.Parameters.AddWithValue("@Id", estudio.IdEstudio);
+
+                            //executa o comando e armazena em um leitor de dados
+                            SqlDataReader leitor2 = cmd2.ExecuteReader();
+
+                            //verifica se há jogos no leitor e se houver atribui à lista de jogos do estudio buscado anteriormente
+                            while (leitor2.Read())
+                            {
+                                //instancia o objeto que cinterá as informações dos jogos armazenados no leitor2
+                                JogoDomain jogo = new JogoDomain()
+                                {
+                                    IdJogo = Convert.ToInt32(leitor2["IdJogo"]),
+                                    IdEstudio = Convert.ToInt32(leitor2["IdEstudio"]),
+                                    Nome = Convert.ToString(leitor2["NomeJogo"]),
+                                    Descricao = Convert.ToString(leitor2["Descricao"]),
+                                    DataLancamento = Convert.ToString(leitor2["DataLancamento"]),
+                                    Valor = Convert.ToDecimal(leitor2["Valor"]),
+                                    Estudio = Convert.ToString(leitor2["NomeEstudio"])
+                                };
+                                //adiciona o jogo buscado para a lista de jogos do estúdio buscado anteriormente
+                                estudio.Jogos.Add(jogo);
+                            }
+                        }
+                    }
                     //caso o leitor não possua informação nenhuma
                     else
                     {
                         return null;
-                    }
-                }
-            }
-
-            using (SqlConnection con2 = new SqlConnection(StringConexao))
-            {
-                //comando para trazer todos os jogos que pertencem ao estúdio buscado
-                string QuerySelectJogo = "SELECT IdJogo,Jogo.Nome AS NomeJogo,Estudio.Nome AS NomeEstudio,Jogo.IdEstudio AS IdEstudio,Descricao,DataLancamento,Valor FROM Jogo INNER JOIN Estudio ON Jogo.IdEstudio = Estudio.IdEstudio WHERE Jogo.IdEstudio = @Id;";
-
-                //recurso que cria uma segunda conexão com o banco de dados para o comando na tabela jogos
-                using (SqlCommand cmd2 = new SqlCommand(QuerySelectJogo, con2))
-                {
-                    //abre a conexão com o banco de dados
-                    con2.Open();
-
-                    //substitui a variável no comando SQL (SqlInjection)
-                    cmd2.Parameters.AddWithValue("@Id", _id);
-
-                    //executa o comando e armazena em um leitor de dados
-                    SqlDataReader leitor2 = cmd2.ExecuteReader();
-
-                    //verifica se há jogos no leitor e se houver atribui à lista de jogos do estudio buscado anteriormente
-                    while (leitor2.Read())
-                    {
-                        //instancia o objeto que cinterá as informações dos jogos armazenados no leitor2
-                        JogoDomain jogo = new JogoDomain()
-                        {
-                            IdJogo = Convert.ToInt32(leitor2["IdJogo"]),
-                            IdEstudio = Convert.ToInt32(leitor2["IdEstudio"]),
-                            Nome = Convert.ToString(leitor2["NomeJogo"]),
-                            Descricao = Convert.ToString(leitor2["Descricao"]),
-                            DataLancamento = Convert.ToString(leitor2["DataLancamento"]),
-                            Valor = Convert.ToDecimal(leitor2["Valor"]),
-                            Estudio = Convert.ToString(leitor2["NomeEstudio"])
-                        };
-                        //adiciona o jogo buscado para a lista de jogos do estúdio buscado anteriormente
-                        estudio.Jogos.Add(jogo);
                     }
                 }
             }
@@ -200,10 +201,10 @@ namespace senai.inlock.webApi.Repositories
                 con.Open();
 
                 //recurso para executar o comando SQL no banco de dados
-                using (SqlCommand cmd = new SqlCommand(QueryDelete,con))
+                using (SqlCommand cmd = new SqlCommand(QueryDelete, con))
                 {
                     //substitui as variáveis no comando SQL (SqlInjection)
-                    cmd.Parameters.AddWithValue("@Id",_id);
+                    cmd.Parameters.AddWithValue("@Id", _id);
 
                     //executa o comando
                     cmd.ExecuteNonQuery();
@@ -297,5 +298,5 @@ namespace senai.inlock.webApi.Repositories
             //retorna a lista com os estúdios buscados
             return listaEstudios;
         }
-}
+    }
 }
