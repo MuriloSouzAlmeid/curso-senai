@@ -10,18 +10,18 @@ restfull: uma API que segue todos os padrões rest se tornando a "melhor"
 
 json: formado da resposta {}
 ex: {					{
-	atributo/chave: valor			nomePessoa: Murilo
+	atributo/chave: valor			nomePessoa: Murilo,
     }						idadePessoa: 17
 					}
 
 array de respostas [{}]
 [
    {
-      NomePessoa: Murilo
+      NomePessoa: Murilo,
       IdadePessoa: 17
    },
    {
-      NomePessoa: Andréia
+      NomePessoa: Andréia,
       IdadePessoa: 40
    }
 ]
@@ -70,3 +70,16 @@ Repository Pattern - Padrão repositório
 	Interface - Contrato/métodos
 	Repository - Lógica/implementação dos métodos
 	Controller - Endpoints/rotas
+
+Ado.Net -> fazer consultas nno banco de dados pelo código usando os recursos e querys
+
+
+ORM: mapeamento objeto-relacional -> irá realizar as consultas no banco de dados sem a necessidade de escrever códigos de conexão com o banco e as querys que serão executadas nele. Principais Framework do tipo ORM: Entity Framework, Dapper, Nhibernate
+
+Entity Framework: um framework do tipo ORM (faz conexões e consultas com banco de dados sem a necessidade das querys dos recursos)
+	-Permite trabalhar com consultas em banoc de dados por meio de objetos .Net sem o uso se query e recurso.
+	-Modular e suporta diversos tipos de banco de dados (SQL Server, MySQL, Oracle, etc.)
+	-Suporta as abordagens CodeFirst (começa pelo código e depois cria o banco) Classe -> Banco e DatabaseFirst (começa pelo banco e depois cria o código) Banco -> Classe
+	-Pode ser facilmente instalado via Nuget
+
+Ao utilizar o Entity Framework devemos instanciar a classe COntext que define as configurações de conexao com o banco de dados (String de conexão) e as configurações de tabelas e classes.
