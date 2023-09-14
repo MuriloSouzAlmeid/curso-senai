@@ -36,6 +36,7 @@ namespace webapi.inlock.codefirst.Domains
         //a datanotation ForeignKey define que no objeto está no objeto do tipo Estudio
         //dentro do parênteses colocamos qual será o campo que se ligará (REFERENCES no Sql)
         [ForeignKey("IdEstudio")]
+        [Required(ErrorMessage = "O Id do estúdio é obrigatório")]
         public Estudio Estudio { get; set; }
     }
 }

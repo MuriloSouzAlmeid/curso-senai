@@ -7,7 +7,7 @@ namespace webapi.inlock.codefirst.Domains
     public class TiposUsuario
     {
         [Key]
-        public Guid IdTipoEstudio { get; set; } = Guid.NewGuid();
+        public Guid IdTipoUsuario { get; set; } = Guid.NewGuid();
 
         [Column(TypeName = "VARCHAR(20)")]
         [Required(ErrorMessage = "O nome da permissao é obrigatório")]
