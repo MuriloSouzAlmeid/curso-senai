@@ -38,9 +38,9 @@ namespace webapi.inlock.codefirst.Repositories
             {
                 Usuario usuarioBuscado = ctx.Usuarios.FirstOrDefault(u => u.Email == email)!;
 
-                if(usuarioBuscado != null) 
+                if (usuarioBuscado != null)
                 {
-                    bool senhaValida = Criptografia.CompararHash(usuarioBuscado.Senha, senha);
+                    bool senhaValida = Criptografia.CompararHash(senha, usuarioBuscado.Senha);
 
                     if (senhaValida)
                     {
@@ -50,6 +50,10 @@ namespace webapi.inlock.codefirst.Repositories
                     {
                         return null;
                     }
+                }
+                else
+                {
+                    return null;
                 }
             }
             catch (Exception)

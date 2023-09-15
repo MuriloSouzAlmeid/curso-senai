@@ -79,3 +79,6 @@ C:\Users\47015003805\Desktop\curso-senai\2-Semestre\API\EntityFramework\codefirs
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\API\EntityFramework\codefirst\API\webapi.inlock.codefirst\obj\Debug\net7.0\webapi.inlock.codefirst.genruntimeconfig.cache
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\API\EntityFramework\codefirst\API\webapi.inlock.codefirst\obj\Debug\net7.0\ref\webapi.inlock.codefirst.dll
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\API\EntityFramework\codefirst\API\webapi.inlock.codefirst\bin\Debug\net7.0\BCrypt.Net-Next.dll
+C:\Users\47015003805\Desktop\curso-senai\2-Semestre\API\EntityFramework\codefirst\API\webapi.inlock.codefirst\bin\Debug\net7.0\webapi.inlock.codefirst.xml
+C:\Users\47015003805\Desktop\curso-senai\2-Semestre\API\EntityFramework\codefirst\API\webapi.inlock.codefirst\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\47015003805\Desktop\curso-senai\2-Semestre\API\EntityFramework\codefirst\API\webapi.inlock.codefirst\obj\Debug\net7.0\webapi.inlock.codefirst.xml

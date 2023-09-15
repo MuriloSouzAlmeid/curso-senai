@@ -83,3 +83,8 @@ Entity Framework: um framework do tipo ORM (faz conexões e consultas com banco 
 	-Pode ser facilmente instalado via Nuget
 
 Ao utilizar o Entity Framework devemos instanciar a classe COntext que define as configurações de conexao com o banco de dados (String de conexão) e as configurações de tabelas e classes.
+
+
+Deixar os controllers de entidades apenas para operações de CRUD detal entidade, para demais operações criamos um Controller separado (como por exemplo uma funcionalidade de login)
+
+VieModel: Criar uma classe modelo personalizada com apenas algumas propriedades necessárias para os métodos que necessitamos deixando assim o corpo de uma requisição mais leve e sem carregar informações necessárias

@@ -17,10 +17,11 @@
         /// <param name="senhaInformada">senha informada por formulário</param>
         /// <returns>True ou False</returns>
         //
-        public static bool CompararHash(string senhaBanco, string senhaInformada)
+        public static bool CompararHash(string senhaInformada, string senhaBanco)
         {
             //criptografa a senha informada pelo formulário e a compara com a senha que está salva no banco de dados
-            return BCrypt.Net.BCrypt.Verify(senhaBanco, senhaInformada);
+            //A ordem é obrigatória: 1 - a senha informada, 2 - a senha no banco
+            return BCrypt.Net.BCrypt.Verify(senhaInformada, senhaBanco);
         }
     }
 }

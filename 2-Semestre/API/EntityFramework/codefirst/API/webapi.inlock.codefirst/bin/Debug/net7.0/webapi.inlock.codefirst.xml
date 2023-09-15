@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>webapi.inlock.codefirst</name>
+    </assembly>
+    <members>
+        <member name="P:webapi.inlock.codefirst.Contexts.InLockContext.TiposUsuarios">
+            <summary>
+            Definição das entidades de dados
+            </summary>
+        </member>
+        <member name="M:webapi.inlock.codefirst.Controllers.UsuarioController.Post(webapi.inlock.codefirst.Domains.Usuario)">
+            <summary>
+            Rota para cadastrar um novo usuário
+            </summary>
+            <param name="usuario">Objeto contendo as informações do usuário a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="T:webapi.inlock.codefirst.Interfaces.IEstudioRepository">
+            <summary>
+            Interface que conterá os métodos para a entidade Estudio
+            </summary>
+        </member>
+        <member name="T:webapi.inlock.codefirst.Interfaces.IJogoRepository">
+            <summary>
+            Interface que contem os métodos da entidade Jogo
+            </summary>
+        </member>
+        <member name="T:webapi.inlock.codefirst.Migrations.InLockBD">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.inlock.codefirst.Migrations.InLockBD.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.inlock.codefirst.Migrations.InLockBD.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.inlock.codefirst.Migrations.InLockBD.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.inlock.codefirst.Utils.Criptografia.CompararHash(System.String,System.String)">
+            <summary>
+            método para verificar se a hash da senha informada é a mesma da hash da senha salva no banco de dados
+            </summary>
+            <param name="senhaBanco">senha salva no banco de dados</param>
+            <param name="senhaInformada">senha informada por formulário</param>
+            <returns>True ou False</returns>
+        </member>
+    </members>
+</doc>

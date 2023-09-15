@@ -28,6 +28,7 @@ namespace webapi.inlock.codefirst.Domains
         public Guid IdTipoUsuario { get; set; }
 
         [ForeignKey("IdTipoUsuario")]
+        //tem de deixar um ponto de interrogação no tipo para permitir que seja um objeto nulo
         public TiposUsuario? TipoUsuario { get; set; }
     }
 }
