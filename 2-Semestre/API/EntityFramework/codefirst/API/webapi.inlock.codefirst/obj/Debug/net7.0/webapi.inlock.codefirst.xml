@@ -9,6 +9,75 @@
             Definição das entidades de dados
             </summary>
         </member>
+        <member name="M:webapi.inlock.codefirst.Controllers.EstudioController.GetAll">
+            <summary>
+            Rota para listar todos os estúdios cadastrados junto com seus jogos.
+            </summary>
+            <returns>Lista com os estúdios cadastrados</returns>
+        </member>
+        <member name="M:webapi.inlock.codefirst.Controllers.EstudioController.GetById(System.Guid)">
+            <summary>
+            Rota para buscar determinado estúdio pelo seu id
+            </summary>
+            <param name="id">Id do estúdio a ser buscado</param>
+            <returns>Estudio com o id informado</returns>
+        </member>
+        <member name="M:webapi.inlock.codefirst.Controllers.EstudioController.CadastrarEstudio(webapi.inlock.codefirst.ViewModels.EstudioViewModel)">
+            <summary>
+            Rota para cadastrar um novo estúdio
+            </summary>
+            <param name="novoEstudio">Objeto contendo as informações do estúdio a ser cadastrado</param>
+            <returns>StatusCode da requisição</returns>
+        </member>
+        <member name="M:webapi.inlock.codefirst.Controllers.EstudioController.Delete(System.Guid)">
+            <summary>
+            Rota para deletar um estúdio por seu id
+            </summary>
+            <param name="id">Id do estúdio a ser deletado</param>
+            <returns>StatusCode da requisição</returns>
+        </member>
+        <member name="M:webapi.inlock.codefirst.Controllers.EstudioController.Put(System.Guid,webapi.inlock.codefirst.ViewModels.EstudioViewModel)">
+            <summary>
+            Rota para atualizar um estúdio pelo seu id
+            </summary>
+            <param name="id">Id do estúdio a ser atualizado</param>
+            <param name="estudioAtualizado">Objeto contendo as novas informações do estúdio</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.inlock.codefirst.Controllers.JogoController.GetAll">
+            <summary>
+            Rota para listar todos os jogos cadastrados junto de seus estúdios
+            </summary>
+            <returns>Lista com todos os jogos cadastrados</returns>
+        </member>
+        <member name="M:webapi.inlock.codefirst.Controllers.JogoController.GetById(System.Guid)">
+            <summary>
+            Rota para buscar um jogo pelo seu id
+            </summary>
+            <param name="id">Id do jogo a ser buscado</param>
+            <returns>Jogo buscado pelo id informado</returns>
+        </member>
+        <member name="M:webapi.inlock.codefirst.Controllers.JogoController.Post(webapi.inlock.codefirst.ViewModels.JogoViewModel)">
+            <summary>
+            Rota para cadastrar um novo jogo
+            </summary>
+            <param name="informacoesJogo">Informações do jogo a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.inlock.codefirst.Controllers.JogoController.Delete(System.Guid)">
+            <summary>
+            Rota para deletar determinado jogo pelo seu id
+            </summary>
+            <param name="id">Id do jogo a ser deletado</param>
+            <returns>StatusCode da requisição</returns>
+        </member>
+        <member name="M:webapi.inlock.codefirst.Controllers.LoginController.Login(webapi.inlock.codefirst.ViewModels.LoginViewModel)">
+            <summary>
+            Método para logar um usuário e gerar seu token para deinições de autenticação e autorização
+            </summary>
+            <param name="informacoesLogin">Email e senha do usuário a ser logado</param>
+            <returns></returns>
+        </member>
         <member name="M:webapi.inlock.codefirst.Controllers.UsuarioController.Post(webapi.inlock.codefirst.Domains.Usuario)">
             <summary>
             Rota para cadastrar um novo usuário

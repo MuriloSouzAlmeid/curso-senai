@@ -23,7 +23,10 @@ namespace webapi.inlock.codefirst.Contexts
             //dentro dos parênteses vai a string de conexão com o banco como parâmetro
             //Muda-se o Data Source para Server e o Initial Catalog para Database
             //TrustServerCertificate garante a sertificação do windows para permitir o acesso ao localhost(servidor local)
-            optionsBuilder.UseSqlServer("Server=NOTE16-S15; Database=inlock_games_CodeFirst_tarde; User Id=sa; Pwd=Senai@134; TrustServerCertificate=true");
+            //Senai:
+            //optionsBuilder.UseSqlServer("Server=NOTE16-S15; Database=inlock_games_CodeFirst_tarde; User Id=sa; Pwd=Senai@134; TrustServerCertificate=true");
+            //Casa:
+            optionsBuilder.UseSqlServer("Server=NOTEBOOKFAMILIA; Database=inlock_games_CodeFirst; User Id=sa; Pwd=Murilo12$; TrustServerCertificate=true");
             base.OnConfiguring(optionsBuilder);
         }
 

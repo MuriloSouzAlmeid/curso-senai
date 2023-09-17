@@ -1,12 +1,22 @@
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+//adiciona as configurações do NewtonSoft para impedir erros de ciclo (cycle)
+builder.Services.AddControllers()
+    .AddNewtonsoftJson(options =>
+    {
+        // Ignora os loopings nas consultas
+        options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+        // Ignora valores nulos ao fazer junções nas consultas
+        options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+    }
+);
 
 //Adiciona serviço de autenticação JWT Bearer - token por json
 builder.Services.AddAuthentication(options =>

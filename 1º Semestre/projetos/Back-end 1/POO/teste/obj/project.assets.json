@@ -8,24 +8,32 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\muril\\.nuget\\packages\\": {}
+    "C:\\Users\\muril\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso_senai\\1º Semestre\\projetos\\Back-end 1\\POO\\teste\\teste.csproj",
+      "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\1º Semestre\\projetos\\Back-end 1\\POO\\teste\\teste.csproj",
       "projectName": "teste",
-      "projectPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso_senai\\1º Semestre\\projetos\\Back-end 1\\POO\\teste\\teste.csproj",
+      "projectPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\1º Semestre\\projetos\\Back-end 1\\POO\\teste\\teste.csproj",
       "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso_senai\\1º Semestre\\projetos\\Back-end 1\\POO\\teste\\obj\\",
+      "outputPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\1º Semestre\\projetos\\Back-end 1\\POO\\teste\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.105\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

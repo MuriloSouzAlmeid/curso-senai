@@ -11,6 +11,7 @@ namespace webapi.inlock.codefirst.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Produces("application/json")]
+    [Authorize]
     public class UsuarioController : ControllerBase
     {
         private IUsuarioRepository _usuarioRepository { get; set; }
@@ -25,7 +26,7 @@ namespace webapi.inlock.codefirst.Controllers
         /// <param name="usuario">Objeto contendo as informações do usuário a ser cadastrado</param>
         /// <returns></returns>
         [HttpPost]
-        [Authorize(Roles = "8868F802-DC18-4C02-89DD-F3151B7FDEE8")]
+        [Authorize(Roles = "Administrador")]
         public IActionResult Post(Usuario usuario)
         {
             try

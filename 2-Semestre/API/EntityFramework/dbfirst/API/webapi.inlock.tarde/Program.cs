@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//adiciona as configurações do NewtonSoft para impedir erros de cycle
+//adiciona as configurações do NewtonSoft para impedir erros de ciclo (cycle)
 builder.Services.AddControllers()
     .AddNewtonsoftJson(options =>
     {

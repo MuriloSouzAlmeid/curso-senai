@@ -14,6 +14,12 @@ namespace webapi.inlock.codefirst.Interfaces
         List<Jogo> ListarJogos();
 
         //método que busca um jogo por seu id
-        Jogo BuscarJogoPorId();
+        Jogo BuscarJogoPorId(Guid id);
+
+        //método para atualizar um jogo pelo id
+        void AtualizarJogoPorId(Guid id, Jogo jogoAtualizado);
+
+        //método para deletar um jogo pelo seu id
+        void DeletarJogoPorId(Guid id);
     }
 }

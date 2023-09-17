@@ -23,6 +23,11 @@ namespace webapi.inlock.codefirst.Controllers
             _usuarioRepository = new UsuarioRepository();
         }
 
+        /// <summary>
+        /// Método para logar um usuário e gerar seu token para deinições de autenticação e autorização
+        /// </summary>
+        /// <param name="informacoesLogin">Email e senha do usuário a ser logado</param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Login(LoginViewModel informacoesLogin)
         {
@@ -40,7 +45,7 @@ namespace webapi.inlock.codefirst.Controllers
                 {
                     new Claim(JwtRegisteredClaimNames.Jti, usuario.IdUsuario.ToString()),
                     new Claim(JwtRegisteredClaimNames.Email, usuario.Email),
-                    new Claim(ClaimTypes.Role, usuario.IdTipoUsuario.ToString())
+                    new Claim(ClaimTypes.Role, usuario.TipoUsuario.Permissao.ToString())
                 };
 
                 //2 - dafine a chave de decodificação

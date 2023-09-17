@@ -1,5 +1,5 @@
-﻿static string FuncaoTeste(){
-    return $"Hello World!\nPressione ENTER para continuar...\n {Console.ReadLine()}";
-}
+﻿using teste;
 
-Console.WriteLine($"{FuncaoTeste()}");
+Teste teste = new Teste();
+
+Console.WriteLine($"{teste[0]}");
