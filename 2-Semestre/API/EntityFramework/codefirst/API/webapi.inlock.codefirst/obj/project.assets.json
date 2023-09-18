@@ -3348,24 +3348,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\muril\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\47015003805\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\EntityFramework\\codefirst\\API\\webapi.inlock.codefirst\\webapi.inlock.codefirst.csproj",
+      "projectUniqueName": "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\API\\EntityFramework\\codefirst\\API\\webapi.inlock.codefirst\\webapi.inlock.codefirst.csproj",
       "projectName": "webapi.inlock.codefirst",
-      "projectPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\EntityFramework\\codefirst\\API\\webapi.inlock.codefirst\\webapi.inlock.codefirst.csproj",
-      "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\senai\\2-Semestre\\API\\EntityFramework\\codefirst\\API\\webapi.inlock.codefirst\\obj\\",
+      "projectPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\API\\EntityFramework\\codefirst\\API\\webapi.inlock.codefirst\\webapi.inlock.codefirst.csproj",
+      "packagesPath": "C:\\Users\\47015003805\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\API\\EntityFramework\\codefirst\\API\\webapi.inlock.codefirst\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\47015003805\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3373,7 +3368,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3452,7 +3446,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

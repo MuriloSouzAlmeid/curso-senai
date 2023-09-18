@@ -3,6 +3,7 @@ using webapi.inlock.codefirst.Domains;
 
 namespace webapi.inlock.codefirst.Contexts
 {
+    //Devemos primeiramente herdar da classe DbContext
     public class InLockContext : DbContext
     {
         /// <summary>

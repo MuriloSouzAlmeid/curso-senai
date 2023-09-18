@@ -10,8 +10,8 @@ restfull: uma API que segue todos os padrões rest se tornando a "melhor"
 
 json: formado da resposta {}
 ex: {					{
-	atributo/chave: valor			nomePessoa: Murilo,
-    }						idadePessoa: 17
+	atributo/chave: valor		      nomePessoa: Murilo,
+    }					      idadePessoa: 17
 					}
 
 array de respostas [{}]
@@ -67,7 +67,7 @@ Controller -> controla as requests, rotas e métodos Http que serão utilizados
 Recordação:
 Repository Pattern - Padrão repositório
 	Domain - Classes
-	Interface - Contrato/métodos
+	Interface - Contrato/métodos - Regras de negócios
 	Repository - Lógica/implementação dos métodos
 	Controller - Endpoints/rotas
 
