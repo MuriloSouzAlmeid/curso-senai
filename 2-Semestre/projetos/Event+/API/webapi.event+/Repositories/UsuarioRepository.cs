@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 using webapi.event_.Contexts;
 using webapi.event_.Domains;
@@ -15,6 +16,27 @@ namespace webapi.event_.Repositories
             ctx = new EventContext();
         }
 
+        public void Atualizar(Guid id, Usuario usuarioAtualizado)
+        {
+            try
+            {
+                Usuario usuarioBuscado = this.BuscarPorId(id);
+
+                usuarioBuscado.Nome = usuarioAtualizado.Nome;
+                usuarioBuscado.Email = usuarioAtualizado.Email;
+                usuarioBuscado.Senha = usuarioAtualizado.Senha;
+                usuarioBuscado.IdTipoUsuario = usuarioAtualizado.IdTipoUsuario;
+
+                ctx.Usuario.Update(usuarioBuscado);
+
+                ctx.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         public Usuario BuscarPorEmailESenha(string email, string senha)
         {
             try
@@ -27,6 +49,7 @@ namespace webapi.event_.Repositories
 
                     if (confere)
                     {
+                        usuarioBuscado.Senha = null;
                         return usuarioBuscado;
                     }
                 }
@@ -77,6 +100,22 @@ namespace webapi.event_.Repositories
                 novoUsuario.Senha = Criptografia.GerarHash(novoUsuario.Senha!);
 
                 ctx.Usuario.Add(novoUsuario);
+
+                ctx.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public void Deletar(Guid id)
+        {
+            try
+            {
+                Usuario usuarioBuscado = this.BuscarPorId(id);
+
+                ctx.Usuario.Remove(usuarioBuscado);
 
                 ctx.SaveChanges();
             }

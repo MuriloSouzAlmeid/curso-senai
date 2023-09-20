@@ -12,5 +12,8 @@ namespace webapi.event_.Domains
         [Column(TypeName = "VARCHAR(50)")]
         [Required(ErrorMessage = "O título do tipo de usuário é obrigatório")]
         public string? Titulo { get; set; }
+
+        //lista de usuários que possuem determinado tipo
+        public List<Usuario>? Usuarios { get; set; }
     }
 }

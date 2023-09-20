@@ -86,6 +86,10 @@ builder.Services.AddSwaggerGen(options =>
         }*/
     });
 
+    //Configura o Swagger para usar o arquivo XML gerado
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+
     //Configura para adicionar tokens de e autenticação e autorização nas requisições pelo swagger
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
     {
@@ -129,6 +133,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//Para atender à interface do usuário do Swagger na raiz do aplicativo - leva pra interface do swagger
+app.UseSwaggerUI(options =>
+{
+    //(https://localhost:<port>/)
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+    //Defina a propriedade RoutePrefix como uma cadeia de caracteres vazia
+    options.RoutePrefix = string.Empty;
+});
 
 app.UseHttpsRedirection();
 

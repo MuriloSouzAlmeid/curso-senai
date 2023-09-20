@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>webapi.event+</name>
+    </assembly>
+    <members>
+        <member name="M:webapi.event_.Controllers.TipoUsuarioController.GetAll">
+            <summary>
+            Rota para listar todos os Tipos de Usuário cadastrados
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.TipoUsuarioController.GetById(System.Guid)">
+            <summary>
+            Rota para buscar determinado tipo de usuário cadatrado pelo seu id
+            </summary>
+            <param name="id">Id do tipo de usuário a ser buscado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.TipoUsuarioController.Post(webapi.event_.Domains.TipoUsuario)">
+            <summary>
+            Rota para cadastrar um novo tipo de usuário
+            </summary>
+            <param name="tipoUsuario">Objeto contendo as informações do tipo de usuário
+            a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.TipoUsuarioController.Delete(System.Guid)">
+            <summary>
+            Rota para deletar determinado tipo de usuário pelo seu id
+            </summary>
+            <param name="id">Id do usuário a ser deletado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.TipoUsuarioController.Delete(System.Guid,webapi.event_.Domains.TipoUsuario)">
+            <summary>
+            Rota para atualizar determinado tipo de tipo de usuário pelo seu id
+            </summary>
+            <param name="id">Id dotipo de usuário a ser deletado</param>
+            <param name="tipoUsuarioAtualizado">Objeto contendo as informações atualizadas do objeto a ser atualiado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.UsuarioController.Post(webapi.event_.Domains.Usuario)">
+            <summary>
+            Método para cadastrar um novo usuário
+            </summary>
+            <param name="usuario">Objeto contendo as informações do usuário a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.UsuarioController.GetById(System.Guid)">
+            <summary>
+            Rota para buscar determinado usuário por seu id
+            </summary>
+            <param name="id">Id do usuário a ser buscado</param>
+            <returns></returns>
+        </member>
+        <member name="T:webapi.event_.Migrations.EventDB">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.EventDB.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.EventDB.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.EventDB.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

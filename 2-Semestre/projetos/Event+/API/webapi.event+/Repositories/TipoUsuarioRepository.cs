@@ -1,4 +1,5 @@
-﻿using webapi.event_.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using webapi.event_.Contexts;
 using webapi.event_.Domains;
 using webapi.event_.Interfaces;
 
@@ -11,14 +12,42 @@ namespace webapi.event_.Repositories
         {
             ctx = new EventContext();
         }
-        public void Atualizar(Guid id, TipoUsuario tipoUsuario)
+
+        public void Atualizar(Guid id, TipoUsuario tipoUsuarioAtualizado)
         {
-            throw new NotImplementedException();
+            try
+            {
+                TipoUsuario tipoUsuarioBuscado = this.BuscarPorId(id);
+
+                tipoUsuarioBuscado.Titulo = tipoUsuarioAtualizado.Titulo;
+
+                ctx.TipoUsuario.Update(tipoUsuarioBuscado);
+
+                ctx.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public TipoUsuario BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                TipoUsuario tipoUsuarioBuscado = ctx.TipoUsuario.Include(t => t.Usuarios).FirstOrDefault(t => t.IdTipoUsuario == id)!;
+
+                if (tipoUsuarioBuscado != null)
+                {
+                    return tipoUsuarioBuscado;
+                }
+
+                return null;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void Cadastrar(TipoUsuario tipoUsuario)
@@ -28,7 +57,8 @@ namespace webapi.event_.Repositories
                 ctx.TipoUsuario.Add(tipoUsuario);
 
                 ctx.SaveChanges();
-            }catch(Exception)
+            }
+            catch (Exception)
             {
                 throw;
             }
@@ -36,12 +66,32 @@ namespace webapi.event_.Repositories
 
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                TipoUsuario tipoUsuarioBuscado = this.BuscarPorId(id);
+
+                ctx.TipoUsuario.Remove(tipoUsuarioBuscado);
+
+                ctx.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public List<TipoUsuario> Listar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<TipoUsuario> listaDeTiposDeUsuarios = ctx.TipoUsuario.Include(t => t.Usuarios).ToList();
+
+                return listaDeTiposDeUsuarios;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }
