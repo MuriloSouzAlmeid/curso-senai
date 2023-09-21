@@ -49,7 +49,6 @@ namespace webapi.event_.Repositories
 
                     if (confere)
                     {
-                        usuarioBuscado.Senha = null;
                         return usuarioBuscado;
                     }
                 }

@@ -54,6 +54,21 @@
             <param name="id">Id do usuário a ser buscado</param>
             <returns></returns>
         </member>
+        <member name="M:webapi.event_.Controllers.UsuarioController.Delete(System.Guid)">
+            <summary>
+            Rota para deletar determinado usuário pelo seu id
+            </summary>
+            <param name="id">Id do usuário a ser deletado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.UsuarioController.Put(System.Guid,webapi.event_.Domains.Usuario)">
+            <summary>
+            Rota para atualizar determinado usuário pelo seu id
+            </summary>
+            <param name="id">Id do usuário a ser atualizado</param>
+            <param name="usuarioAtualizado">Objeto contendo as novas informações do usuário</param>
+            <returns></returns>
+        </member>
         <member name="T:webapi.event_.Migrations.EventDB">
             <inheritdoc />
         </member>
