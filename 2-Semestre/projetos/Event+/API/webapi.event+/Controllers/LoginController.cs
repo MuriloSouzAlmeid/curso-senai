@@ -21,6 +21,11 @@ namespace webapi.event_.Controllers
             _usuarioRepository = new UsuarioRepository();
         }
 
+        /// <summary>
+        /// Rota para logar determinado usuário e obter suas definições de autenticação e autorização
+        /// </summary>
+        /// <param name="informacoesLogin">Informações de Email e Senha para a verificação de Login</param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Login(LoginViewModel informacoesLogin)
         {

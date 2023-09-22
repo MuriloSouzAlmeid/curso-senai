@@ -19,7 +19,7 @@ namespace webapi.event_.Domains
 
         [Column(TypeName = "DATE")]
         [Required(ErrorMessage = "A data do evento é obrigatória")]
-        public DateTime DataEvento { get; set; }
+        public DateTime? DataEvento { get; set; }
 
 
 

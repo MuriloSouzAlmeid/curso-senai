@@ -4,6 +4,118 @@
         <name>webapi.event+</name>
     </assembly>
     <members>
+        <member name="M:webapi.event_.Controllers.EventoController.GetAll">
+            <summary>
+            Rota para listar todos os eventos cadastrados
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.EventoController.GetById(System.Guid)">
+            <summary>
+            Rota para Buscar determinado evento pelo seu id
+            </summary>
+            <param name="id">Id do evento a ser buscado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.EventoController.Post(webapi.event_.Domains.Evento)">
+            <summary>
+            Rota para cadastrar um novo evento
+            </summary>
+            <param name="novoEvento">Informações do evento a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.EventoController.Delete(System.Guid)">
+            <summary>
+            Rota para deletar determinado evento pelo seu id
+            </summary>
+            <param name="id">Id do evento a ser deletado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.EventoController.Put(System.Guid,webapi.event_.Domains.Evento)">
+            <summary>
+            Rota para atualizar determinado evento pelo seu id
+            </summary>
+            <param name="id">Id do evento a ser atualizado</param>
+            <param name="eventoAtualizado">Novas informações do evento em questão</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.InstituicaoController.GetAll">
+            <summary>
+            Rota para listar todas as instituições cadastradas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.InstituicaoController.GetById(System.Guid)">
+            <summary>
+            Rota para buscar determinada estituição pelo seu id
+            </summary>
+            <param name="id">Id do estúdio a ser buscado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.InstituicaoController.Post(webapi.event_.Domains.Instituicao)">
+            <summary>
+            Rota para cadastrar uma nova instituição
+            </summary>
+            <param name="instituicao">Informações da instituição que será cadastrada</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.InstituicaoController.Delete(System.Guid)">
+            <summary>
+            Rota para deletar determinada instituição pelo seu id
+            </summary>
+            <param name="id">Id da instituição a ser deletada</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.InstituicaoController.Put(System.Guid,webapi.event_.Domains.Instituicao)">
+            <summary>
+            Rota para atualizar determinada instituição
+            </summary>
+            <param name="id">Id da instituição a ser atualizada</param>
+            <param name="instituicao">Novas informações da instituição</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.LoginController.Login(webapi.event_.ViewModels.LoginViewModel)">
+            <summary>
+            Rota para logar determinado usuário e obter suas definições de autenticação e autorização
+            </summary>
+            <param name="informacoesLogin">Informações de Email e Senha para a verificação de Login</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.TipoEventoController.GetAll">
+            <summary>
+            Rota para listar todos os tipos de evento cadastrados
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.TipoEventoController.GetById(System.Guid)">
+            <summary>
+            Rota para buscar determinado tipo de evento pelo seu id
+            </summary>
+            <param name="id">Id do tipo de estúdio a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.TipoEventoController.Post(webapi.event_.Domains.TipoEvento)">
+            <summary>
+            Rota para cadastrar um novo tipo de evento
+            </summary>
+            <param name="novoTipo">Informações do novo tipo de evento a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.TipoEventoController.Delete(System.Guid)">
+            <summary>
+            Rota para deletar determinado tipo de evento pelo seu id
+            </summary>
+            <param name="id">Id do tipo de evento a ser deletado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.TipoEventoController.Put(System.Guid,webapi.event_.Domains.TipoEvento)">
+            <summary>
+            Rota para atualizar determinado tipo de evento pelo seu id
+            </summary>
+            <param name="id">Id do evento a ser atualizado</param>
+            <param name="tipoAtualizado">Novas informações do tipo de evento em questão</param>
+            <returns></returns>
+        </member>
         <member name="M:webapi.event_.Controllers.TipoUsuarioController.GetAll">
             <summary>
             Rota para listar todos os Tipos de Usuário cadastrados
@@ -42,7 +154,7 @@
         </member>
         <member name="M:webapi.event_.Controllers.UsuarioController.Post(webapi.event_.Domains.Usuario)">
             <summary>
-            Método para cadastrar um novo usuário
+            Rota para cadastrar um novo usuário
             </summary>
             <param name="usuario">Objeto contendo as informações do usuário a ser cadastrado</param>
             <returns></returns>

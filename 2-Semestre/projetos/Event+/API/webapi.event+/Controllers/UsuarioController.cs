@@ -20,7 +20,7 @@ namespace webapi.event_.Controllers
         }
 
         /// <summary>
-        /// Método para cadastrar um novo usuário
+        /// Rota para cadastrar um novo usuário
         /// </summary>
         /// <param name="usuario">Objeto contendo as informações do usuário a ser cadastrado</param>
         /// <returns></returns>

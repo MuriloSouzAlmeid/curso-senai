@@ -16,7 +16,13 @@ namespace webapi.event_.Repositories
         {
             try
             {
+                TipoEvento tipoBuscado = this.BuscarPorId(id);
 
+                tipoBuscado.Titulo = tipoEvento.Titulo;             
+
+                ctx.TipoEvento.Update(tipoBuscado);
+
+                ctx.SaveChanges();
             }
             catch (Exception)
             {
@@ -28,7 +34,14 @@ namespace webapi.event_.Repositories
         {
             try
             {
+                TipoEvento tipoBuscado = ctx.TipoEvento.FirstOrDefault(t => t.IdTipoEvento == id)!;
 
+                if(tipoBuscado != null)
+                {
+                    return tipoBuscado;
+                }
+
+                return null;
             }
             catch (Exception)
             {
@@ -40,7 +53,9 @@ namespace webapi.event_.Repositories
         {
             try
             {
+                ctx.TipoEvento.Add(tipoEvento);
 
+                ctx.SaveChanges();
             }
             catch (Exception)
             {
@@ -52,7 +67,11 @@ namespace webapi.event_.Repositories
         {
             try
             {
+                TipoEvento tipoBuscado = this.BuscarPorId(id);
 
+                ctx.TipoEvento.Remove(tipoBuscado);
+
+                ctx.SaveChanges();
             }
             catch (Exception)
             {
