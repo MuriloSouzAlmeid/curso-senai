@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\webapi.health.clinic.project.props" />
+</Project>
