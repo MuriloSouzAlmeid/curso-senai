@@ -36,11 +36,11 @@ namespace webapi.health.clinic.project.Migrations
                         .IsRequired()
                         .HasColumnType("VARCHAR(300)");
 
-                    b.Property<TimeSpan?>("HorarioAbertura")
+                    b.Property<DateTime?>("HorarioAbertura")
                         .IsRequired()
                         .HasColumnType("TIME");
 
-                    b.Property<TimeSpan?>("HorarioEncerramento")
+                    b.Property<DateTime?>("HorarioEncerramento")
                         .IsRequired()
                         .HasColumnType("TIME");
 

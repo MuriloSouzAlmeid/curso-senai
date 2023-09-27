@@ -4,6 +4,27 @@
         <name>webapi.health.clinic.project</name>
     </assembly>
     <members>
+        <member name="M:webapi.health.clinic.project.Controllers.TiposUsuarioController.GetById(System.Guid)">
+            <summary>
+            Rota para buscar determinado tipo de usuário pelo seu id
+            </summary>
+            <param name="id">Id do médico a ser buscado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.TiposUsuarioController.Post(webapi.health.clinic.project.Domains.TiposUsuario)">
+            <summary>
+            Rota para cadastrar um novo tipo de usuário
+            </summary>
+            <param name="novoTipo">Informações do novo tipo a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.TiposUsuarioController.Delete(System.Guid)">
+            <summary>
+            Rota para deletar determinado tipo de usuário
+            </summary>
+            <param name="id">Id do tipo de usuário a ser deletado</param>
+            <returns></returns>
+        </member>
         <member name="T:webapi.health.clinic.project.Migrations.HealthClinicBD">
             <inheritdoc />
         </member>
