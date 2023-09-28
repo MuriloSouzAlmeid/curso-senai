@@ -9,5 +9,7 @@ namespace webapi.health.clinic.project.Interfaces
         void Deletar(Guid id);
 
         TiposUsuario BuscarPorId(Guid id);
+
+        List<TiposUsuario> ListarTiposDeUsuario();
     }
 }

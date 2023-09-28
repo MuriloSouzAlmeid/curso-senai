@@ -17,27 +17,17 @@ namespace webapi.health.clinic.project.Controllers
             _tiposUsuarioRepository = new TiposUsuarioRepository();
         }
 
-        /// <summary>
-        /// Rota para buscar determinado tipo de usuário pelo seu id
-        /// </summary>
-        /// <param name="id">Id do médico a ser buscado</param>
-        /// <returns></returns>
-        [HttpGet("{id}")]
-        public IActionResult GetById(Guid id)
+        [HttpGet]
+        public IActionResult GetAll()
         {
             try
             {
-                TiposUsuario tipoBuscado = _tiposUsuarioRepository.BuscarPorId(id);
+                List<TiposUsuario> listaDeTiposDeUsuarios = _tiposUsuarioRepository.ListarTiposDeUsuario();
 
-                if(tipoBuscado == null)
-                {
-                    return NotFound("Não foi encontrado um tipo de usuário com o id informado");
-                }
-
-                return Ok(tipoBuscado);
-            }catch(Exception ex)
+                return Ok(listaDeTiposDeUsuarios);
+            }catch(Exception e)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(e.Message);
             }
         }
 
@@ -59,7 +49,7 @@ namespace webapi.health.clinic.project.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+         
         /// <summary>
         /// Rota para deletar determinado tipo de usuário
         /// </summary>

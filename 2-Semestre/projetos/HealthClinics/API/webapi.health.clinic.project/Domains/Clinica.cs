@@ -25,12 +25,13 @@ namespace webapi.health.clinic.project.Domains
         [Required(ErrorMessage = "O endereço fantasia da clínica é obrigatório")]
         public string? Endereco { get; set; }
 
-        [Column(TypeName = "DATETIME")]
+        [Column(TypeName = "TIME")]
         [Required(ErrorMessage = "O horário de abertura fantasia da clínica é obrigatório")]
-        public DateTime? HorarioAbertura { get; set; }
+        //TimeInly define que o tipo de dado será horário (apenas horário)
+        public TimeOnly HorarioAbertura { get; set; }
 
-        [Column(TypeName = "DATETIME")]
+        [Column(TypeName = "TIME")]
         [Required(ErrorMessage = "O horário de encerramento da clínica é obrigatório")]
-        public DateTime? HorarioEncerramento { get; set; }
+        public TimeOnly HorarioEncerramento { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using System.ComponentModel;
 using System.Reflection;
+using webapi.health.clinic.project.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +16,6 @@ builder.Services.AddControllers()
         options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
         // Ignora valores nulos ao fazer junções nas consultas
         options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
-        options.SerializerSettings.Converters.Add(new TimeSpanConverter());
     }
 );
 

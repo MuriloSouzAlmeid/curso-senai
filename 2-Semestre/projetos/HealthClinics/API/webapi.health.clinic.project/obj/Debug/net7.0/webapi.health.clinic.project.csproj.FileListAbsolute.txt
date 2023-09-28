@@ -82,3 +82,5 @@ C:\Users\47015003805\Desktop\curso-senai\2-Semestre\projetos\HealthClinics\API\w
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\projetos\HealthClinics\API\webapi.health.clinic.project\obj\Debug\net7.0\webapi.health.clinic.project.pdb
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\projetos\HealthClinics\API\webapi.health.clinic.project\obj\Debug\net7.0\webapi.health.clinic.project.genruntimeconfig.cache
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\projetos\HealthClinics\API\webapi.health.clinic.project\obj\Debug\net7.0\ref\webapi.health.clinic.project.dll
+C:\Users\47015003805\Desktop\curso-senai\2-Semestre\projetos\HealthClinics\API\webapi.health.clinic.project\bin\Debug\net7.0\EntityFrameworkCore.SqlServer.DateOnlyTimeOnly.dll
+C:\Users\47015003805\Desktop\curso-senai\2-Semestre\projetos\HealthClinics\API\webapi.health.clinic.project\obj\Debug\net7.0\EFCoreSqlServerDateOnlyTimeOnly.cs

@@ -1,4 +1,5 @@
-﻿using webapi.health.clinic.project.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using webapi.health.clinic.project.Contexts;
 using webapi.health.clinic.project.Domains;
 using webapi.health.clinic.project.Interfaces;
 
@@ -53,6 +54,20 @@ namespace webapi.health.clinic.project.Repositories
                 ctx.TiposUsuarios.Remove(tipoBuscado);
 
                 ctx.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public List<TiposUsuario> ListarTiposDeUsuario()
+        {
+            try
+            {
+                List<TiposUsuario> lista = ctx.TiposUsuarios.Include(t => t.Usuarios).ToList();
+
+                return lista;
             }
             catch (Exception)
             {

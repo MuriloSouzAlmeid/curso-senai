@@ -4,11 +4,32 @@
         <name>webapi.health.clinic.project</name>
     </assembly>
     <members>
-        <member name="M:webapi.health.clinic.project.Controllers.TiposUsuarioController.GetById(System.Guid)">
+        <member name="M:webapi.health.clinic.project.Controllers.ClinicaController.GetAll">
             <summary>
-            Rota para buscar determinado tipo de usuário pelo seu id
+            Rota para listar todas as clínicas cadastradas
             </summary>
-            <param name="id">Id do médico a ser buscado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ClinicaController.Post(webapi.health.clinic.project.Domains.Clinica)">
+            <summary>
+            Rota para cadastrar uma nova clínica
+            </summary>
+            <param name="novaClinica">informações da clínica a ser cadastrada</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ClinicaController.Delete(System.Guid)">
+            <summary>
+            Rota para deletar determinada clínica pelo seu id
+            </summary>
+            <param name="id">Id da clínica a ser deletada</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ClinicaController.Put(System.Guid,webapi.health.clinic.project.Domains.Clinica)">
+            <summary>
+            Rota para atualizar determinada clínica pelo seu id
+            </summary>
+            <param name="id">Id da clínica a ser atualizada</param>
+            <param name="clinicaAtualizada">Novas informações da clínica em questão</param>
             <returns></returns>
         </member>
         <member name="M:webapi.health.clinic.project.Controllers.TiposUsuarioController.Post(webapi.health.clinic.project.Domains.TiposUsuario)">

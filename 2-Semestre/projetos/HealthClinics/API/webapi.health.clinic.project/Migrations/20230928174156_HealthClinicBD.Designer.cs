@@ -12,7 +12,7 @@ using webapi.health.clinic.project.Contexts;
 namespace webapi.health.clinic.project.Migrations
 {
     [DbContext(typeof(HealthClinicContext))]
-    [Migration("20230927193358_HealthClinicBD")]
+    [Migration("20230928174156_HealthClinicBD")]
     partial class HealthClinicBD
     {
         /// <inheritdoc />
@@ -39,13 +39,13 @@ namespace webapi.health.clinic.project.Migrations
                         .IsRequired()
                         .HasColumnType("VARCHAR(300)");
 
-                    b.Property<DateTime?>("HorarioAbertura")
+                    b.Property<TimeSpan?>("HorarioAbertura")
                         .IsRequired()
-                        .HasColumnType("DATETIME");
+                        .HasColumnType("TIME");
 
-                    b.Property<DateTime?>("HorarioEncerramento")
+                    b.Property<TimeSpan?>("HorarioEncerramento")
                         .IsRequired()
-                        .HasColumnType("DATETIME");
+                        .HasColumnType("TIME");
 
                     b.Property<string>("NomeFantasia")
                         .IsRequired()

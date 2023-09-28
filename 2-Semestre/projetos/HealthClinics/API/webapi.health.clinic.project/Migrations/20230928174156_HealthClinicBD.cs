@@ -20,8 +20,8 @@ namespace webapi.health.clinic.project.Migrations
                     RazaoSocial = table.Column<string>(type: "VARCHAR(200)", nullable: false),
                     CNPJ = table.Column<string>(type: "CHAR(14)", nullable: false),
                     Endereco = table.Column<string>(type: "VARCHAR(300)", nullable: false),
-                    HorarioAbertura = table.Column<DateTime>(type: "TIME", nullable: false),
-                    HorarioEncerramento = table.Column<DateTime>(type: "TIME", nullable: false)
+                    HorarioAbertura = table.Column<TimeSpan>(type: "TIME", nullable: false),
+                    HorarioEncerramento = table.Column<TimeSpan>(type: "TIME", nullable: false)
                 },
                 constraints: table =>
                 {
