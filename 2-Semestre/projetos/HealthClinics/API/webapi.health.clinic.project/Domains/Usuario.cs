@@ -1,9 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace webapi.health.clinic.project.Domains
 {
     [Table(nameof(Usuario))]
+    [Index(nameof(Email), IsUnique = true)]
+    [Index(nameof(Telefone), IsUnique = true)]
     public class Usuario
     {
         [Key]
@@ -28,7 +31,7 @@ namespace webapi.health.clinic.project.Domains
 
         [Column(TypeName = "DATE")]
         [Required(ErrorMessage = "A data de nascimento do usuário é obrigatório")]
-        public DateTime DataNascimento { get; set; }
+        public DateOnly? DataNascimento { get; set; }
 
 
 

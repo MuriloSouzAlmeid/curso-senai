@@ -17,6 +17,10 @@ namespace webapi.health.clinic.project.Controllers
             _tiposUsuarioRepository = new TiposUsuarioRepository();
         }
 
+        /// <summary>
+        /// Rota para listar todos os tipos de usuários junto dos usuários com tal tipo
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult GetAll()
         {

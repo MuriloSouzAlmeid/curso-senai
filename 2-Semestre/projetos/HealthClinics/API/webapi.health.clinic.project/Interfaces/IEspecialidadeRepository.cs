@@ -9,5 +9,7 @@ namespace webapi.health.clinic.project.Interfaces
         void Atualizar(Guid id, Especialidade especialidadeAtualizada);
 
         Especialidade BuscarPorId(Guid id);
+
+        List<Especialidade> Listar();
     }
 }

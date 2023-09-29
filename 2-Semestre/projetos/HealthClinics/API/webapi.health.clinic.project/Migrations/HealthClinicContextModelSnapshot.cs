@@ -36,12 +36,10 @@ namespace webapi.health.clinic.project.Migrations
                         .IsRequired()
                         .HasColumnType("VARCHAR(300)");
 
-                    b.Property<TimeSpan?>("HorarioAbertura")
-                        .IsRequired()
+                    b.Property<TimeOnly>("HorarioAbertura")
                         .HasColumnType("TIME");
 
-                    b.Property<TimeSpan?>("HorarioEncerramento")
-                        .IsRequired()
+                    b.Property<TimeOnly>("HorarioEncerramento")
                         .HasColumnType("TIME");
 
                     b.Property<string>("NomeFantasia")
@@ -53,6 +51,12 @@ namespace webapi.health.clinic.project.Migrations
                         .HasColumnType("VARCHAR(200)");
 
                     b.HasKey("IdClinica");
+
+                    b.HasIndex("CNPJ")
+                        .IsUnique();
+
+                    b.HasIndex("RazaoSocial")
+                        .IsUnique();
 
                     b.ToTable("Clinica");
                 });
@@ -131,6 +135,9 @@ namespace webapi.health.clinic.project.Migrations
 
                     b.HasKey("IdEspecialidade");
 
+                    b.HasIndex("Titulo")
+                        .IsUnique();
+
                     b.ToTable("Especialidade");
                 });
 
@@ -159,6 +166,9 @@ namespace webapi.health.clinic.project.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("IdMedico");
+
+                    b.HasIndex("CRM")
+                        .IsUnique();
 
                     b.HasIndex("IdEspecialidade");
 
@@ -198,7 +208,13 @@ namespace webapi.health.clinic.project.Migrations
 
                     b.HasKey("IdPaciente");
 
+                    b.HasIndex("CPF")
+                        .IsUnique();
+
                     b.HasIndex("IdUsuario");
+
+                    b.HasIndex("RG")
+                        .IsUnique();
 
                     b.ToTable("Paciente");
                 });
@@ -237,6 +253,9 @@ namespace webapi.health.clinic.project.Migrations
 
                     b.HasKey("IdTipoUsuario");
 
+                    b.HasIndex("Titulo")
+                        .IsUnique();
+
                     b.ToTable("TiposUsuario");
                 });
 
@@ -246,7 +265,8 @@ namespace webapi.health.clinic.project.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("DataNascimento")
+                    b.Property<DateOnly?>("DataNascimento")
+                        .IsRequired()
                         .HasColumnType("DATE");
 
                     b.Property<string>("Email")
@@ -272,7 +292,13 @@ namespace webapi.health.clinic.project.Migrations
 
                     b.HasKey("IdUsuario");
 
+                    b.HasIndex("Email")
+                        .IsUnique();
+
                     b.HasIndex("IdTipoUsuario");
+
+                    b.HasIndex("Telefone")
+                        .IsUnique();
 
                     b.ToTable("Usuario");
                 });

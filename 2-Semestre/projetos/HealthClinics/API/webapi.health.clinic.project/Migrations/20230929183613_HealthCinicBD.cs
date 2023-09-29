@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace webapi.health.clinic.project.Migrations
 {
     /// <inheritdoc />
-    public partial class HealthClinicBD : Migration
+    public partial class HealthCinicBD : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,8 +20,8 @@ namespace webapi.health.clinic.project.Migrations
                     RazaoSocial = table.Column<string>(type: "VARCHAR(200)", nullable: false),
                     CNPJ = table.Column<string>(type: "CHAR(14)", nullable: false),
                     Endereco = table.Column<string>(type: "VARCHAR(300)", nullable: false),
-                    HorarioAbertura = table.Column<TimeSpan>(type: "TIME", nullable: false),
-                    HorarioEncerramento = table.Column<TimeSpan>(type: "TIME", nullable: false)
+                    HorarioAbertura = table.Column<TimeOnly>(type: "time", nullable: false),
+                    HorarioEncerramento = table.Column<TimeOnly>(type: "time", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -61,7 +61,7 @@ namespace webapi.health.clinic.project.Migrations
                     Email = table.Column<string>(type: "VARCHAR(100)", nullable: false),
                     Senha = table.Column<string>(type: "CHAR(60)", maxLength: 60, nullable: false),
                     Telefone = table.Column<string>(type: "VARCHAR(20)", nullable: false),
-                    DataNascimento = table.Column<DateTime>(type: "DATE", nullable: false),
+                    DataNascimento = table.Column<DateOnly>(type: "date", nullable: false),
                     IdTipoUsuario = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
@@ -198,6 +198,18 @@ namespace webapi.health.clinic.project.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Clinica_CNPJ",
+                table: "Clinica",
+                column: "CNPJ",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Clinica_RazaoSocial",
+                table: "Clinica",
+                column: "RazaoSocial",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_ComentarioConsulta_IdConsulta",
                 table: "ComentarioConsulta",
                 column: "IdConsulta");
@@ -218,6 +230,18 @@ namespace webapi.health.clinic.project.Migrations
                 column: "IdPaciente");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Especialidade_Titulo",
+                table: "Especialidade",
+                column: "Titulo",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Medico_CRM",
+                table: "Medico",
+                column: "CRM",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Medico_IdEspecialidade",
                 table: "Medico",
                 column: "IdEspecialidade");
@@ -228,9 +252,21 @@ namespace webapi.health.clinic.project.Migrations
                 column: "IdUsuario");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Paciente_CPF",
+                table: "Paciente",
+                column: "CPF",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Paciente_IdUsuario",
                 table: "Paciente",
                 column: "IdUsuario");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Paciente_RG",
+                table: "Paciente",
+                column: "RG",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProntuarioConsulta_IdConsulta",
@@ -239,9 +275,27 @@ namespace webapi.health.clinic.project.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_TiposUsuario_Titulo",
+                table: "TiposUsuario",
+                column: "Titulo",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Usuario_Email",
+                table: "Usuario",
+                column: "Email",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Usuario_IdTipoUsuario",
                 table: "Usuario",
                 column: "IdTipoUsuario");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Usuario_Telefone",
+                table: "Usuario",
+                column: "Telefone",
+                unique: true);
         }
 
         /// <inheritdoc />

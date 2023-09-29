@@ -32,6 +32,12 @@
             <param name="clinicaAtualizada">Novas informações da clínica em questão</param>
             <returns></returns>
         </member>
+        <member name="M:webapi.health.clinic.project.Controllers.TiposUsuarioController.GetAll">
+            <summary>
+            Rota para listar todos os tipos de usuários junto dos usuários com tal tipo
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:webapi.health.clinic.project.Controllers.TiposUsuarioController.Post(webapi.health.clinic.project.Domains.TiposUsuario)">
             <summary>
             Rota para cadastrar um novo tipo de usuário
@@ -46,16 +52,16 @@
             <param name="id">Id do tipo de usuário a ser deletado</param>
             <returns></returns>
         </member>
-        <member name="T:webapi.health.clinic.project.Migrations.HealthClinicBD">
+        <member name="T:webapi.health.clinic.project.Migrations.HealthCinicBD">
             <inheritdoc />
         </member>
-        <member name="M:webapi.health.clinic.project.Migrations.HealthClinicBD.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:webapi.health.clinic.project.Migrations.HealthCinicBD.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:webapi.health.clinic.project.Migrations.HealthClinicBD.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:webapi.health.clinic.project.Migrations.HealthCinicBD.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:webapi.health.clinic.project.Migrations.HealthClinicBD.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:webapi.health.clinic.project.Migrations.HealthCinicBD.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>
