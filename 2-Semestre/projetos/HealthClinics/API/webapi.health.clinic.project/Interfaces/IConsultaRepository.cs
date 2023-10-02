@@ -12,7 +12,7 @@ namespace webapi.health.clinic.project.Interfaces
 
         Consulta BuscarPorId(Guid id);
 
-        Consulta BuscarMinhas(Guid id);
+        List<Consulta> BuscarMinhas(Guid id);
 
         List<Consulta> ListarTodas();
     }
