@@ -40,7 +40,7 @@ namespace webapi.health.clinic.project.Controllers
         /// </summary>
         /// <param name="id">Id do usuário associado à consulta</param>
         /// <returns></returns>
-        [HttpGet("ListarMinhas")]
+        [HttpGet("ListarMinhas/{id}")]
         public IActionResult GetByUser(Guid id)
         {
             try

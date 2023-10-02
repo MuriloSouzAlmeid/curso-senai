@@ -16,7 +16,7 @@ SELECT * FROM Especialidade;
 INSERT INTO Clinica 
 	(NomeFantasia,RazaoSocial,CNPJ,EnderecoClinica,HorarioInicio,HorarioEncerramento)
 VALUES 
-	('Health Clinic','Health Clinic - Clínica de saúde LTDA','65793057738022','Rua dos Bobos, n0 - SP','07:00:00','21:30:00');
+	('Health Clinic','Health Clinic - Clínica de saúde LTDA','65793057738022','Rua dos Bobos, n0 - SP','07:00:00','22:30:00');
 SELECT * FROM Clinica;
 
 INSERT INTO Comentario 
@@ -35,11 +35,11 @@ SELECT * FROM Situacao;
 INSERT INTO Usuario 
 	(IdTipoDeUsuario,NomeUsuario,EmailUsuario,SenhaUsuario,TelefoneUsuario,DataNascUsuario)
 VALUES
-	(1,'Murilo Souza','murilo.souza@email.com','Murilo12$','11995135732','12-11-1999'),
-	(2,'Leonardo Xavier','leonardo.xavier@email.com','Leo123','11974829477','23-05-1986'),
-	(3,'João Lipporoni','joao.lipporoni@email.com','Joao456','11955368294','17-07-1992'),
-	(3,'Arthur lins','arthur.lins@email.com','Arthur123','11965489366','05-12-1982'),
-	(2,'Enzo Carvalho','enzo.carvalho@email.com','Enzo123','11947299471','14-10-1973');
+	(1,'Murilo Souza Almeida','murilo.souza@email.com','Murilo12$','11995135732','12-11-1999'),
+	(2,'Leonardo Christian Oliveira Xavier','leonardo.xavier@email.com','Leo123','11974829477','23-05-1986'),
+	(3,'João Pedro Lipporoni','joao.lipporoni@email.com','Joao456','11955368294','17-07-1992'),
+	(3,'Arthur lins Belarmino','arthur.lins@email.com','Arthur123','11965489366','05-12-1982'),
+	(2,'Laura Tabarelli Capossi','laura.tabarelli@email.com','Laura123','11942187901','14-10-1973');
 SELECT * FROM Usuario;
 
 INSERT INTO Paciente 

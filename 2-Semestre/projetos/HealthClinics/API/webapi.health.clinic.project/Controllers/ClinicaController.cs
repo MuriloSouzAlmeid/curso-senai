@@ -101,7 +101,7 @@ namespace webapi.health.clinic.project.Controllers
 
                 _clinicaRepository.Atualizar(id, clinicaAtualizada);
 
-                return Ok("Clínica deletada com sucesso");
+                return Ok("Clínica atualizada com sucesso");
             }
             catch (Exception ex)
             {
