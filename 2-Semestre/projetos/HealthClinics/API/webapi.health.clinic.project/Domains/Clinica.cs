@@ -30,7 +30,7 @@ namespace webapi.health.clinic.project.Domains
 
         [Column(TypeName = "TIME")]
         [Required(ErrorMessage = "O horário de abertura fantasia da clínica é obrigatório")]
-        //TimeInly define que o tipo de dado será horário (apenas horário)
+        //TimeOnly define que o tipo de dado será horário (apenas horário)
         public TimeOnly HorarioAbertura { get; set; }
 
         [Column(TypeName = "TIME")]

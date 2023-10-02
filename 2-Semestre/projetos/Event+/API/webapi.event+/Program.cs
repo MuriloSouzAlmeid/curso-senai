@@ -100,7 +100,7 @@ builder.Services.AddSwaggerGen(options =>
         In = ParameterLocation.Header,
 
         //Define como o valor do token será passado pelo swagger
-        Description = "Velue: Bearer TokenJWT"
+        Description = "Value: Bearer TokenJWT"
     });
 
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
