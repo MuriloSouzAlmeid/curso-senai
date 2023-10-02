@@ -121,7 +121,7 @@ namespace webapi.event_.Repositories
         {
             try
             {
-                throw;
+                
             }
             catch (Exception)
             {

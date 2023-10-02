@@ -31,7 +31,7 @@ namespace webapi.health.clinic.project.Domains
 
         [Column(TypeName = "DATE")]
         [Required(ErrorMessage = "A data de nascimento do usuário é obrigatório")]
-        public DateOnly? DataNascimento { get; set; }
+        public DateTime? DataNascimento { get; set; }
 
 
 

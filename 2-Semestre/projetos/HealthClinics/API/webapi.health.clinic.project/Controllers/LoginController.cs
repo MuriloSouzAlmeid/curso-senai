@@ -42,6 +42,7 @@ namespace webapi.health.clinic.project.Controllers
                 {
                     new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
                     new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email),
+                    new Claim(JwtRegisteredClaimNames.Name, usuarioBuscado.Nome),
                     new Claim(ClaimTypes.Role, usuarioBuscado.TipoUsuario.Titulo.ToString())
                 };
 

@@ -32,6 +32,55 @@
             <param name="clinicaAtualizada">Novas informações da clínica em questão</param>
             <returns></returns>
         </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ComentarioConsultaController.Post(webapi.health.clinic.project.Domains.ComentarioConsulta)">
+            <summary>
+            Rota para cadastrar um novo comentário para uma consulta
+            </summary>
+            <param name="novoComentario">Informações do comentário a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ComentarioConsultaController.Delete(System.Guid)">
+            <summary>
+            Rota para deletar um comentário cadastrado
+            </summary>
+            <param name="id">Id do comentário a ser deletado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ConsultaController.GetAll">
+            <summary>
+            Rota para listar todas as consultas cadastradas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ConsultaController.GetByUser(System.Guid)">
+            <summary>
+            Rota para listar as consultas associadas a um determinado usuário pelo seu id
+            </summary>
+            <param name="id">Id do usuário associado à consulta</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ConsultaController.Post(webapi.health.clinic.project.Domains.Consulta)">
+            <summary>
+            Rota para agendar uma nova consulta
+            </summary>
+            <param name="novaConsulta">Informações da consulta a ser agendada</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ConsultaController.Delete(System.Guid)">
+            <summary>
+            Rota para cancelar determinada consulta agendada pelo seu id
+            </summary>
+            <param name="id">id da consulta a ser cancelada</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ConsultaController.Put(System.Guid,webapi.health.clinic.project.Domains.Consulta)">
+            <summary>
+            Rota para atualizar os dados de uma consulta agendada pelo seu id
+            </summary>
+            <param name="id">Id da consulta a ser atualizada</param>
+            <param name="consultaAtualizada">Novas informações da consulta em questão</param>
+            <returns></returns>
+        </member>
         <member name="M:webapi.health.clinic.project.Controllers.EspecialidadeController.GetAll">
             <summary>
             Rota para listar todas as especialidades cadastradas assim como os médicos que as possuem
@@ -53,6 +102,13 @@
             <param name="especialidadeAtualizada">Novas informações da especialidade em questão</param>
             <returns></returns>
         </member>
+        <member name="M:webapi.health.clinic.project.Controllers.LoginController.Login(webapi.health.clinic.project.ViewModels.LoginViewModel)">
+            <summary>
+            Rota para realizar o Login de um usuário
+            </summary>
+            <param name="informacoesLogin"></param>
+            <returns></returns>
+        </member>
         <member name="M:webapi.health.clinic.project.Controllers.MedicoController.GetAll">
             <summary>
             Rota para listar todos os médicos cdstrados
@@ -72,6 +128,42 @@
             </summary>
             <param name="id">Id do médico a ser atualizado</param>
             <param name="medicoAtualizado">Novas informações do médico em questão</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.PacienteController.GetAll">
+            <summary>
+            Roota para listar todos os pacientes cadastrados
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.PacienteController.Post(webapi.health.clinic.project.Domains.Paciente)">
+            <summary>
+            Rota para cadastrar um novo paciente
+            </summary>
+            <param name="novoPaciente">Informeções do paciente a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.PacienteController.Put(System.Guid,webapi.health.clinic.project.Domains.Paciente)">
+            <summary>
+            Rota para atualizar determinado paciente pelo seu id
+            </summary>
+            <param name="id">Id do paciente a ser atualizado</param>
+            <param name="pacienteAtualizado">Novas informações do paciente</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ProntuarioConsultaController.Post(webapi.health.clinic.project.Domains.ProntuarioConsulta)">
+            <summary>
+            Rota para cadastrar um prontuário para uma consulta
+            </summary>
+            <param name="novoProntuario">Informações do prontuário</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.health.clinic.project.Controllers.ProntuarioConsultaController.Put(System.Guid,webapi.health.clinic.project.Domains.ProntuarioConsulta)">
+            <summary>
+            Rota para atualizar um prontuário de uma consulta
+            </summary>
+            <param name="id">Id do prontuário a ser atualizado</param>
+            <param name="prontuarioAtualizado">Novas informações do prontuário a ser atualizado</param>
             <returns></returns>
         </member>
         <member name="M:webapi.health.clinic.project.Controllers.TiposUsuarioController.GetAll">

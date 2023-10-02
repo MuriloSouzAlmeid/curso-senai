@@ -41,16 +41,16 @@ builder.Services.AddAuthentication(options =>
         ValidateLifetime = true,
 
         //Forma de criptografia e a validação da chave de autenticação
-        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("projeto-webapi-evnt+-chave-autenticacao")),
+        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("projeto-health-clinic-webapi-chave-autenticacao")),
 
         //Valida o tempo de expiração do token
         ClockSkew = TimeSpan.FromMinutes(20),
 
         //De onde está vindo (qual o issure)
-        ValidIssuer = "webapi.event+",
+        ValidIssuer = "webapi.health.clinic.project",
 
         //Para onde está indo (qual o audiece)
-        ValidAudience = "webapi.event+"
+        ValidAudience = "webapi.health.clinic.project"
     };
 });
 
@@ -101,7 +101,7 @@ builder.Services.AddSwaggerGen(options =>
         In = ParameterLocation.Header,
 
         //Define como o valor do token será passado pelo swagger
-        Description = "Velue: Bearer TokenJWT"
+        Description = "Value: Bearer TokenJWT"
     });
 
     options.AddSecurityRequirement(new OpenApiSecurityRequirement

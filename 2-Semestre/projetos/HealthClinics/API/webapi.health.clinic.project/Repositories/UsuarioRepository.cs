@@ -39,14 +39,14 @@ namespace webapi.health.clinic.project.Repositories
         {
             try
             {
-                Usuario usuarioBUscado = ctx.Usuario.Include(u => u.TipoUsuario).FirstOrDefault(u => u.IdTipoUsuario == id)!;
+                Usuario usuarioBuscado = ctx.Usuario.Include(u => u.TipoUsuario).FirstOrDefault(u => u.IdUsuario == id)!;
 
-                if(usuarioBUscado == null)
+                if(usuarioBuscado == null)
                 {
                     return null;
                 }
 
-                return usuarioBUscado;
+                return usuarioBuscado;
             }
             catch (Exception)
             {
