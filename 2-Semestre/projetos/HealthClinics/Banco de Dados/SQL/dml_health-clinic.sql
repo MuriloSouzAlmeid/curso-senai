@@ -35,11 +35,11 @@ SELECT * FROM Situacao;
 INSERT INTO Usuario 
 	(IdTipoDeUsuario,NomeUsuario,EmailUsuario,SenhaUsuario,TelefoneUsuario,DataNascUsuario)
 VALUES
-	(1,'Murilo Souza Almeida','murilo.souza@email.com','Murilo12$','11995135732','12-11-1999'),
-	(2,'Leonardo Christian Oliveira Xavier','leonardo.xavier@email.com','Leo123','11974829477','23-05-1986'),
-	(3,'João Pedro Lipporoni','joao.lipporoni@email.com','Joao456','11955368294','17-07-1992'),
-	(3,'Arthur lins Belarmino','arthur.lins@email.com','Arthur123','11965489366','05-12-1982'),
-	(2,'Laura Tabarelli Capossi','laura.tabarelli@email.com','Laura123','11942187901','14-10-1973');
+	(1,'Murilo Souza Almeida','murilo.souza@email.com','Murilo12$','11995135732','1999-11-12'),
+	(2,'Leonardo Christian Oliveira Xavier','leonardo.xavier@email.com','Leo123','11974829477','1986-05-23'),
+	(3,'João Pedro Lipporoni','joao.lipporoni@email.com','Joao456','11955368294','1992-07-17'),
+	(3,'Arthur lins Belarmino','arthur.lins@email.com','Arthur123','11965489366','1982-12-05'),
+	(2,'Laura Tabarelli Capossi','laura.tabarelli@email.com','Laura123','11942187901','1973-10-14');
 SELECT * FROM Usuario;
 
 INSERT INTO Paciente 

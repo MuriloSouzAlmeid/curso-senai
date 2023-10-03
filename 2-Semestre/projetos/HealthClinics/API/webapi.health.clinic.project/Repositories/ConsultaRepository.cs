@@ -38,7 +38,7 @@ namespace webapi.health.clinic.project.Repositories
         {
             try
             {
-                return ctx.Consulta.Include(c => c.Clinica).Include(c => c.Paciente).ThenInclude(p => p.Usuario).Include(c => c.Medico).Where(c => c.IdPaciente == id || c.IdMedico == id).ToList();
+                return ctx.Consulta.Include(c => c.Prontuario).Include(c => c.Paciente).Include(c => c.Medico).Include(c => c.Comentarios).Where(c => (c.Paciente.IdUsuario == id) || (c.Medico.IdUsuario == id)).ToList();
             }
             catch (Exception)
             {
@@ -99,7 +99,7 @@ namespace webapi.health.clinic.project.Repositories
         {
             try
             {
-                return ctx.Consulta.Include(c => c.Clinica).Include(c => c.Paciente).ThenInclude(p => p.Usuario).Include(c => c.Medico).ToList();
+                return ctx.Consulta.Include(c => c.Prontuario).Include(c => c.Paciente).Include(c => c.Medico).Include(c => c.Comentarios).ToList();
             }
             catch (Exception)
             {

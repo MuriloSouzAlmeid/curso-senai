@@ -23,6 +23,7 @@ namespace webapi.health.clinic.project.Repositories
 
                 medicoBuscado.CRM = medicoAtualizado.CRM;
                 medicoBuscado.EstadoCRM = medicoAtualizado.EstadoCRM;
+                medicoBuscado.IdUsuario = medicoAtualizado.IdUsuario;
                 medicoBuscado.IdEspecialidade = medicoAtualizado.IdEspecialidade;
 
                 ctx.Medico.Update(medicoBuscado);

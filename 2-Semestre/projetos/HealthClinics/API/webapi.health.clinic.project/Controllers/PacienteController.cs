@@ -70,6 +70,8 @@ namespace webapi.health.clinic.project.Controllers
 
                 if(PacienteBusado != null)
                 {
+                    _pacienteRepository.Atualizar(id, pacienteAtualizado);
+
                     return Ok("Usuario atualizado com sucesso");
                 }
 

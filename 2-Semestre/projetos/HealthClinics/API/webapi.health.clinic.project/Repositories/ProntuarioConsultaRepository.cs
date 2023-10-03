@@ -20,6 +20,10 @@ namespace webapi.health.clinic.project.Repositories
                 ProntuarioConsulta prontuarioBuscado = this.BuscarPorId(id);
 
                 prontuarioBuscado.Descricao = prontuarioAtualizado.Descricao;
+
+                ctx.ProntuarioConsulta.Update(prontuarioBuscado);
+
+                ctx.SaveChanges();
             }
             catch (Exception)
             {

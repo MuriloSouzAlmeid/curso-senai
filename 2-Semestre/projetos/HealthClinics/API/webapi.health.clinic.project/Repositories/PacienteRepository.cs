@@ -23,6 +23,7 @@ namespace webapi.health.clinic.project.Repositories
                 pacienteBuscado.CEP = PacienteAtualizado.CEP;
                 pacienteBuscado.Endereco = PacienteAtualizado.Endereco;
                 pacienteBuscado.RG = PacienteAtualizado.RG;
+                pacienteBuscado.IdUsuario = PacienteAtualizado.IdUsuario;
 
                 ctx.Paciente.Update(pacienteBuscado);
 
@@ -38,7 +39,7 @@ namespace webapi.health.clinic.project.Repositories
         {
             try
             {
-                Paciente pacienteBuscado = ctx.Paciente.Include(p => p.Usuario).FirstOrDefault(p => p.IdPaciente == id)!;
+                Paciente pacienteBuscado = ctx.Paciente.FirstOrDefault(p => p.IdPaciente == id)!;
 
                 if(pacienteBuscado !=  null)
                 {
