@@ -15,15 +15,15 @@ namespace webapi.event_.Domains
 
 
         //Referência à tabela Usuario
-        [Required(ErrorMessage = "O id so usuário é obrigatório")]
-        public Guid IdUsuario { get; set; }
+        [Required(ErrorMessage = "O id do usuário é obrigatório")]
+        public Guid? IdUsuario { get; set; }
 
         [ForeignKey(nameof(IdUsuario))]
         public Usuario? Usuario { get; set; }
 
         //Referência à tabela Evento
         [Required(ErrorMessage = "O id do evento é obrigatório")]
-        public Guid IdEvento { get; set; }
+        public Guid? IdEvento { get; set; }
 
         [ForeignKey(nameof(IdEvento))]
         public Evento? Evento { get; set; }

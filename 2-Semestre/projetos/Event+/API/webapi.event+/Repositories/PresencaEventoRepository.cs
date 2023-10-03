@@ -1,4 +1,5 @@
-﻿using webapi.event_.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using webapi.event_.Contexts;
 using webapi.event_.Domains;
 using webapi.event_.Interfaces;
 
@@ -16,7 +17,15 @@ namespace webapi.event_.Repositories
         {
             try
             {
+                PresencaEvento presencaBuscada = this.BuscarPorId(id);
 
+                presencaBuscada.Situacao = presencaEvento.Situacao;
+                presencaBuscada.IdEvento = presencaEvento.IdEvento;
+                presencaBuscada.IdUsuario = presencaEvento.IdUsuario;
+
+                ctx.PresencaEvento.Update(presencaBuscada);
+
+                ctx.SaveChanges();
             }
             catch (Exception)
             {
@@ -28,25 +37,7 @@ namespace webapi.event_.Repositories
         {
             try
             {
-                PresencaEvento presencaBuscada = ctx.PresencaEvento
-                    .Select(pe => new PresencaEvento()
-                    {
-                        IdPresencaEvento = pe.IdPresencaEvento,
-                        Situacao = pe.Situacao,
-                        IdUsuario = pe.IdUsuario,
-                        IdEvento = pe.IdEvento,
-
-                        Usuario = new Usuario()
-                        {
-                            IdUsuario = pe.IdUsuario
-                        },
-
-                        Evento = new Evento()
-                        {
-                            IdEvento = pe.IdEvento
-                        }
-
-                    }).FirstOrDefault(pe => pe.IdPresencaEvento == id)!;
+                PresencaEvento presencaBuscada = ctx.PresencaEvento.Include(pe => pe.Evento).Include(pe => pe.Usuario).FirstOrDefault(pe => pe.IdPresencaEvento == id)!;
 
                 if(presencaBuscada != null)
                 {
@@ -65,7 +56,11 @@ namespace webapi.event_.Repositories
         {
             try
             {
+                PresencaEvento presencaBuscada = this.BuscarPorId(id);
 
+                ctx.PresencaEvento.Remove(presencaBuscada);
+
+                ctx.SaveChanges();
             }
             catch (Exception)
             {
@@ -77,7 +72,9 @@ namespace webapi.event_.Repositories
         {
             try
             {
+                ctx.PresencaEvento.Add(inscricao);
 
+                ctx.SaveChanges();
             }
             catch (Exception)
             {
@@ -89,25 +86,7 @@ namespace webapi.event_.Repositories
         {
             try
             {
-                List<PresencaEvento> listaDePresencas = ctx.PresencaEvento
-                    .Select(pe => new PresencaEvento()
-                    {
-                        IdPresencaEvento = pe.IdPresencaEvento,
-                        Situacao = pe.Situacao,
-                        IdUsuario = pe.IdUsuario,
-                        IdEvento = pe.IdEvento,
-
-                        Usuario = new Usuario()
-                        {
-                            IdUsuario = pe.IdUsuario
-                        },
-
-                        Evento = new Evento()
-                        {
-                            IdEvento= pe.IdEvento
-                        }
-
-                    }).ToList();
+                List<PresencaEvento> listaDePresencas = ctx.PresencaEvento.Include(pe => pe.Evento).Include(pe => pe.Usuario).ToList();
 
                 return listaDePresencas;
             }
@@ -121,7 +100,15 @@ namespace webapi.event_.Repositories
         {
             try
             {
-                
+                List<PresencaEvento> listaMinhas = ctx.PresencaEvento.Include(pe => pe.Evento).Include(pe => pe.Usuario)
+                    .Where(pe => pe.IdUsuario == id).ToList()!;
+
+                if (listaMinhas != null)
+                {
+                    return listaMinhas;
+                }
+
+                return null;
             }
             catch (Exception)
             {

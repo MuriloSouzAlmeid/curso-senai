@@ -24,18 +24,6 @@ namespace webapi.event_.Repositories
                 eventoBuscado.DataEvento = eventoAtualizado.DataEvento;
                 eventoBuscado.IdTipoEvento = eventoAtualizado.IdTipoEvento;
                 eventoBuscado.IdInstituicao = eventoAtualizado.IdInstituicao;
-                eventoBuscado.TipoEvento = new TipoEvento() 
-                {
-                    IdTipoEvento = eventoAtualizado.IdTipoEvento,
-                    Titulo = eventoAtualizado.TipoEvento.Titulo
-                };
-                eventoBuscado.Instituicao = new Instituicao()
-                {
-                    IdInstituicao = eventoAtualizado.IdInstituicao,
-                    CNPJ = eventoAtualizado.Instituicao.CNPJ,
-                    Endereco = eventoAtualizado.Instituicao.Endereco,
-                    NomeFantasia = eventoAtualizado.Instituicao.NomeFantasia
-                };
 
                 ctx.Evento.Update(eventoBuscado);
 

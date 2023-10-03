@@ -4,6 +4,33 @@
         <name>webapi.event+</name>
     </assembly>
     <members>
+        <member name="M:webapi.event_.Controllers.ComentarioEventoController.GetAll">
+            <summary>
+            Rota para listar todos os comentários cadastrados
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.ComentarioEventoController.GetById(System.Guid)">
+            <summary>
+            Rota para buscar determinado comentário pelo seu id
+            </summary>
+            <param name="id">Id do comentário a ser buscado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.ComentarioEventoController.Post(webapi.event_.Domains.ComentarioEvento)">
+            <summary>
+            Rota para cadastrar um novo comentário
+            </summary>
+            <param name="novoComentario">Informações do comentário a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.ComentarioEventoController.Delete(System.Guid)">
+            <summary>
+            Rota para deletar determinado comentário pelo seu id
+            </summary>
+            <param name="id">Id do comentário a ser deletado</param>
+            <returns></returns>
+        </member>
         <member name="M:webapi.event_.Controllers.EventoController.GetAll">
             <summary>
             Rota para listar todos os eventos cadastrados
@@ -79,6 +106,48 @@
             Rota para logar determinado usuário e obter suas definições de autenticação e autorização
             </summary>
             <param name="informacoesLogin">Informações de Email e Senha para a verificação de Login</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.PresencaEventoController.GetAll">
+            <summary>
+            Rota para listar todas as inscrições em eventos cadastradas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.PresencaEventoController.GetById(System.Guid)">
+            <summary>
+            Rota buscar determinada inscrição em algum evento pelo seu id
+            </summary>
+            <param name="id">Id do evento a ser buscado</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.PresencaEventoController.GetByUser(System.Guid)">
+            <summary>
+            Rota para listar todas as inscrições associadas a determinado aluno pelo seu id
+            </summary>
+            <param name="id">Id do aluno associado às inscrições</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.PresencaEventoController.Post(webapi.event_.Domains.PresencaEvento)">
+            <summary>
+            Rota para realizar uma inscrição de um aluno em um evento
+            </summary>
+            <param name="novaPresenca">Informações do aluno, do evento e da situação da inscrição para o cadastro</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.PresencaEventoController.Delete(System.Guid)">
+            <summary>
+            Rota para cancelar determinada inscrição de um aluno em um evento pelo id da inscrição
+            </summary>
+            <param name="id">Id da inscrição a ser cancelada</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.Controllers.PresencaEventoController.Put(System.Guid,webapi.event_.Domains.PresencaEvento)">
+            <summary>
+            Rota para atualizar as iformações de determinada inscrição pelo seu id
+            </summary>
+            <param name="id">Id da inscrição a ser atualizada</param>
+            <param name="presencaAtualizada">Informaações atualizadas da inscrição</param>
             <returns></returns>
         </member>
         <member name="M:webapi.event_.Controllers.TipoEventoController.GetAll">
