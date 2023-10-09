@@ -1,0 +1,109 @@
+Curso Excel Básico:
+
+Definição: o Excel é um editor de planilhas eletrônicas utilizado sobretudo para o desenvolvimento de cálculos simples e complexos
+
+Aplicações: controles de despesas e receitas, controle de estoque, folhas de pagamentos de funcionários, criação de bancos de dados, etc.
+
+No layout inicial da aplicação temos diversos componentes para serem trabalhados sendo
+    -Superior	
+        -Barra de Título
+	-Barra de Menu
+	-Barra de Ferramentas de acesso rápido (salvar, desfazer e refazer)
+	-Barra de Controles de janela (fechar, maximizar e minimizar)
+    -Central
+	-Barra de Ferramentas do menu
+	-Área de Edição
+    -Inferior
+	-Barra de Planilhas na pasta
+
+Menu e suas ferramentas -> Faixas de opções (Excel 2016)
+-O menu é separado por guias: cada guia traz um kit de ferramentas específicas para cada situação.
+
+    -Arquivo: Ferramentas relacionadas ao arquivo 
+	->Novo (criar uma nova pasta de planilhas)
+	->Abrir (abrir uma pasta de planilhas salva)
+	->Salvar (salvar as modificações realizadas na mesma pasta de planilhas)
+	->Salvar Como (salvar uma cópia com as modificações realizadas em uma pasta de planilhas diferentre)
+	->Imprimir (imprimir as planilhas de uma pasta)
+	->Fechar (fechar o arquivo de uma pasta de planilhas
+
+    -Página Inicial: Resumo das opções de formatação
+	->Fonte
+	->Negrito
+	->Bordas
+	->Cor de Preenchimento
+	->Alinhamento
+	->Formato de Números
+	->Estilos de Tabela
+	->Algumas das principais ferramentas (Soma, Classificar e Filtrar)
+
+    -Inserir: objetos que podemos inserir em uma planilha
+	->Imagens
+	->Formas
+	->SmartArt
+	->Gráficos
+	->Entre outros
+
+    -Layout de Página: formatar a impressão das planilhas
+	->Margem do Papel
+	->Orientação (retrato ou paisagem)
+	->Quantidade de Páginas
+	->Dimensões de Tamanho (largura e altura)
+	->Entre Outros
+
+    -Fórmulas: Biblioteca que organiza todas as fórmulas no Excel
+	*Uma fórmula efetua cálculos e outras ações nos dados da planilha
+	
+    -Dados: Opções para tratas os dados
+	->Validação
+	->Remover Duplicadas
+	->Iserir dados de outras fontes (Acsses, web, etc)
+
+    -Revisão: Rever a formtação de textos e dados nas planilhas
+	->Proteger
+	->Corrigir erros de ortografia
+	->Entre outros
+
+    -Exibir: funções que permitem vizualizar como ficará a planilha quando for impressa
+	->Quebra de Página
+	->Layout de Página
+	->Linhas de Grade (com ou sem)
+	->Entre Outros
+	
+Começando: 
+    -Para abrir uma pasta de planilhas no Excel abrimos o menu de "Arquivo" e na ferramenta "Abrir" podemos selecionar uma pasta aberta recentemente ou procurar em um diratório específico. (Arquivo > Abrir)
+    -Caso exista mais de 2 ou mais pastas abertas pode-se alternar entre as janelas usano o menu "Exibir" e a ferramenta "Alternar Janelas" (Exibir > Alternar Janelas). pode-se usar Alt+Tab também
+
+Salvar alterações:
+    -É sempre nacessário salvar as alterações feitas.
+    -Na parte superior da aplicação, na barra de ferramentas de acesso rápido há o ícone em forma de disquete, ao clicar no mesmo a ferramenta "Salvar" será ativada e a pasta de arquivos será salva com as alterações feitas. Funciona também ao clicar Ctrl+B
+    -Também há a opção para salvar uma pasta de planilhas acessando o menu "Arquivo" e em seguida selecionando a ferramenta "Salvar" (Arquivo > Salvar)
+    -Caso seja necessário salvar uma cópia da pasta de planilhas com um nome diferente ou em um local diferente (ou ambos) há também a opção de abrir o menu "Arquivo", selecionar a ferramenta "Salvar Como" e em seguida escolher o local que deseja salvar o novo arquivo gerado. (Arquivo > Salvar Como)  
+
+
+
+Trabalhando: Em uma pasta de planilhas é possível inserir diversas planilhas, linkar dados entre elas em um mesmo arquivo e renomeá-las para melhor organização.
+
+-Uma planilha é composta por células: A célula é o cruzamento de uma coluna com uma linha (como coordenadas de um tabuleiro)
+    Por padrão a coluna é representada por uma letra e a linha é representada por uma coluna
+
+Edição: paa que uma célula possa receber algum tipo de dado de formatação, é necessário selecioná-la. Uma célula selecionada se torna uma "Célula Ativa"
+    Há como vizualizar qual cécula está ativa na "Caixa de Nomes" na área de edição e ao clicar na caixa e digitar um novo nome você pode renomear o nome da cúlula ativa.
+    Um grupo de células é também conhecido como um "Intervalo", para selecionar um intervalo pode-se selecionar arrastando o mouse pelas linhas e colunas ou clicar na primeira e última célula do intervalo enquanto segura a tecla Shift (células marcadas ficam com o fundo escuro, a não ser pela célula ativa que permanece branca). Para retirar a seleção basta dar um clique em qualquer célula da planilha
+
+
+-Uma cúlula pode ser composta por dados numéricos, alfabéticos, fórmulas ou comandos
+
+-Ao lado da caixa de nomes há a caixa de fórmulas indicada pela figura (fx), ao clicar em fx você pode inserir uma função ou simplesmente valor dentro da célula. ao final pressione entre para finalizar a digitação de uma tecla.
+Para apagar o que foi digitado basta selecionar a célula em questão e clicar em DELETE no teclado
+
+
+-Recursos
+    ->Copiar
+	Para copiar o conteúdo de uma célula para outra, basta selecionar a célula com o conteúdo desejado e em seguida clicar na ferramenta "Copiar" no menu "Página Inicial" (Página Inicial > Copiar), há também como fazer isso clicando no botão direito do teclado e selecionar "Copiar" ou utilizar o atalho do teclado Ctrl+C              
+    ->Recortar
+	Para recortar o conteúdo de uma célula as formas são as mesmas que para copiar, o que muda é que no caso dos atalhos do teclado seria Ctrl+X
+    ->Colar
+	Para colar os dados em uma nova célula deve-se selecionar a célula desejada e clicar na ferramente "Colar" da guia "Página Inicial", por meio do botão direito do teclado ou por meio do teclado no atalho Ctrl+V. Uma célula que foi copiada por meio da ferramenta "Copiar" mantém seu valor inalterado, já uma tecla que foi copiada com a ferramenta "Recortar" perderá o seu conteúdo ao final do processo de "Colar"
+    ->Há como você realizar o processo de colar o dado de uma célula por meio da colagem especial, nela você terá outrar opções de colagem como somente valores, fórmulas, formatação da célula ou colar referente.
+	

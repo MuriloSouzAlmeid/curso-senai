@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Introdução ao JavaScript</h1>
+
+    <!-- Tag para formulário -->
+    <!-- action -> para onde vai os dados do formulário -->
+    <!-- method -> como serão enviados od dados (get (url), post, etc.) 
+    Se não colocar o method o padrão é get
+    Se não tiver o action envia os dados para a própra página e a recarrega por isso paramos o action para usar o console.log
+    -->
+    <form action="">
+        <!-- Campo de entrada de dados -->
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        <br> <br>
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome"> <br> <br>
+
+        <!-- Não é de boa prática chamar JavaScript dentro de HTML, o certo é chamar funções que estão no script -->
+
+        <!-- Maneira errada -->
+        <button onclick="alert('Boa Tarde')">Boa Tarde</button>
+
+        <!-- Maneira correta -->
+        <!-- onclick => ao ser clicado faça algo -->
+        <button onclick="Saldar()">Saldar</button>
+    </form>
+
+    <!-- Tag para comandos em script -->
+    <script>
+        // Em JavaScript não há tipos de dados logo não é necessário especificar o tipo de retorno de uma função
+        function Saldar() {
+            //para o envio (submit) do formulário (para o action e o method) - explicação em cima mano
+            event.preventDefault(); //Não esqueça
+
+            // Para guardar um valor cria-se com let(variáveis) ou const(constantes)
+            // let nomeUsuario = "Murilo Almeida";
+
+            // separar o nome em nome e sobrenome e interpolar na frase
+            //let primeiroNome = "Murilo";
+            //let sobrenome = "Almeida";
+
+            // Pega valores de elementos HTML pelo seu id e atribui a uma variável (adiantando)
+            
+            //o document é o código html e o element é a tag HTML
+            // um elemento pego pelo id representa um objeto
+            // os valores em um element são retornados como um objeto e por isso para acessar o mesmo vale POO
+            let primeiroNome = document.getElementById("nome").value;
+            let sobrenome = document.getElementById("sobrenome").value;
+
+            // Para escrever um caracter com interpolação coloca-se a string entre crazes `` e utiliza o $ e cada lugar para interpolar
+
+            //alert => exibe um alerta na página com um conteúdo
+            alert(`Boa tarde ${primeiroNome} ${sobrenome}!`)
+
+            //console.log() é como um ConsoleWriteLine()
+            console.log(`Boa tarde ${primeiroNome} ${sobrenome}!`);
+        }
+    </script>
+</body>
+
+</html>
