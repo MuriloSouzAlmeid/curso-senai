@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Dados em JavaScript</title>
+</head>
+<body>
+    <script>
+                  //012345 -> uma string também pode ser considerada como um cadeia de caracteres """"""""""""array""""""""""""""
+        let nome = `  Murilo Souza Almeida  `;
+
+        console.log(nome);
+
+        /*String Methods*/
+
+        //acessando a posição do caracter na string
+        console.log(nome[2]);
+
+        //método para deixar caracteres em maiúsculo
+        console.log(nome.toUpperCase());
+
+        //método para deixar caracteres em minúsculo
+        console.log(nome.toLowerCase());
+
+        //remove espaçamentos vazios antes e depois da cadeia de caracteres
+        console.log(nome.trim());
+
+        //indica o tamanho (quantidade de caracteres) de uma string (cadeia de caracteres) => (é um atributo não um método)
+        console.log(nome.length);
+
+        //divide uma string por valores na cadeia de caracter indicando o índice inicial e o índice final tirando o índice final no caso -> não exibe o último índice indicado (se colocado o índice 17 exibe até no máximo o índice 16)
+        console.log(nome.substring(5,12));
+
+        //também divide a string no entanto no segundo valor indica o tamanho final que a string resultante deverá ter (se começou no índice 5 irá terminar no índice 15)
+        console.log(nome.substr(5,12));
+
+        //substitui uma cadeia de caracter de uma string por outra podendo ser toda a cadeia ou apenas uma parte dentro dela
+        console.log(nome.replace("Almeida", "Dantas"));
+
+    </script>
+</body>
+</html>
