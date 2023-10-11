@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de NickName</title>
+</head>
+
+<body>
+    <h1>Informe seu NickName</h1>
+
+    <form onsubmit="ExibeNickName()">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome-usuario" placeholder="Digite seu nome:">
+        <br>
+        <button onclick="RecebeNome()">Ok</button><br>
+        <p id="saudacao"></p>
+        <label for="nickname">NickName: </label>
+        <input type="text" id="nickname" placeholder="Digite seu nickname:">
+        <br>
+        <button>Run</button><br>
+        <p id="resposta">Olá, ?.</p>
+    </form>
+
+    <script>
+        function RecebeNome(){
+            event.preventDefault();
+
+            //documento.getEelementById => retorna um OBJETO
+            let nome = document.getElementById("nome-usuario").value;
+
+            let saudacao = document.getElementById("saudacao").innerText;
+
+            if(saudacao == ""){
+                //em um html podemos colocar textos ou outros htmls
+                saudacao = document.getElementById("saudacao").innerText = `Olá, ${nome}. informe abaixo como gostaria de ser chamado:`;
+            }else{
+                return nome;
+            }
+        }
+
+        function ExibeNickName() {
+            event.preventDefault();
+
+            //aribuições funcionam da direita pra esquerda isso executa depois <atribui o valor para< isso executa primeiro
+            nome = RecebeNome();
+
+            nome = nome.replace(nome , document.getElementById("nickname").value);
+
+            document.getElementById("resposta").innerText = document.getElementById("resposta").innerText.replace("?", nome);
+        }
+    </script>
+</body>
+
+</html>

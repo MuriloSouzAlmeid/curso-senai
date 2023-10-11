@@ -68,7 +68,10 @@ function Calcular() {
     //o elemento recebe o valor da variável a ser escrito
 
     //verifica de res é um número e se for atribui o .ToFixed()
-    if (isNaN(res) == false) {
+    // if(isNaN(res) == false) -> verificação booleana padrão
+    // if (!(isNaN(res))) -> verificação por operador lógico de negação
+    if(res === NaN) //verificação por análise do tipo de dado da variável
+    {
         res = res.toFixed(2);
         //o método toFixed(qtd de casas decimais) => define o número máximo de casas decimais do resultado 
         //caso o retorno seja uma string não há como aplicar o método .toFixed() logo devemos utiliá-los em um dado certamente do tipo número

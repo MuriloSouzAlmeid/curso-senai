@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //Arrays em javascript
+        let frutas = []; // [] => indica a instância de um array vazio
+        //como ele busca direto da memória não é necessário dar console.log do mesmo array 2 vezes no mesmo código
+        console.log(frutas);
+
+        let array = ['Murilo', 14, true]; // (aceita qualquer tipo de dado - array não tipado) - ao colocar os valores diretamente dentro dos colchetes podemos atribuir seus valores diretamente
+        console.log(array);
+
+        //o push serve para adicionar um item em um array no seu índice final => como o List.Add() no c#
+        frutas.push('Maçã','Banana','Uva'); //posso adicionar diversos valores de uma vez
+
+        //para ordenar um array em javascript usamos sort -> ordena em ordem crescente
+        frutas.sort();
+
+        //passando por listas usando for (tradicional)
+        // for(let i = 0; i < frutas.length; i++){
+        //     console.log(`Fruta ${i + 1}: ${frutas[i]}`);
+        // }
+
+        //passando por foreach (melhorado)
+        frutas.forEach(
+            //função callback, uma função que será executada dentro de um parâmetrode uma outra função - possuem diversos tipos como funções anônimas ou funções labdas
+            //função anônima, uma função que não possui nome e só irá executar um bloco de comando
+            function (f, i){ //parâmetros que serão recebidos pelo foreach. 1º -> valor do item, 2º -> indice do item
+                console.log(`${i + 1}º Fruta: ${f}`); //comando que será executado em cada item no array que irá chamar a function cada vez
+            }
+        ); //é um método de array
+
+    </script>
+</body>
+</html>
