@@ -1,4 +1,4 @@
-// o node do javascript é uma forma de vizualizar os códigos gerados no console do editor de código, uma vez que o javascript foi criado para serf interpretado pelo navegador se fez necessário a criação de uma ferramenta a parte para poder vizualizar os comandos sem um navegador
+// o node do javascript é uma forma de vizualizar os códigos gerados no console do editor de código, uma vez que o javascript foi criado para serf interpretado pelo navegador se fez necessário a criação de uma ferramenta a parte para poder vizualizar os comandos sem um navegador -> para rodar o comando usamos node "nome do arquivo com o script"
 
 
 
@@ -29,6 +29,9 @@ let pessoas = [];
 pessoas.push(murilo, gabriel);
 
 console.log(pessoas);
+
+//diz o tamanho de um array
+console.log(pessoas.length)
 
 // exibir somente o nome das pessoas
 pessoas.forEach(
