@@ -1,5 +1,5 @@
+//instancia a lista de pessoas que será exibida no HTML
 const listaDePessoas = [];
-let linhasTabela = "";
 
 //objeto event instanciado já no submit do formulário
 function ExibeIMC(e) {
@@ -17,9 +17,7 @@ function ExibeIMC(e) {
     let imc = calculaIMC(altura, peso);
 
     //método que verifica se um número é finito ou não
-    if (isFinite(imc)) {
-        imc = imc.toFixed(2);
-    } else {
+    if (!(isFinite(imc))) {
         alert("Insira dados válidos no fomulário!");
         return;
     }
@@ -54,13 +52,18 @@ function ExibeIMC(e) {
         imc,
         classificacao,
         //formata a data para um formato legível
-        "dataCadastro": dataAtual.toLocaleString('pt-BR', options)
+        "dataCadastro": gerarDataAtual()
     }
 
+    //adiciona a pessoa cadastrada com os dados do formulário na lista de pessoas do script
     listaDePessoas.push(pessoa);
 
     //exibir os dados
     exibirPessoas();
+
+
+    //função para limpar o formulário ao final do cálculo
+    limparForm();
 }
 
 //função que calcula o valor do IMC
@@ -87,30 +90,57 @@ function verificaClassificacao(imc) {
     }
 }
 
-function exibirPessoas(){
+//função que gera a data atual para colocar no registro do formulário
+function gerarDataAtual(){
+    //pega qual a data atual e retornar para a constante no entanto em milissegundos
+    let dataAtual = Date.now();
+
+    //converte a data para um objeto do tipo Date consertando seus valores de anos, meses, dias e horário 
+    dataAtual = new Date(dataAtual);
+
+    //define o local da data para ser formatada
+    const options = { timeZone: 'America/Sao_Paulo' };
+
+    //retorna a data formatada
+    return dataAtual.toLocaleString('pt-BR', options);
+}
+
+//função que gera as linhas da tabela no HTML
+function exibirPessoas() {
     //listar as pessoas no console
 
     let template = ''; //template = pedaço de tela
 
-    listaDePessoas.forEach( pessoa => {
+    listaDePessoas.forEach(pessoa => {
         //linhas de tabela
         //+= para ir acumulando a string na variável
-        template += 
-        `<tr>
+        template +=
+            `<tr>
             <td data-cell="nome">${pessoa.nome}</td>
             <td data-cell="altura">${pessoa.altura}</td>
             <td data-cell="peso">${pessoa.peso}</td>
-            <td data-cell="valor do IMC">${pessoa.imc}</td>
+            <td data-cell="valor do IMC">${pessoa.imc.toFixed(2)}</td>
             <td data-cell="classificação do IMC">${pessoa.classificacao}</td>
             <td data-cell="data de cadastro">${pessoa.dataCadastro}</td>
         </tr>`
-    } );
+    });
 
     //inserir as linhas de tabela no html => tem que colocar dentro dessa função para sempre estar atualizando o inner html
     document.getElementById("corpo-tabela").innerHTML = template;
 }
 
+//função que limpa os valores dos campos do formulário
+function limparForm() {
+    //limpar os dados após o cálculo do imc
+    document.getElementById("nome").value = '';
+    document.getElementById("altura").value = '';
+    document.getElementById("peso").value = '';
+}
 
+//método para limpar a lista de pessoas
+function deletarRegistros() {
+
+}
 
 
 // Escopo de variáveis => define a visibilidade da variável no decorrer do código

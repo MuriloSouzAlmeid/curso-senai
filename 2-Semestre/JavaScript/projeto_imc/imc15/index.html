@@ -17,7 +17,7 @@
         <h1>Calculadora de IMC</h1>
         <section>
             <h2>Cadastro de informações</h2>
-            <!-- instancia um objeto event no submit para ser utilizado no script -->
+            <!-- instancia um objeto event no submit para ser utilizado no script no caso a palavra event que é uma palavra reservada da linguagem javascript e possui os métodos necessários para trabalhar com a mesma -->
             <form method="post" onsubmit="ExibeIMC(event)">
                 <div class="campo-form">
                     <label for="nome">Nome: </label>
@@ -38,7 +38,10 @@
                 </div>
 
                 <div class="conjunto-botoes">
+
+                    <!-- o type reset trás de volta o valor inicial para os campos do formulário -->
                     <button type="reset">Limpar Formulário</button>
+
                     <button type="submit">Calcular</button>
                 </div>
 
@@ -60,7 +63,7 @@
                 </thead>
                 <tbody id="corpo-tabela">
                     <!-- Exemplo de Registro da tabela -->
-                    <tr>
+                    <!-- <tr>
                         <td data-cell="nome">Thiago Nascimento</td>
                         <td data-cell="altura">1.78</td>
                         <td data-cell="peso">67</td>
@@ -83,7 +86,7 @@
                         <td data-cell="valor do IMC">21.1</td>
                         <td data-cell="classificação do IMC">Normal</td>
                         <td data-cell="data de cadastro">19/06/2023 21:27</td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
             <button class="botao-tabela" onclick="deletarRegistros()">Limpar Registros</button>
