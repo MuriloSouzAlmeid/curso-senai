@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API com JavaScript</title>
+</head>
+
+<body>
+    <form>
+        <label for="cep">CEP: </label>
+        <input type="number" placeholder="Digite o CEP:" id="cep" onblur="chamarApi()">
+        <!-- onblur="" evento acionado ao abandonar o elemento input -->
+        <br><br>
+
+        <label for="endereco">Endereço: </label>
+        <input type="text" placeholder="..." id="endereco">
+        <br><br>
+
+        <label for="cidade">Cidade: </label>
+        <input type="text" placeholder="..." id="cidade">
+        <br><br>
+
+        <label for="bairro">Bairro: </label>
+        <input type="text" placeholder="..." id="bairro">
+        <br><br>
+
+        <label for="estado">Estado: </label>
+        <input type="text" placeholder="..." id="estado">
+        <br><br>
+
+        <!-- <button onclick="chamarApi()">Ok</button> Não irá precisar do button por conta do onblur --> 
+    </form>
+
+    <script>
+        async function chamarApi() {
+            let cep = document.getElementById("cep").value;
+            const url = `https://viacep.com.br/ws/${cep}/json/`;
+
+            try { 
+                const retorno = await fetch(url); 
+                const endereco = await retorno.json(); 
+
+                const {logradouro, bairro, localidade, uf} = await endereco;
+
+                console.log(endereco);
+
+                document.getElementById("endereco").value = logradouro;
+                document.getElementById("cidade").value = localidade;
+                document.getElementById("bairro").value = bairro;
+                document.getElementById("estado").value = uf;
+                
+            } catch (error) { 
+                console.log("Deu ruim na API");
+            }
+        }
+    </script>
+</body>
+
+</html>

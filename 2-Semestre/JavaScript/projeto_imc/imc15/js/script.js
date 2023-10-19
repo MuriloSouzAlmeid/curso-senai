@@ -25,14 +25,8 @@ function ExibeIMC(e) {
     //gera a classificação do IMC do usuário passando o IMC como parâmetro
     let classificacao = verificaClassificacao(imc);
 
-    //pega qual a data atual e retornar para a constante no entanto em milissegundos
-    let dataAtual = Date.now();
-
     //converte a data para um objeto do tipo Date consertando seus valores de anos, meses, dias e horário 
     dataAtual = new Date(dataAtual);
-
-    //define o local da data para ser formatada
-    const options = { timeZone: 'America/Sao_Paulo' };
 
     //sempre que um usuário nõa vai ser alterado pode ser usado uma constante para criá-lo
     const pessoa = {

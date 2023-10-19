@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API com JavaScript</title>
+</head>
+
+<body>
+    <button onclick="chamarApi()">Ok</button>
+
+    <script>
+        /* Como o JavaScript é uma linguagem assíncrona temos a opção de marcar comandos que só serão executados mais pra frente como uma promessa de algo futuro e a api retorna tal promessa como um objeto vazio e só após executar o comando ele atualiza o valor */
+
+        //Sintaxe em desuso:
+        // fetch("https://viacep.com.br/ws/09432530/json/") //usamos o fetch para acessar um endereço web e realizar uma requisição api do mesmo
+
+        //ao utlizar o then() e catch() lidamos com os resultador possíveis, mas ainda de maneira assíncrona
+        //caso seja fullfill irá cair em then()
+        //caso seja rejected irá cair em catch()
+        //dentro do retorno utilizamos funções de callback para executar comandos
+
+        // .then(
+        //     retorno => {
+        //         console.log("Deu bom na api");
+        //     }
+        // ) //resolvida
+        // .catch(
+        //     () => {
+        //         console.log("Deu ruim na api");
+        //     }
+        // ); //rejeitada
+
+
+
+        /*Uma promisse pode ser tetornada em 3 estados: pending, fullfill, reject
+        pending: enquando o fetch está sendo feito
+        fullfill: a requisição foi bem sucedida
+        rejected: caso a requisição tenha sido mal sucedida*/
+
+        console.log("Meu nome é Murilo Souza Almeida");
+
+        //utilizamos o async para indicar que os comandos a serem executados a de maneira assíncrona
+        async function chamarApi() {
+            const url = "https://viacep.com.br/ws/09432530/json/";
+
+            //como não temos controle da chamada e a mesma pode quebrar o funcionamento do sistema utilizamos o try catch no comando que pode dar erro sendo assim utilizamos o try catch
+            try { // caso o comando dê certo (fullfilled)
+                const retorno = await fetch(url); // a palavra reservada await funciona para esperar a resposta obtida pelo fetch antes de atribuir à variável ou constante assim a const receberá a resposta e não enviará antes disso
+
+                const endereco = await retorno.json(); //pega o corpo de requisição da promisse usando o .json()
+
+                console.log(endereco);
+                // console.log(endereco); não há como eu retornar a promisse pois já retornou o valor
+            } catch (error) { //caso dê algum erro (rejected)
+                console.log("Deu ruim na API");
+            }
+        }
+    </script>
+</body>
+
+</html>

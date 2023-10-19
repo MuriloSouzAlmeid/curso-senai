@@ -24,9 +24,9 @@ const soma = numeros.reduce(
 , 10); //valor inicial podendo ser o que eu escolher
 
 //o reduce também serve para concatenação de strings
-const nomes = ["Murilo", " Souza ", "Almeida"];
+const nomes = ["Murilo", "Souza", "Almeida"];
 
-const nomeCompleto = nomes.reduce((inicio, n) => inicio + n, "");
+const nomeCompleto = nomes.reduce((inicio, n) => `${inicio} ${n}`, "");
 
 
 //retornos no prompt
