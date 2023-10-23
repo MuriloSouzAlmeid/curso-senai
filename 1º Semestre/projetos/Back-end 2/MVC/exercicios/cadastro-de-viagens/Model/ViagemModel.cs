@@ -43,6 +43,8 @@ namespace cadastro_de_viagens.Model
 
             string[] elementosLista = File.ReadAllLines(PATH);
 
+            
+
 
             foreach(string linha in elementosLista){
                 string[] atributos = linha.Split(";");
