@@ -8,7 +8,15 @@
 </head>
 
 <body>
-    <form>
+    <form onsubmit="salvarContato(event)">
+        <label for="nome">Nome: </label>
+        <input type="text" placeholder="Nome de Contato:" id="nome">
+        <br><br>
+
+        <label for="telefone">Telefone: </label>
+        <input type="number" placeholder="Telefone de Contato:" id="telefone">
+        <br><br>
+
         <label for="cep">CEP: </label>
         <input type="number" placeholder="Digite o CEP:" id="cep" onblur="chamarApi()" autocomplete="off">
         <!-- a propriedade autocomplete define se serão exibidas opções para autocompletar o valor do campo -->
@@ -17,26 +25,67 @@
         <span id="not-found"></span>
         <br><br>
 
-        <label for="endereco">Endereço: </label>
-        <input type="text" placeholder="..." id="endereco">
+        <label for="estado">Estado: </label>
+        <input type="text" placeholder="..." id="estado">
         <br><br>
 
         <label for="cidade">Cidade: </label>
         <input type="text" placeholder="..." id="cidade">
         <br><br>
 
+
         <label for="bairro">Bairro: </label>
         <input type="text" placeholder="..." id="bairro">
         <br><br>
 
-        <label for="estado">Estado: </label>
-        <input type="text" placeholder="..." id="estado">
+        <label for="endereco">Endereço: </label>
+        <input type="text" placeholder="..." id="endereco">
         <br><br>
+
+        <label for="numero">Núemro da Residência: </label>
+        <input type="number" placeholder="Número da residência" id="numero">
+        <br><br>
+
+        <button>Salvar Contato</button>
 
         <!-- <button onclick="chamarApi()">Ok</button> Não irá precisar do button por conta do onblur -->
     </form>
 
     <script>
+        const urlLocal = "http://localhost:3000/contatos";
+
+        async function salvarContato(e) {
+            e.preventDefault();
+
+            //pegar os dados do formulário e guardar diretamente em um objeto
+            let contato = {
+                "nome": document.getElementById("nome").value,
+                "telefone": document.getElementById("telefone").value,
+                "cep": document.getElementById("cep").value,
+                "endereco": document.getElementById("endereco").value,
+                "cidade": document.getElementById("cidade").value,
+                "bairro": document.getElementById("bairro").value,
+                "estado": document.getElementById("estado").value,
+                "numero": document.getElementById("numero").value
+            }
+
+            //sempre que for fazer uma chamada à api faça um try catch
+            try {
+                //promessa retornada pelo fetch
+
+                const promisse = await fetch(urlLocal, { // o método fetch recebe o endereço da api, e opcionalmente um objeto json com as informações para a chamada 
+                    body: JSON.stringify(contato), // converte um objeto javascript em json
+                    headers: { "Content-Type": "application/json" },
+                    method: "post"
+                });
+
+                redefineValores();
+            } catch (erro) {
+                console.log("Deu Ruim: " + erro);
+            }
+
+        }//fim da função cadastrar
+
         async function chamarApi() {
             let cep = document.getElementById("cep").value;
             const url = `https://viacep.com.br/ws/${cep}/json/`;
@@ -72,12 +121,32 @@
         }
 
         function redefineValores() {
+            document.getElementById("nome").value = "";
+            document.getElementById("telefone").value = "";
             document.getElementById("endereco").value = "...";
             document.getElementById("cidade").value = "...";
             document.getElementById("bairro").value = "...";
             document.getElementById("estado").value = "...";
+            document.getElementById("numero").value = "";
         }
     </script>
 </body>
 
 </html>
+
+
+<!-- No JSON -> aparece objetos json que sibolizam as rotas da api local -->
+<!-- {
+    nome da rota/tabela
+    "imc": 
+    [
+      {
+        campos da tabela
+        "id": 1,
+        "nome": "Murilo Souza Almeida",
+        "idade": 18,
+        "altura": 1.75,
+        "peso": 86
+      }
+    ]
+  } -->

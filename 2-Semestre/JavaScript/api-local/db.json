@@ -1,11 +1,26 @@
 {
-  "imc": [
+  "contatos": [
     {
-      "id": 1,
       "nome": "Murilo Souza Almeida",
-      "idade": 18,
-      "altura": 1.75,
-      "peso": 86
+      "telefone": "11995135732",
+      "cep": "09432530",
+      "endereco": "Rua das Goiabeiras",
+      "cidade": "Ribeirão Pires",
+      "bairro": "Pilar Velho",
+      "estado": "SP",
+      "numero": "16",
+      "id": 1
+    },
+    {
+      "nome": "Pedro Homo Felix",
+      "telefone": "11945316782",
+      "cep": "08573710",
+      "endereco": "Rua Lageado",
+      "cidade": "Itaquaquecetuba",
+      "bairro": "Morro Branco",
+      "estado": "SP",
+      "numero": "67",
+      "id": 3
     }
   ]
 }
