@@ -1,0 +1,73 @@
+{
+  "contatos": [
+    {
+      "nome": {
+        "primeiroNome": "Murilo",
+        "Sobrenome": "Souza Almeida"
+      },
+      "email": "murilo.souza@email.com",
+      "telefone": {
+        "pais": "55",
+        "ddd": "11",
+        "numeroTelefone": "995135732"
+      },
+      "endereco": {
+        "cep": "09432530",
+        "rua": "Rua das Goiabeiras",
+        "numero": "16",
+        "complemento": "",
+        "bairro": "Pilar Velho",
+        "cidade": "Ribeirão Pires",
+        "uf": "SP"
+      },
+      "anotacoes": "Eu mesmooo",
+      "id": 1
+    },
+    {
+      "nome": {
+        "primeiroNome": "Amanda",
+        "Sobrenome": "Rodrigues"
+      },
+      "email": "amanda.rodrigues@email.com",
+      "telefone": {
+        "pais": "55",
+        "ddd": "11",
+        "numeroTelefone": "975173399"
+      },
+      "endereco": {
+        "cep": "09360190",
+        "rua": "Rua São Clemente",
+        "numero": "167",
+        "complemento": "casa",
+        "bairro": "Vila Nossa Senhora das Vitórias",
+        "cidade": "Mauá",
+        "uf": "SP"
+      },
+      "anotacoes": "minha cunhada Manda",
+      "id": 2
+    },
+    {
+      "nome": {
+        "primeiroNome": "",
+        "Sobrenome": ""
+      },
+      "email": "",
+      "telefone": {
+        "pais": "",
+        "ddd": "",
+        "numeroTelefone": ""
+      },
+      "endereco": {
+        "cep": "09790678678959868887",
+        "rua": "",
+        "numero": "",
+        "complemento": "",
+        "bairro": "",
+        "cidade": "",
+        "uf": ""
+      },
+      "anotacoes": "",
+      "id": 3
+    }
+  ]
+}
