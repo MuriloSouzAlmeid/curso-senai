@@ -1,0 +1,24 @@
+/* Com Get BEM */
+.equipe{
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-color: blueviolet;
+    gap: 7px;
+    align-items: center;
+}
+
+.equipe__integrante{
+    display: flex;
+    width: auto;
+    color: white;
+}
+
+.equipe__integrante--apresentador{
+    font-style: italic;
+    font-weight: bold;
+    color: aqua;
+}
+
+

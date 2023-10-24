@@ -42,7 +42,7 @@ async function gravarNoJSON(informacoesContato) {
             method: "post"
         });
 
-        console.log(`Contato cadastrado com sucesso! ${retornoApi.json()}`);
+        alert(`Contato ${informacoesContato.nome} salvo com sucesso!`);
     } catch (erro) {
         console.log(`Algo deu errado!`);
         console.log(`Erro: ${erro}`);
