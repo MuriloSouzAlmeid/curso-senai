@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+}
+
+.titulo__texto{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.titulo__texto--branco{
+    color: white;
+}
+
+.titulo__linha{
+    border: 2px solid #B51D44;
+    width: 120px;
+}
+
+.titulo__linha--branca{
+    border-color: white;
+}
