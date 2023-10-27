@@ -1,0 +1,15 @@
+node_modules: onde estão instalados todos os pacotes do projeto instalados pelo node (igual a packages do nuget no visual studio) - não se sobe para o github pois é muito grande (colocamos no gitignore)
+
+Para rodar um projeto que ainda não tem ps pacotes instalados utilizamos npm install
+
+
+package.json: arquivo de configuração e dependências do projeto (.csproj) informa quais as bibliotecas e ferramentas estão sendo utilizadas no projeto (dependências) assim como suas versões 
+
+é esse arquivo que vai executar as instalações do node_modules
+
+
+public: arquivos da estrutura da página  -> como html, css imagens e etc...
+
+src: arquivos de execução de códigos em javascript -> app.js, index.js e etc
+
+arquivos de componentes em React devem estar sempre em maiúsculo

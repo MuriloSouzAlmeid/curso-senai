@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-evento{
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 250px;
+    padding: 0 35px 0;
+
+    border: 2px solid #821B47;
+    border-radius: 5px;
+}
+
+.card-evento__titulo-evento{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 31px;
+}
+
+.card-evento__descricao-evento{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 31px, 0, 41px, 0;
+}
+
+.card-evento__conectar-evento{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    color: #B51D44;
+    margin-bottom: 41px;
+}
+
+.card-evento__conectar-evento--disabled{
+    color: lightgray;
+    cursor: not-allowed;
+}
