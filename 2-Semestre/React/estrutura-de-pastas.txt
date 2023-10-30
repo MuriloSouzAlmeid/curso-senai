@@ -13,3 +13,11 @@ public: arquivos da estrutura da página  -> como html, css imagens e etc...
 src: arquivos de execução de códigos em javascript -> app.js, index.js e etc
 
 arquivos de componentes em React devem estar sempre em maiúsculo
+
+
+
+Instalações:
+node.js -> programa
+json server -> npm i -g json-server 
+React Create App -> npm i -g react-create-app
+react routes -> npm i -g react-router-dom
