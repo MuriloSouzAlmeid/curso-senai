@@ -8,7 +8,6 @@ import Header from '../../components/Header/Header';
 const HomePage = () => {
     return (
         <div>
-            <Header />
             <Titulo titulo='Página Home' />
         </div>
     );

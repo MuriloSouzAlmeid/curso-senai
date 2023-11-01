@@ -1,28 +1,25 @@
-import React, { createFactory } from 'react';
-
-import { Link } from 'react-router-dom';
-
+import React from 'react';
 import './Header.css';
+
+import Container from './Container/Container';
+import Navbar from '../Navbar/Navbar';
+import PerfilUsuario from '../PerfilUsuario/PerfilUsuario';
 
 const Header = () => {
     return (
-        // caso eu tente escrever a tag em maiúsculo ele fica chamando um elemento React e dá erro. Prestar atenção nisso
-        // <header></header> -> certo (tag)
-        // <Header></Header> -> errado (componente)
-        <header>
-            <nav>
-                {/* href não rola pq vai recarregar a página 
-                <a href="/">Home</a>*/}
-                <Link to='/'>Home</Link>
-                <br />
-                <Link to='/eventos'>Eventos</Link>
-                <br />
-                <Link to='/tipos-eventos'>Tipos de Eventos</Link>
-                <br />
-                <Link to='/login'>Login</Link>
-                <br />
-                <Link to='/teste'>Teste</Link>
-            </nav>
+        <header className='headerpage'>
+            <Container>
+                <div className='header-flex'>
+                    <img 
+                        src="" 
+                        alt="Imagem menu de barras. Serve para exibir ou escorder o menu no smartphone" 
+                    />
+
+                    <Navbar/>
+
+                    <PerfilUsuario/>
+                </div>
+            </Container>
         </header>
     );
 };
