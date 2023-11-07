@@ -7,7 +7,7 @@ import Titulo from '../../components/Titulo/Titulo';
 const EventosPage = () => {
     return (
         <div>
-             <Titulo titulo="Página de Eventos" />           
+             <Titulo titleText="Página de Eventos" />           
         </div>
     );
 };
