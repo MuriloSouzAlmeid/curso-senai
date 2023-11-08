@@ -120,13 +120,7 @@
         padding: 0;
         margin: 0;
         font-size: 0.875rem;
-        
-        /* usando variáveis no css */
         color: var(--color-dark-blue);
         border: none;
-    }
-
-    .navbar__close{
-        display: none;
     }
 }
