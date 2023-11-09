@@ -20,25 +20,14 @@
     justify-content: space-evenly;
     width: 250px;
     height: 250px;
-    padding: 25px;
+    padding: 120px 25px;
     border: 1px solid var(--color-blue-red);
     border-radius: 5px;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .event-card::-webkit-scrollbar{
-    width: 10px;
-}
-
-.event-card::-webkit-scrollbar-track{
-    background-color: #f1e9e9;
-    border-radius: 10px;
-}
-
-.event-card::-webkit-scrollbar-thumb{
-    background-color: var(--color-red);
-    border-radius: 10px;
-    border: 3px solid #fff;
+    width: 0px;
 }
 
 .event-card__title {
