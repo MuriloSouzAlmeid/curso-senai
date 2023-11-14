@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import api from '../../services/Service';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import "./HomePage.css";
 
 //import dos componentes
@@ -14,43 +15,26 @@ import Container from "../../components/Container/Container";
 const HomePage = () => {
   //chamar a api na hora que carregar a página
   //usamos o useEffect, ele sempre roda uma primeira vez mesmo não tendo alterado a variável
-  useEffect(
+  useEffect( () => {
     //função que será executada quando o useEffect for chamado (irá chamar a api)
     async function getProximosEventos () {
       try{
-        const promisse = await axios.get('http://localhost:5000/api/Evento/ListarProximos');
+        const promisse = await api.get('/Evento/ListarProximos');
 
         setNextEvents(promisse.data); //o data acessa os dados no objeto json
       }catch(error){
-        console.log(error);
+        console.log('Deu ruim na API');
       }
-      getProximosEventos();
     }
-    , 
+    getProximosEventos();
+  }, 
     [] //array de dependências para indicar quando o comando será executado (vazia roda uma vez só quando a página for carregada)
     //podemos colocar várias variáveis como dependência e quando qualquer uma delas for alterada o useEffect é executado
   );
 
   //fake mock - api mocada
   const [nextEvents, setNextEvents] = useState([
-    {
-      id: 1,
-      title: "Evento A",
-      date: "12/11/2023",
-      description: "Evento legal sobre assunto A",
-    },
-    {
-      id: 2,
-      title: "Evento B",
-      date: "25/12/2023",
-      description: "Evento legal sobre assunto B",
-    },
-    {
-      id: 3,
-      title: "Evento C",
-      date: "01/01/2024",
-      description: "Evento legal sobre assunto C",
-    },
+    
   ]);
 
   return (
@@ -67,10 +51,10 @@ const HomePage = () => {
             {nextEvents.map((e) => {
               return (
                 <NextEvent
-                  title={e.title}
-                  description={e.description}
-                  eventDate={e.date}
-                  idEvento={e.id}
+                  title={e.nomeEvento}
+                  description={e.descricao}
+                  eventDate={e.dataEvento}
+                  idEvento={e.idEvento}
                 />
               );
             })}
