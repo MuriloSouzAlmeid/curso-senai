@@ -67,6 +67,15 @@
     font-size: 0.75rem;
 }
 
+.table-data__body{
+    overflow: auto;
+    max-height: 350px;
+}
+
+.table-data__body::-webkit-scrollbar{
+    width: 0px;
+}
+
 .table-data__data {
     font-family: Poppins-Regular;
     font-size: 0.70rem;

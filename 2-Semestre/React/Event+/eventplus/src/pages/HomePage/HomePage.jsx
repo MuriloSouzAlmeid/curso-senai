@@ -33,9 +33,7 @@ const HomePage = () => {
   );
 
   //fake mock - api mocada
-  const [nextEvents, setNextEvents] = useState([
-    
-  ]);
+  const [nextEvents, setNextEvents] = useState([]);
 
   return (
     //quando tem componentes dentro de um outro componente usamos um elemento duplo (com abertura e fechamento)

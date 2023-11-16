@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./TiposEventos.css";
 
 //import da api
@@ -9,6 +9,7 @@ import Titulo from "../../components/Titulo/Titulo";
 import MainContent from "../../components/MainContent/MainContent";
 import ImageIllustrator from "../../components/ImageIllustrator/ImageIllustrator";
 import Container from "../../components/Container/Container";
+import TableTp from "./TableTp/TableTp";
 
 //pois não é um export default
 import { Input, Button } from "../../components/FormComponents/FormComponents";
@@ -16,6 +17,22 @@ import { Input, Button } from "../../components/FormComponents/FormComponents";
 import imageTipoEvento from "../../assets/images/tipo-evento.svg";
 
 const TiposEventos = () => {
+  const [listaTiposDeEventos, setListaTiposDeEventos] = useState([]);
+
+  useEffect(() => {
+    async function getEvetsType(){
+      try{
+        const promisse = await api.get('/TiposEvento');
+        setListaTiposDeEventos(promisse.data);
+      }catch(error){
+        alert('Deu rum na api');
+        console.log(error);
+      }
+    }
+    getEvetsType();
+  }, [listaTiposDeEventos]);
+
+  //states
   const [formEdit, setFormEdit] = useState(false);
   const [titulo, setTitulo] = useState();
 
@@ -35,25 +52,51 @@ const TiposEventos = () => {
                             // o post requer como parâmetros qual a rota a ser acessada e qual o corpo de rquisição
       const retorno = await api.post('/TiposEvento', {titulo : titulo})//representa o JSON
 
-      alert('Tipo de evento cadastrado com sucesso!!');
+      alert('Tipos de evento cadastrado com sucesso!!');
+      setTitulo(''); //limpa o estado
     }catch(error){
       console.log(error);
     }
   }
 
-  async function handleUpdate(e) {
-    e.preventDefault();
 
-    if(titulo.trim().length < 3){
-        alert('O título deve ter no mínimo 3 caracteres');
-        return;
-    }
 
-    const retorno = await api.put(`/TiposEvento/`);
+// ATUALIZAÇÃO DOS DADOS
+
+//funçào que puxa os dados atuais e coloca o formulário em modo de edição
+function showUpdateForm(){
+  alert('Mostrando a tela de update')
+  console.log(listaTiposDeEventos);
+}
+
+//função que atualiza os dados na api
+async function handleUpdate(e) {
+    // e.preventDefault();
+
+    // if(titulo.trim().length < 3){
+    //     alert('O título deve ter no mínimo 3 caracteres');
+    //     return;
+    // }
+
+    // try{
+    //   const retorno = await api.put(`/TiposEvento/`);
+    // }catch(error){
+    //   console.log(error);
+    // }
+}
+
+//função que cancela a operação de atualizar
+function editActionAbort(){
+
+}
+
+  function handleDelete(){
+    alert('Bora apagar lá na api')
   }
 
   return (
     <MainContent>
+      {/* Cadastro de Tipo de Eventos */}
       <section className="cadastro-evento-section">
         <Container>
           <Titulo titleText={"Página de Tipos de Eventos"} />
@@ -94,6 +137,18 @@ const TiposEventos = () => {
               <Button textButton={"Cadastrar"} id={"button"} type={"submit"} />
             </form>
           </div>
+        </Container>
+      </section>
+
+      {/* Listagem de Tipos de Eventos */}
+      <section className="lista-eventos-section">
+        <Container>
+          <Titulo titleText={'Tipo de Eventos Cadastrados'} color="white" />
+          <TableTp 
+            dados={listaTiposDeEventos}
+            fnUpdate={showUpdateForm}
+            fnDelete={handleDelete}
+          />
         </Container>
       </section>
     </MainContent>
