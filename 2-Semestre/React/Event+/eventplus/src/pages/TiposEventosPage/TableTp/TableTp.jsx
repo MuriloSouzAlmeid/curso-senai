@@ -1,10 +1,10 @@
 import React from "react";
 import "./TableTp.css";
 
-import editPen from '../../../assets/images/edit-pen.svg';
-import trashDelete from '../../../assets/images/trash-delete.svg';
+import editPen from "../../../assets/images/edit-pen.svg";
+import trashDelete from "../../../assets/images/trash-delete.svg";
 
-const TableTP = ({dados, fnUpdate, fnDelete}) => {
+const TableTP = ({ dados, fnUpdate, fnDelete }) => {
   return (
     <table className="table-data">
       <thead className="table-data__head">
@@ -23,39 +23,38 @@ const TableTP = ({dados, fnUpdate, fnDelete}) => {
 
       <tbody className="table-data__body">
         {dados.map((d) => {
-          return (<tr className="table-data__head-row">
-          <td className="table-data__data table-data__data--big">
-            {d.titulo}
-          </td>
+          return (
+            <tr className="table-data__head-row">
+              <td className="table-data__data table-data__data--big">
+                {d.titulo}
+              </td>
 
-          <td className="table-data__data table-data__data--little">
-            <img 
-              className="table-data__icon" 
-              src={editPen} 
-              alt="" 
-              onClick={
-                () => {
-                  fnUpdate();
-                }
-              }
-            />
-          </td>
+              <td className="table-data__data table-data__data--little">
+                <img
+                  className="table-data__icon"
+                  src={editPen}
+                  alt=""
+                  onClick={() => {
+                    fnUpdate();
+                  }}
+                />
+              </td>
 
-          <td className="table-data__data table-data__data--little">
-            <img 
-              className="table-data__icon" 
-              src={trashDelete} 
-              alt="" 
-              onClick={
-                () => {
-                  fnDelete();
-                }
-              }
-            />
-          </td>
-        </tr>)
+              <td className="table-data__data table-data__data--little">
+                <img
+                  className="table-data__icon"
+                  src={trashDelete}
+                  alt=""
+                  onClick={
+                    () => {
+                      fnDelete(d.idTipoEvento);
+                    }
+                  }
+                />
+              </td>
+            </tr>
+          );
         })}
-        
       </tbody>
     </table>
   );

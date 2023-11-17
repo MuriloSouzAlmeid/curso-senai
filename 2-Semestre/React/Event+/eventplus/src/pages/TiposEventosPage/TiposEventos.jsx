@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./TiposEventos.css";
 
 //import da api
-import api from '../../services/Service';
+import api from "../../services/Service";
 
 //import dos componentes
 import Titulo from "../../components/Titulo/Titulo";
@@ -10,6 +10,7 @@ import MainContent from "../../components/MainContent/MainContent";
 import ImageIllustrator from "../../components/ImageIllustrator/ImageIllustrator";
 import Container from "../../components/Container/Container";
 import TableTp from "./TableTp/TableTp";
+import Notification from "../../components/Notification/Notification";
 
 //pois não é um export default
 import { Input, Button } from "../../components/FormComponents/FormComponents";
@@ -18,80 +19,98 @@ import imageTipoEvento from "../../assets/images/tipo-evento.svg";
 
 const TiposEventos = () => {
   const [listaTiposDeEventos, setListaTiposDeEventos] = useState([]);
+  const [notifyUser, setNotifyUser] = useState({});
 
   useEffect(() => {
-    async function getEvetsType(){
-      try{
-        const promisse = await api.get('/TiposEvento');
+    async function getEvetsType() {
+      try {
+        const promisse = await api.get("/TiposEvento");
         setListaTiposDeEventos(promisse.data);
-      }catch(error){
-        alert('Deu rum na api');
+      } catch (error) {
+        alert("Deu rum na api");
         console.log(error);
       }
     }
     getEvetsType();
-  }, [listaTiposDeEventos]);
+  }, []);
 
   //states
   const [formEdit, setFormEdit] = useState(false);
   const [titulo, setTitulo] = useState();
 
   //métodos/funções do componente
-  async function handleSubmit(e) { //já passa o event automaticamente
+  async function handleSubmit(e) {
+    //já passa o event automaticamente
     //parar o submit do formulário
     e.preventDefault();
 
     //validar no mínimo 3 caracteres
-    if(titulo.trim().length < 3){
-      alert('O título deve ter no mínimo 3 caracteres');  
+    if (titulo.trim().length < 3) {
+      alert("O título deve ter no mínimo 3 caracteres");
       return; //retorna a função a  aqui mesmo
     }
 
-    //chamar a api e cadastrar no banco de dados
-    try{
-                            // o post requer como parâmetros qual a rota a ser acessada e qual o corpo de rquisição
-      const retorno = await api.post('/TiposEvento', {titulo : titulo})//representa o JSON
+    setNotifyUser({
+      titleNote: "Sucesso",
+      textNote: `Cadastrado com sucesso!`,
+      imgIcon: "success",
+      imgAlt:
+        "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+      showMessage: true,
+    }); 
 
-      alert('Tipos de evento cadastrado com sucesso!!');
-      setTitulo(''); //limpa o estado
-    }catch(error){
+    //chamar a api e cadastrar no banco de dados
+    try {
+      // o post requer como parâmetros qual a rota a ser acessada e qual o corpo de rquisição
+      const retorno = await api.post("/TiposEvento", { titulo: titulo }); //representa o JSON
+
+      setTitulo(""); //limpa o estado
+
+      const promisse = await api.get("/TiposEvento");
+
+      setListaTiposDeEventos(promisse.data);
+    } catch (error) {
       console.log(error);
     }
   }
 
+  // ATUALIZAÇÃO DOS DADOS
 
+  //funçào que puxa os dados atuais e coloca o formulário em modo de edição
+  function showUpdateForm() {
+    alert("Mostrando a tela de update");
+    console.log(listaTiposDeEventos);
+  }
 
-// ATUALIZAÇÃO DOS DADOS
-
-//funçào que puxa os dados atuais e coloca o formulário em modo de edição
-function showUpdateForm(){
-  alert('Mostrando a tela de update')
-  console.log(listaTiposDeEventos);
-}
-
-//função que atualiza os dados na api
-async function handleUpdate(e) {
+  //função que atualiza os dados na api
+  async function handleUpdate(e) {
     // e.preventDefault();
-
     // if(titulo.trim().length < 3){
     //     alert('O título deve ter no mínimo 3 caracteres');
     //     return;
     // }
-
     // try{
     //   const retorno = await api.put(`/TiposEvento/`);
     // }catch(error){
     //   console.log(error);
     // }
-}
+  }
 
-//função que cancela a operação de atualizar
-function editActionAbort(){
+  //função que cancela a operação de atualizar
+  function editActionAbort() {}
 
-}
+  async function handleDelete(id) {
+    try {
+      const retorno = await api.delete(`/TiposEvento/${id}`);
 
-  function handleDelete(){
-    alert('Bora apagar lá na api')
+      console.log(retorno.data);
+
+      const promisse = await api.get("/TiposEvento");
+
+      setListaTiposDeEventos(promisse.data);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (
@@ -121,13 +140,10 @@ function editActionAbort(){
                     name={"titulo"}
                     placeholder={"Título"}
                     required={"required"}
-                    manipulationFunction={
-                      (e) => {
-                        setTitulo(e.target.value);
-                      }
-                    }
+                    manipulationFunction={(e) => {
+                      setTitulo(e.target.value);
+                    }}
                   />
-                  <span>{titulo}</span>
                 </>
               ) : (
                 // Atualizar
@@ -143,14 +159,16 @@ function editActionAbort(){
       {/* Listagem de Tipos de Eventos */}
       <section className="lista-eventos-section">
         <Container>
-          <Titulo titleText={'Tipo de Eventos Cadastrados'} color="white" />
-          <TableTp 
+          <Titulo titleText={"Tipo de Eventos Cadastrados"} color="white" />
+          <TableTp
             dados={listaTiposDeEventos}
             fnUpdate={showUpdateForm}
             fnDelete={handleDelete}
           />
         </Container>
       </section>
+
+      <Notification {...notifyUser} setNotifyUser={setNotifyUser} />
     </MainContent>
   );
 };
