@@ -31,7 +31,8 @@ export const Button = ({
     name,
     type,
     textButton,
-    additionalClass = ''
+    additionalClass = '',
+    manipulationFunction
 }) => {
     return(
         <button
@@ -39,6 +40,7 @@ export const Button = ({
             name={name}
             type={type}
             className={`button-component ${additionalClass}`}
+            onClick={manipulationFunction}
         >
             {textButton}
         </button>

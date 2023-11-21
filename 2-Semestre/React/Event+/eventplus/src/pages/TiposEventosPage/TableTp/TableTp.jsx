@@ -35,7 +35,7 @@ const TableTP = ({ dados, fnUpdate, fnDelete }) => {
                   src={editPen}
                   alt=""
                   onClick={() => {
-                    fnUpdate();
+                    fnUpdate(d.idTipoEvento);
                   }}
                 />
               </td>

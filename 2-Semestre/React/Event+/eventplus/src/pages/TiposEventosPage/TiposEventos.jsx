@@ -11,6 +11,7 @@ import ImageIllustrator from "../../components/ImageIllustrator/ImageIllustrator
 import Container from "../../components/Container/Container";
 import TableTp from "./TableTp/TableTp";
 import Notification from "../../components/Notification/Notification";
+import Spinner from '../../components/Spinner/Spinner'
 
 //pois não é um export default
 import { Input, Button } from "../../components/FormComponents/FormComponents";
@@ -18,25 +19,40 @@ import { Input, Button } from "../../components/FormComponents/FormComponents";
 import imageTipoEvento from "../../assets/images/tipo-evento.svg";
 
 const TiposEventos = () => {
+  //states
+  const [formEdit, setFormEdit] = useState(false);
+  const [titulo, setTitulo] = useState("");
+  const [idTipoEvento, setIdTipoEvento] = useState("");
   const [listaTiposDeEventos, setListaTiposDeEventos] = useState([]);
   const [notifyUser, setNotifyUser] = useState({});
+  const [showSpinner, setShowSpinner] = useState(false);
 
+  //ao carregar a página
   useEffect(() => {
     async function getEvetsType() {
+      
+      //antes de consultar a api
+      setShowSpinner(true);
       try {
         const promisse = await api.get("/TiposEvento");
         setListaTiposDeEventos(promisse.data);
       } catch (error) {
-        alert("Deu rum na api");
+        setNotifyUser({
+          titleNote: "Deu Ruim na API",
+          textNote: `Não foi possíve entrar na tela de edição. Abra o console para ver o erro`,
+          imgIcon: "danger",
+          imgAlt:
+            "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+          showMessage: true,
+        });
         console.log(error);
       }
     }
     getEvetsType();
-  }, []);
 
-  //states
-  const [formEdit, setFormEdit] = useState(false);
-  const [titulo, setTitulo] = useState();
+    //depois de consultar a api
+    setShowSpinner(false);
+  }, []);
 
   //métodos/funções do componente
   async function handleSubmit(e) {
@@ -46,10 +62,16 @@ const TiposEventos = () => {
 
     //validar no mínimo 3 caracteres
     if (titulo.trim().length < 3) {
-      alert("O título deve ter no mínimo 3 caracteres");
+      setNotifyUser({
+        titleNote: "Nome do Tipo Inválido",
+        textNote: `O título deve ter no mínimo 3 caracteres!`,
+        imgIcon: "warning",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
       return; //retorna a função a  aqui mesmo
     }
-
     setNotifyUser({
       titleNote: "Sucesso",
       textNote: `Cadastrado com sucesso!`,
@@ -57,7 +79,7 @@ const TiposEventos = () => {
       imgAlt:
         "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
       showMessage: true,
-    }); 
+    });
 
     //chamar a api e cadastrar no banco de dados
     try {
@@ -66,9 +88,7 @@ const TiposEventos = () => {
 
       setTitulo(""); //limpa o estado
 
-      const promisse = await api.get("/TiposEvento");
-
-      setListaTiposDeEventos(promisse.data);
+      atualizarListaDeTiposDeEventos();
     } catch (error) {
       console.log(error);
     }
@@ -77,33 +97,88 @@ const TiposEventos = () => {
   // ATUALIZAÇÃO DOS DADOS
 
   //funçào que puxa os dados atuais e coloca o formulário em modo de edição
-  function showUpdateForm() {
-    alert("Mostrando a tela de update");
-    console.log(listaTiposDeEventos);
+  async function showUpdateForm(idElemento) {
+    setFormEdit(true);
+
+    //pegar o título do tipo de evento em questão - get by id
+
+    try {
+      const retorno = await api.get(`/TiposEvento/${idElemento}`);
+
+      const { idTipoEvento, titulo } = await retorno.data;
+
+      setIdTipoEvento(idTipoEvento);
+      setTitulo(titulo);
+    } catch (error) {
+      setNotifyUser({
+        titleNote: "Deu Ruim na API",
+        textNote: `Não foi possíve entrar na tela de edição. Abra o console para ver o erro`,
+        imgIcon: "danger",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
+      console.log(error);
+    }
   }
 
   //função que atualiza os dados na api
   async function handleUpdate(e) {
-    // e.preventDefault();
-    // if(titulo.trim().length < 3){
-    //     alert('O título deve ter no mínimo 3 caracteres');
-    //     return;
-    // }
-    // try{
-    //   const retorno = await api.put(`/TiposEvento/`);
-    // }catch(error){
-    //   console.log(error);
-    // }
+    e.preventDefault();
+
+    if (titulo.trim().length < 3) {
+      setNotifyUser({
+        titleNote: "Nome do Tipo Inválido",
+        textNote: `O título deve ter no mínimo 3 caracteres!`,
+        imgIcon: "warning",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
+      return;
+    }
+
+    try {
+      //como a propriedade e o valor possuem o mesmo nome posso simplificar
+      const retorno = await api.put(`/TiposEvento/${idTipoEvento}`, { titulo });
+
+      editActionAbort();
+
+      setNotifyUser({
+        titleNote: "Sucesso",
+        textNote: `Atualizado com sucesso!`,
+        imgIcon: "success",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
+
+      atualizarListaDeTiposDeEventos();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   //função que cancela a operação de atualizar
-  function editActionAbort() {}
+  function editActionAbort() {
+    setFormEdit(false);
+    setTitulo("");
+    setIdTipoEvento("");
+  }
 
+  // FUNÇÃO para deletar um tipo de evento
   async function handleDelete(id) {
     try {
       const retorno = await api.delete(`/TiposEvento/${id}`);
 
-      console.log(retorno.data);
+      setNotifyUser({
+        titleNote: "Sucesso",
+        textNote: `Deletado com sucesso!`,
+        imgIcon: "success",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
 
       const promisse = await api.get("/TiposEvento");
 
@@ -111,6 +186,11 @@ const TiposEventos = () => {
     } catch (error) {
       console.log(error);
     }
+  }
+
+  async function atualizarListaDeTiposDeEventos() {
+    const promisse = await api.get(`/TiposEvento/`);
+    setListaTiposDeEventos(promisse.data);
   }
 
   return (
@@ -144,13 +224,48 @@ const TiposEventos = () => {
                       setTitulo(e.target.value);
                     }}
                   />
+                  <Button
+                    textButton={"Cadastrar"}
+                    id={"button"}
+                    type={"submit"}
+                  />
                 </>
               ) : (
                 // Atualizar
-                <p>Tela de Edição</p>
-              )}
+                <>
+                  <p>Tela de Edição</p>
+                  <Input
+                    value={titulo}
+                    type={"text"}
+                    id={"titulo"}
+                    name={"titulo"}
+                    placeholder={"Novo Título"}
+                    required={"required"}
+                    manipulationFunction={(e) => {
+                      setTitulo(e.target.value);
+                    }}
+                  />
 
-              <Button textButton={"Cadastrar"} id={"button"} type={"submit"} />
+                  {/* div para os botões de editar e cancelar */}
+                  <div className="buttons-editbox">
+                    <Button
+                      textButton={"Atualizar"}
+                      id={"atualizar"}
+                      name={"atualizar"}
+                      type={"submit"}
+                      additionalClass={"button-component--middle"}
+                    />
+                    <Button
+                      textButton={"Cancelar"}
+                      id={"cancelar"}
+                      name={"cancelar"}
+                      type={"button"}
+                      additionalClass={"button-component--middle"}
+                      manipulationFunction={editActionAbort}
+                    />
+                  </div>
+                </>
+              )}
             </form>
           </div>
         </Container>
@@ -169,6 +284,11 @@ const TiposEventos = () => {
       </section>
 
       <Notification {...notifyUser} setNotifyUser={setNotifyUser} />
+
+      {showSpinner ? (
+        <Spinner />
+      ) : null}
+      
     </MainContent>
   );
 };
