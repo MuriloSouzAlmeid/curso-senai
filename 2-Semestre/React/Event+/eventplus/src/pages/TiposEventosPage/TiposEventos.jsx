@@ -193,6 +193,19 @@ const TiposEventos = () => {
     setListaTiposDeEventos(promisse.data);
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+  
   return (
     <MainContent>
       {/* Cadastro de Tipo de Eventos */}
