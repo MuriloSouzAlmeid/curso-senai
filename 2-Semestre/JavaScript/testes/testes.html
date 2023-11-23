@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de testes</title>
+  </head>
+  <body>
+    <h1>Página de Testes</h1>
+    <form onsubmit="getValue(event)">
+      <input type="date" id="date-input" />
+      <br /><br />
+      <input type="text" id="text-input" />
+      <br /><br />
+      <button onclick="mostraValor()" type="button">Pegar Valor</button>
+      <button type="submit">Mostrar Valor</button>
+    </form>
+
+    <script>
+      function getValue(e) {
+        e.preventDefault();
+
+        let valueText = document.getElementById("text-input").value;
+
+        document.getElementById('date-input').value = valueText; 
+      }
+
+      function mostraValor() {
+        let valueDate = document.getElementById("date-input").value;
+        alert(valueDate);
+      }
+    </script>
+  </body>
+</html>

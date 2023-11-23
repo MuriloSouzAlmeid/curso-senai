@@ -47,12 +47,30 @@ export const Button = ({
   );
 };
 
-export const Select = ({dados, defaultOptionText='Tipo Evento', mudaOpcao, selectValue}) => {
+export const Select = ({
+  dados,
+  defaultOptionText = "Tipo Evento",
+  mudaOpcao,
+  id,
+  name,
+  selectValue,
+  required,
+  additionalClass = ''
+}) => {
   return (
-    <select name="tipos-de-eventos" id="tipos-de-eventos" value={selectValue} onChange={mudaOpcao}>
+    <select
+      className={`input-component ${additionalClass}`}
+      name={name}
+      id={id}
+      value={selectValue}
+      onChange={mudaOpcao}
+      required={required ? 'required' : ''}
+    >
       <option value="">{defaultOptionText}</option>
-      {dados.map((tipoEvento) => {
-        return (<option value={tipoEvento.idTipoEvento}>{tipoEvento.titulo}</option>)
+      {dados.map((opt) => {
+        return (
+          <option key={opt.idTipoEvento} value={opt.idTipoEvento}>{opt.titulo}</option>
+        );
       })}
     </select>
   );

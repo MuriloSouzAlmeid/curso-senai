@@ -102,7 +102,7 @@ namespace webapi.event_.Repositories
                         IdTipoEvento = e.IdTipoEvento,
                         Titulo = e.TiposEvento.Titulo
                     }
-                }).ToList();
+                }).OrderBy(e => e.DataEvento).ToList();
             }
             catch (Exception)
             {

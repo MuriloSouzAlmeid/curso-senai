@@ -24,7 +24,7 @@ import Spinner from "../../components/Spinner/Spinner";
 import Notification from "../../components/Notification/Notification";
 
 //import de Utils
-import {dateFormatDbToView} from '../../Utils/stringFunctions';
+import { dateFormatDbToDateValue } from "../../Utils/stringFunctions";
 
 const EventosPage = () => {
   //states
@@ -32,11 +32,11 @@ const EventosPage = () => {
   const [mostraSpinner, setMostraSpinner] = useState(false);
   const [nome, setNome] = useState("");
   const [descricao, setDescricao] = useState("");
-  const [dataEvento, setDataEvento] = useState();
+  const [dataEvento, setDataEvento] = useState("");
   const [idTipoEventoSelecionado, setIdTipoEventoSelecionado] = useState("");
   const [idEventoSelecionado, setIdEventoSelecionado] = useState("");
   const [idInstituicao, setIdInstituicao] = useState(
-    "a54983d0-9e20-4149-aec7-ed8ed5257371"
+    "4b18d4c6-018b-4e45-8be8-46d59593e7e1"
   );
   const [formularioCadastro, setFormularioCadastro] = useState(true);
   const [listaDeTiposDeEventos, setListaDeTiposDeEventos] = useState([]);
@@ -127,7 +127,7 @@ const EventosPage = () => {
         imgAlt:
           "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
         showMessage: true,
-      })
+      });
     } catch (erro) {
       console.log(erro);
     }
@@ -136,13 +136,14 @@ const EventosPage = () => {
   async function mostraFormularioAtualizar(id) {
     setFormularioCadastro(false);
 
-    const retorno = await api.get(`/Evento/${id}`)
+    const retorno = await api.get(`/Evento/${id}`);
 
-    const {idEvento, nomeEvento, descricao, dataEvento, idTipoEvento} = retorno.data;
+    const { idEvento, nomeEvento, descricao, dataEvento, idTipoEvento } =
+      retorno.data;
 
     setNome(nomeEvento);
     setDescricao(descricao);
-    setDataEvento(dateFormatDbToView(dataEvento));
+    setDataEvento(dateFormatDbToDateValue(dataEvento));
     setIdTipoEventoSelecionado(idTipoEvento);
     setIdEventoSelecionado(idEvento);
   }
@@ -151,39 +152,39 @@ const EventosPage = () => {
     e.preventDefault();
 
     if (nome.length < 3) {
-        setNotifyUser({
-          titleNote: "Nome de Evento Inválido",
-          textNote: `O nome do evento deve conter pelo menos 3 caracteres!`,
-          imgIcon: "warning",
-          imgAlt:
-            "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
-          showMessage: true,
-        });
-        return;
-      }
+      setNotifyUser({
+        titleNote: "Nome de Evento Inválido",
+        textNote: `O nome do evento deve conter pelo menos 3 caracteres!`,
+        imgIcon: "warning",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
+      return;
+    }
 
     try {
-        const retorno = await api.put(`/Evento/${idEventoSelecionado}`, {
-            nomeEvento: nome,
-            descricao: descricao,
-            dataEvento: dataEvento,
-            idTipoEvento: idTipoEventoSelecionado,
-            idInstituicao: idInstituicao,
-          });
-    
-          atualizarListaEventos();
-          cancelarEdit();
-    
-          setNotifyUser({
-            titleNote: "Evento Atualizado Com Sucesso",
-            textNote: `O Evento em questão foi atualizado com sucesso!`,
-            imgIcon: "success",
-            imgAlt:
-              "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
-            showMessage: true,
-          })
+      const retorno = await api.put(`/Evento/${idEventoSelecionado}`, {
+        nomeEvento: nome,
+        descricao: descricao,
+        dataEvento: dataEvento,
+        idTipoEvento: idTipoEventoSelecionado,
+        idInstituicao: idInstituicao,
+      });
+
+      atualizarListaEventos();
+      cancelarEdit();
+
+      setNotifyUser({
+        titleNote: "Evento Atualizado Com Sucesso",
+        textNote: `O Evento em questão foi atualizado com sucesso!`,
+        imgIcon: "success",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
     } catch (error) {
-        console.log(error);
+      console.log(error);
     }
   }
 
@@ -192,7 +193,7 @@ const EventosPage = () => {
     setDescricao("");
     setDataEvento("");
     setIdTipoEventoSelecionado("");
-    setIdEventoSelecionado('');
+    setIdEventoSelecionado("");
   }
 
   function cancelarEdit() {
@@ -238,6 +239,9 @@ const EventosPage = () => {
                   />
 
                   <Select
+                    id={"tipos-de-eventos"}
+                    name={"tipos-de-eventos"}
+                    required
                     dados={listaDeTiposDeEventos}
                     selectValue={idTipoEventoSelecionado}
                     mudaOpcao={(e) => {
@@ -291,6 +295,9 @@ const EventosPage = () => {
                   />
 
                   <Select
+                    id={"tipos-de-eventos"}
+                    name={"tipos-de-eventos"}
+                    required
                     dados={listaDeTiposDeEventos}
                     selectValue={idTipoEventoSelecionado}
                     mudaOpcao={(e) => {
