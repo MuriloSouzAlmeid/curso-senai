@@ -73,14 +73,14 @@
   width: 20%;
 }
 
-.table-data__body{
-  overflow: auto;
-  max-height: 350px;
-}
-
 .table-data__head-title {
   font-family: Poppins-Semibold;
   font-size: 1.1rem !important;
+}
+
+.table-data__body{
+  overflow: auto;
+  max-height: 350px;
 }
 
 .table-data__data {

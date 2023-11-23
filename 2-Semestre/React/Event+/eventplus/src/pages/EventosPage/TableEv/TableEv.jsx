@@ -1,5 +1,5 @@
 import React from "react";
-import "./TableEv.css";
+import '../TableEv/TableEv.css';
 
 //import dos ícones
 import trashIcon from "../../../assets/images/trash-delete.svg";
@@ -48,8 +48,8 @@ const TableEv = ({ dados, fnDelete, fnUpdate }) => {
                   data-tooltip-content={dado.descricao}
                   data-tooltip-place="top"
                 >
-                  <Tooltip id={dado.idEvento} />
-                  {dado.descricao.substr(0, 15)}...
+                  <Tooltip id={dado.idEvento} className="custom-tootip" />
+                  {dado.descricao.substr(0, 14)}...
                 </p>
               </td>
               <td className="table-data__data table-data__data--little">

@@ -10569,19 +10569,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\47015003805\\.nuget\\packages\\": {}
+    "C:\\Users\\muril\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj",
+      "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj",
       "projectName": "gamer-fullstack",
-      "projectPath": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj",
-      "packagesPath": "C:\\Users\\47015003805\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47015003805\\Desktop\\curso_senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\obj\\",
+      "projectPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj",
+      "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\47015003805\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10645,7 +10645,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
