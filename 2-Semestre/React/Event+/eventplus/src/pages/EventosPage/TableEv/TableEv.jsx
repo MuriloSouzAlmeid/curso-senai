@@ -38,7 +38,7 @@ const TableEv = ({ dados, fnDelete, fnUpdate }) => {
       <tbody className="table-data__body">
         {dados.map((dado) => {
           return (
-            <tr className="table-data__head-row">
+            <tr key={dado.idEvento} className="table-data__head-row">
               <td className="table-data__data table-data__data--big">
                 {dado.nomeEvento}
               </td>
@@ -64,7 +64,7 @@ const TableEv = ({ dados, fnDelete, fnUpdate }) => {
                   src={editIcon}
                   alt=""
                   onClick={() => {
-                    fnUpdate(dado.idEvento);
+                    fnUpdate(dado);
                   }}
                 />
               </td>

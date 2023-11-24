@@ -53,7 +53,7 @@ export const Select = ({
   mudaOpcao,
   id,
   name,
-  selectValue,
+  selectValue = '',
   required,
   additionalClass = ''
 }) => {
