@@ -28,7 +28,6 @@ const Navbar = ( {setExibeNavbar, exibeNavbar} ) => {
                 <Link to='/' exact>Home</Link>
                 <Link to='/eventos'>Eventos</Link>
                 <Link to='/tipos-eventos'>Tipos de Eventos</Link>
-                <Link to='/login'>Login</Link>
             </div>
         </nav>
     );

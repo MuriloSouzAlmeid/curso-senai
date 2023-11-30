@@ -1,4 +1,4 @@
-import { React, useContext, useState } from "react";
+import { React, useContext, useEffect, useState } from "react";
 import ImageIllustrator from "../../components/ImageIllustrator/ImageIllustrator";
 import loginImage from "../../assets/images/login.svg";
 import logo from "../../assets/images/logo-pink.svg";
@@ -8,6 +8,7 @@ import api from "../../services/Service";
 
 import "./LoginPage.css";
 import { UserTokenDecoder, UserContext } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
   const {userData, setUserData} = useContext(UserContext);
@@ -17,7 +18,15 @@ const LoginPage = () => {
     senha: "",
   });
 
+  const navigate = useNavigate();
+
   const [notifyUser, setNotifyUser] = useState({})
+
+  useEffect(() => {
+    if(userData.nome) navigate('/');
+  }, 
+  //devemos colocar o userData como dependência para observar qualquer alteração no mesmo
+  [userData])
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -53,6 +62,8 @@ const LoginPage = () => {
       console.log(userData);
 
       localStorage.setItem('token', JSON.stringify(userFullToken))//transforma o objeto em json
+
+      navigate('/') //redireciona para a página home 
 
     } catch (error) {
       

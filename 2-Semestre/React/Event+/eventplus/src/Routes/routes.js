@@ -5,15 +5,15 @@ import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 //import das páginas
-import HomePage from './pages/HomePage/HomePage';
-import EventosPage from './pages/EventosPage/EventosPage';
-import LoginPage from './pages/LoginPage/LoginPage';
-import TiposEventos from './pages/TiposEventosPage/TiposEventos';
-import TestePage from './pages/TestePage/TestePage';
+import HomePage from '../pages/HomePage/HomePage';
+import EventosPage from '../pages/EventosPage/EventosPage';
+import LoginPage from '../pages/LoginPage/LoginPage';
+import TiposEventos from '../pages/TiposEventosPage/TiposEventos';
+import TestePage from '../pages/TestePage/TestePage';
 
 //import dos componentes
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 const Rotas = () => {
     return (
