@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./TiposEventos.css";
 
 //import da api
@@ -17,8 +17,12 @@ import Spinner from '../../components/Spinner/Spinner'
 import { Input, Button } from "../../components/FormComponents/FormComponents";
 
 import imageTipoEvento from "../../assets/images/tipo-evento.svg";
+import { ActivatedPage } from "../../context/ActivatedPage";
 
 const TiposEventos = () => {
+  //contexts
+  const {setActivatedPage} = useContext(ActivatedPage);
+
   //states
   const [formEdit, setFormEdit] = useState(false);
   const [titulo, setTitulo] = useState("");
@@ -29,6 +33,8 @@ const TiposEventos = () => {
 
   //ao carregar a página
   useEffect(() => {
+    setActivatedPage('tipos-eventos')
+
     async function getEvetsType() {
       
       //antes de consultar a api

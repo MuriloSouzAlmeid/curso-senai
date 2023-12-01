@@ -112,19 +112,25 @@ namespace webapi.event_.Repositories
         public List<PresencasEvento> ListarMinhas(Guid id)
         {
             return _context.PresencasEvento
-                .Select(p => new PresencasEvento
+                .Select(p => new PresencasEvento()
                 {
                     IdPresencaEvento = p.IdPresencaEvento,
                     Situacao = p.Situacao,
+                    IdUsuario = p.IdUsuario,
+                    IdEvento = p.IdEvento,
 
-                    Evento = new Evento
+                    Evento = new Evento()
                     {
+                        IdEvento = p.IdEvento,
                         DataEvento = p.Evento!.DataEvento,
                         NomeEvento = p.Evento.NomeEvento,
                         Descricao = p.Evento.Descricao,
+                        IdTipoEvento = p.Evento.IdTipoEvento,
+                        IdInstituicao = p.Evento.IdInstituicao,
 
-                        Instituicao = new Instituicao
+                        Instituicao = new Instituicao()
                         {
+                            IdInstituicao = p.Evento.IdInstituicao,
                             NomeFantasia = p.Evento.Instituicao!.NomeFantasia
                         }
                     }

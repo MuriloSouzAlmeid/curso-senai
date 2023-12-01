@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import api from '../../services/Service';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "./HomePage.css";
@@ -11,11 +11,14 @@ import VisionSection from "../../components/VisionSection/VisionSection";
 import ContactSection from "../../components/ContactSection/ContactSection";
 import NextEvent from "../../components/NextEvent/NextEvent";
 import Container from "../../components/Container/Container";
+import { ActivatedPage } from "../../context/ActivatedPage";
 
 const HomePage = () => {
+  const {setActivatedPage} = useContext(ActivatedPage)
   //chamar a api na hora que carregar a página
   //usamos o useEffect, ele sempre roda uma primeira vez mesmo não tendo alterado a variável
   useEffect( () => {
+    setActivatedPage('home')
     //função que será executada quando o useEffect for chamado (irá chamar a api)
     async function getProximosEventos () {
       try{

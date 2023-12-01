@@ -23,6 +23,15 @@
     font-size: 1rem;
     color: #201849;
     text-decoration: none;
+    text-align: center;
+}
+
+.perfil-usuario__menuitem__link:hover{
+    color: var(--color-red);
+}
+
+.perfil-usuario__menuitem__link--activated{
+    color: var(--color-red);
 }
 
 .perfil-usuario__icon {

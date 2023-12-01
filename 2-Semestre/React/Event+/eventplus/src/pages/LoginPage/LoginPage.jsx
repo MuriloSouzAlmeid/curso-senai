@@ -9,8 +9,11 @@ import api from "../../services/Service";
 import "./LoginPage.css";
 import { UserTokenDecoder, UserContext } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import { ActivatedPage } from "../../context/ActivatedPage";
 
 const LoginPage = () => {
+  const {setActivatedPage} = useContext(ActivatedPage);
+
   const {userData, setUserData} = useContext(UserContext);
 
   const [user, setUser] = useState({
@@ -23,6 +26,8 @@ const LoginPage = () => {
   const [notifyUser, setNotifyUser] = useState({})
 
   useEffect(() => {
+    setActivatedPage('login')
+
     if(userData.nome) navigate('/');
   }, 
   //devemos colocar o userData como dependência para observar qualquer alteração no mesmo

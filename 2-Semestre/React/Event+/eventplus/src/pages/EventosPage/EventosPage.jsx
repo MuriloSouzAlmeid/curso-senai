@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./EventosPage.css";
 
 //import dos componentes
@@ -25,8 +25,12 @@ import Notification from "../../components/Notification/Notification";
 
 //import de Utils
 import { dateFormatDbToDateValue } from "../../Utils/stringFunctions";
+import { ActivatedPage } from "../../context/ActivatedPage";
 
 const EventosPage = () => {
+  //contexts
+  const {setActivatedPage} = useContext(ActivatedPage)
+
   //states
   const [listaDeEventos, setListaDeEventos] = useState([]);
   const [mostraSpinner, setMostraSpinner] = useState(false);
@@ -46,6 +50,7 @@ const EventosPage = () => {
 
   //use effect
   useEffect(() => {
+    setActivatedPage('eventos');
     async function getEvents() {
       setMostraSpinner(true);
 

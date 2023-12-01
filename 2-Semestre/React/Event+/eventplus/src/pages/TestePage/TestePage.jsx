@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useState } from 'react';
 
 import Titulo from '../../components/Titulo/Titulo';
@@ -12,6 +12,7 @@ import './TestePage.css';
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { ActivatedPage } from '../../context/ActivatedPage';
 
 const TestePage = () => {
   const [count, setCount] =useState(10);

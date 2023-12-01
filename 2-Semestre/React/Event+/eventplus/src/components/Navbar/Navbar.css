@@ -77,6 +77,16 @@
     border-bottom: 2px solid #201849;
 }
 
+.navbar__items-box__link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: Poppins-Regular;
+}
+
+.navbar__items-box__link:hover{
+    color: var(--color-red);
+}
+
 
 /* Desktop */
 @media screen and (min-width: 992px) {
@@ -112,7 +122,8 @@
         height: auto;
         width: 60%;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 20%;
     
         /* border: 1px solid blue; */
     }
@@ -122,5 +133,9 @@
         font-size: 0.875rem;
         color: var(--color-dark-blue);
         border: none;
+    }
+
+    .navbar__items-box__link--activated{
+        color: var(--color-red);
     }
 }
