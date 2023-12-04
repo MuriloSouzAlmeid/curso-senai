@@ -49,7 +49,7 @@ export const Button = ({
 
 export const Select = ({
   dados,
-  defaultOptionText = "Tipo Evento",
+  defaultOptionText = "Selecione",
   mudaOpcao,
   id,
   name,
@@ -69,7 +69,7 @@ export const Select = ({
       <option value="">{defaultOptionText}</option>
       {dados.map((opt) => {
         return (
-          <option key={opt.idTipoEvento} value={opt.idTipoEvento}>{opt.titulo}</option>
+          <option key={opt.value} value={opt.value}>{opt.text}</option>
         );
       })}
     </select>

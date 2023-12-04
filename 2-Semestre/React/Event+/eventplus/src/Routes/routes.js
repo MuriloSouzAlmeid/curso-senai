@@ -10,6 +10,7 @@ import EventosPage from "../pages/EventosPage/EventosPage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import TiposEventos from "../pages/TiposEventosPage/TiposEventos";
 import TestePage from "../pages/TestePage/TestePage";
+import EventosAlunoPage from "../pages/EventosAlunoPage/EventosAlunoPage";
 
 //import dos componentes
 import Header from "../components/Header/Header";
@@ -44,7 +45,7 @@ const Rotas = () => {
           <Route
             element={
               <PrivateRoute redirectTo="/">
-                <EventosPage />
+                <EventosAlunoPage />
               </PrivateRoute>
             }
             path="/eventos-aluno"

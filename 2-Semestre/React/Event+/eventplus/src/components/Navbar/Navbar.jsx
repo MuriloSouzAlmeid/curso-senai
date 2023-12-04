@@ -46,8 +46,8 @@ const Navbar = ({ setExibeNavbar, exibeNavbar }) => {
           </>
         ) : (
           userData.perfil === "Comun" ? (
-            <Link className={`navbar__items-box__link ${(activatedPage === 'eventos-aluno') ? `navbar__items-box__link--activated` : ``}`} to="/">
-              Eventos Aluno
+            <Link className={`navbar__items-box__link ${(activatedPage === 'eventos-aluno') ? `navbar__items-box__link--activated` : ``}`} to="/eventos-aluno">
+              Eventos
             </Link>
           ) : (null)
         )}

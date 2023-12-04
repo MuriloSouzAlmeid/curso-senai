@@ -61,7 +61,9 @@ const EventosPage = () => {
 
         const retornoTiposDeEvento = await api.get("/TiposEvento");
 
-        setListaDeTiposDeEventos(retornoTiposDeEvento.data);
+        setListaDeTiposDeEventos(
+          retornoTiposDeEvento.data
+        );
       } catch (erro) {
         console.log(erro);
       }
@@ -164,20 +166,18 @@ const EventosPage = () => {
     }
   }
 
-  function mostraFormularioAtualizar(evento) {
+  async function mostraFormularioAtualizar(evento) {
     setFormularioCadastro(false);
-    setEventoDados(evento);
 
-    // const retorno = await api.get(`/Evento/${id}`);
+    const retorno = await api.get(`/Evento/${evento.idEvento}`);
 
-    // const { idEvento, nomeEvento, descricao, dataEvento, idTipoEvento } =
-    //   retorno.data;
+    const { idEvento, nomeEvento, descricao, dataEvento, idTipoEvento } = retorno.data;
 
-    // setNome(nomeEvento);
-    // setDescricao(descricao);
-    // setDataEvento(dateFormatDbToDateValue(dataEvento));
-    // setIdTipoEventoSelecionado(idTipoEvento);
-    // setIdEventoSelecionado(idEvento);
+    setNome(nomeEvento);
+    setDescricao(descricao);
+    setDataEvento(dateFormatDbToDateValue(dataEvento));
+    setIdTipoEventoSelecionado(idTipoEvento);
+    setIdEventoSelecionado(idEvento);
   }
 
   async function handleUpdate(e) {
