@@ -15,6 +15,7 @@ import { UserContext } from "../../context/AuthContext";
 
 import { ActivatedPage } from "../../context/ActivatedPage";
 import TiposEventos from "../TiposEventosPage/TiposEventos";
+import userEvent from "@testing-library/user-event";
 
 const EventosAlunoPage = () => {
   // contexts
@@ -42,12 +43,7 @@ const EventosAlunoPage = () => {
       setShowSpinner(true);
 
       try {
-        if (tipoEvento === "1") {
-          const retornoEventos = await api.get(`/Evento`);
-
-          setEventos(retornoEventos.data);
-        } else {
-
+        if (tipoEvento === "2") {
           let arrayEventos = [];
 
           const retornoEventos = await api.get(
@@ -55,10 +51,28 @@ const EventosAlunoPage = () => {
           );
 
           retornoEventos.data.forEach((elemento) => {
-            arrayEventos.push(elemento.evento);
+            arrayEventos.push({
+              ...elemento.evento,
+
+              //pega a situação do evento
+              situacao: elemento.situacao
+            });
           });
 
           setEventos(arrayEventos);
+
+          
+        } else {
+          const retornoEventos = await api.get(`/Evento`);
+          const retornoEventosUsuario = await api.get(
+            `/PresencasEvento/ListarMInhas/${userData.userId}`
+          );
+
+          const listaEventosMarcados = verificarPresenca(retornoEventos.data, retornoEventosUsuario.data);
+
+          console.log(listaEventosMarcados);
+
+          setEventos(retornoEventos.data);
         }
 
       } catch (error) {
@@ -69,7 +83,7 @@ const EventosAlunoPage = () => {
     }
 
     loadEventsType();
-  }, [tipoEvento]);
+  }, [tipoEvento, userData.userId]);
 
   // toggle meus eventos ou todos os eventos
   function myEvents(tpEvent) {
@@ -91,6 +105,24 @@ const EventosAlunoPage = () => {
   function handleConnect() {
     alert("Desenvolver a função conectar evento");
   }
+
+  const verificarPresenca = (allEvents, userEvents) => {
+    for (let x = 0; x < allEvents.length; x++) {
+      
+      for (let i = 0; i < userEvents.length; i++) {
+        
+        if(allEvents[x].idEvento === userEvents[i].idEvento){
+          allEvents[x].situacao = true;
+          break;
+        }
+        
+      }
+      
+    }
+
+    return allEvents;
+  }
+
   return (
     <>
       <MainContent>

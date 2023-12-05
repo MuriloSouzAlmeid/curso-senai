@@ -38,8 +38,8 @@ const EventosPage = () => {
   const [listaDeTiposDeEventos, setListaDeTiposDeEventos] = useState([]);
   const [notifyUser, setNotifyUser] = useState({});
 
-  // const instituicao = "4b18d4c6-018b-4e45-8be8-46d59593e7e1";
-  const instituicao = "a54983d0-9e20-4149-aec7-ed8ed5257371";
+  const instituicao = "4b18d4c6-018b-4e45-8be8-46d59593e7e1";
+  //const instituicao = "a54983d0-9e20-4149-aec7-ed8ed5257371";
 
   const [dadosEvento, setDadosEvento] = useState({
     idEvento: "",
