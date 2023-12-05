@@ -64,7 +64,7 @@ const TableEv = ({ dados, fnDelete, fnUpdate }) => {
                   src={editIcon}
                   alt=""
                   onClick={() => {
-                    fnUpdate(dado.idEvento);
+                    fnUpdate(dado);
                   }}
                 />
               </td>

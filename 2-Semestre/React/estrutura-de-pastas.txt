@@ -20,4 +20,4 @@ Instalações:
 node.js -> programa
 json server -> npm i -g json-server 
 React Create App -> npm i -g react-create-app
-react routes -> npm i -g react-router-dom
+react routes -> npm i react-router-dom

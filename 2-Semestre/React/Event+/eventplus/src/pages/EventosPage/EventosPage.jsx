@@ -29,28 +29,29 @@ import { ActivatedPage } from "../../context/ActivatedPage";
 
 const EventosPage = () => {
   //contexts
-  const {setActivatedPage} = useContext(ActivatedPage)
+  const { setActivatedPage } = useContext(ActivatedPage);
 
   //states
   const [listaDeEventos, setListaDeEventos] = useState([]);
   const [mostraSpinner, setMostraSpinner] = useState(false);
-  const [nome, setNome] = useState("");
-  const [descricao, setDescricao] = useState("");
-  const [dataEvento, setDataEvento] = useState("");
-  const [idTipoEventoSelecionado, setIdTipoEventoSelecionado] = useState("");
-  const [idEventoSelecionado, setIdEventoSelecionado] = useState("");
-  const [idInstituicao, setIdInstituicao] = useState(
-    "4b18d4c6-018b-4e45-8be8-46d59593e7e1"
-  );
   const [formularioCadastro, setFormularioCadastro] = useState(true);
   const [listaDeTiposDeEventos, setListaDeTiposDeEventos] = useState([]);
   const [notifyUser, setNotifyUser] = useState({});
 
-  const [eventoDados, setEventoDados] = useState({});
+  // const instituicao = "4b18d4c6-018b-4e45-8be8-46d59593e7e1";
+  const instituicao = "a54983d0-9e20-4149-aec7-ed8ed5257371";
+
+  const [dadosEvento, setDadosEvento] = useState({
+    idEvento: "",
+    nomeEvento: "",
+    descricao: "",
+    dataEvento: "",
+    idTipoEvento: "",
+  });
 
   //use effect
   useEffect(() => {
-    setActivatedPage('eventos');
+    setActivatedPage("eventos");
     async function getEvents() {
       setMostraSpinner(true);
 
@@ -61,9 +62,16 @@ const EventosPage = () => {
 
         const retornoTiposDeEvento = await api.get("/TiposEvento");
 
-        setListaDeTiposDeEventos(
-          retornoTiposDeEvento.data
-        );
+        let arrayGenerico = [];
+
+        retornoTiposDeEvento.data.forEach((tp) => {
+          arrayGenerico.push({
+            value: tp.idTipoEvento,
+            text: tp.titulo,
+          });
+        });
+
+        setListaDeTiposDeEventos(arrayGenerico);
       } catch (erro) {
         console.log(erro);
       }
@@ -119,7 +127,7 @@ const EventosPage = () => {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    if (nome.length < 3) {
+    if (dadosEvento.nomeEvento.length < 3) {
       setNotifyUser({
         titleNote: "Nome de Evento Inválido",
         textNote: `O nome do evento deve conter pelo menos 3 caracteres!`,
@@ -129,7 +137,7 @@ const EventosPage = () => {
         showMessage: true,
       });
       return;
-    }else if(new Date(dataEvento) < new Date(Date.now())){
+    } else if (new Date(dadosEvento.dataEvento) < new Date(Date.now())) {
       setNotifyUser({
         titleNote: "Data do Evento Inválido",
         textNote: `Informe uma data válida para o evento!`,
@@ -142,12 +150,12 @@ const EventosPage = () => {
     }
 
     try {
-      const retorno = await api.post("/Evento", {
-        nomeEvento: nome,
-        descricao: descricao,
-        dataEvento: dataEvento,
-        idTipoEvento: idTipoEventoSelecionado,
-        idInstituicao: idInstituicao
+      const cadastro = await api.post("/Evento", {
+        nomeEvento: dadosEvento.nomeEvento,
+        descricao: dadosEvento.descricao,
+        dataEvento: dadosEvento.dataEvento,
+        idTipoEvento: dadosEvento.idTipoEvento,
+        idInstituicao: instituicao,
       });
 
       atualizarListaEventos();
@@ -168,74 +176,73 @@ const EventosPage = () => {
 
   async function mostraFormularioAtualizar(evento) {
     setFormularioCadastro(false);
+    alert("Bora Atualizar");
 
     const retorno = await api.get(`/Evento/${evento.idEvento}`);
 
     const { idEvento, nomeEvento, descricao, dataEvento, idTipoEvento } = retorno.data;
 
-    setNome(nomeEvento);
-    setDescricao(descricao);
-    setDataEvento(dateFormatDbToDateValue(dataEvento));
-    setIdTipoEventoSelecionado(idTipoEvento);
-    setIdEventoSelecionado(idEvento);
+    // setNome(nomeEvento);
+    // setDescricao(descricao);
+    // setDataEvento(dateFormatDbToDateValue(dataEvento));
+    // setIdTipoEventoSelecionado(idTipoEvento);
+    // setIdEventoSelecionado(idEvento);
   }
 
   async function handleUpdate(e) {
-    e.preventDefault();
-
-    if (nome.length < 3) {
-      setNotifyUser({
-        titleNote: "Nome de Evento Inválido",
-        textNote: `O nome do evento deve conter pelo menos 3 caracteres!`,
-        imgIcon: "warning",
-        imgAlt:
-          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
-        showMessage: true,
-      });
-      return;
-    }else if(new Date(dataEvento) < new Date(Date.now())){
-      setNotifyUser({
-        titleNote: "Data do Evento Inválido",
-        textNote: `Informe uma data válida para o evento!`,
-        imgIcon: "warning",
-        imgAlt:
-          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
-        showMessage: true,
-      });
-      return;
-    }
-
-    try {
-      const retorno = await api.put(`/Evento/${idEventoSelecionado}`, {
-        nomeEvento: nome,
-        descricao: descricao,
-        dataEvento: dataEvento,
-        idTipoEvento: idTipoEventoSelecionado,
-        idInstituicao: idInstituicao,
-      });
-
-      atualizarListaEventos();
-      cancelarEdit();
-
-      setNotifyUser({
-        titleNote: "Evento Atualizado Com Sucesso",
-        textNote: `O Evento em questão foi atualizado com sucesso!`,
-        imgIcon: "success",
-        imgAlt:
-          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
-        showMessage: true,
-      });
-    } catch (error) {
-      console.log(error);
-    }
+    // e.preventDefault();
+    // if (nome.length < 3) {
+    //   setNotifyUser({
+    //     titleNote: "Nome de Evento Inválido",
+    //     textNote: `O nome do evento deve conter pelo menos 3 caracteres!`,
+    //     imgIcon: "warning",
+    //     imgAlt:
+    //       "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+    //     showMessage: true,
+    //   });
+    //   return;
+    // }else if(new Date(dataEvento) < new Date(Date.now())){
+    //   setNotifyUser({
+    //     titleNote: "Data do Evento Inválido",
+    //     textNote: `Informe uma data válida para o evento!`,
+    //     imgIcon: "warning",
+    //     imgAlt:
+    //       "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+    //     showMessage: true,
+    //   });
+    //   return;
+    // }
+    // try {
+    //   const retorno = await api.put(`/Evento/${idEventoSelecionado}`, {
+    //     nomeEvento: nome,
+    //     descricao: descricao,
+    //     dataEvento: dataEvento,
+    //     idTipoEvento: idTipoEventoSelecionado,
+    //     idInstituicao: idInstituicao,
+    //   });
+    //   atualizarListaEventos();
+    //   cancelarEdit();
+    //   setNotifyUser({
+    //     titleNote: "Evento Atualizado Com Sucesso",
+    //     textNote: `O Evento em questão foi atualizado com sucesso!`,
+    //     imgIcon: "success",
+    //     imgAlt:
+    //       "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+    //     showMessage: true,
+    //   });
+    // } catch (error) {
+    //   console.log(error);
+    // }
   }
 
   function redefinirCamposFormulario() {
-    setNome("");
-    setDescricao("");
-    setDataEvento("");
-    setIdTipoEventoSelecionado("");
-    setIdEventoSelecionado("");
+    setDadosEvento({
+      idEvento: "",
+      nomeEvento: "",
+      descricao: "",
+      dataEvento: "",
+      idTipoEvento: "",
+    });
   }
 
   function cancelarEdit() {
@@ -253,52 +260,68 @@ const EventosPage = () => {
               imageRender={EventImage}
               alterText={"Imagem de um cara vendo uns balões"}
             />
-            <form className="fevento" onSubmit={ formularioCadastro ? handleSubmit : handleUpdate}>
+            <form
+              className="fevento"
+              onSubmit={formularioCadastro ? handleSubmit : handleUpdate}
+            >
               {formularioCadastro ? (
                 <>
                   <Input
                     type={"text"}
                     id={"nome"}
-                    value={nome}
+                    value={dadosEvento.nomeEvento}
                     required={"required"}
                     name={"nome"}
                     placeholder={"Nome"}
                     manipulationFunction={(e) => {
-                      setNome(e.target.value);
+                      setDadosEvento({
+                        ...dadosEvento,
+                        nomeEvento: e.target.value,
+                      });
                     }}
                   />
 
                   <Input
                     type={"text"}
                     id={"descricao"}
-                    value={descricao}
+                    value={dadosEvento.descricao}
                     required={"required"}
                     name={"descricao"}
                     placeholder={"Descrição"}
                     manipulationFunction={(e) => {
-                      setDescricao(e.target.value);
+                      setDadosEvento({
+                        ...dadosEvento,
+                        descricao: e.target.value,
+                      });
                     }}
                   />
 
                   <Select
                     id={"tipos-de-eventos"}
                     name={"tipos-de-eventos"}
+                    defaultOptionText={"Tipo de Evento"}
                     required
                     dados={listaDeTiposDeEventos}
-                    selectValue={idTipoEventoSelecionado}
+                    selectValue={dadosEvento.idTipoEvento}
                     mudaOpcao={(e) => {
-                      setIdTipoEventoSelecionado(e.target.value);
+                      setDadosEvento({
+                        ...dadosEvento,
+                        idTipoEvento: e.target.value,
+                      });
                     }}
                   />
 
                   <Input
                     type={"date"}
                     id={"data-evento"}
-                    value={dataEvento}
+                    value={dadosEvento.dataEvento}
                     required={"required"}
                     name={"data-evento"}
                     manipulationFunction={(e) => {
-                      setDataEvento(e.target.value);
+                      setDadosEvento({
+                        ...dadosEvento,
+                        dataEvento: e.target.value,
+                      });
                     }}
                   />
 
@@ -315,14 +338,14 @@ const EventosPage = () => {
                   <Input
                     type={"text"}
                     id={"nome"}
-                    value={eventoDados.nomeEvento}
+                    value={dadosEvento.nomeEvento}
                     required={"required"}
                     name={"nome"}
                     placeholder={"Nome"}
                     manipulationFunction={(e) => {
-                      setEventoDados({
-                        ...eventoDados, 
-                        nomeEvento: e.target.value
+                      setDadosEvento({
+                        ...dadosEvento,
+                        nomeEvento: e.target.value,
                       });
                     }}
                   />
@@ -330,14 +353,14 @@ const EventosPage = () => {
                   <Input
                     type={"text"}
                     id={"descricao"}
-                    value={eventoDados.descricao}
+                    value={dadosEvento.descricao}
                     required={"required"}
                     name={"descricao"}
                     placeholder={"Descrição"}
                     manipulationFunction={(e) => {
-                      setDescricao({
-                        ...eventoDados,
-                        descricao: e.target.value
+                      setDadosEvento({
+                        ...dadosEvento,
+                        descricao: e.target.value,
                       });
                     }}
                   />
@@ -345,12 +368,14 @@ const EventosPage = () => {
                   <Select
                     id={"tipos-de-eventos"}
                     name={"tipos-de-eventos"}
+                    defaultOptionText={"Tipo de Evento"}
                     required
                     dados={listaDeTiposDeEventos}
-                    selectValue={eventoDados.idTipoEvento}
+                    selectValue={dadosEvento.idTipoEvento}
                     mudaOpcao={(e) => {
-                      setEventoDados({
-                        ...eventoDados, idTipoEvento: e.target.value
+                      setDadosEvento({
+                        ...dadosEvento,
+                        idTipoEvento: e.target.value,
                       });
                     }}
                   />
@@ -358,12 +383,13 @@ const EventosPage = () => {
                   <Input
                     type={"date"}
                     id={"data-evento"}
-                    value={dateFormatDbToDateValue(eventoDados.dataEvento)}
+                    value={dadosEvento.dataEvento}
                     required={"required"}
                     name={"data-evento"}
                     manipulationFunction={(e) => {
-                      setEventoDados({
-                        ...eventoDados, dataEvento: e.target.value
+                      setDadosEvento({
+                        ...dadosEvento,
+                        dataEvento: e.target.value,
                       });
                     }}
                   />
