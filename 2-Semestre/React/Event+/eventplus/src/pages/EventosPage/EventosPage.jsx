@@ -176,11 +176,10 @@ const EventosPage = () => {
 
   async function mostraFormularioAtualizar(evento) {
     setFormularioCadastro(false);
-    alert("Bora Atualizar");
 
     const retorno = await api.get(`/Evento/${evento.idEvento}`);
 
-    const { idEvento, nomeEvento, descricao, dataEvento, idTipoEvento } = retorno.data;
+    setDadosEvento(retorno.data);
 
     // setNome(nomeEvento);
     // setDescricao(descricao);
@@ -190,28 +189,51 @@ const EventosPage = () => {
   }
 
   async function handleUpdate(e) {
-    // e.preventDefault();
-    // if (nome.length < 3) {
-    //   setNotifyUser({
-    //     titleNote: "Nome de Evento Inválido",
-    //     textNote: `O nome do evento deve conter pelo menos 3 caracteres!`,
-    //     imgIcon: "warning",
-    //     imgAlt:
-    //       "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
-    //     showMessage: true,
-    //   });
-    //   return;
-    // }else if(new Date(dataEvento) < new Date(Date.now())){
-    //   setNotifyUser({
-    //     titleNote: "Data do Evento Inválido",
-    //     textNote: `Informe uma data válida para o evento!`,
-    //     imgIcon: "warning",
-    //     imgAlt:
-    //       "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
-    //     showMessage: true,
-    //   });
-    //   return;
-    // }
+    e.preventDefault();
+    if (dadosEvento.nomeEvento.length < 3) {
+      setNotifyUser({
+        titleNote: "Nome de Evento Inválido",
+        textNote: `O nome do evento deve conter pelo menos 3 caracteres!`,
+        imgIcon: "warning",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
+      return;
+    }else if(new Date(dadosEvento.dataEvento) < new Date(Date.now())){
+      setNotifyUser({
+        titleNote: "Data do Evento Inválido",
+        textNote: `Informe uma data válida para o evento!`,
+        imgIcon: "warning",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
+      return;
+    }
+
+    try{
+      await api.put(`/Evento/${dadosEvento.idEvento}`, {
+        nomeEvento: dadosEvento.nomeEvento,
+        dataEvento: dadosEvento.dataEvento,
+        descricao: dadosEvento.descricao,
+        idTipoEvento: dadosEvento.idTipoEvento
+      });
+
+      atualizarListaEventos();
+      cancelarEdit();
+
+      setNotifyUser({
+        titleNote: "Evento Atualizado Com Sucesso",
+        textNote: `O Evento em questão foi atualizado com sucesso!`,
+        imgIcon: "success",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true,
+      });
+    }catch(erro){
+      console.log(erro);
+    }
     // try {
     //   const retorno = await api.put(`/Evento/${idEventoSelecionado}`, {
     //     nomeEvento: nome,
@@ -383,7 +405,7 @@ const EventosPage = () => {
                   <Input
                     type={"date"}
                     id={"data-evento"}
-                    value={dadosEvento.dataEvento}
+                    value={dateFormatDbToDateValue(dadosEvento.dataEvento)}
                     required={"required"}
                     name={"data-evento"}
                     manipulationFunction={(e) => {

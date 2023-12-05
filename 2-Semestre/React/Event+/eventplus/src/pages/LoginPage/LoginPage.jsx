@@ -71,7 +71,14 @@ const LoginPage = () => {
       navigate('/') //redireciona para a página home 
 
     } catch (error) {
-      
+      setNotifyUser({
+        titleNote: "Erro ao se logar com o usuário",
+        textNote: `Usuário ou senhas incorretos`,
+        imgIcon: "warning",
+        imgAlt:
+          "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+        showMessage: true
+      })
       console.log(error);
     }
 
