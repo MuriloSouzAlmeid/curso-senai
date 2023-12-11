@@ -9,13 +9,13 @@ import Container from "../../components/Container/Container";
 import { Select } from "../../components/FormComponents/FormComponents";
 import Spinner from "../../components/Spinner/Spinner";
 import Modal from "../../components/Modal/Modal";
+import Notification from "../../components/Notification/Notification";
 import api from "../../services/Service";
 
 import { UserContext } from "../../context/AuthContext";
 
 import { ActivatedPage } from "../../context/ActivatedPage";
 import TiposEventos from "../TiposEventosPage/TiposEventos";
-import userEvent from "@testing-library/user-event";
 
 const EventosAlunoPage = () => {
   // contexts
@@ -35,52 +35,56 @@ const EventosAlunoPage = () => {
   const [tipoEvento, setTipoEvento] = useState("1"); //código do tipo do Evento escolhido
   const [showSpinner, setShowSpinner] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [notifyUser, setNotifyUser] = useState({});
+  const [idEventoComentario, setIdEventoComentario] = useState("");
+  const [descricaoComentario, setDescricaoComentario] = useState("");
+  const [idComentario, setIdComentario] = useState(null);
+
+  async function loadEventsType() {
+    setShowSpinner(true);
+
+    try {
+      if (tipoEvento === "1") {
+        const retornoEventos = await api.get(`/Evento`);
+
+        const retornoPresencas = await api.get(
+          `/PresencasEvento/ListarMInhas/${userData.userId}`
+        );
+
+        const eventosMarcados = verificarPresenca(
+          retornoEventos.data,
+          retornoPresencas.data
+        );
+
+        setEventos(eventosMarcados);
+        console.log(eventosMarcados);
+      } else {
+        let arrayEventos = [];
+
+        const retornoEventos = await api.get(
+          `/PresencasEvento/ListarMInhas/${userData.userId}`
+        );
+
+        retornoEventos.data.forEach((elemento) => {
+          arrayEventos.push({
+            ...elemento.evento,
+
+            situacao: elemento.situacao,
+            idPresencaEvento: elemento.idPresencaEvento,
+          });
+        });
+
+        setEventos(arrayEventos);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+
+    setShowSpinner(false);
+  }
 
   useEffect(() => {
     setActivatedPage("eventos-aluno");
-
-    async function loadEventsType() {
-      setShowSpinner(true);
-
-      try {
-        if (tipoEvento === "2") {
-          let arrayEventos = [];
-
-          const retornoEventos = await api.get(
-            `/PresencasEvento/ListarMInhas/${userData.userId}`
-          );
-
-          retornoEventos.data.forEach((elemento) => {
-            arrayEventos.push({
-              ...elemento.evento,
-
-              //pega a situação do evento
-              situacao: elemento.situacao
-            });
-          });
-
-          setEventos(arrayEventos);
-
-          
-        } else {
-          const retornoEventos = await api.get(`/Evento`);
-          const retornoEventosUsuario = await api.get(
-            `/PresencasEvento/ListarMInhas/${userData.userId}`
-          );
-
-          const listaEventosMarcados = verificarPresenca(retornoEventos.data, retornoEventosUsuario.data);
-
-          console.log(listaEventosMarcados);
-
-          setEventos(retornoEventos.data);
-        }
-
-      } catch (error) {
-        console.log(error);
-      }
-
-      setShowSpinner(false);
-    }
 
     loadEventsType();
   }, [tipoEvento, userData.userId]);
@@ -90,38 +94,117 @@ const EventosAlunoPage = () => {
     setTipoEvento(tpEvent);
   }
 
-  async function loadMyComentary(idComentary) {
-    return "????";
+  const showHideModal = (idEvento) => {
+    setShowModal(showModal ? false : true);
+    setIdEventoComentario(idEvento);
+
+    if (idEvento === "") {
+      setDescricaoComentario("");
+    }
+  };
+
+  async function loadMyComentary(idUsuario, idEvento) {
+    try {
+      const retornoComentario = await api.get(
+        `/ComentariosEvento/BuscarPorUsuario?idUsuario=${idUsuario}&idEvento=${idEvento}`
+      );
+
+      setDescricaoComentario(retornoComentario.data.descricao);
+      setIdComentario(retornoComentario.data.idComentarioEvento);
+    } catch (erro) {
+      setDescricaoComentario("Não há comentário");
+      setIdComentario(null);
+      setIdComentario(null);
+    }
   }
 
-  const showHideModal = () => {
-    setShowModal(showModal ? false : true);
+  const commentaryRemove = async (idComentario) => {
+    try {
+      if (idComentario === null) {
+        alert("Ainda não há comentário");
+        return;
+      }
+
+      await api.delete(`/ComentariosEvento/${idComentario}`);
+      alert("comentário apagado");
+
+      loadMyComentary();
+    } catch (erro) {
+      console.log(erro);
+    }
   };
 
-  const commentaryRemove = () => {
-    alert("Remover o comentário");
+  const postarComentario = async (descricao, idEvento, idUsuario, idComentario) => {
+    try {
+      if(idComentario === null){
+        const retornoPostComentario = await api.post("/ComentariosEvento", {
+          descricao: descricao,
+          idEvento: idEvento,
+          idUsuario: idUsuario,
+          exibe: true
+        });
+
+        alert("comentário cadastrado")
+
+        loadMyComentary();
+      }else{
+        alert("Só é possível cadastrar um comentário por evento")
+      }
+    } catch (erro) {
+      console.log(erro);
+    }
   };
 
-  function handleConnect() {
-    alert("Desenvolver a função conectar evento");
+  async function handleConnect(statusConexao, idEvento, idPresencaEvento) {
+    // alert(statusConexao ? "Desconectar" : "Conectar");
+
+    if (!statusConexao) {
+      try {
+        await api.post("/PresencasEvento", {
+          situacao: true,
+          idUsuario: userData.userId,
+          idEvento: idEvento,
+        });
+
+        setNotifyUser({
+          titleNote: "inscrição Realizada com Sucesso",
+          textNote: `Sua inscrição no evento em questão foi realizada com sucesso!`,
+          imgIcon: "success",
+          imgAlt:
+            "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+          showMessage: true,
+        });
+
+        loadEventsType();
+      } catch (erro) {
+        console.log(erro);
+      }
+    }
+
+    if (statusConexao) {
+      try {
+        await api.delete(`/PresencasEvento/${idPresencaEvento}`);
+
+        loadEventsType();
+      } catch (erro) {
+        console.log(erro);
+      }
+    }
   }
 
   const verificarPresenca = (allEvents, userEvents) => {
     for (let x = 0; x < allEvents.length; x++) {
-      
       for (let i = 0; i < userEvents.length; i++) {
-        
-        if(allEvents[x].idEvento === userEvents[i].idEvento){
+        if (allEvents[x].idEvento === userEvents[i].evento.idEvento) {
           allEvents[x].situacao = true;
+          allEvents[x].idPresencaEvento = userEvents[i].idPresencaEvento;
           break;
         }
-        
       }
-      
     }
 
     return allEvents;
-  }
+  };
 
   return (
     <>
@@ -142,9 +225,7 @@ const EventosAlunoPage = () => {
             tableType={tipoEvento}
             dados={eventos}
             fnConnect={handleConnect}
-            fnShowModal={() => {
-              showHideModal();
-            }}
+            fnShowModal={showHideModal}
           />
         </Container>
       </MainContent>
@@ -152,11 +233,18 @@ const EventosAlunoPage = () => {
       {/* SPINNER -Feito com position */}
       {showSpinner ? <Spinner /> : null}
 
+      <Notification {...notifyUser} setNotifyUser={setNotifyUser} />
+
       {showModal ? (
         <Modal
           userId={userData.userId}
           showHideModal={showHideModal}
+          fnGet={loadMyComentary}
           fnDelete={commentaryRemove}
+          fnPost={postarComentario}
+          eventId={idEventoComentario}
+          comentaryText={descricaoComentario}
+          idComentario={idComentario}
         />
       ) : null}
     </>

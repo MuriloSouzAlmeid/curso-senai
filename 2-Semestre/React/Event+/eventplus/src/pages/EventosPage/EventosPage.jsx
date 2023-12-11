@@ -38,8 +38,8 @@ const EventosPage = () => {
   const [listaDeTiposDeEventos, setListaDeTiposDeEventos] = useState([]);
   const [notifyUser, setNotifyUser] = useState({});
 
-  const instituicao = "4b18d4c6-018b-4e45-8be8-46d59593e7e1";
-  //const instituicao = "a54983d0-9e20-4149-aec7-ed8ed5257371";
+  // const instituicao = "4b18d4c6-018b-4e45-8be8-46d59593e7e1";
+  const [instituicao, setInstituicao] = useState({});
 
   const [dadosEvento, setDadosEvento] = useState({
     idEvento: "",
@@ -56,6 +56,10 @@ const EventosPage = () => {
       setMostraSpinner(true);
 
       try {
+        const retornoInstituicao = await api.get("/Instituicao");
+
+        setInstituicao(retornoInstituicao.data[0]);
+
         const retornoEvento = await api.get("/Evento");
 
         setListaDeEventos(retornoEvento.data);
@@ -155,7 +159,7 @@ const EventosPage = () => {
         descricao: dadosEvento.descricao,
         dataEvento: dadosEvento.dataEvento,
         idTipoEvento: dadosEvento.idTipoEvento,
-        idInstituicao: instituicao,
+        idInstituicao: instituicao.idInstituicao
       });
 
       atualizarListaEventos();
@@ -217,7 +221,8 @@ const EventosPage = () => {
         nomeEvento: dadosEvento.nomeEvento,
         dataEvento: dadosEvento.dataEvento,
         descricao: dadosEvento.descricao,
-        idTipoEvento: dadosEvento.idTipoEvento
+        idTipoEvento: dadosEvento.idTipoEvento,
+        idInstituicao: instituicao.idInstituicao
       });
 
       atualizarListaEventos();
@@ -325,6 +330,7 @@ const EventosPage = () => {
                     required
                     dados={listaDeTiposDeEventos}
                     selectValue={dadosEvento.idTipoEvento}
+                    hasDefaultOption={true}
                     mudaOpcao={(e) => {
                       setDadosEvento({
                         ...dadosEvento,

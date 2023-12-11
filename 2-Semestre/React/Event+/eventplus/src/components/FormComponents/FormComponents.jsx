@@ -55,7 +55,8 @@ export const Select = ({
   name,
   selectValue = '',
   required,
-  additionalClass = ''
+  additionalClass = '',
+  hasDefaultOption = false
 }) => {
   return (
     <select
@@ -66,7 +67,7 @@ export const Select = ({
       onChange={mudaOpcao}
       required={required ? 'required' : ''}
     >
-      <option value="">{defaultOptionText}</option>
+      {hasDefaultOption ? (<option value="">{defaultOptionText}</option>) : null}
       {dados.map((opt) => {
         return (
           <option key={opt.value} value={opt.value}>{opt.text}</option>

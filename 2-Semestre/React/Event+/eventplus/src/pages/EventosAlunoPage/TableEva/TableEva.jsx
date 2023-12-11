@@ -46,10 +46,20 @@ const TableEva = ({ dados, fnConnect = null, fnShowModal = null, tableType }) =>
                       idevento={e.idEvento}
                       src={comentaryIcon}
                       alt=""
-                      onClick={fnShowModal}
+                      onClick={() => {
+                        fnShowModal(e.idEvento);
+                      }}
                     />
     
-                    <Toggle toggleActive={e.situacao} manipulationFunction={fnConnect} />
+                    <Toggle manipulationFunction={() => {
+                      fnConnect(
+                        e.situacao ? true : false,
+                        e.idEvento,
+                        e.idPresencaEvento
+                      )
+                      }} 
+                      
+                      toggleActive={e.situacao} />
                   </td>
                 </tr>
               );
