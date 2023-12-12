@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using System.Reflection;
@@ -72,6 +73,8 @@ builder.Services.AddSwaggerGen(options =>
     });
 
 
+    options.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+
     //Configura o Swagger para usar o arquivo XML gerado
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
@@ -130,6 +133,8 @@ app.UseSwaggerUI(options =>
     options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
     options.RoutePrefix = string.Empty;
 });
+
+app.UseRouting();
 
 app.UseCors("CorsPolicy");
 

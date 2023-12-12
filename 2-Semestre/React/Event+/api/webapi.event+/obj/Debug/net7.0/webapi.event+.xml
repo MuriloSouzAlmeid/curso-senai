@@ -15,64 +15,16 @@
             </summary>
             <param name="optionsBuilder">Objeto com as configurações definidas</param>
         </member>
-        <member name="T:webapi.event_.Migrations.EventBD">
+        <member name="T:webapi.event_.Migrations.BdAzure">
             <inheritdoc />
         </member>
-        <member name="M:webapi.event_.Migrations.EventBD.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:webapi.event_.Migrations.BdAzure.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:webapi.event_.Migrations.EventBD.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:webapi.event_.Migrations.BdAzure.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:webapi.event_.Migrations.EventBD.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:webapi.event_.Migrations.BD">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.BD.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.BD.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.BD.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:webapi.event_.Migrations.db">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.db.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.db.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.db.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:webapi.event_.Migrations.DatabaseEvent">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.DatabaseEvent.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.DatabaseEvent.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.DatabaseEvent.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="T:webapi.event_.Migrations.db2">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.db2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.db2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:webapi.event_.Migrations.db2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:webapi.event_.Migrations.BdAzure.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>
