@@ -1300,3 +1300,14 @@ C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso\2-Semestre\React\E
 C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.pdb
 C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.genruntimeconfig.cache
 C:\Users\muril\OneDrive\Documentos\murilo_souza\estudos\curso\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\ref\webapi.event+.dll
+C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.csproj.AssemblyReference.cache
+C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.dll
+C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\refint\webapi.event+.dll
+C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.xml
+C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Debug\net7.0\webapi.event+.pdb

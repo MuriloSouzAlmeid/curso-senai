@@ -68,7 +68,7 @@ namespace webapi.event_.Repositories
         {
             try
             {
-                PresencasEvento presencaEventoBuscado = _context.PresencasEvento.Find(id)!;
+                PresencasEvento presencaEventoBuscado = _context.PresencasEvento.FirstOrDefault(p => p.IdPresencaEvento == id)!;
 
                 if (presencaEventoBuscado != null)
                 {

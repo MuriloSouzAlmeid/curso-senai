@@ -54,5 +54,18 @@ namespace webapi.event_.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(Guid id)
+        {
+            try {
+                _presencasEventoRepository.Deletar(id);
+
+                return StatusCode(204, "desinscrição confirmada");
+            }catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

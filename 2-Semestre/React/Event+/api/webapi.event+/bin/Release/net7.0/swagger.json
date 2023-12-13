@@ -10,6 +10,140 @@
     "version": "v1"
   },
   "paths": {
+    "/api/ComentariosEvento": {
+      "get": {
+        "tags": [
+          "ComentariosEvento"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ComentariosEvento"
+        ],
+        "consumes": [
+          "application/json-patch+json",
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ComentariosEvento"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/ComentariosEvento/ListarPorUsuarioEvento": {
+      "get": {
+        "tags": [
+          "ComentariosEvento"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "idUsuario",
+            "type": "string",
+            "format": "uuid",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "idEvento",
+            "type": "string",
+            "format": "uuid",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/ComentariosEvento/ListarSomenteExibe/{id}": {
+      "get": {
+        "tags": [
+          "ComentariosEvento"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "idEvento",
+            "type": "string",
+            "format": "uuid",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/ComentariosEvento/ListarComentariosPorEvento/{id}": {
+      "get": {
+        "tags": [
+          "ComentariosEvento"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/ComentariosEvento/{id}": {
+      "delete": {
+        "tags": [
+          "ComentariosEvento"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Evento": {
       "get": {
         "tags": [
@@ -325,6 +459,27 @@
         }
       }
     },
+    "/api/PresencasEvento/{id}": {
+      "delete": {
+        "tags": [
+          "PresencasEvento"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/TiposEvento": {
       "get": {
         "tags": [
@@ -572,6 +727,43 @@
     }
   },
   "definitions": {
+    "ComentariosEvento": {
+      "required": [
+        "descricao",
+        "exibe",
+        "idEvento",
+        "idUsuario"
+      ],
+      "type": "object",
+      "properties": {
+        "idComentarioEvento": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "descricao": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "exibe": {
+          "type": "boolean"
+        },
+        "idUsuario": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "usuario": {
+          "$ref": "#/definitions/Usuario"
+        },
+        "idEvento": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "evento": {
+          "$ref": "#/definitions/Evento"
+        }
+      },
+      "additionalProperties": false
+    },
     "Evento": {
       "required": [
         "dataEvento",

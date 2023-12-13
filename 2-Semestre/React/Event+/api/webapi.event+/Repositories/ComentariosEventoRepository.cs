@@ -41,6 +41,26 @@ namespace webapi.event_.Repositories
             }
         }
 
+        public ComentariosEvento BuscarPorIdUsuarioEvento(Guid idUsuario, Guid idEvento)
+        {
+            try
+            {
+                ComentariosEvento comentarioBuscado = _context.ComentariosEvento.FirstOrDefault(
+                    c => c.IdEvento == idEvento && c.IdUsuario == idUsuario)!;
+
+                if(comentarioBuscado == null)
+                {
+                    return null;
+                }
+
+                return comentarioBuscado;
+
+            }catch(Exception erro)
+            {
+                throw;
+            }
+        }
+
         public void Cadastrar(ComentariosEvento comentarioEvento)
         {
             try
@@ -82,6 +102,8 @@ namespace webapi.event_.Repositories
                     {
                         Descricao = c.Descricao,
                         Exibe = c.Exibe,
+                        IdUsuario = c.IdUsuario,
+                        IdEvento = c.IdEvento,
 
                         Usuario = new Usuario
                         {
@@ -102,15 +124,15 @@ namespace webapi.event_.Repositories
             }
         }
 
-        public List<ComentariosEvento> ListarSometeExibe()
+        public List<ComentariosEvento> ListarPorIdEvento(Guid idEvento)
         {
-            try
-            {
-                return _context.ComentariosEvento
+            List<ComentariosEvento> comentariosBuscados = _context.ComentariosEvento
                     .Select(c => new ComentariosEvento
                     {
                         Descricao = c.Descricao,
                         Exibe = c.Exibe,
+                        IdUsuario = c.IdUsuario,
+                        IdEvento = c.IdEvento,
 
                         Usuario = new Usuario
                         {
@@ -122,7 +144,76 @@ namespace webapi.event_.Repositories
                             NomeEvento = c.Evento!.NomeEvento,
                         }
 
-                    }).Where(c => c.Exibe == true).ToList();
+                    }).Where(c => c.IdEvento == idEvento).ToList();
+
+            if(comentariosBuscados.Count < 1)
+            {
+                return null;
+            }
+
+            return comentariosBuscados;
+        }
+
+        public List<ComentariosEvento> ListarPorUsuarioEvento(Guid idUsuario, Guid idEvento)
+        {
+            try
+            {
+                ComentariosEvento comentarioBuscado = BuscarPorIdUsuarioEvento(idUsuario, idEvento);
+
+                if(comentarioBuscado == null)
+                {
+                    return null;
+                }
+
+                return _context.ComentariosEvento
+                    .Select(c => new ComentariosEvento
+                    {
+                        Descricao = c.Descricao,
+                        Exibe = c.Exibe,
+                        IdUsuario = c.IdUsuario,
+                        IdEvento = c.IdEvento,
+
+                        Usuario = new Usuario
+                        {
+                            Nome = c.Usuario!.Nome
+                        },
+
+                        Evento = new Evento
+                        {
+                            NomeEvento = c.Evento!.NomeEvento,
+                        }
+
+                    }).Where(c => c.IdUsuario == idUsuario && c.IdEvento == idEvento).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public List<ComentariosEvento> ListarSometeExibe(Guid idEvento)
+        {
+            try
+            {
+                return _context.ComentariosEvento
+                    .Select(c => new ComentariosEvento
+                    {
+                        Descricao = c.Descricao,
+                        Exibe = c.Exibe,
+                        IdUsuario = c.IdUsuario,
+                        IdEvento = c.IdEvento,
+
+                        Usuario = new Usuario
+                        {
+                            Nome = c.Usuario!.Nome
+                        },
+
+                        Evento = new Evento
+                        {
+                            NomeEvento = c.Evento!.NomeEvento,
+                        }
+
+                    }).Where(c => c.Exibe == true && c.IdEvento == idEvento).ToList();
             }
             catch (Exception)
             {

@@ -123,9 +123,15 @@ var app = builder.Build();
 //Habilite o middleware para atender ao documento JSON gerado e à interface do usuário do Swagger
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseDeveloperExceptionPage();
 }
+
+app.UseSwagger(options =>
+{
+    options.SerializeAsV2 = true;
+});
+
+app.UseSwaggerUI();
 
 //Para atender à interface do usuário do Swagger na raiz do aplicativo
 app.UseSwaggerUI(options =>
