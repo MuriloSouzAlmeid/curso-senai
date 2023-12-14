@@ -121,9 +121,9 @@ builder.Services.AddCors(options =>
 
 //HABILITA O SERVIÇO DE MODERADOR DE CONTEÚDO DO AZURE
 builder.Services.AddSingleton(provider => new ContentModeratorClient(
-    new ApiKeyServiceClientCredentials("10c7f3761e3d4f07aa937bdb978f2029")) //ele espera um parametro key, que é a chave q temos la na plataforma azure depois de criar o recurso "Content Moderator"
+    new ApiKeyServiceClientCredentials("6b9e19f0285a4559a2a39b3f1c186423")) //ele espera um parametro key, que é a chave q temos la na plataforma azure depois de criar o recurso "Content Moderator"
 {
-    Endpoint = "https://eventcontentmoderatorvini.cognitiveservices.azure.com/" //link que também está no recurso criado do azure
+    Endpoint = "https://eventmurilo-contentmoderator.cognitiveservices.azure.com/" //link que também está no recurso criado do azure
 }
     );
 

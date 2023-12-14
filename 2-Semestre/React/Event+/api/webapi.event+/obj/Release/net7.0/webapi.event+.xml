@@ -15,13 +15,6 @@
             </summary>
             <param name="optionsBuilder">Objeto com as configurações definidas</param>
         </member>
-        <member name="M:webapi.event_.Controllers.ComentariosEventoController.Post(webapi.event_.Domains.ComentariosEvento)">
-            <summary>
-            Cadastro pela IA
-            </summary>
-            <param name="novoComentario"></param>
-            <returns></returns>
-        </member>
         <member name="T:webapi.event_.Migrations.bdzure">
             <inheritdoc />
         </member>

@@ -13,13 +13,14 @@ namespace webapi.event_.Controllers
     [Produces("application/json")]
     public class ComentariosEventoController : ControllerBase
     {
-        private IComentariosEventoRepository _comentariosRepository { get; set; } = new ComentariosEventoRepository();
+        private IComentariosEventoRepository _comentariosRepository { get; set; }
 
         private readonly ContentModeratorClient _contentModeratorClient;
 
         //construtor da IA
         public ComentariosEventoController(ContentModeratorClient contentModerator)
         {
+            _comentariosRepository = new ComentariosEventoRepository();
             _contentModeratorClient = contentModerator;
         }
 
@@ -59,10 +60,10 @@ namespace webapi.event_.Controllers
         }
 
         [HttpGet("ListarSomenteExibe/{id}")]
-        public IActionResult GetOnlyShowTrue(Guid idEvento)
+        public IActionResult GetOnlyShowTrue(Guid id)
         {
             try {
-                List<ComentariosEvento> comentariosSomenteExibe = _comentariosRepository.ListarSometeExibe(idEvento);
+                List<ComentariosEvento> comentariosSomenteExibe = _comentariosRepository.ListarSometeExibe(id);
 
                 return Ok(comentariosSomenteExibe);
             }catch(Exception erro)
@@ -111,13 +112,15 @@ namespace webapi.event_.Controllers
                 if (moderationResult.Terms != null)
                 {
                     novoComentario.Exibe = false;
-                    _comentariosRepository.Cadastrar(novoComentario);
+                    
                 }
                 else
                 {
                     novoComentario.Exibe = true;
-                    _comentariosRepository.Cadastrar(novoComentario);
                 }
+
+                _comentariosRepository.Cadastrar(novoComentario);
+
                 return StatusCode(201, novoComentario);
             }catch(Exception erro)
             {

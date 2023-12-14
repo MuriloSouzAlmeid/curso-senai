@@ -66,6 +66,8 @@ namespace webapi.event_.Repositories
             try
             {
                 _context.ComentariosEvento.Add(comentarioEvento);
+
+                _context.SaveChanges();
             }
             catch (Exception)
             {
