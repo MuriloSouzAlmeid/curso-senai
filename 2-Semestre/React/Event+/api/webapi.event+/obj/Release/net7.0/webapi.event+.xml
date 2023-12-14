@@ -15,16 +15,23 @@
             </summary>
             <param name="optionsBuilder">Objeto com as configurações definidas</param>
         </member>
-        <member name="T:webapi.event_.Migrations.BdAzure">
+        <member name="M:webapi.event_.Controllers.ComentariosEventoController.Post(webapi.event_.Domains.ComentariosEvento)">
+            <summary>
+            Cadastro pela IA
+            </summary>
+            <param name="novoComentario"></param>
+            <returns></returns>
+        </member>
+        <member name="T:webapi.event_.Migrations.bdzure">
             <inheritdoc />
         </member>
-        <member name="M:webapi.event_.Migrations.BdAzure.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:webapi.event_.Migrations.bdzure.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:webapi.event_.Migrations.BdAzure.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:webapi.event_.Migrations.bdzure.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:webapi.event_.Migrations.BdAzure.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:webapi.event_.Migrations.bdzure.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.Azure.CognitiveServices.ContentModerator;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
@@ -117,6 +118,14 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
         });
 });
+
+//HABILITA O SERVIÇO DE MODERADOR DE CONTEÚDO DO AZURE
+builder.Services.AddSingleton(provider => new ContentModeratorClient(
+    new ApiKeyServiceClientCredentials("10c7f3761e3d4f07aa937bdb978f2029")) //ele espera um parametro key, que é a chave q temos la na plataforma azure depois de criar o recurso "Content Moderator"
+{
+    Endpoint = "https://eventcontentmoderatorvini.cognitiveservices.azure.com/" //link que também está no recurso criado do azure
+}
+    );
 
 var app = builder.Build();
 

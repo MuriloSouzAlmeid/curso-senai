@@ -13,6 +13,7 @@ C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.even
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.Azure.CognitiveServices.ContentModerator.dll
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.Build.dll
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.Build.Framework.dll
@@ -43,6 +44,8 @@ C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.even
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.NET.StringTools.dll
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.Rest.ClientRuntime.dll
+C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.Rest.ClientRuntime.Azure.dll
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.SqlServer.Server.dll
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\obj\Release\net7.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll

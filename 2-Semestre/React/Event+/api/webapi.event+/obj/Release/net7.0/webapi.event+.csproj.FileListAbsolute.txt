@@ -523,3 +523,6 @@ C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\ap
 C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\bin\Release\net7.0\Microsoft.Azure.CognitiveServices.ContentModerator.dll
 C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\bin\Release\net7.0\Microsoft.Rest.ClientRuntime.dll
 C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\bin\Release\net7.0\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\bin\Release\net7.0\Microsoft.Azure.CognitiveServices.ContentModerator.dll
+C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\bin\Release\net7.0\Microsoft.Rest.ClientRuntime.dll
+C:\Users\47015003805\Desktop\curso-senai\2-Semestre\React\Event+\api\webapi.event+\bin\Release\net7.0\Microsoft.Rest.ClientRuntime.Azure.dll

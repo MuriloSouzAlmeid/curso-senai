@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.CognitiveServices.ContentModerator;
+using System.Text;
 using webapi.event_.Domains;
 using webapi.event_.Interfaces;
 using webapi.event_.Repositories;
@@ -9,9 +11,17 @@ namespace webapi.event_.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Produces("application/json")]
-    public class ComentariosEventoCOntroller : ControllerBase
+    public class ComentariosEventoController : ControllerBase
     {
         private IComentariosEventoRepository _comentariosRepository { get; set; } = new ComentariosEventoRepository();
+
+        private readonly ContentModeratorClient _contentModeratorClient;
+
+        //construtor da IA
+        public ComentariosEventoController(ContentModeratorClient contentModerator)
+        {
+            _contentModeratorClient = contentModerator;
+        }
 
         [HttpGet]
         public IActionResult GetAll()
@@ -80,13 +90,35 @@ namespace webapi.event_.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(ComentariosEvento novoComentario)
+        public async Task<IActionResult> Post(ComentariosEvento novoComentario)
         {
             try
             {
-                _comentariosRepository.Cadastrar(novoComentario);
+                if (string.IsNullOrEmpty(novoComentario.Descricao))
+                {
+                    return BadRequest("Não há como cadastrar um comentário vazio");
+                }
 
-                return Ok(novoComentario);
+                //converte a string(descrição do comentário) em um MemoryStream
+                using var stream = new MemoryStream(Encoding.UTF8.GetBytes(novoComentario.Descricao));
+
+                //realiza a moderação do conteúdo
+                var moderationResult = await _contentModeratorClient.TextModeration.ScreenTextAsync("text/plain", stream, "por", false, false, null, true);
+
+
+                //moderationResult.Terms != null ? novoComentario.Exibe = false : novoComentario.Exibe = true;
+                //se existir termos ofensivos, não mostrar(exibe = false)
+                if (moderationResult.Terms != null)
+                {
+                    novoComentario.Exibe = false;
+                    _comentariosRepository.Cadastrar(novoComentario);
+                }
+                else
+                {
+                    novoComentario.Exibe = true;
+                    _comentariosRepository.Cadastrar(novoComentario);
+                }
+                return StatusCode(201, novoComentario);
             }catch(Exception erro)
             {
                 return BadRequest(erro.Message);

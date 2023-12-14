@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\curso-senai\\2-Semestre\\React\\Event+\\api\\webapi.event+\\webapi.event+.csproj": {}
+    "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event+\\api\\webapi.event+\\webapi.event+.csproj": {}
   },
   "projects": {
-    "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\curso-senai\\2-Semestre\\React\\Event+\\api\\webapi.event+\\webapi.event+.csproj": {
+    "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event+\\api\\webapi.event+\\webapi.event+.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\curso-senai\\2-Semestre\\React\\Event+\\api\\webapi.event+\\webapi.event+.csproj",
+        "projectUniqueName": "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event+\\api\\webapi.event+\\webapi.event+.csproj",
         "projectName": "webapi.event+",
-        "projectPath": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\curso-senai\\2-Semestre\\React\\Event+\\api\\webapi.event+\\webapi.event+.csproj",
-        "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\curso-senai\\2-Semestre\\React\\Event+\\api\\webapi.event+\\obj\\",
+        "projectPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event+\\api\\webapi.event+\\webapi.event+.csproj",
+        "packagesPath": "C:\\Users\\47015003805\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event+\\api\\webapi.event+\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47015003805\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
