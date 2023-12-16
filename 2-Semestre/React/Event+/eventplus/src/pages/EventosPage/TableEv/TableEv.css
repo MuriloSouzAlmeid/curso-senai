@@ -33,6 +33,10 @@
   /* border: 1px solid white; */
 }
 
+.table-data__head{
+  display: none;
+}
+
 .table-data__head-row {
   width: 100%;
   display: flex;
@@ -62,7 +66,7 @@
 
 .table-data__head-title--big,
 .table-data__data--big {
-  width: 30%;
+  width: 60%;
 }
 .table-data__data--handover {
   cursor: pointer;
@@ -78,11 +82,6 @@
   font-size: 1.1rem !important;
 }
 
-.table-data__body{
-  overflow: auto;
-  max-height: 350px;
-}
-
 .table-data__data {
   font-family: Poppins-Regular;
   font-size: 0.9rem !important;
@@ -90,11 +89,23 @@
 
 .table-data__icon {
   cursor: pointer;
+  height: 20px;
+  width: 20px;
 }
 
 @media screen and (min-width: 992px) {
+
+  .table-data__head{
+    display: block;
+  }
+
   .table-data__head-title,
   .table-data__head-data {
     font-size: 1rem;
+  }
+
+  .table-data__data--little{
+    display: flex;
+    
   }
 }

@@ -3,7 +3,7 @@ import { dateFormatDbToView } from "../../Utils/stringFunctions";
 import { Tooltip } from "react-tooltip";
 import "./NextEvent.css";
 
-const NextEvent = ({ title, description, eventDate, idEvento }) => {
+const NextEvent = ({ title, description, eventDate, idEvento, carregarDetalhes = null }) => {
   //função que recebe o evento a se conectar pela api
   function conectar(idEvento) {
     alert(`Deu certo Aqui. Conetado ao Evento: ${idEvento}`);
@@ -25,15 +25,14 @@ const NextEvent = ({ title, description, eventDate, idEvento }) => {
       <p className="event-card__description">{dateFormatDbToView(eventDate)}</p>
       {/* <p className="event-card__description">{new Date(eventDate).toLocaleDateString()</p> */}
 
-      <a
+      <p
         onClick={() => {
-          conectar(idEvento);
+          carregarDetalhes(idEvento);
         }}
-        href=""
         className="event-card__connect-link"
       >
-        Conectar
-      </a>
+        Detalhes
+      </p>
     </article>
   );
 };

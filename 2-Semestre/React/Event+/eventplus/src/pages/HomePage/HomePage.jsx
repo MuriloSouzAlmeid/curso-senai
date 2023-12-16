@@ -13,8 +13,20 @@ import NextEvent from "../../components/NextEvent/NextEvent";
 import Container from "../../components/Container/Container";
 import { ActivatedPage } from "../../context/ActivatedPage";
 
+import { GetEventIdDescription } from "../../Utils/GetEventIdDescription";
+
+
+import Spinner from "../../components/Spinner/Spinner";
+import { UserContext } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
+
 const HomePage = () => {
   const {setActivatedPage} = useContext(ActivatedPage)
+
+  const {userData} = useContext(UserContext)
+
+  const [showSpinner, setShowSpinner] = useState({});
+
   //chamar a api na hora que carregar a página
   //usamos o useEffect, ele sempre roda uma primeira vez mesmo não tendo alterado a variável
   useEffect( () => {
@@ -29,14 +41,22 @@ const HomePage = () => {
         console.log('Deu ruim na API');
       }
     }
+    setShowSpinner(true)
     getProximosEventos();
+    setShowSpinner(false)
   }, 
-    [] //array de dependências para indicar quando o comando será executado (vazia roda uma vez só quando a página for carregada)
+    [userData.userId] //array de dependências para indicar quando o comando será executado (vazia roda uma vez só quando a página for carregada)
     //podemos colocar várias variáveis como dependência e quando qualquer uma delas for alterada o useEffect é executado
   );
 
   //fake mock - api mocada
   const [nextEvents, setNextEvents] = useState([]);
+
+  const navigate = useNavigate()
+
+  const handleCarregarDetalhes = (idEvento) => {
+    GetEventIdDescription(idEvento, navigate);
+  }
 
   return (
     //quando tem componentes dentro de um outro componente usamos um elemento duplo (com abertura e fechamento)
@@ -56,6 +76,7 @@ const HomePage = () => {
                   description={e.descricao}
                   eventDate={e.dataEvento}
                   idEvento={e.idEvento}
+                  carregarDetalhes={handleCarregarDetalhes}
                 />
               );
             })}
@@ -65,6 +86,7 @@ const HomePage = () => {
 
       <VisionSection />
       <ContactSection />
+      {showSpinner ? <Spinner /> : null}
     </MainContent>
   );
 };

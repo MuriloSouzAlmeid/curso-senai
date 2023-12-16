@@ -20,6 +20,7 @@ namespace webapi.event_.Repositories
                 return _context.ComentariosEvento
                     .Select(c => new ComentariosEvento
                     {
+                        IdComentarioEvento = c.IdComentarioEvento,
                         Descricao = c.Descricao,
                         Exibe = c.Exibe,
 
@@ -36,26 +37,6 @@ namespace webapi.event_.Repositories
                     }).FirstOrDefault(c => c.IdComentarioEvento == id)!;
             }
             catch (Exception)
-            {
-                throw;
-            }
-        }
-
-        public ComentariosEvento BuscarPorIdUsuarioEvento(Guid idUsuario, Guid idEvento)
-        {
-            try
-            {
-                ComentariosEvento comentarioBuscado = _context.ComentariosEvento.FirstOrDefault(
-                    c => c.IdEvento == idEvento && c.IdUsuario == idUsuario)!;
-
-                if(comentarioBuscado == null)
-                {
-                    return null;
-                }
-
-                return comentarioBuscado;
-
-            }catch(Exception erro)
             {
                 throw;
             }
@@ -102,6 +83,7 @@ namespace webapi.event_.Repositories
                 return _context.ComentariosEvento
                     .Select(c => new ComentariosEvento
                     {
+                        IdComentarioEvento = c.IdComentarioEvento,
                         Descricao = c.Descricao,
                         Exibe = c.Exibe,
                         IdUsuario = c.IdUsuario,
@@ -131,6 +113,7 @@ namespace webapi.event_.Repositories
             List<ComentariosEvento> comentariosBuscados = _context.ComentariosEvento
                     .Select(c => new ComentariosEvento
                     {
+                        IdComentarioEvento = c.IdComentarioEvento,
                         Descricao = c.Descricao,
                         Exibe = c.Exibe,
                         IdUsuario = c.IdUsuario,
@@ -160,16 +143,11 @@ namespace webapi.event_.Repositories
         {
             try
             {
-                ComentariosEvento comentarioBuscado = BuscarPorIdUsuarioEvento(idUsuario, idEvento);
-
-                if(comentarioBuscado == null)
-                {
-                    return null;
-                }
 
                 return _context.ComentariosEvento
                     .Select(c => new ComentariosEvento
                     {
+                        IdComentarioEvento = c.IdComentarioEvento,
                         Descricao = c.Descricao,
                         Exibe = c.Exibe,
                         IdUsuario = c.IdUsuario,
@@ -200,6 +178,7 @@ namespace webapi.event_.Repositories
                 return _context.ComentariosEvento
                     .Select(c => new ComentariosEvento
                     {
+                        IdComentarioEvento = c.IdComentarioEvento,
                         Descricao = c.Descricao,
                         Exibe = c.Exibe,
                         IdUsuario = c.IdUsuario,

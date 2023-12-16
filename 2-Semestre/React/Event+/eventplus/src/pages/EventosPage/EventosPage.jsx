@@ -13,6 +13,8 @@ import {
   Select,
 } from "../../components/FormComponents/FormComponents";
 
+import { GetEventIdDescription } from "../../Utils/GetEventIdDescription";
+
 //import da API
 import api from "../../services/Service";
 
@@ -26,8 +28,11 @@ import Notification from "../../components/Notification/Notification";
 //import de Utils
 import { dateFormatDbToDateValue } from "../../Utils/stringFunctions";
 import { ActivatedPage } from "../../context/ActivatedPage";
+import { useNavigate } from "react-router-dom";
 
 const EventosPage = () => {
+  const navigate = useNavigate();
+
   //contexts
   const { setActivatedPage } = useContext(ActivatedPage);
 
@@ -277,6 +282,10 @@ const EventosPage = () => {
     setFormularioCadastro(true);
   }
 
+  const handleDetalharEvento = (idEvento) => {
+    GetEventIdDescription(idEvento, navigate);
+  }
+
   return (
     <MainContent>
       <section className="cadastro-evento-section">
@@ -451,6 +460,7 @@ const EventosPage = () => {
             dados={listaDeEventos}
             fnDelete={handleDelete}
             fnUpdate={mostraFormularioAtualizar}
+            carregarDetalhes={handleDetalharEvento}
           />
         </Container>
       </section>

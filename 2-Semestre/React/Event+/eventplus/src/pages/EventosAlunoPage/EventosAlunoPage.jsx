@@ -12,10 +12,13 @@ import Modal from "../../components/Modal/Modal";
 import Notification from "../../components/Notification/Notification";
 import api from "../../services/Service";
 
+import { GetEventIdDescription } from "../../Utils/GetEventIdDescription";
+
 import { UserContext } from "../../context/AuthContext";
 
 import { ActivatedPage } from "../../context/ActivatedPage";
 import TiposEventos from "../TiposEventosPage/TiposEventos";
+import { useNavigate } from "react-router-dom";
 
 const EventosAlunoPage = () => {
   // contexts
@@ -39,6 +42,8 @@ const EventosAlunoPage = () => {
   const [idEventoComentario, setIdEventoComentario] = useState("");
   const [descricaoComentario, setDescricaoComentario] = useState("");
   const [idComentario, setIdComentario] = useState(null);
+
+  const navigate = useNavigate();
 
   async function loadEventsType() {
     setShowSpinner(true);
@@ -106,21 +111,27 @@ const EventosAlunoPage = () => {
   async function loadMyComentary(idUsuario, idEvento) {
     try {
       const retornoComentario = await api.get(
-        `/ComentariosEvento/BuscarPorUsuario?idUsuario=${idUsuario}&idEvento=${idEvento}`
+        `/ComentariosEvento/ListarPorUsuarioEvento?idUsuario=${idUsuario}&idEvento=${idEvento}`
       );
 
-      setDescricaoComentario(retornoComentario.data.descricao);
-      setIdComentario(retornoComentario.data.idComentarioEvento);
+      if(retornoComentario.data.length === 0){
+        setDescricaoComentario("Ainda não foi feito comentário para este evento")
+        setIdComentario("")
+      }else{
+        setDescricaoComentario(retornoComentario.data[0].descricao);
+        setIdComentario(retornoComentario.data[0].idComentarioEvento)
+      }
+
+      // setDescricaoComentario(retornoComentario.data.descricao);
+      // setIdComentario(retornoComentario.data.idComentarioEvento);
     } catch (erro) {
-      setDescricaoComentario("Não há comentário");
-      setIdComentario(null);
-      setIdComentario(null);
+      console.log(erro);
     }
   }
 
-  const commentaryRemove = async (idComentario) => {
+  const commentaryRemove = async (idComentario, idEvento, idUsuario) => {
     try {
-      if (idComentario === null) {
+      if (idComentario === "") {
         alert("Ainda não há comentário");
         return;
       }
@@ -128,7 +139,7 @@ const EventosAlunoPage = () => {
       await api.delete(`/ComentariosEvento/${idComentario}`);
       alert("comentário apagado");
 
-      loadMyComentary();
+      loadMyComentary(idUsuario, idEvento);
     } catch (erro) {
       console.log(erro);
     }
@@ -136,17 +147,16 @@ const EventosAlunoPage = () => {
 
   const postarComentario = async (descricao, idEvento, idUsuario, idComentario) => {
     try {
-      if(idComentario === null){
-        const retornoPostComentario = await api.post("/ComentariosEvento", {
+      if(idComentario === ""){
+        await api.post("/ComentariosEvento", {
           descricao: descricao,
           idEvento: idEvento,
-          idUsuario: idUsuario,
-          exibe: true
+          idUsuario: idUsuario
         });
 
         alert("comentário cadastrado")
 
-        loadMyComentary();
+        loadMyComentary(idUsuario, idEvento);
       }else{
         alert("Só é possível cadastrar um comentário por evento")
       }
@@ -206,6 +216,10 @@ const EventosAlunoPage = () => {
     return allEvents;
   };
 
+  const handleDetalharEvento = (idEvento) => {
+    GetEventIdDescription(idEvento, navigate)
+  }
+
   return (
     <>
       <MainContent>
@@ -226,6 +240,7 @@ const EventosAlunoPage = () => {
             dados={eventos}
             fnConnect={handleConnect}
             fnShowModal={showHideModal}
+            carregarDetalhes={handleDetalharEvento}
           />
         </Container>
       </MainContent>

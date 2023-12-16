@@ -46,11 +46,6 @@ namespace webapi.event_.Controllers
             {
                 List<ComentariosEvento> comentariosUsuarioEvento = _comentariosRepository.ListarPorUsuarioEvento(idUsuario, idEvento);
 
-                if(comentariosUsuarioEvento == null)
-                {
-                    return NotFound("Não há comentário");
-                }
-
                 return Ok(comentariosUsuarioEvento);
             }
             catch (Exception erro)

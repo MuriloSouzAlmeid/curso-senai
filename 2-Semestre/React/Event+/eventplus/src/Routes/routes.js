@@ -11,6 +11,7 @@ import LoginPage from "../pages/LoginPage/LoginPage";
 import TiposEventos from "../pages/TiposEventosPage/TiposEventos";
 import TestePage from "../pages/TestePage/TestePage";
 import EventosAlunoPage from "../pages/EventosAlunoPage/EventosAlunoPage";
+import DetalhesEventoPage from "../pages/DetalhesEventoPage/DetalhesEventoPage";
 
 //import dos componentes
 import Header from "../components/Header/Header";
@@ -32,6 +33,7 @@ const Rotas = () => {
           <Route element={<HomePage />} path="/" />
 
           <Route element={<LoginPage />} path="/login" />
+          <Route element={<DetalhesEventoPage />} path="/detalhes-evento/:idEvento" />
 
           <Route
             element={

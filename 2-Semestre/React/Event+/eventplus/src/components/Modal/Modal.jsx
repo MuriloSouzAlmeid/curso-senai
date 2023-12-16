@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import trashDelete from "../../assets/images/trash-delete-red.png";
 
 import { Button, Input } from "../FormComponents/FormComponents";
@@ -6,6 +6,7 @@ import "./Modal.css";
 
 const Modal = (
     {
+
         modalTitle = "Feedback",
         comentaryText = "Não informado. Não informado. Não informado.",
         userId = null,
@@ -15,8 +16,10 @@ const Modal = (
         fnPost = null,
         fnGet = null,
         idComentario = null
-      }
+    }
 ) => {
+    const [descricaoComentario, setDescricaoComentario] = useState("");
+
     useEffect(() => {
       carregarComentario();
     }, [])
@@ -43,7 +46,7 @@ const Modal = (
             className="comentary__icon-delete"
             alt="Ícone de uma lixeira"
             onClick={ async () => {
-              await fnDelete(idComentario);
+              await fnDelete(idComentario, eventId, userId);
             }}
           />
 
@@ -53,15 +56,23 @@ const Modal = (
         </div>
 
         <Input
-          placeholder="Escreva seu comentário..."
-          additionalClass="comentary__entry"
+          placeholder={ idComentario === "" ? "Escreva seu comentário..." : "Só é possível escrever um comentário por evento"}
+          additionalClass={`comentary__entry ${idComentario === "" ? "" : "comentary__entry--blocked"}`}
+          value={idComentario === "" ? descricaoComentario : ""}
+          manipulationFunction={(e) => {
+            if(idComentario === ""){
+              setDescricaoComentario(e.target.value)
+            }else{
+              setDescricaoComentario("")
+            }
+          }}
         />
 
         <Button
           textButton="Comentar"
           additionalClass="comentary__button"
           manipulationFunction={ async () => {
-            await fnPost(comentaryText, eventId, userId, idComentario)
+            await fnPost(descricaoComentario, eventId, userId, idComentario)
           }}
         />
       </article>
