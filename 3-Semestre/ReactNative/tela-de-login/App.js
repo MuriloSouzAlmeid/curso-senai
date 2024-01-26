@@ -1,7 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
+import {useFonts} from 'expo-font';
 import { StyleSheet, Text, Image, View, TextInput, TouchableOpacity } from 'react-native';
 
 export default function App() {
+  const [fontesPersonalizadas] = useFonts({
+    'Inika-Bold': require('./src/assets/fonts/Inika/Inika-Bold.ttf')
+  });
+
   return (
     <View style={styles.container}>
       <View style={styles.loginBox}>
@@ -14,6 +19,7 @@ export default function App() {
           <View style={styles.inputBox}>
             <Text style={styles.label}>Email:</Text>
             <TextInput
+              placeholderTextColor={'rgba(2, 58, 4, 0.55)'}
               inputMode='email'
               style={styles.input}
               placeholder='Digite seu email:'
@@ -23,6 +29,7 @@ export default function App() {
           <View style={styles.inputBox}>
             <Text style={styles.label}>Senha:</Text>
             <TextInput
+             placeholderTextColor={'rgba(2, 58, 4, 0.55)'}
               secureTextEntry={true}
               style={styles.input}
               placeholder='Digite sua senha:'
@@ -35,6 +42,28 @@ export default function App() {
           <Text style={styles.txtEntrar}>Entrar</Text>
         </TouchableOpacity>
       </View>
+      <Text style={styles.txtSociais}>Entrar com</Text>
+      <View style={styles.loginSociais}>
+        <TouchableOpacity>
+          <Image
+            style={styles.imgSociais}
+            source={require('./src/assets/img/google.png')}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity>
+
+          <Image
+            style={styles.imgSociais}
+            source={require('./src/assets/img/microsoft.png')}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image
+            style={styles.imgSociais}
+            source={require('./src/assets/img/linkedin.png')}
+          />
+        </TouchableOpacity>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -45,26 +74,29 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     width: '80%',
-    marginLeft: '10%'
+    marginLeft: '10%',
+    paddingTop: 100,
+    paddingBottom: 110
   },
   loginBox: {
     alignItems: 'center',
     justifyContent: 'center',
-    width: '100%'
+    width: '100%',
+    marginBotton: 30
   },
   title: {
+    fontFamily: 'Inika-Bold',
     textTransform: 'uppercase',
     color: '#0E7670',
     fontSize: 30,
     fontWeight: 'bold',
     marginTop: 35,
-    marginBottom: 35
   },
   imgLogo: {
-    width: 200,
-    height: 200
+    width: 150,
+    height: 150
   },
   formBox: {
     width: '100%',
@@ -97,11 +129,24 @@ const styles = StyleSheet.create({
     marginTop: 30,
     backgroundColor: '#18A11E',
     borderRadius: 10,
-    width: '50%',
-    height: 40
+    width: '60%',
+    height: 40,
+    marginBottom: 30
   },
   txtEntrar: {
     color: 'white',
-    fontSize: 15
+    fontSize: 15,
+  },
+  loginSociais: {
+    gap: 42,
+    flexDirection: 'row'
+  },
+  imgSociais: {
+    marginTop: 30,
+    height: 40,
+    width: 40
+  },
+  txtSociais: {
+    color: '#10510B'
   }
 });
