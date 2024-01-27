@@ -1,14 +1,66 @@
-import { StatusBar } from 'expo-status-bar';
-import {useFonts} from 'expo-font';
+import { useCallback, useEffect, useState } from 'react';
+import { StatusBar } from 'react-native';
+import { Inika_400Regular, Inika_700Bold } from '@expo-google-fonts/inika';
 import { StyleSheet, Text, Image, View, TextInput, TouchableOpacity } from 'react-native';
+import * as SplashScreen from 'expo-splash-screen';
+import * as Font from 'expo-font';
+
+// mantém a tela de splash visível enquanto as fontes são carregadas
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-  const [fontesPersonalizadas] = useFonts({
-    'Inika-Bold': require('./src/assets/fonts/Inika/Inika-Bold.ttf')
-  });
+
+  //state para deinir se a App.js poderá ser carregada ou não
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    async function prepara(){
+      try {
+          // vai esperar as fontes que passei como parâmetro carregar
+          await Font.loadAsync({
+            Inika_400Regular, Inika_700Bold
+          });
+
+          //cria um tempo de "mentirinha" para manter splashscreen
+          await new Promise(resposta => setTimeout(resposta, 2000));
+      } catch (erro) {
+        //mostra um aviso com o erro sem quebar a aplicação
+        console.warn(erro);
+      } 
+      // vai acontecer independente de ter dado certo ou errado
+      finally {
+        //está pronto para carregar a App.js
+        setIsReady(true)
+      }
+    }
+    prepara();
+  },[]);
+
+  //agora usa-se um outro Hook, o useCallback que funciona da mesma forma que o useEffect, no entanto este não irá rodar quando a página carregar pela primeira vez e sim somente quando a dependência for alterada
+
+
+  //precisa do Root no nome de não não funciona (não sei o pq)
+  const onLayoutRootView = useCallback(async () => {
+    // vai verificar se a tela App.js já pode ser carregada, se sim então vai tirar o SplashScreen
+    if(isReady){
+      // tem que esperar o retorno do useEffect, por isso o await
+      await SplashScreen.hideAsync();
+    }
+  }, 
+  //vai acontecer assim que o isReady que é a dependência for alterada
+  [isReady]);
+
+  // caso ainda não esteja pronto para ser carregado então apenas retorna nulo
+  if(!isReady){
+    return null;
+  }
+
+
 
   return (
-    <View style={styles.container}>
+    // precisamos do onLayout na view para saber de fato de a App.js já pode ser carregada ou não
+    <View  onLayout={onLayoutRootView} style={styles.container}>
+      <StatusBar />
       <View style={styles.loginBox}>
         <Image
           style={styles.imgLogo}
@@ -29,7 +81,7 @@ export default function App() {
           <View style={styles.inputBox}>
             <Text style={styles.label}>Senha:</Text>
             <TextInput
-             placeholderTextColor={'rgba(2, 58, 4, 0.55)'}
+              placeholderTextColor={'rgba(2, 58, 4, 0.55)'}
               secureTextEntry={true}
               style={styles.input}
               placeholder='Digite sua senha:'
@@ -42,7 +94,11 @@ export default function App() {
           <Text style={styles.txtEntrar}>Entrar</Text>
         </TouchableOpacity>
       </View>
-      <Text style={styles.txtSociais}>Entrar com</Text>
+      <View style={styles.titleSociais}>
+        <View style={styles.rowSocial}></View>
+        <Text style={styles.txtSociais}>Entrar com</Text>
+        <View style={styles.rowSocial}></View>
+      </View>
       <View style={styles.loginSociais}>
         <TouchableOpacity>
           <Image
@@ -64,7 +120,6 @@ export default function App() {
           />
         </TouchableOpacity>
       </View>
-      <StatusBar style="auto" />
     </View>
   );
 }
@@ -77,8 +132,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     width: '80%',
     marginLeft: '10%',
+    marginRight: '10%',
     paddingTop: 100,
-    paddingBottom: 110
+    paddingBottom: 115
   },
   loginBox: {
     alignItems: 'center',
@@ -87,11 +143,10 @@ const styles = StyleSheet.create({
     marginBotton: 30
   },
   title: {
-    fontFamily: 'Inika-Bold',
+    fontFamily: 'Inika_700Bold',
     textTransform: 'uppercase',
     color: '#0E7670',
     fontSize: 30,
-    fontWeight: 'bold',
     marginTop: 35,
   },
   imgLogo: {
@@ -106,6 +161,7 @@ const styles = StyleSheet.create({
     gap: 5
   },
   label: {
+    fontFamily: 'Inika_400Regular',
     color: '#0E7670',
     fontSize: 20
   },
@@ -133,6 +189,12 @@ const styles = StyleSheet.create({
     height: 40,
     marginBottom: 30
   },
+  titleSociais: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10
+  },
   txtEntrar: {
     color: 'white',
     fontSize: 15,
@@ -147,6 +209,13 @@ const styles = StyleSheet.create({
     width: 40
   },
   txtSociais: {
-    color: '#10510B'
+    color: '#085A55'
+  },
+  rowSocial: {
+    height: 0.000000000001,
+    borderWidth: 0.8,
+    width: '30%',
+    borderColor: '#18A11E',
+    borderTopColor: 'black'
   }
 });

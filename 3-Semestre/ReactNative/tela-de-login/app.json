@@ -28,12 +28,7 @@
     },
     "plugins": [
       [
-        "expo-font",
-        {
-          "fonts":[
-            "./src/assets/fonts/Inika-Bold.ttf"
-          ]
-        }
+        "expo-font"
       ]
     ]
   }
