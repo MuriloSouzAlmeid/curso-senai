@@ -9,10 +9,18 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo-google-fonts/open-sans": "^0.2.3",
+    "@expo-google-fonts/poor-story": "^0.2.3",
+    "@expo-google-fonts/poppins": "^0.2.3",
+    "@expo/metro-runtime": "~3.1.1",
     "expo": "~50.0.3",
+    "expo-app-loading": "^2.1.1",
+    "expo-font": "~11.10.2",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
-    "react-native": "0.73.2"
+    "react-dom": "18.2.0",
+    "react-native": "0.73.2",
+    "react-native-web": "~0.19.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

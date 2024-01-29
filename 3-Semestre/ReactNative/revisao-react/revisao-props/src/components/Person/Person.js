@@ -18,11 +18,13 @@ const styles = StyleSheet.create({
     },
     txtName: {
         color: 'darkred',
-        fontSize: 18
+        fontSize: 18,
+        fontFamily: 'Poppins_400Regular'
     },
     txtAge: {
         color: 'blueviolet',
-        fontSize: 15
+        fontSize: 15,
+        fontFamily: 'OpenSans_700Bold'
     }
 })
 
