@@ -2,81 +2,45 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
+import { Container } from './src/components/container/Container';
+import { Title, TitleBtnIncrement, TitleBtnDecrement } from './src/components/titles/Title';
+
+import { ButtonIncrement, ButtonDecrement } from './src/components/button/Button';
+
+import { CountBox, ButtonBox } from './src/components/box/Box';
+
+
 export default function App() {
   const [count, setCount] = useState(0);
 
   const increment = () => setCount(count + 1);
 
-  const decrement = () => setCount(count - 1);
-
-  useEffect(() => {
-    console.warn(`Contador atualizado: ${count}`)
-  }, [count])
+  const decrement = () => {
+    if(count > 0){
+      setCount(count - 1)
+    }else{
+      console.warn('Não é possível contador menor que 0')
+    }
+  };
 
   return (
-    <View style={styles.container}>
-      <View style={styles.countBox}>
-        <Text style={styles.txtContador}>{count}</Text>
-        <View style={styles.btnBox}>
-          <TouchableOpacity
-            onPress={increment}
-            style={styles.btnIncrementar}
-          >
-            <Text style={styles.btnText}>+</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+    <Container>
+      <CountBox>
+        <Title>{count}</Title>
+        <ButtonBox>
+          <ButtonDecrement
             onPress={decrement}
-            style={styles.btnDecrementar}
           >
-            <Text style={styles.btnText}>-</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
+            <TitleBtnDecrement>-</TitleBtnDecrement>
+          </ButtonDecrement>
+          <ButtonIncrement
+            onPress={increment}
+          >
+            <TitleBtnIncrement>+</TitleBtnIncrement>
+          </ButtonIncrement>
+        </ButtonBox>
+      </CountBox>
       <StatusBar style="auto" />
-    </View>
+    </Container>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'start'
-  },
-  countBox: {
-    marginTop: 300,
-    justifyContent: 'start',
-    gap: 300,
-    alignItems: 'center'
-  },  
-  txtContador: {
-    fontSize: 80,
-    textTransform: 'uppercase',
-    color: 'blue'
-  },
-  btnBox: {
-    flexDirection: 'row',
-    gap: 20
-  },
-  btnIncrementar: {
-    backgroundColor: 'green',
-    borderRadius: '50%',
-    width: 50,
-    height: 50,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  btnDecrementar: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'red',
-    color: 'white',
-    width: 50,
-    height: 50
-  },
-  btnText: {
-    color: 'white',
-    fontSize: 30
-  }
-});
