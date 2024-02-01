@@ -2,15 +2,18 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.View`
     background-color: #FECC2B;
-    height: 20%;
+    height: 23.8%;
     align-items: center;
-    border-radius: 0 0 20px 20px;
+    justify-content: center;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 -10px 15px rgb(0, 0, 0, 0.15);
+
+    /*Para Android*/
     elevation: 20;
-    box-shadow: 0 -10px 15px #000000;
 `
 
 export const HeaderContent = styled.SafeAreaView`
-    margin-top: 45px;
+    margin-top: 30px;
 `
 
 export const TextHeader = styled.Text`

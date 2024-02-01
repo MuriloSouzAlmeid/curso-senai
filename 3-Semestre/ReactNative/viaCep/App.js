@@ -4,26 +4,30 @@ import { Roboto_500Medium, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 import { ContainerApp } from './style';
 import { Header } from './src/components/Header';
+import { Home } from './src/screens/HomeScreen';
 
 export default function App() {
-  const [fonts] = useFonts({
+  const [fontLoaded, fontError] = useFonts({
     Roboto_500Medium, Roboto_700Bold
   })
 
-  if(!fonts){
+  if(!fontLoaded && !fontError){
     return null;
   }
 
   return (
     <ContainerApp>
       <StatusBar
-        backgroundColor="#FECC2B"
+        barStyle="default"
+        backgroundColor="transparent"
+        translucent
       />
 
       {/* HEADER */}
       <Header/>
 
       {/* HOMESCREEN */}
+      <Home/>
 
     </ContainerApp>
   );
