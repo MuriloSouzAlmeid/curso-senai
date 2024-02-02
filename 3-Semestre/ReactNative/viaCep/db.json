@@ -1,0 +1,13 @@
+{
+    "cep": [
+        {
+            "id": "1",
+            "cep": "09432530",
+            "street": "Rua das Goiabeiras",
+            "district": "Pilar Velho",
+            "city": "Ribeirão Pires",
+            "state": "São Paulo",
+            "stateShortName": "SP"
+        }
+    ]
+}

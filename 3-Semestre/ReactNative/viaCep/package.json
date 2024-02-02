@@ -11,12 +11,16 @@
   "dependencies": {
     "@expo-google-fonts/roboto": "^0.2.3",
     "@expo/metro-runtime": "~3.1.1",
+    "axios": "^1.6.7",
     "expo": "~50.0.4",
     "expo-font": "~11.10.2",
     "expo-status-bar": "~1.11.1",
+    "json-server": "^1.0.0-alpha.23",
     "react": "18.2.0",
+    "react-input-mask": "^2.0.4",
     "react-native": "0.73.2",
     "react-native-web": "~0.19.6",
+    "remask": "^1.2.2",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {

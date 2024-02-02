@@ -9,3 +9,8 @@ export const ContainerForm = styled.SafeAreaView`
     margin: 20px auto;
     gap: 20px;
 `
+
+export const ViewInpuRow = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+`
