@@ -8,7 +8,7 @@ export const Header = () => {
             {/* SafeAreaView */}
             <HeaderContent>
                 {/* Text */}
-                <TextHeader>Consumo da API ViaCep</TextHeader>
+                <TextHeader>Consumo da API BrasilAberto</TextHeader>
             </HeaderContent>
         </HeaderContainer>
     )

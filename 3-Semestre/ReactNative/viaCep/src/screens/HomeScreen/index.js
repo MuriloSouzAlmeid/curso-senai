@@ -9,7 +9,7 @@ export const Home = () => {
     const [endereco, setEndereco] = useState({});
 
     const pegarEndereco = async () => {
-        if(cep.length < 9){
+        if (cep.length < 9) {
             setEndereco({})
             return
         }
@@ -17,14 +17,18 @@ export const Home = () => {
         try {
             const retono = await api.get(`${desmascarar(cep)}`);
 
-            setEndereco(retono.data.result)
+            const cepApi = retono.data.result;
 
-            // if(endereco.complement !== ''){
-            //     setEndereco({
-            //         ...endereco,
-            //         street: `${endereco.street}, ${endereco.complement}`
-            //     })
-            // }
+            setEndereco({
+                logradouro: cepApi.street + `${(cepApi.complement == '') ? '' : `, ${cepApi.complement}`}`,
+                complemento: cepApi.complement,
+                bairro: cepApi.district,
+                cidade: cepApi.city,
+                estado: cepApi.state,
+                uf: cepApi.stateShortname,
+            })
+
+
         } catch (erro) {
             console.warn(erro)
         }
@@ -43,37 +47,37 @@ export const Home = () => {
                     keyType={'numeric'}
                     maxLenght={9}
                     editable
-                    onChangeText={setCep}
+                    onChangeText={(tx) => setCep(tx)}
                     fieldValue={mascarar(cep)}
                 />
                 <BoxInput
                     placeholder={'Logradouro...'}
                     textLabel={'Logradouro'}
-                    fieldValue={endereco.street}
+                    fieldValue={endereco.logradouro}
                 />
                 <BoxInput
                     placeholder={'Bairro...'}
                     textLabel={'Bairro'}
-                    fieldValue={endereco.district}
+                    fieldValue={endereco.bairro}
                 />
                 <BoxInput
                     placeholder={'Cidade...'}
                     textLabel={'Cidade'}
-                    fieldValue={endereco.city}
+                    fieldValue={endereco.cidade}
                 />
                 <ViewInpuRow>
                     <BoxInput
                         textLabel={'Estado'}
                         placeholder={'Estado...'}
                         fieldWidth={67.8}
-                        fieldValue={endereco.state}
+                        fieldValue={endereco.estado}
                     />
                     <BoxInput
                         textLabel={'UF'}
                         placeholder={'UF'}
                         fieldWidth={23}
                         maxLenght={2}
-                        fieldValue={endereco.stateShortname}
+                        fieldValue={endereco.uf}
                     />
                 </ViewInpuRow>
             </ContainerForm>
