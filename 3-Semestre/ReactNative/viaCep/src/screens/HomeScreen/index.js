@@ -5,9 +5,11 @@ import { useEffect, useState } from "react"
 import { mascarar, desmascarar } from "../../utils/StringMak"
 
 export const Home = () => {
+    //States e Variáveis
     const [cep, setCep] = useState('');
     const [endereco, setEndereco] = useState({});
 
+    //UseEffects e Funções
     const pegarEndereco = async () => {
         if (cep.length < 9) {
             setEndereco({})
@@ -16,6 +18,10 @@ export const Home = () => {
 
         try {
             const retono = await api.get(`${desmascarar(cep)}`);
+
+            if(retono.error){
+                return;
+            }
 
             const cepApi = retono.data.result;
 
@@ -37,6 +43,8 @@ export const Home = () => {
     useEffect(() => {
         pegarEndereco();
     }, [cep])
+
+    //Componente
 
     return (
         <ScrollForm>
