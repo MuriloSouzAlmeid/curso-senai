@@ -1,16 +1,21 @@
 import { useFonts } from 'expo-font';
-import { MontserratAlternates_600SemiBold } from '@expo-google-fonts/montserrat-alternates';;
+import { MontserratAlternates_600SemiBold,MontserratAlternates_400Regular, MontserratAlternates_700Bold } from '@expo-google-fonts/montserrat-alternates';
+import { Quicksand_500Medium } from '@expo-google-fonts/quicksand';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { Navegacao } from './src/screens/Navegacao/navegacao';
 import { Login } from './src/screens/Login/login';
+import { Cadastro } from './src/screens/Cadastro/cadastro';
 
 //instância de um objeto da classe Native Stack Navigator para acessar seus métodos
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   const [fontsLoaded, fontsError] = useFonts({
-    MontserratAlternates_600SemiBold
+    MontserratAlternates_600SemiBold,
+    MontserratAlternates_400Regular,
+    MontserratAlternates_700Bold,
+    Quicksand_500Medium
   })
 
   if (!fontsLoaded || fontsError) {
@@ -36,6 +41,11 @@ export default function App() {
             name="Login" 
             component={Login}
             options={{title: "Login"}}  
+          />
+          <Stack.Screen 
+            name="Cadastro" 
+            component={Cadastro}
+            options={{title: "Cadastro"}}  
           />
         </Stack.Navigator>
       </NavigationContainer>

@@ -1,39 +1,38 @@
-import { Button } from "react-native";
-import { ContainerApp, ContainerLogin } from "../../components/Container/style";
-import { Title, TitleLogin } from "../../components/Text/style";
+import { ContainerApp } from "../../components/Container/style";
+import { ButtonTitle, ButtonTitleGoogle, TextAccount, TitleLogin } from "../../components/Text/style";
 import { LogoVitalHub } from "../../components/Logo";
-import { BoxInput } from "../../components/Box/style";
+import { BoxButton, BoxInputLogin, ContentAccount } from "../../components/Box/style";
 import { Input } from "../../components/Input";
+import { LinkAccount, LinkRedefinirSenha } from "../../components/Link";
+import { Button, ButtonGoogle } from "../../components/Button";
+import { AntDesign } from '@expo/vector-icons';
 
 export const Login = () =>
     <ContainerApp>
-        <ContainerLogin>
-            <LogoVitalHub />
-            <TitleLogin>Entrar ou criar conta</TitleLogin>
-            <BoxInput>
-                <Input
-                    placeholderText={"Usuário ou email"}
+        <LogoVitalHub />
+        <TitleLogin>Entrar ou criar conta</TitleLogin>
+        <BoxInputLogin>
+            <Input
+                placeholderText={"Usuário ou email"}
 
-                />
-                <Input
-                    placeholderText={"Senha"}
+            />
+            <Input
+                placeholderText={"Senha"}
 
-                />
-            </BoxInput>
-
-            {/*
-
-            <Input/>
-            <Input/>
-            <LinkMedium>Esqueceu sua senha?</LinkMedium>
+            />
+            <LinkRedefinirSenha url={"https://www.google.com.br/?hl=pt-BR"}>Esqueceu sua senha?</LinkRedefinirSenha>
+        </BoxInputLogin>
+        <BoxButton>
             <Button>
                 <ButtonTitle>Entrar</ButtonTitle>
             </Button>
             <ButtonGoogle>
+                <AntDesign name="google" size={20} color={"#4D659D"} />
                 <ButtonTitleGoogle>Entrar com Google</ButtonTitleGoogle>
             </ButtonGoogle>
-            <ContentAccount>
-                <TextAccount>Não tem conta? Crie uma conta agora</TextAccount>
-            </ContentAccount> */}
-        </ContainerLogin>
+        </BoxButton>
+        <ContentAccount>
+            <TextAccount>Não tem conta? </TextAccount>
+            <LinkAccount url={"https://sig.ufabc.edu.br/sigaa/verTelaLogin.do"} >Crie sua conta aqui</LinkAccount>
+        </ContentAccount>
     </ContainerApp>
