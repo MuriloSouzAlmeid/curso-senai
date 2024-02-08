@@ -1,17 +1,17 @@
-import { ContainerApp } from "../../components/Container/style";
 import { ButtonTitle, ButtonTitleGoogle, TextAccount, TitleLogin } from "../../components/Text/style";
 import { LogoVitalHub } from "../../components/Logo";
-import { BoxButton, BoxInputLogin, ContentAccount } from "../../components/Box/style";
+import { BoxButton, BoxInput, ContentAccount } from "../../components/Box/style";
 import { Input } from "../../components/Input";
 import { LinkAccount, LinkRedefinirSenha } from "../../components/Link";
-import { Button, ButtonGoogle } from "../../components/Button";
 import { AntDesign } from '@expo/vector-icons';
+import { ContainerApp } from "../../components/Container/style";
+import { Button, ButtonGoogle } from "../../components/Button/styled";
 
 export const Login = () =>
     <ContainerApp>
         <LogoVitalHub />
         <TitleLogin>Entrar ou criar conta</TitleLogin>
-        <BoxInputLogin>
+        <BoxInput>
             <Input
                 placeholderText={"Usuário ou email"}
 
@@ -21,7 +21,7 @@ export const Login = () =>
 
             />
             <LinkRedefinirSenha url={"https://www.google.com.br/?hl=pt-BR"}>Esqueceu sua senha?</LinkRedefinirSenha>
-        </BoxInputLogin>
+        </BoxInput>
         <BoxButton>
             <Button>
                 <ButtonTitle>Entrar</ButtonTitle>

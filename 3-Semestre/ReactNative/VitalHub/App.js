@@ -6,6 +6,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Navegacao } from './src/screens/Navegacao/navegacao';
 import { Login } from './src/screens/Login/login';
 import { Cadastro } from './src/screens/Cadastro/cadastro';
+import { RedefinirSenha } from './src/screens/RedefinirSenha/redefinir-senha';
+import { VerificarEmail } from './src/screens/VerificarEmail/verificar-email';
 
 //instância de um objeto da classe Native Stack Navigator para acessar seus métodos
 const Stack = createNativeStackNavigator();
@@ -46,6 +48,16 @@ export default function App() {
             name="Cadastro" 
             component={Cadastro}
             options={{title: "Cadastro"}}  
+          />
+          <Stack.Screen 
+            name="RedefinirSenha"
+            component={RedefinirSenha}
+            options={{title: "Redefinir Senha"}}
+          />
+          <Stack.Screen
+            name="VerificarEmail"
+            component={VerificarEmail}
+            option={{title: "Verificar Email"}}
           />
         </Stack.Navigator>
       </NavigationContainer>

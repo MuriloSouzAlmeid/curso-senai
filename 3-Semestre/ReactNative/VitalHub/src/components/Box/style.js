@@ -4,11 +4,7 @@ export const BoxInput = styled.View`
     width: 100%;
     gap: 15px;
     align-items: flex-start;
-`
-
-export const BoxInputLogin = styled(BoxInput)`
-    position: relative;
-    margin-bottom: 30px;
+    margin: 20px 0 30px;
 `
 
 export const BoxButton = styled(BoxInput)`
