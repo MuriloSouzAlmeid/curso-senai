@@ -1,6 +1,6 @@
 import { useFonts } from 'expo-font';
 import { MontserratAlternates_600SemiBold,MontserratAlternates_400Regular, MontserratAlternates_700Bold } from '@expo-google-fonts/montserrat-alternates';
-import { Quicksand_500Medium } from '@expo-google-fonts/quicksand';
+import { Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/quicksand';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { Navegacao } from './src/screens/Navegacao/navegacao';
@@ -8,6 +8,8 @@ import { Login } from './src/screens/Login/login';
 import { Cadastro } from './src/screens/Cadastro/cadastro';
 import { RedefinirSenha } from './src/screens/RedefinirSenha/redefinir-senha';
 import { VerificarEmail } from './src/screens/VerificarEmail/verificar-email';
+import { Home } from './src/screens/Home/home';
+import { PerfilDeUsuario } from './src/screens/PerfilDeUsuario/perfil-de-usuario';
 
 //instância de um objeto da classe Native Stack Navigator para acessar seus métodos
 const Stack = createNativeStackNavigator();
@@ -17,7 +19,8 @@ export default function App() {
     MontserratAlternates_600SemiBold,
     MontserratAlternates_400Regular,
     MontserratAlternates_700Bold,
-    Quicksand_500Medium
+    Quicksand_500Medium,
+    Quicksand_600SemiBold
   })
 
   if (!fontsLoaded || fontsError) {
@@ -58,6 +61,16 @@ export default function App() {
             name="VerificarEmail"
             component={VerificarEmail}
             option={{title: "Verificar Email"}}
+          />
+          <Stack.Screen
+            name="Home"
+            component={Home}
+            options={{title: "Página Home"}}
+          />
+          <Stack.Screen
+            name="PerfilDeUsuario"
+            component={PerfilDeUsuario}
+            option={{title: "Perfil de Usuário"}}
           />
         </Stack.Navigator>
       </NavigationContainer>

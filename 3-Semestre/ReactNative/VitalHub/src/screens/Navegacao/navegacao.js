@@ -18,4 +18,12 @@ export const Navegacao = ({navigation}) =>
             title="Verificar Email"
             onPress={() => navigation.navigate("VerificarEmail")}
         />
+        <Button
+            title="Página Home"
+            onPress={() => navigation.navigate("Home")}
+        />
+        <Button
+            title="Perfil de Usuário"
+            onPress={() => navigation.navigate("PerfilDeUsuario")}
+        />
     </View>;

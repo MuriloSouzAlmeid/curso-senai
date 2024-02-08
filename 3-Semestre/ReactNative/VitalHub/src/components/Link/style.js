@@ -18,10 +18,17 @@ export const LinkSemiBold = styled.Text`
     font-family: 'MontserratAlternates_600SemiBold';
     color: #4D659D;
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 16px;
 `
 
 export const LinkSemiBoldCancel = styled(LinkSemiBold)`
     margin-top: 30px;
+    font-size: 14px;
 `
 
+export const LinkSemiBoldVerifyEmail = styled(LinkSemiBold)`
+    text-decoration: none;
+`
+
+export const LinkSemiBoldReenviarEmail = styled(LinkSemiBoldCancel)`
+`

@@ -18,9 +18,27 @@ export const TitleRedefinirSenha = styled(Title)`
     margin: 25px 0 15px;
 `
 
+export const TitleVerificarEmail = styled(Title)`
+    margin: 25px 0 15px;
+`
+
+export const SemiBoldText = styled.Text`
+    font-size: 16px;
+    font-family: "MontserratAlternates_600SemiBold";
+    color: #33303E;
+`
+
+export const UserNameTextHeader = styled(SemiBoldText)`
+    color: #FBFBFB;
+`
+
 export const MediumText = styled.Text`
     font-size: 14px;
     font-family: 'MontserratAlternates_700Bold';
+`
+
+export const WelcomeText = styled(MediumText)`
+    color: #4E4B59;
 `
 
 export const ButtonTitle = styled(MediumText)`

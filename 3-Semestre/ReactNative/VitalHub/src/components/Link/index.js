@@ -1,5 +1,5 @@
 import { Linking } from "react-native"
-import { LinkMediumLogin, LinkMediumSingup, LinkSemiBold, LinkSemiBoldCancel } from "./style"
+import { LinkMediumLogin, LinkMediumSingup, LinkSemiBold, LinkSemiBoldCancel, LinkSemiBoldReenviarEmail, LinkSemiBoldVerifyEmail } from "./style"
 
 const abrirUrl = async (url) => {
     try {
@@ -37,9 +37,23 @@ export const LinkAccount = ({ url, children }) =>
         {children}
     </LinkSemiBold>
 
-export const LinkCancel = ({url, children}) => 
+export const LinkCancel = ({ url, children }) =>
     <LinkSemiBoldCancel
         onPress={() => abrirUrl(url)}
     >
         {children}
     </LinkSemiBoldCancel>
+
+export const LinkVerifyEmail = ({ url, children }) =>
+    <LinkSemiBoldVerifyEmail
+        onPress={() => abrirUrl(url)}
+    >
+        {children}
+    </LinkSemiBoldVerifyEmail>
+
+export const LinkReenviarEmail = ({ url, children }) =>
+    <LinkSemiBoldReenviarEmail
+        onPress={() => abrirUrl(url)}
+    >
+        {children}
+    </LinkSemiBoldReenviarEmail>

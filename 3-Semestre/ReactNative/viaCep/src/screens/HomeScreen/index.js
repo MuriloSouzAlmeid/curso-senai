@@ -53,7 +53,7 @@ export const Home = () => {
                     placeholder={'CEP...'}
                     textLabel={'Informar CEP'}
                     keyType={'numeric'}
-                    maxLenght={9}
+                    maxLength={9}
                     editable
                     onChangeText={(tx) => setCep(tx)}
                     fieldValue={mascarar(cep)}
@@ -84,7 +84,7 @@ export const Home = () => {
                         textLabel={'UF'}
                         placeholder={'UF'}
                         fieldWidth={23}
-                        maxLenght={2}
+                        maxLength={2}
                         fieldValue={endereco.uf}
                     />
                 </ViewInpuRow>

@@ -4,7 +4,7 @@ import { FieldContent } from "./style"
 
 export const BoxInput = ({
     fieldWidth = 100, editable = false, textLabel, placeholder, fieldValue = null, 
-    onChangeText = null, keyType = 'default', maxLenght  
+    onChangeText = null, keyType = 'default', maxLength  
 }) => {
     return(
         <FieldContent fieldWidth={fieldWidth}>
@@ -16,7 +16,7 @@ export const BoxInput = ({
                 fieldValue={fieldValue}
                 onChangeText={onChangeText}
                 keyType={keyType}
-                maxLenght={maxLenght}
+                maxLength={maxLength}
             />
         </FieldContent>
     )
