@@ -4,7 +4,9 @@ import { Image, Modal, StyleSheet, Text, TouchableOpacity, View } from 'react-na
 import { Camera, CameraType } from 'expo-camera';
 import { useEffect, useState, useRef } from 'react';
 
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign, FontAwesome } from '@expo/vector-icons';
+
+import * as MediaLibrary from 'expo-media-library'
 
 export default function App() {
 
@@ -15,22 +17,43 @@ export default function App() {
   const cameraRef = useRef(null)
 
   useEffect(() => {
-    ( async () => {
-      const {status: cameraStatus} = await Camera.requestCameraPermissionsAsync()
+    (async () => {
+      const { status: cameraStatus } = await Camera.requestCameraPermissionsAsync()
+      const { status: mediaStatus } = await MediaLibrary.requestPermissionsAsync()
     })();
   }, [])
 
   const CaptureFoto = async () => {
 
-    if(cameraRef){
+    if (cameraRef) {
       const photo = await cameraRef.current.takePictureAsync()
 
       setOpenModal(true)
       setFoto(photo.uri)
-      
+
 
       console.log(photo);
     }
+  }
+
+  const ClearFoto = async () => {
+    await MediaLibrary.deleteAssetsAsync(foto)
+      .then(() => {
+        setFoto(null)
+        setOpenModal(false)
+        console.warn("Foto salva com sucesso otario")
+      }).catch(error => {
+        alert("Erro ao apagar a foto da galeria")
+      })
+  }
+
+  const UploadFoto = async () => {
+    await MediaLibrary.createAssetAsync(foto)
+      .then(() => {
+        console.warn("Foto salva com sucesso cabaço")
+      }).catch(error => {
+        alert("Não foi possível salvar a foto")
+      })
   }
 
   return (
@@ -41,7 +64,7 @@ export default function App() {
         ratio='15:9'
         type={tipoCamera}
       >
-        <View 
+        <View
           style={styles.viewFlip}
         >
           <TouchableOpacity
@@ -52,11 +75,12 @@ export default function App() {
           </TouchableOpacity>
         </View>
       </Camera>
+
       <TouchableOpacity
         style={styles.btnCapture}
         onPress={CaptureFoto}
       >
-       <AntDesign name="camera" size={23} color="#FFF"/>
+        <AntDesign name="camera" size={50} color="black" />
       </TouchableOpacity>
 
       <Modal
@@ -65,19 +89,30 @@ export default function App() {
         visible={openModal}
       >
         <View
-          style={{flex: 1, margin: 20, justifyContent: "center", alignItems: "center"}}
+          style={{ flex: 1, margin: 20, justifyContent: "center", alignItems: "center" }}
         >
           {/* Controles da foto */}
           <View
-            style={{margin: 10, flexDirection: "row"}}
-          ></View>
+            style={{ margin: 10, flexDirection: "row", gap: 20 }}
+          >
+            <TouchableOpacity
+              style={styles.btnClear}
+              onPress={() => ClearFoto()}
+            >
+              <FontAwesome name="trash" size={24} color="red" />
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.btnUpload}
+              onPress={() => UploadFoto()}
+            >
+              <FontAwesome name="upload" size={24} color="darkgreen" />
+            </TouchableOpacity>
+          </View>
 
           <Image
-            style={{width: "100%", height:500, borderRadius: 15}}
-            source={{uri: foto}}
+            style={{ width: "100%", height: 500, borderRadius: 15 }}
+            source={{ uri: foto }}
           />
-
-          <Text onPress={() => setOpenModal(false)}>Fechar</Text>
         </View>
       </Modal>
     </View>
@@ -92,7 +127,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   camera: {
-    flex: 1,
     height: "80%",
     width: "100%"
   },
@@ -118,6 +152,13 @@ const styles = StyleSheet.create({
     margin: 20,
     borderRadius: 10,
     backgroundColor: "#8775F0",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  btnCapture: {
+    padding: 20,
+    backgroundColor: "#transparent",
+
     justifyContent: "center",
     alignItems: "center"
   }
