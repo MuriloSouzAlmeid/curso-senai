@@ -37,14 +37,8 @@ export default function App() {
   }
 
   const ClearFoto = async () => {
-    await MediaLibrary.deleteAssetsAsync(foto)
-      .then(() => {
-        setFoto(null)
-        setOpenModal(false)
-        console.warn("Foto salva com sucesso otario")
-      }).catch(error => {
-        alert("Erro ao apagar a foto da galeria")
-      })
+    setFoto(null)
+    setOpenModal(false)
   }
 
   const UploadFoto = async () => {
