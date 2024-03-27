@@ -1,0 +1,16 @@
+O comando git merge -X <strategy-option> <other-branch> é usado para mesclar alterações de outra ramificação para a ramificação atual, mas com uma estratégia específica de mesclagem. Existem duas opções de estratégia que você mencionou: -X theirs e -X ours. Vou explicar cada uma:
+
+git merge -X theirs <outra branch>:
+
+Esta opção é usada para forçar o Git a aceitar as alterações da ramificação que está sendo mesclada (<outra branch>), mesmo que haja conflitos. Se houver conflitos, o Git escolherá automaticamente as alterações da outra ramificação (a ramificação que está sendo mesclada) como a versão "correta" a ser mantida.
+Isso é útil quando você está mesclando uma ramificação e deseja garantir que as alterações feitas nessa ramificação substituam as alterações conflitantes na ramificação atual.
+git merge -X ours <outra branch>:
+
+Ao contrário da opção -X theirs, esta opção faz o contrário. Ela força o Git a manter as alterações da ramificação atual (a ramificação que está fazendo a mesclagem) em caso de conflitos, ignorando as alterações da outra ramificação (<outra branch>).
+Isso é útil quando você deseja mesclar alterações de outra ramificação para a atual, mas quer garantir que as alterações atuais não sejam substituídas, mesmo que haja conflitos.
+Em resumo, -X theirs escolhe automaticamente as alterações da outra ramificação em caso de conflitos, enquanto -X ours escolhe as alterações da ramificação atual, ignorando as da outra ramificação em caso de conflitos.
+
+
+
+
+
