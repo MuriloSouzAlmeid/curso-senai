@@ -44,7 +44,7 @@ public partial class VitalContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=NOTE07-SALA19; initial catalog=VitalHub_G5TV2; User Id=sa; Pwd=Senai@134; TrustServerCertificate=true;");
+        => optionsBuilder.UseSqlServer("Data Source=NOTEBOOKFAMILIA; initial catalog=VitalHub_G5TV2; User Id=sa; Pwd=Murilo12$; TrustServerCertificate=true;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -125,6 +125,7 @@ public partial class VitalContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.Longitude).HasColumnType("decimal(9, 6)");
+            entity.Property(e => e.Numero).HasColumnType("int");
         });
 
         modelBuilder.Entity<Especialidade>(entity =>
