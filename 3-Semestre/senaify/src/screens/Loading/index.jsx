@@ -7,7 +7,7 @@ import { SubTitle } from "../../components/Text/Title/styles";
 const Loading = () => {
   return (
     <LinearGradient
-      style={{ flex : 1, alignItems : "center", justifyContent : "center", gap : 5 }}
+      style={{ flex : 1, alignItems : "center", justifyContent : "center", gap : 5, paddingTop: 10 }}
       colors={['#2e0000', '#121212', '#121212', '#001b09']}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}

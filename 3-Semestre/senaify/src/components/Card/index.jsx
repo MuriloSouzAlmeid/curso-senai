@@ -13,9 +13,9 @@ import { ImageAlbum, ImageMusic } from "../Image/styles";
 import { Paragraph, SubParagraph } from "../Text/Paragraph/styles";
 import { ContainerMusic, ContainerSound } from "../Container/styles";
 
-export const Album = ({ image, name, description, onPress }) => {
+export const Album = ({ label, image, name, description, onPress }) => {
   return (
-    <CardAlbum onPress={onPress}>
+    <CardAlbum onPress={onPress} accessibilityLabel={label}>
       <ImageAlbum 
         source={{ uri : image }}
       />
@@ -27,7 +27,7 @@ export const Album = ({ image, name, description, onPress }) => {
   )
 }
 
-export const Music = ({ image, name, artist, play = false, isLike = false, like, onPress }) => {
+export const Music = ({ label, image, name, artist, play = false, isLike = false, like, onPress }) => {
   const [isLiked, setIsLiked] = useState(isLike);
 
   // Função para curtir e descurtir a música
@@ -43,7 +43,7 @@ export const Music = ({ image, name, artist, play = false, isLike = false, like,
   }
 
   return (
-    <CardMusic onPress={onPress}>
+    <CardMusic onPress={onPress} accessibilityLabel={label}>
       <ContainerSound>
         <ImageMusic 
           playSound={play}

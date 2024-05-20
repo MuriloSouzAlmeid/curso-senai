@@ -33,7 +33,7 @@ const Favorites = ({ token, atual, audio, setAtual, setAudio }) => {
 
   return (
     <LinearGradient
-      style={{ flex : 1 }}
+      style={{ flex : 1, paddingTop: 10 }}
       colors={['#2e0000', '#121212', '#121212', '#001b09']}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
