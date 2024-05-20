@@ -205,8 +205,8 @@ main #servicos .info-servicos .servico-jogos .info-jogos, main #servicos .info-s
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.83));
+    background-color: rgba(253, 66, 85, .3);
+    /* background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.83)); */
     backdrop-filter: blur(7px);
 
     color: white;

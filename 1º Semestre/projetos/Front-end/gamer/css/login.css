@@ -24,6 +24,7 @@ main #login .fundo-borrado{
 main #login .formulario{
     padding: 62px 0 55px;
     border: 1px solid transparent;
+    background-color: rgba(239, 239, 239, .30);
     background:
          linear-gradient(to right bottom, rgba(27, 20, 38, 1) 0%, rgba(60, 3, 65, .38) 100%) padding-box,
          linear-gradient(to right bottom, rgba(239, 239, 239, .50) 0%, rgba(239, 239, 239, .30) 25%, rgba(239, 239, 239, 0) 100%) border-box;
