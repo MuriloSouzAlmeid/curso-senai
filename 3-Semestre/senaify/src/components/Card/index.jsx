@@ -62,11 +62,11 @@ export const Music = ({ label, image, name, artist, play = false, isLike = false
       </ContainerMusic>
 
       { like && (
-        <ButtonLike onPress={() => handleLike()}>
+        <ButtonLike onPress={() => handleLike()} testID="icon-button" >
           {
             isLiked
-              ? <FontAwesome name="heart" size={18} color="#FF0000" />
-              : <FontAwesome name="heart-o" size={18} color="#1ED760"/>
+              ? <FontAwesome name="heart" size={18} color="#FF0000" accessibilityLabel="icon-like"/>
+              : <FontAwesome name="heart-o" size={18} color="#1ED760" accessibilityLabel="icon-deslike"/>
           }
         </ButtonLike>
       )}

@@ -51,6 +51,7 @@ const Favorites = ({ token, atual, audio, setAtual, setAudio }) => {
             data={ lista }
             renderItem={ ({ item }) => (
               <Music
+                label={'music-item'}
                 play={atual == item.track.preview_url}
                 onPress={() => playSound(item.track.preview_url, atual, setAtual, audio, setAudio)}
 
