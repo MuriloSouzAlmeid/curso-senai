@@ -27,7 +27,7 @@ export const Album = ({ label, image, name, description, onPress }) => {
   )
 }
 
-export const Music = ({ label, image, name, artist, play = false, isLike = false, like, onPress }) => {
+export const Music = ({ label, labelButton, image, name, artist, play = false, isLike = false, like, onPress }) => {
   const [isLiked, setIsLiked] = useState(isLike);
 
   // Função para curtir e descurtir a música
@@ -62,7 +62,7 @@ export const Music = ({ label, image, name, artist, play = false, isLike = false
       </ContainerMusic>
 
       { like && (
-        <ButtonLike onPress={() => handleLike()} testID="icon-button" >
+        <ButtonLike onPress={() => handleLike()} testID={labelButton} >
           {
             isLiked
               ? <FontAwesome name="heart" size={18} color="#FF0000" accessibilityLabel="icon-like"/>

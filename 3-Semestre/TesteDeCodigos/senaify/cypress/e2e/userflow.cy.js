@@ -52,18 +52,18 @@ describe('Fluxo do Usuário na Aplicação de Música', () => {
     cy.wait(2000)
 
     // Then eu vejo uma lista de resultados de músicas
-    cy.get("[aria-label='music-item-src']").should("have.length.greaterThan", 0)
+    cy.get("[aria-label='music-item-sch']").should("have.length.greaterThan", 0)
 
     // When eu clico na primeira música dos resultados - Then a música começa a tocar
     // cy.get("[aria-label='music-item']").eq(0).click()
 
     let musicaPesquisada;
 
-    musicaPesquisada = cy.get("[aria-label='music-item-src']").contains('Cupid').click()
-    cy.wait(5000)
+    musicaPesquisada = cy.get("[aria-label='music-item-sch']").contains('Cupid').click()
+    cy.wait(4000)
 
     // And eu clico para favoritar a música - Then a música é adicionada à lista de favoritos
-    cy.get("[style='margin-top: 15px; padding-bottom: 150px;'] > :nth-child(1) > .r-flexDirection-18u37iz > [data-testid='icon-button'] > .css-text-146c3p1").eq(0).click()
+    cy.get(musicaPesquisada).get("[data-testid='icon-button-sch']").eq(0).click()
 
   })
 
