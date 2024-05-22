@@ -117,6 +117,7 @@ const Home = ({ token, atual, audio, setAtual, setAudio }) => {
                         <ContainerPlaylist>
                           <ButtonIcon onPress={() => setPlaylist(null)}>
                             <FontAwesome5
+                              accessibilityLabel={"return-button"}
                               name="angle-left" 
                               size={30} color="#fbfbfb"
                             />
