@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q4ZUPZx3NIKY+3MIyNWZQ8zOrS3Z1+/dVOSXKakbPAP46N0csnN+u4ZLBtaCt7qv3fa1Ib2mh5xGqnjLLIVlJA==",
+  "dgSpecHash": "zMVzT6wD9fv8QxR25nwqFcqZhsO1CZZutVdfOaS8lnzGfVyyCpOe7K2JO/RLtOGmXNPRW9Gn2mhOYv8tFP2S7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso-senai\\2-Semestre\\projetos\\Event+\\API\\webapi.event+\\webapi.event+.csproj",
+  "projectFilePath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\projetos\\Event+\\API\\webapi.event+\\webapi.event+.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\muril\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\muril\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

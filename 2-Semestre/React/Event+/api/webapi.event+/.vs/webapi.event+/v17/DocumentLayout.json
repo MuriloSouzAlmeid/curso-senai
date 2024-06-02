@@ -1,0 +1,469 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\repositories\\comentarioseventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:repositories\\comentarioseventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\interfaces\\icomentarioseventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:interfaces\\icomentarioseventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\controllers\\comentarioseventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:controllers\\comentarioseventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\domains\\comentariosevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:domains\\comentariosevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\contexts\\event_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:contexts\\event_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\controllers\\presencaseventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:controllers\\presencaseventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\interfaces\\ipresencaseventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:interfaces\\ipresencaseventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\repositories\\presencarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:repositories\\presencarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Migrations\\20231212193105_bdlocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Migrations\\20231212182757_bdazure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\domains\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:domains\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\domains\\tiposevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:domains\\tiposevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\interfaces\\ieventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:interfaces\\ieventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\controllers\\tiposeventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:controllers\\tiposeventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\controllers\\tiposusuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:controllers\\tiposusuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\repositories\\tiposusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:repositories\\tiposusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\repositories\\tiposeventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:repositories\\tiposeventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\repositories\\instituicaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:repositories\\instituicaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\utils\\criptografia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:utils\\criptografia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\domains\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:domains\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\2-semestre\\react\\event\u002B\\api\\webapi.event\u002B\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1118C6C-ACBE-4950-B455-3E273BE090E2}|webapi.event\u002B.csproj|solutionrelative:interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwEAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:55:30.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IComentariosEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Interfaces\\IComentariosEventoRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IComentariosEventoRepository.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Interfaces\\IComentariosEventoRepository.cs",
+              "RelativeToolTip": "Interfaces\\IComentariosEventoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\EventoRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EventoRepository.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\EventoRepository.cs",
+              "RelativeToolTip": "Repositories\\EventoRepository.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAuwDkAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ComentariosEvento.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Domains\\ComentariosEvento.cs",
+              "RelativeDocumentMoniker": "Domains\\ComentariosEvento.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Domains\\ComentariosEvento.cs",
+              "RelativeToolTip": "Domains\\ComentariosEvento.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Event_Context.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Contexts\\Event_Context.cs",
+              "RelativeDocumentMoniker": "Contexts\\Event_Context.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Contexts\\Event_Context.cs",
+              "RelativeToolTip": "Contexts\\Event_Context.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACAAAADGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\UsuarioRepository.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAkwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ComentariosEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\ComentariosEventoRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ComentariosEventoRepository.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\ComentariosEventoRepository.cs",
+              "RelativeToolTip": "Repositories\\ComentariosEventoRepository.cs",
+              "ViewState": "AQIAALwAAAAAAAAAAAAAALMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAH0AAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ComentariosEventoCOntroller.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\ComentariosEventoCOntroller.cs",
+              "RelativeDocumentMoniker": "Controllers\\ComentariosEventoCOntroller.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\ComentariosEventoCOntroller.cs",
+              "RelativeToolTip": "Controllers\\ComentariosEventoCOntroller.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAAC4AAACGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PresencasEventoController.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\PresencasEventoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PresencasEventoController.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\PresencasEventoController.cs",
+              "RelativeToolTip": "Controllers\\PresencasEventoController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwD8AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IPresencasEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Interfaces\\IPresencasEventoRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IPresencasEventoRepository.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Interfaces\\IPresencasEventoRepository.cs",
+              "RelativeToolTip": "Interfaces\\IPresencasEventoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PresencaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\PresencaRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PresencaRepository.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\PresencaRepository.cs",
+              "RelativeToolTip": "Repositories\\PresencaRepository.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEYAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EventoController.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\EventoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventoController.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\EventoController.cs",
+              "RelativeToolTip": "Controllers\\EventoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20231212193105_bdlocal.cs",
+              "DocumentMoniker": "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Migrations\\20231212193105_bdlocal.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Migrations\\20231212193105_bdlocal.cs",
+              "ToolTip": "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Migrations\\20231212193105_bdlocal.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Migrations\\20231212193105_bdlocal.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-12T19:31:06.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20231212182757_bdazure.cs",
+              "DocumentMoniker": "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Migrations\\20231212182757_bdazure.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Migrations\\20231212182757_bdazure.cs",
+              "ToolTip": "C:\\Users\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Migrations\\20231212182757_bdazure.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\47015003805\\Desktop\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Migrations\\20231212182757_bdazure.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-12T18:27:57.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TiposEvento.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Domains\\TiposEvento.cs",
+              "RelativeDocumentMoniker": "Domains\\TiposEvento.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Domains\\TiposEvento.cs",
+              "RelativeToolTip": "Domains\\TiposEvento.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwA0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Evento.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Domains\\Evento.cs",
+              "RelativeDocumentMoniker": "Domains\\Evento.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Domains\\Evento.cs",
+              "RelativeToolTip": "Domains\\Evento.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Interfaces\\IEventoRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IEventoRepository.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Interfaces\\IEventoRepository.cs",
+              "RelativeToolTip": "Interfaces\\IEventoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TiposEventoController.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\TiposEventoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TiposEventoController.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\TiposEventoController.cs",
+              "RelativeToolTip": "Controllers\\TiposEventoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TiposUsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\TiposUsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TiposUsuarioController.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Controllers\\TiposUsuarioController.cs",
+              "RelativeToolTip": "Controllers\\TiposUsuarioController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAowDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TiposUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\TiposUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TiposUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\TiposUsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\TiposUsuarioRepository.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowF0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TiposEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\TiposEventoRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TiposEventoRepository.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\TiposEventoRepository.cs",
+              "RelativeToolTip": "Repositories\\TiposEventoRepository.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAkwF0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "InstituicaoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\InstituicaoRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\InstituicaoRepository.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Repositories\\InstituicaoRepository.cs",
+              "RelativeToolTip": "Repositories\\InstituicaoRepository.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwFAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Criptografia.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Utils\\Criptografia.cs",
+              "RelativeDocumentMoniker": "Utils\\Criptografia.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Utils\\Criptografia.cs",
+              "RelativeToolTip": "Utils\\Criptografia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Domains\\Usuario.cs",
+              "RelativeDocumentMoniker": "Domains\\Usuario.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Domains\\Usuario.cs",
+              "RelativeToolTip": "Domains\\Usuario.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\2-Semestre\\React\\Event\u002B\\api\\webapi.event\u002B\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeToolTip": "Interfaces\\IUsuarioRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:25:38.634Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

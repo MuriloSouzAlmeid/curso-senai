@@ -12,7 +12,7 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>webapi.event_.Contexts.Event_Context</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
-    <NameOfLastUsedPublishProfile>C:\Users\muril\OneDrive\Área de Trabalho\curso-senai\2-Semestre\React\Event+\api\webapi.event+\Properties\PublishProfiles\eventmurilo-webapi - Web Deploy3.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>eventmurilosouza-api - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
