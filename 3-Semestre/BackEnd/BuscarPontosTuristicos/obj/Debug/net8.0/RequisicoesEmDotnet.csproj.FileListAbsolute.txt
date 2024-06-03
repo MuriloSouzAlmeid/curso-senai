@@ -1,0 +1,36 @@
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\bin\Debug\net8.0\RequisicoesEmDotnet.exe
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\bin\Debug\net8.0\RequisicoesEmDotnet.deps.json
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\bin\Debug\net8.0\RequisicoesEmDotnet.runtimeconfig.json
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\bin\Debug\net8.0\RequisicoesEmDotnet.dll
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\bin\Debug\net8.0\RequisicoesEmDotnet.pdb
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.dll
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\obj\Debug\net8.0\refint\RequisicoesEmDotnet.dll
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.pdb
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.genruntimeconfig.cache
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\obj\Debug\net8.0\ref\RequisicoesEmDotnet.dll
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\bin\Debug\net8.0\GenerativeAI.dll
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.csproj.AssemblyReference.cache
+C:\Users\muril\OneDrive\Área de Trabalho\RequisicoesEmDotnet\obj\Debug\net8.0\Requisic.9944DD52.Up2Date
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\bin\Debug\net8.0\RequisicoesEmDotnet.exe
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\bin\Debug\net8.0\RequisicoesEmDotnet.deps.json
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\bin\Debug\net8.0\RequisicoesEmDotnet.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\bin\Debug\net8.0\RequisicoesEmDotnet.dll
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\bin\Debug\net8.0\RequisicoesEmDotnet.pdb
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\bin\Debug\net8.0\GenerativeAI.dll
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.csproj.AssemblyReference.cache
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.sourcelink.json
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.csproj.CopyComplete
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.dll
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\refint\RequisicoesEmDotnet.dll
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.pdb
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\RequisicoesEmDotnet.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso-senai\3-Semestre\BackEnd\RequisicoesEmDotnet\obj\Debug\net8.0\ref\RequisicoesEmDotnet.dll
