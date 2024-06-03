@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\RequisicoesEmDotnet\\RequisicoesEmDotnet.csproj": {}
+    "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\BuscarPontosTuristicos\\RequisicoesEmDotnet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\RequisicoesEmDotnet\\RequisicoesEmDotnet.csproj": {
+    "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\BuscarPontosTuristicos\\RequisicoesEmDotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\RequisicoesEmDotnet\\RequisicoesEmDotnet.csproj",
+        "projectUniqueName": "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\BuscarPontosTuristicos\\RequisicoesEmDotnet.csproj",
         "projectName": "RequisicoesEmDotnet",
-        "projectPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\RequisicoesEmDotnet\\RequisicoesEmDotnet.csproj",
+        "projectPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\BuscarPontosTuristicos\\RequisicoesEmDotnet.csproj",
         "packagesPath": "C:\\Users\\47015003805\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\RequisicoesEmDotnet\\obj\\",
+        "outputPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\BuscarPontosTuristicos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\47015003805\\AppData\\Roaming\\NuGet\\NuGet.Config",

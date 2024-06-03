@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LVXs2ajG1siibdnQSn15U1woh/o23uukouh5pC0DN/4bmhPbj/uBbHMNnW5U5dLRUE/54Iy0/VVKnoh9gevGtQ==",
+  "dgSpecHash": "geAp6fNrtKzJY6jdyetedHYpa17en0aDIUKo2vl6nxMRSbNfZ0wjMimfSC22UQrfBAviy5sFUGa1rk04IC6DlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\RequisicoesEmDotnet\\RequisicoesEmDotnet.csproj",
+  "projectFilePath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\3-Semestre\\BackEnd\\BuscarPontosTuristicos\\RequisicoesEmDotnet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\47015003805\\.nuget\\packages\\google_generativeai\\1.0.0\\google_generativeai.1.0.0.nupkg.sha512",
     "C:\\Users\\47015003805\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
