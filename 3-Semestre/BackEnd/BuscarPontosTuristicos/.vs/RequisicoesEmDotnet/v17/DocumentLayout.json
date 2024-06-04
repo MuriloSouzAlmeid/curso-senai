@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\muril\\OneDrive\\\u00C1rea de Trabalho\\RequisicoesEmDotnet\\",
+  "WorkspaceRootPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\3-Semestre\\BackEnd\\BuscarPontosTuristicos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A24C418E-406E-4D10-A6DC-D9379B5E295E}|RequisicoesEmDotnet.csproj|c:\\users\\muril\\onedrive\\\u00E1rea de trabalho\\requisicoesemdotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A24C418E-406E-4D10-A6DC-D9379B5E295E}|RequisicoesEmDotnet.csproj|c:\\users\\muril\\onedrive\\documentos\\murilo_souza\\estudos\\senai\\curso-senai\\3-semestre\\backend\\buscarpontosturisticos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A24C418E-406E-4D10-A6DC-D9379B5E295E}|RequisicoesEmDotnet.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\\u00C1rea de Trabalho\\RequisicoesEmDotnet\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\3-Semestre\\BackEnd\\BuscarPontosTuristicos\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\muril\\OneDrive\\\u00C1rea de Trabalho\\RequisicoesEmDotnet\\Program.cs",
+              "ToolTip": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\Senai\\curso-senai\\3-Semestre\\BackEnd\\BuscarPontosTuristicos\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAMAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABUAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-02T15:53:43.976Z",
               "EditorCaption": ""
