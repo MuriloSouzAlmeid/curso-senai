@@ -40,9 +40,14 @@ namespace minimalAPIMongo.Controllers
             {
                 var filter = Builders<Product>.Filter.Eq(p => p.Id, id);
 
-                List<Product> produtoBuscado = await _product.Find(filter).ToListAsync();
+                Product produtoBuscado = await _product.Find(filter).FirstOrDefaultAsync();
 
-                return Ok(produtoBuscado.First());
+                if(produtoBuscado == null)
+                {
+                    return NotFound("Produto não encontrado");
+                }
+
+                return Ok(produtoBuscado);
             }
             catch (Exception erro)
             {
@@ -76,6 +81,15 @@ namespace minimalAPIMongo.Controllers
         {
             try
             {
+                var filter = Builders<Product>.Filter.Eq(p => p.Id, id);
+
+                Product produtoBuscado = await _product.Find(filter).FirstOrDefaultAsync();
+
+                if (produtoBuscado == null)
+                {
+                    return NotFound("Produto não encontrado");
+                }
+
                 await _product.DeleteOneAsync(product => product.Id == id);
                 return Ok("Deletado com sucesso");
             }
@@ -96,16 +110,26 @@ namespace minimalAPIMongo.Controllers
 
                 Product produtoBuscado = lista.First();
 
+                if (produtoBuscado == null)
+                {
+                    return NotFound("Produto não encontrado");
+                }
+
                 if (produtoAtualizado.Name != null)
                 {
                     produtoBuscado.Name = produtoAtualizado.Name; 
                 }
-                if(produtoAtualizado.Price != produtoBuscado.Price)
+                if(produtoAtualizado.Price != 0)
                 {
                     produtoBuscado.Price = produtoAtualizado.Price;
                 }
+                if(produtoAtualizado.AdditionalAttributes != null){
+                    produtoBuscado.AdditionalAttributes = produtoAtualizado.AdditionalAttributes;
+                }
 
-                var update = Builders<Product>.Update.Set(p => p.Name, produtoBuscado.Name).Set(p => p.Price, produtoBuscado.Price);
+                var update = Builders<Product>.Update.Set(p => p.Name, produtoBuscado.Name)
+                                                     .Set(p => p.Price, produtoBuscado.Price)
+                                                     .Set(p => p.AdditionalAttributes, produtoBuscado.AdditionalAttributes);
 
                 await _product.UpdateOneAsync(filter, update);
 

@@ -10,7 +10,7 @@ namespace minimalAPIMongo.Domains
         public string? Id { get; set; }
 
         [BsonElement("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [BsonElement("price")]
         public decimal Price { get; set; }
