@@ -32,6 +32,22 @@ namespace minimalAPIMongo.Controllers
             {
                 List<Order> listaDePedidos = await _order.Find(FilterDefinition<Order>.Empty).ToListAsync();
 
+                foreach(Order order in listaDePedidos)
+                {
+                    if(order.ProductId != null)
+                    {
+                        var filter = Builders<Product>.Filter.In(p => p.Id, order.ProductId);
+
+                        // trás uma lista com where no caso seria o filter
+                        order.Products = await _product.Find(filter).ToListAsync();
+                    }
+
+                    if(order.ClientId != null)
+                    {
+                        order.Client = await _client.Find(c => c.Id == order.ClientId).FirstOrDefaultAsync();
+                    }
+                }
+
                 return Ok(listaDePedidos);
             }
             catch (Exception erro)
@@ -50,6 +66,20 @@ namespace minimalAPIMongo.Controllers
                 if(pedidoBuscado == null)
                 {
                     return NotFound("Pedido não encontrado");
+                }
+
+                Client cliente = await _client.Find(c => c.Id == pedidoBuscado.ClientId).FirstOrDefaultAsync();
+
+                if(cliente != null)
+                {
+                    pedidoBuscado.Client = cliente;
+                }
+
+                foreach(string idPedido in pedidoBuscado.ProductId!)
+                {
+                    List<Product> listaDeProdutos = await _product.Find(p => p.Id == idPedido).ToListAsync();
+
+                    pedidoBuscado.Products = listaDeProdutos;
                 }
 
                 return Ok(pedidoBuscado);
@@ -79,24 +109,20 @@ namespace minimalAPIMongo.Controllers
                     return NotFound("Cliente não encontrado");
                 }
 
-                novoPedido.Client = clienteBuscado;
-
-                List<Product> listaDeProdutos = new List<Product>();
-
-                if(novoPedido.ProductId != null)
+                if(infoPedido.ProductsList == null)
                 {
-                    foreach (string idProduto in novoPedido.ProductId!)
-                    {
-                        Product produtoBuscado = await _product.Find(p => p.Id == idProduto).FirstOrDefaultAsync();
-
-                        if(produtoBuscado != null)
-                        {
-                            listaDeProdutos.Add(produtoBuscado);
-                        }
-                    }
+                    return NotFound("Especifique os produtos do pedido");
                 }
 
-                novoPedido.Products = listaDeProdutos;
+                foreach(string id in infoPedido.ProductsList)
+                {
+                    Product produto = await _product.Find(p => p.Id == id).FirstOrDefaultAsync();
+
+                    if(produto == null)
+                    {
+                        return NotFound("Produto não encontrado");
+                    }
+                }
 
                 await _order.InsertOneAsync(novoPedido);
 
