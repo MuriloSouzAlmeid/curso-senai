@@ -9,6 +9,8 @@ namespace Calculos.Test
 {
     public class CalculoUnitTest
     {
+        // princípio AAA: Act (agir), Arrange (organizar) e Assert (provar)
+
         [Fact]
         public void SomarDoisNumeros()
         {

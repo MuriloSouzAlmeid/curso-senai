@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\bin\Debug\net8.0\ConversaoTemperaturas.exe
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\bin\Debug\net8.0\ConversaoTemperaturas.deps.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\bin\Debug\net8.0\ConversaoTemperaturas.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\bin\Debug\net8.0\ConversaoTemperaturas.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\bin\Debug\net8.0\ConversaoTemperaturas.pdb
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\obj\Debug\net8.0\ConversaoTemperaturas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\obj\Debug\net8.0\ConversaoTemperaturas.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\obj\Debug\net8.0\ConversaoTemperaturas.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\obj\Debug\net8.0\ConversaoTemperaturas.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\obj\Debug\net8.0\ConversaoTemperaturas.sourcelink.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\obj\Debug\net8.0\ConversaoTemperaturas.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\obj\Debug\net8.0\refint\ConversaoTemperaturas.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\obj\Debug\net8.0\ConversaoTemperaturas.pdb
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\obj\Debug\net8.0\ConversaoTemperaturas.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\Testes\Exercicios\Validacao_de_email\ConversaoTemperaturas\obj\Debug\net8.0\ref\ConversaoTemperaturas.dll
