@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5d5H2AQlaAQhJxeBYLIpa9+XeyDGYdjQR16ArAXAhP4=",
+  "Source": "ProductsWebAPI",
+  "BasePath": "_content/ProductsWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
