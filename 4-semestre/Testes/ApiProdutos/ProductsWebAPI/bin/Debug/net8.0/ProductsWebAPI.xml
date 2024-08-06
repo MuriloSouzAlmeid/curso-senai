@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProductsWebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:ProductsWebAPI.Migrations.ProductsBD">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductsWebAPI.Migrations.ProductsBD.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductsWebAPI.Migrations.ProductsBD.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductsWebAPI.Migrations.ProductsBD.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
