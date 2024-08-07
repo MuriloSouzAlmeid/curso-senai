@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\bin\Debug\net8.0\LogicaDeProgramacao.exe
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\bin\Debug\net8.0\LogicaDeProgramacao.deps.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\bin\Debug\net8.0\LogicaDeProgramacao.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\bin\Debug\net8.0\LogicaDeProgramacao.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\bin\Debug\net8.0\LogicaDeProgramacao.pdb
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\obj\Debug\net8.0\LogicaDeProgramacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\obj\Debug\net8.0\LogicaDeProgramacao.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\obj\Debug\net8.0\LogicaDeProgramacao.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\obj\Debug\net8.0\LogicaDeProgramacao.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\obj\Debug\net8.0\LogicaDeProgramacao.sourcelink.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\obj\Debug\net8.0\LogicaDeProgramacao.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\obj\Debug\net8.0\refint\LogicaDeProgramacao.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\obj\Debug\net8.0\LogicaDeProgramacao.pdb
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\obj\Debug\net8.0\LogicaDeProgramacao.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\LogicaDeProgramacao\obj\Debug\net8.0\ref\LogicaDeProgramacao.dll
