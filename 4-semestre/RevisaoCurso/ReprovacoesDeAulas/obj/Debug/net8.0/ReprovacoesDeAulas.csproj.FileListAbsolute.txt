@@ -1,0 +1,15 @@
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\bin\Debug\net8.0\ReprovacoesDeAulas.exe
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\bin\Debug\net8.0\ReprovacoesDeAulas.deps.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\bin\Debug\net8.0\ReprovacoesDeAulas.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\bin\Debug\net8.0\ReprovacoesDeAulas.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\bin\Debug\net8.0\ReprovacoesDeAulas.pdb
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\obj\Debug\net8.0\ReprovacoesDeAulas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\obj\Debug\net8.0\ReprovacoesDeAulas.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\obj\Debug\net8.0\ReprovacoesDeAulas.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\obj\Debug\net8.0\ReprovacoesDeAulas.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\obj\Debug\net8.0\ReprovacoesDeAulas.sourcelink.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\obj\Debug\net8.0\ReprovacoesDeAulas.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\obj\Debug\net8.0\refint\ReprovacoesDeAulas.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\obj\Debug\net8.0\ReprovacoesDeAulas.pdb
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\obj\Debug\net8.0\ReprovacoesDeAulas.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ReprovacoesDeAulas\obj\Debug\net8.0\ref\ReprovacoesDeAulas.dll

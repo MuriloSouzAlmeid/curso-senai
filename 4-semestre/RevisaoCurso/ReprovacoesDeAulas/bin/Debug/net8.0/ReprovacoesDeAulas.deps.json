@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ReprovacoesDeAulas/1.0.0": {
+        "runtime": {
+          "ReprovacoesDeAulas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ReprovacoesDeAulas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
