@@ -1,0 +1,29 @@
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\bin\Debug\net8.0\ex05.exe
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\bin\Debug\net8.0\ex05.deps.json
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\bin\Debug\net8.0\ex05.runtimeconfig.json
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\bin\Debug\net8.0\ex05.dll
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\bin\Debug\net8.0\ex05.pdb
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\obj\Debug\net8.0\ex05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\obj\Debug\net8.0\ex05.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\obj\Debug\net8.0\ex05.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\obj\Debug\net8.0\ex05.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\obj\Debug\net8.0\ex05.dll
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\obj\Debug\net8.0\refint\ex05.dll
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\obj\Debug\net8.0\ex05.pdb
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\obj\Debug\net8.0\ex05.genruntimeconfig.cache
+C:\Users\muril\OneDrive\Área de Trabalho\ex05\obj\Debug\net8.0\ref\ex05.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\bin\Debug\net8.0\ex05.exe
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\bin\Debug\net8.0\ex05.deps.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\bin\Debug\net8.0\ex05.runtimeconfig.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\bin\Debug\net8.0\ex05.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\bin\Debug\net8.0\ex05.pdb
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\obj\Debug\net8.0\ex05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\obj\Debug\net8.0\ex05.AssemblyInfoInputs.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\obj\Debug\net8.0\ex05.AssemblyInfo.cs
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\obj\Debug\net8.0\ex05.csproj.CoreCompileInputs.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\obj\Debug\net8.0\ex05.sourcelink.json
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\obj\Debug\net8.0\ex05.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\obj\Debug\net8.0\refint\ex05.dll
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\obj\Debug\net8.0\ex05.pdb
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\obj\Debug\net8.0\ex05.genruntimeconfig.cache
+C:\Users\47015003805\Desktop\curso-senai\4-semestre\RevisaoCurso\ListaDeExercicios\ex05\obj\Debug\net8.0\ref\ex05.dll
