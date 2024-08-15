@@ -1,0 +1,77 @@
+/*Configurações Gerais*/
+
+/* fonts */
+@font-face{
+    font-family: "Lato Regular";
+    src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Lato Light";
+    src: url(../assets/fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face{
+    font-family: "Lato Bold";
+    src: url(../assets/fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face{
+    font-family: "Lato Black";
+    src: url(../assets/fonts/Lato/Lato-Black.ttf);
+}
+
+/* css geral */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.background-gradient{
+    background: linear-gradient(to right, #1E52B4, #002777);
+}
+
+
+
+/*Configurações Header*/
+
+/* geral */
+header{
+    width: 100%;
+    padding: 30px 0;
+}
+
+header .header-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* navbar */
+header .header-flex .navbar-flex{
+    display: flex;
+    gap: 30px;
+}
+
+header .header-flex .navbar-flex a{
+    text-decoration: none;
+    color: white;
+    font-family: "Lato Regular";
+    font-size: 14px;
+}
+
+header .header-flex .navbar-flex a:last-of-type{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/*Configurações Main*/
+
+/*Configurações Footer*/
