@@ -26,6 +26,9 @@
     src: url(../assets/fonts/Inter/static/Inter_24pt-Medium.ttf);
 }
 
+
+/*DESKTOP ================================================================================================================*/
+
 /* css geral */
 *{
     padding: 0;
@@ -136,18 +139,18 @@ header .header-flex .navbar-flex a:last-of-type:hover{
     position: absolute;
     display: flex;
     flex-direction: row;
-    width: 942px;
+    width: 950px;
     left: 20%;
     bottom: -40px;
     background-color: white;
     border-radius: 8px;
     padding: 13px 32px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.15);
 }
 
 /* input box */
 .input-travel-form-box{
-    padding: 18px 54px 18px 46px;
+    padding-left: 46px;
     border-right: 2px dashed #4E4B59;
     display: flex;
     align-items: center;
@@ -181,7 +184,7 @@ header .header-flex .navbar-flex a:last-of-type:hover{
     background: transparent;
     outline: none;
     border: none;
-    height: 100%;
+    /* height: 100%; */
     color: #4E4B59;
     font-family: "Lato Regular";
     font-size: 16px;
@@ -200,16 +203,20 @@ header .header-flex .navbar-flex a:last-of-type:hover{
 
 /* button submit */
 .submit-travel-form{
-    margin-left: 46px;
+    margin-left: 40px;
     width: auto;
     border-radius: 8px;
     border: 2px solid #FAFAFA;
     background-color: #009C3B;
     color: white;
     font-family: "Lato Regular";
-    font-size: 15px;
-    padding: 14px 33px;
+    font-size: 14px;
+    padding: 14px 30px;
     cursor: pointer;
+}
+
+.submit-travel-form:hover{
+    background-color: #019438;
 }
 
 
@@ -256,6 +263,72 @@ header .header-flex .navbar-flex a:last-of-type:hover{
 
 .sale-description-text-yellow{
     color: #ffb300;
+}
+
+
+/* places section */
+.places-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 42px 0 42px;
+}
+
+.place-card, .place-card-description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.place-card{
+    border-radius: 8px;
+    width: 260px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.place-card:hover{
+    /* box-shadow: 0 0 7px black; */
+    border: 1px solid gray;
+    scale: 1.05;
+}
+
+.place-card-image{
+    width: 260px;
+    height: 173px;
+    border-radius: 8px;
+}
+
+.place-card-description{
+    padding: 0 10px 10px;
+}
+
+
+.place-card-description-title-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.place-card-description-title-container h3{
+    font-size: 16px;
+    font-family: "Lato Bold";
+}
+
+.place-card-description-title-container span{
+    font-family: "Lato Black";
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffb300;
+}
+
+.place-description-text{
+    text-align: left;
+    font-family: "Lato Regular";
+    font-size: 12px;
+    line-height: 16px;
 }
 
 /*Configurações Footer*/
@@ -321,3 +394,23 @@ footer section{
     height: 20px;
     width: auto;
 }
+
+/*====================================================================================================================================*/
+
+
+
+
+
+
+
+
+
+/*MOBILE =============================================================================================================================*/
+
+@media screen and (max-width: 390px){
+    header .header-flex .navbar-flex{
+        display: none;
+    }
+}
+
+/*====================================================================================================================================*/
