@@ -12,8 +12,11 @@
 <body>
     <!-- Header  -->
     <header class="background-gradient">
+        <!-- Header Flex -->
         <div class="container header-flex">
-            <img src="assets/img/logo-branca.png" />
+            <!-- Logo -->
+            <img class="header-logo" src="assets/img/logo-branca.png" alt="Logotipo da plataforma Hospedagens.com em cor branca" />
+            <!-- Navbar -->
             <nav class="navbar-flex">
                 <a href="">Hotéis</a>
                 <a href="">Contato</a>
@@ -23,8 +26,74 @@
         </div>
     </header>
 
-    <main></main>
-    <footer></footer>
+    <!-- Main -->
+    <main>
+        <!-- banner' -->
+        <section class="banner">
+            <div class="container banner-flex">
+                <article class="banner-description">
+                    <h1 class="banner-description-title">As melhores hospedagens do Brasil</h1>
+                    <p class="banner-description-text">mais de 500 mil reservas esperando por você! Basta procurar pelo local ideal, e realizar a viagem dos seus sonhos.</p>
+                </article>
+    
+                <img class="banner-image" src="assets/img/mapa-brasil.png" alt="Mapa do Brasil com figuras turísticas de cada uma de suas regioes geográficas">
+            </div>
+
+            <form class="travel-form">
+                <div class="input-travel-form-box">
+                    <img class="input-form-label-image" src="assets/icons/local-icon.png" alt="Ícone de check in em um calendário">
+                    <input class="input-form" name="place-travel" type="text" placeholder="Qual o local desejado?">
+                </div>
+                <div class="input-travel-form-box">
+                    <label for="check-in" class="input-form-label">
+                        <img class="input-form-label-image" src="assets/icons/checkin-icon.png" alt="Ícone de check in em um calendário">
+                        <p class="input-form-label-text">Data check in</p>
+                    </label>
+                    <!-- <input name="check-in" id="check-in" type="date" class="input-form"> -->
+                </div>
+                <div class="input-travel-form-box">
+                    <label for="check-out" class="input-form-label">
+                        <img class="input-form-label-image" src="assets/icons/checkout-icon.png" alt="Ícone de check out em um calendário">
+                        <p class="input-form-label-text">Data check out</p>
+                    </label>
+                    <!-- <input name="check-out" id="check-out" type="date" class="input-form"> -->
+                </div>
+                <button class="submit-travel-form" type="submit">Procurar hotel</button>
+            </form>
+        </section>
+
+        <!-- places -->
+        <section class="places"></section>
+
+        <!-- sale -->
+        <section class="sale">
+            <section class="container sale-flex">
+                <article class="sale-description">
+                    <h2 class="sale-description-title">Venha conferir os melhores hoteis com as melhores <span class="sale-description-text-green">promoções</span> do país.</h2>
+                    <p class="sale-description-text"><span class="sale-description-text-green">Não perca tempo</span> e venha conferir o que há de <span class="sale-description-text-yellow">melhor</span> na hotelagem brasileira</p>
+                </article>
+                <img class="sale-image" src="assets/img/travel.png" alt="Imagem ilustrativa mostrando malas prontas para viagens, junto de elementos como um avião e tracejados de rotas de viagem.">
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer-top">
+            <article class="footer-top-description">
+                <p class="footer-top-description-title">Fale com um de nossos acessores</p>
+                
+                <div class="footer-top-description-contact">
+                    <p class="footer-top-description-contact-text">hospedagens@contato.com.br</p>
+                    <p class="footer-top-description-contact-text">(11) 0800-707-0707</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="footer-bottom">
+            <img src="assets/img/logo-preta.png" alt="Logotipo da plataforma Hospedagens.com em cor preta">
+        </section>
+    </footer>
 
 
 

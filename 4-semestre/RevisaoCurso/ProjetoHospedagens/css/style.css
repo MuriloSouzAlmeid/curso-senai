@@ -21,6 +21,11 @@
     src: url(../assets/fonts/Lato/Lato-Black.ttf);
 }
 
+@font-face{
+    font-family: "Inter Medium";
+    src: url(../assets/fonts/Inter/static/Inter_24pt-Medium.ttf);
+}
+
 /* css geral */
 *{
     padding: 0;
@@ -44,19 +49,26 @@
 /* geral */
 header{
     width: 100%;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 header .header-flex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+/* logo */
+header .header-logo{
+    height: 23px;
+    width: auto;
+}
 
 /* navbar */
 header .header-flex .navbar-flex{
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 50px;
 }
 
 header .header-flex .navbar-flex a{
@@ -69,9 +81,243 @@ header .header-flex .navbar-flex a{
 header .header-flex .navbar-flex a:last-of-type{
     border: 1px solid white;
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 35px;
 }
+
+header .header-flex .navbar-flex a:last-of-type:hover{
+    background-color: white;
+    color: #002777;
+}
+
 
 /*Configurações Main*/
 
+/* configurações gerais banner */
+.banner{
+    background: linear-gradient(to right, #1E52B4, #002777);
+    padding: 33px 0;
+    position: relative;
+}
+
+.banner-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-image{
+    width: 380px;
+    height: auto;
+}
+
+/* descriçao banner' */
+.banner-description{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    color: white;
+}
+
+.banner-description-title{
+    font-family: "Lato Bold";
+    font-size: 28px;
+}
+
+.banner-description-text{
+    font-size: 18px;
+    font-family: "Lato Light";
+    line-height: 27px;
+}
+
+/* formulario de viagem */
+.travel-form{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 942px;
+    left: 20%;
+    bottom: -40px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 13px 32px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* input box */
+.input-travel-form-box{
+    padding: 18px 54px 18px 46px;
+    border-right: 2px dashed #4E4B59;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-travel-form-box:first-of-type{
+    padding: 0;
+}
+
+/* input label */
+.input-form-label{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.input-form-label-image{
+    width: 15px;
+}
+
+.input-form-label-text{
+    font-family: "Lato Regular";
+    font-size: 16px;
+    color: #5F5C6B;
+}
+
+/* input style */
+.travel-form input[type="text"]{
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 100%;
+    color: #4E4B59;
+    font-family: "Lato Regular";
+    font-size: 16px;
+}
+
+.travel-form input[type="text"]::placeholder{
+    color: #5F5C6B;
+}
+
+.travel-form input[type="date"]{
+    height: 10px;
+    width: 10px;
+    outline: none;
+    border: none;
+}
+
+/* button submit */
+.submit-travel-form{
+    margin-left: 46px;
+    width: auto;
+    border-radius: 8px;
+    border: 2px solid #FAFAFA;
+    background-color: #009C3B;
+    color: white;
+    font-family: "Lato Regular";
+    font-size: 15px;
+    padding: 14px 33px;
+    cursor: pointer;
+}
+
+
+/* Sale section */
+.sale{
+    padding: 10px 0;
+}
+
+.sale-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale-image{
+    height: 300px;
+    width: auto;
+}
+
+.sale-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 38%;
+    gap: 30px;
+}
+
+.sale-description-title{
+    color: #2E2636;
+    font-family: "Lato Black";
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.sale-description-text{
+    color: #2E2636;
+    font-family: "Lato Regular";
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.sale-description-text-green{
+    color: #019438;
+}
+
+.sale-description-text-yellow{
+    color: #ffb300;
+}
+
 /*Configurações Footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer section{
+    width: 100%;
+}
+
+/* footer top */
+.footer-top{
+    padding: 33px 0;
+    background: linear-gradient(to right, #009C3B, #009538);
+    background-image: url(../assets/img/footer-top-background.png);
+    background-size: cover;
+}
+
+.footer-top p{
+    color: white;
+}
+
+.footer-top-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-top-description-title{
+    font-size: 24px;
+    font-family: "Inter Medium";
+}
+
+.footer-top-description-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-top-description-contact-text{
+    font-size: 16px;
+    font-family: "Lato Light";
+}
+
+/* footer bottom */
+.footer-bottom{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFDF00;
+}
+
+.footer-bottom img{
+    height: 20px;
+    width: auto;
+}
