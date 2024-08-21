@@ -1,0 +1,108 @@
+.list__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px 0;
+    gap: 10px;
+    max-height: 50%;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.list__element, .list__element--checked{
+    padding: 14px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 0.77px solid #3C424A;
+}
+
+.list__element{
+    background-color: #FCFCFC;
+}
+
+.list__element--checked{
+    background-color: #6C45CE;
+}
+
+.list__element__description{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.list__element .list__element__description__checkbox, .list__element--checked .list__element__description__checkbox{
+    width: 27px;
+    height: 27px;
+    border: 0.77px solid #8758FF;
+    border-radius: 3.86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list__element .list__element__description__checkbox{
+    background-color: #BDA4FF;
+}
+
+.list__element .list__element__description__checkbox:hover{
+    background-color: #a487f5;
+    cursor: pointer;
+}
+
+.list__element--checked .list__element__description__checkbox{
+    background-color: #1E123B;
+    border: none;
+}
+
+.list__element--checked .list__element__description__checkbox:hover{
+    cursor: pointer;
+}
+
+.list__element--checked .list__element__description__checkbox img{
+    width: 22.38px;
+    height: 22.38px;
+}
+
+.list__element--checked .list__element__description p, .list__element .list__element__description p{
+    font-size: 15.43px;
+    font-weight: 600;
+}
+
+.list__element--checked p{
+    color: #25282C
+}
+
+.list__element--checked p{
+    color: #fff;
+}
+
+.list__element__actions{
+    display: flex;
+    gap: 7.7px;
+}
+
+.list__element__actions__delete, .list__element__actions__update{
+    border: 2px solid black;
+    border-radius: 3.86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.95px;
+    height: 33.95px;
+    background: transparent;
+}
+
+.list__element__actions__image{
+    width: 23.15px;
+    height: 23.15px;
+    cursor: pointer;
+}
+
+.list__element--checked .list__element__actions .list__element__actions__delete, .list__element--checked .list__element__actions .list__element__actions__update{
+    border-color: #FFFFFF;
+}

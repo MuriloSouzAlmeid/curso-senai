@@ -20,6 +20,18 @@ export const ToDoListContainer = styled.div`
     gap: 10px;
     align-items: flex-end;
     justify-content: center;
-    width: 60%;
+    width: 50%;
     height: auto;
+`
+
+export const ContainerModal = styled.div`
+    background-color: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `

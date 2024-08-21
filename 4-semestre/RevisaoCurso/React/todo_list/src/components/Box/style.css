@@ -1,11 +1,25 @@
 .todolist-box__box{
     width: 100%;
+    margin-right: -5%;
     display: flex;
     border-radius: 8px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #1E123B;
-    padding: 45px 35px;
+    padding: 45px 40px;
     gap: 30px;
+    max-height: 70%;
+}
+
+.newtask-modal-box{
+    width: 50%;
+    height: 50%;
+    background-color: #1E123B;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
 }

@@ -1,0 +1,25 @@
+.new-task-button{
+    padding: 12px 47px;
+    font-size: 18px;
+    color: #FCFCFC;
+    background: transparent;
+    border: 2px solid #FCFCFC;
+    border-radius: 8px;
+}
+
+.new-task-button:hover{
+    background-color: #FCFCFC;
+    color: #1E123B;
+    border: 2px solid #FCFCFC;
+    cursor: pointer;
+}
+
+.crate-new-task-button{
+    background-color: #6C45CE;
+    border: 2px solid #FCFCFC;
+    color: #FCFCFC;
+    border-radius: 10px;
+    font-size: 23px;
+    padding: 16px 60px;
+    font-weight: 700;
+}
