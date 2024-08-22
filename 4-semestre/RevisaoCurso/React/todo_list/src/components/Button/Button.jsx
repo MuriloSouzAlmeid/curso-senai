@@ -8,10 +8,10 @@ export const NewTaskButton = ({onClick}) => {
     )
 }
 
-export const CreateNewTaskButton = ({onClick}) => {
+export const CreateNewTaskButton = ({onClick, editModal}) => {
     return(
         <button className="crate-new-task-button" onClick={onClick}>
-            Confirmar tarefa
+            {editModal ? "Atualizar tarefa" : "Confirmar tarefa"}
         </button>
     )
 }

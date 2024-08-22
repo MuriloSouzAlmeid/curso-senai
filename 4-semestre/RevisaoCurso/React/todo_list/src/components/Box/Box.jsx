@@ -8,7 +8,7 @@ import { Title } from "../Text/Text";
 import "./style.css";
 import { useState } from "react";
 
-export const ToDoListBox = ({ data }) => {
+export const ToDoListBox = ({ data, checkTask, deleteTask, openModalUpdate }) => {
   moment.locale("pt-br");
 
   return (
@@ -18,7 +18,7 @@ export const ToDoListBox = ({ data }) => {
           {moment().format("dddd")},{" "}
         </span>
         <span style={{ color: "#8758FF", fontFamily: "Roboto Bold" }}>
-          {moment().day()}{" "}
+          {moment().format("DD")}{" "}
         </span>
         de{" "}
         <span style={{ textTransform: "capitalize" }}>
@@ -26,24 +26,19 @@ export const ToDoListBox = ({ data }) => {
         </span>
       </Title>
       <SearchInput />
-      <ToDoList toDoListArray={data} />
+      <ToDoList openModalUpdate={openModalUpdate} checkTask={checkTask} deleteTask={deleteTask} toDoListArray={data} />
     </div>
   );
 };
 
-export const NewTaskModalBox = ({ data, closeModal }) => {
+export const NewTaskModalBox = ({addTask, updateTask, editModal }) => {
   const [taskDescription, setTaskDescription] = useState("");
-
-  const AddTask = () => {
-    data.push({ checked: false, description: taskDescription });
-    closeModal();
-  };
 
   return (
     <div className="newtask-modal-box">
-      <Title>Descreva sua tarefa</Title>
+      <Title>{editModal ? "Descreva sua nova tarefa" : "Descreva sua tarefa"}</Title>
       <NewTaskInput setDescription={setTaskDescription} />
-      <CreateNewTaskButton onClick={() => AddTask()} />
+      <CreateNewTaskButton editModal={editModal} onClick={editModal ? () => updateTask(index, taskDescription) : () => addTask(taskDescription) }/>
     </div>
   );
 };

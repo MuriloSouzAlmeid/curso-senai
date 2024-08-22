@@ -1,11 +1,12 @@
+import { updateLocale } from "moment";
 import { NewTaskModalBox } from "../Box/Box";
 import { ContainerModal } from "../Container/style";
 import { Title } from "../Text/Text";
 
-export const NewTaskModal = ({ toDoListArray, showModal, setShowModal }) => {
+export const NewTaskModal = ({ showModal, setShowModal, addTask, editModal, updateTask }) => {
   return showModal ? (
     <ContainerModal>
-      <NewTaskModalBox data={toDoListArray} closeModal={() => setShowModal(false)} />
+      <NewTaskModalBox editModal={editModal} addTask={addTask} updateTask={updateTask} closeModal={() => setShowModal(false)} />
     </ContainerModal>
   ) : null;
 };
