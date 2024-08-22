@@ -14,6 +14,7 @@
     background: transparent;
     height: 100%;
     color: #FCFCFC;
+    font-family: "Roboto Regular";
     font-size: 15px;
     display: flex;
     align-self: flex-end;
@@ -24,4 +25,26 @@
 
 .search-input__field::placeholder{
     color: #FCFCFC;
+}
+
+.newtask-input{
+    border: 2px solid #FCFCFC;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 18px;
+    color: #FCFCFC;
+    background: transparent;
+    width: 75%;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 22px 30px;
+    font-family: "Roboto Medium";
+}
+
+.newtask-input::placeholder{
+    color: #fcfcfccd;
+    font-size: 18px;
 }

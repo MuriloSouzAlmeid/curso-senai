@@ -1,16 +1,16 @@
 import "./style.css"
 
-export const NewTaskButton = ({}) => {
+export const NewTaskButton = ({onClick}) => {
     return(
-        <button className="new-task-button">
+        <button className="new-task-button" onClick={onClick}>
             Nova Tarefa
         </button>
     )
 }
 
-export const CreateNewTaskButton = ({}) => {
+export const CreateNewTaskButton = ({onClick}) => {
     return(
-        <button className="crate-new-task-button">
+        <button className="crate-new-task-button" onClick={onClick}>
             Confirmar tarefa
         </button>
     )

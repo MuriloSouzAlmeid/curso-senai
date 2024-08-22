@@ -9,3 +9,9 @@ export const SearchInput = () => {
         </div>
     )
 }
+
+export const NewTaskInput = ({setDescription}) => {
+    return(
+        <textarea className="newtask-input" onChange={(e) => setDescription(e.target.value)} placeholder="Digite aqui sua nova tarefa..."></textarea>
+    )
+}
