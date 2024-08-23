@@ -7,4 +7,5 @@ export const SearchIcon = styled.img.attrs({
 })`
     width: 20px;
     height: 20px;
+    cursor: pointer;
 `

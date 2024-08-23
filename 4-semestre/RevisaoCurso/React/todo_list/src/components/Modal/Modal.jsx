@@ -3,10 +3,10 @@ import { NewTaskModalBox } from "../Box/Box";
 import { ContainerModal } from "../Container/style";
 import { Title } from "../Text/Text";
 
-export const NewTaskModal = ({ showModal, setShowModal, addTask, editModal, updateTask }) => {
+export const NewTaskModal = ({ showModal, addTask, editModal, updateTask, index, descriptionEdit, closeModal }) => {
   return showModal ? (
     <ContainerModal>
-      <NewTaskModalBox editModal={editModal} addTask={addTask} updateTask={updateTask} closeModal={() => setShowModal(false)} />
+      <NewTaskModalBox closeModal={closeModal} descriptionEdit={descriptionEdit} index={index} editModal={editModal} addTask={addTask} updateTask={updateTask} />
     </ContainerModal>
   ) : null;
 };
