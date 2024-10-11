@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj": {}
+    "C:\\Users\\47015003805\\Desktop\\curso-senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj": {
+    "C:\\Users\\47015003805\\Desktop\\curso-senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj",
+        "projectUniqueName": "C:\\Users\\47015003805\\Desktop\\curso-senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj",
         "projectName": "gamer-fullstack",
-        "projectPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj",
-        "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\muril\\OneDrive\\Documentos\\murilo_souza\\estudos\\curso\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\obj\\",
+        "projectPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\gamer-fullstack.csproj",
+        "packagesPath": "C:\\Users\\47015003805\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\1º Semestre\\projetos\\Back-end 2\\MVC\\gamer-fullstack\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47015003805\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,6 +75,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -78,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
