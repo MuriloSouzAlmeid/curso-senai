@@ -31,3 +31,7 @@
     align-items: center;
     gap: 45px
 }
+
+.close-modal__text:hover{
+    color: #fcfcfccf;
+}

@@ -6,7 +6,7 @@ import UpdateIconWhite from "../../assets/icons/update-icon-white.svg";
 
 import "./style.css";
 
-export const ToDoList = ({ toDoListArray, checkTask, deleteTask, openModalUpdate }) => {
+export const ToDoList = ({ toDoListArray, checkTask, deleteTask, openModalUpdate}) => {
     return (
         <div className="list__container">
             {toDoListArray.map((task, index) =>
@@ -25,7 +25,7 @@ export const ToDoList = ({ toDoListArray, checkTask, deleteTask, openModalUpdate
                         <button className="list__element__actions__delete" onClick={() => deleteTask(index)} >
                             <img className="list__element__actions__image" src={task.checked ? DeleteIconWhite : DeleteIconBlack} alt="ícone da letra x" />
                         </button>
-                        <button className="list__element__actions__update" onClick={() => openModalUpdate(index)}>
+                        <button className="list__element__actions__update" onClick={() => openModalUpdate(index, task.description)}>
                             <img className="list__element__actions__image" src={task.checked ? UpdateIconWhite : UpdateIconBlack} alt="ícone de um lápis" />
                         </button>
                     </div>

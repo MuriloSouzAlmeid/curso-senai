@@ -7,8 +7,9 @@ import { ToDoList } from "../List/List";
 import { Title } from "../Text/Text";
 import "./style.css";
 import { useState } from "react";
+import { CancelText } from "../Text/style";
 
-export const ToDoListBox = ({ data, checkTask, deleteTask, openModalUpdate }) => {
+export const ToDoListBox = ({ data, checkTask, deleteTask, openModalUpdate, searchTask, setSearchText, searchText }) => {
   moment.locale("pt-br");
 
   return (
@@ -25,20 +26,21 @@ export const ToDoListBox = ({ data, checkTask, deleteTask, openModalUpdate }) =>
           {moment().format("MMMM")}
         </span>
       </Title>
-      <SearchInput />
+      <SearchInput searchText={searchText} searchTask={searchTask} setSearchText={setSearchText}/>
       <ToDoList openModalUpdate={openModalUpdate} checkTask={checkTask} deleteTask={deleteTask} toDoListArray={data} />
     </div>
   );
 };
 
-export const NewTaskModalBox = ({addTask, updateTask, editModal }) => {
+export const NewTaskModalBox = ({addTask, updateTask, editModal, index, descriptionEdit, closeModal }) => {
   const [taskDescription, setTaskDescription] = useState("");
 
   return (
     <div className="newtask-modal-box">
-      <Title>{editModal ? "Descreva sua nova tarefa" : "Descreva sua tarefa"}</Title>
-      <NewTaskInput setDescription={setTaskDescription} />
+      <Title>{editModal ? `Atualize sua tarefa` : "Descreva sua tarefa"}</Title>
+      <NewTaskInput setDescription={setTaskDescription} descriptionEdit={editModal ? descriptionEdit : null} />
       <CreateNewTaskButton editModal={editModal} onClick={editModal ? () => updateTask(index, taskDescription) : () => addTask(taskDescription) }/>
+        <CancelText className="close-modal__text" onClick={closeModal}>Cancelar</CancelText>
     </div>
   );
 };
