@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gamer-fullstack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60eaaa3a059def9e9dd3ccc8678de3f3120487cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+132be64fd1e4a20b2a2b7fddd34e917e7eb2807f")]
 [assembly: System.Reflection.AssemblyProductAttribute("gamer-fullstack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gamer-fullstack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

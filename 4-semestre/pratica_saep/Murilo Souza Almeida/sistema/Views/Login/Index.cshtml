@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>Bem vindo</h2>
+
+@* seleciona qual o controller e o método do mesmo a ser acionado *@
+<form asp-controller="Login" asp-action="Logar" method="post">
+    <div>
+        <label>Email</label>
+        <input type="email" name="email" required/>
+    </div>
+
+    <div>
+        <label>Senha</label>
+        <input type="password" name="senha" required/>
+    </div>
+
+    <button type="submit">Entrar</button>
+</form>
+
+@if (TempData["Mensagem"] != null)
+{
+    <p style="color: red">@TempData["Mensagem"]</p>
+}

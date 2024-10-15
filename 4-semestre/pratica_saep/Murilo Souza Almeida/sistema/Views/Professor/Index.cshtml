@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Principal";
+}
+
+@* cabacelho *@
+<div>
+    <h3>@ViewBag.NomeProfessor</h3>
+    <form asp-controller="Login" asp-action="Logout">
+        <button type="submit">Sair</button>
+    </form>
+</div>
+
+@* cadastrar turma *@
+<form asp-controller="Professor" asp-action="CadastrarTurma">
+    <label for="nomeTurma">Nome da Turma</label>
+    <input type="text" name="nomeTurma" placeholder="Nome" required/>
+    <button>Cadastrar Turma</button>
+</form>
+
+@* título *@
+
+@* tabela *@
+<table>
+    <thead>
+        <tr>
+            <th>Número</th>
+            <th>Nome da Turma</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @* a model é o que eu passei como parâmetro para a view *@
+        @foreach (var turma in Model)
+        {
+            <tr>
+                <td>@turma.TurmaId</td>
+                <td>@turma.Nome</td>
+                <td>
+                    <div style="display: flex">
+                        <form asp-controller="Professor" asp-action="ExcluirTurma" method="post">
+                            <input type="hidden" name="turmaId" value="@turma.TurmaId" />
+                            <button type="submit">Excluir</button>
+                        </form>
+                    </div>
+                    <div style="display: flex">
+                        <form asp-controller="Atividade" asp-action="Index" asp-route-turmaId="@turma.TurmaId">
+                            <input type="hidden" name="turmaId" value="@turma.TurmaId" />
+                            <button type="submit">Visualizar</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

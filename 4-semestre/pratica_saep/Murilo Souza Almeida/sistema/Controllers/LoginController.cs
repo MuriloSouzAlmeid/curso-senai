@@ -4,11 +4,11 @@ using sistema.Models;
 
 namespace sistema.Controllers
 {
-    public class LoginControllercs : Controller
+    public class LoginController : Controller
     {
         private readonly sistemaContext _context;
 
-        public LoginControllercs(sistemaContext context) { 
+        public LoginController(sistemaContext context) { 
             _context = context;
         }
 
@@ -42,6 +42,12 @@ namespace sistema.Controllers
             {
                 return BadRequest(erro.Message);
             }
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Login");
         }
     }
 }
