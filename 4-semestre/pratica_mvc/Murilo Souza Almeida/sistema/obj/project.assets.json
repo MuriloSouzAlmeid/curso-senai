@@ -4046,11 +4046,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47015003805\\Desktop\\curso-senai\\4-semestre\\pratica_saep\\Murilo Souza Almeida\\sistema\\sistema.csproj",
+      "projectUniqueName": "C:\\Users\\47015003805\\Desktop\\curso-senai\\4-semestre\\pratica_mvc\\Murilo Souza Almeida\\sistema\\sistema.csproj",
       "projectName": "sistema",
-      "projectPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\4-semestre\\pratica_saep\\Murilo Souza Almeida\\sistema\\sistema.csproj",
+      "projectPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\4-semestre\\pratica_mvc\\Murilo Souza Almeida\\sistema\\sistema.csproj",
       "packagesPath": "C:\\Users\\47015003805\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\4-semestre\\pratica_saep\\Murilo Souza Almeida\\sistema\\obj\\",
+      "outputPath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\4-semestre\\pratica_mvc\\Murilo Souza Almeida\\sistema\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

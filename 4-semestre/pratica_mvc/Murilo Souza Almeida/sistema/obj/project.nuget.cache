@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5cEv7lrv7GKe7dxqke7wkYO/FEG8QLMAy0GgM+dQOJXM3aUjDArQR7wAJPjIdIfWIp1uUud5rphCziiwgNXhHg==",
+  "dgSpecHash": "JO731kGawJ5dJAcPN4NJ7YPvFFot17f64TOuPvWSR72lfEMj63FeKHsg7JYNDfKaata4pCXQn3qpyehzdU3yEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\4-semestre\\pratica_saep\\Murilo Souza Almeida\\sistema\\sistema.csproj",
+  "projectFilePath": "C:\\Users\\47015003805\\Desktop\\curso-senai\\4-semestre\\pratica_mvc\\Murilo Souza Almeida\\sistema\\sistema.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\47015003805\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\47015003805\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

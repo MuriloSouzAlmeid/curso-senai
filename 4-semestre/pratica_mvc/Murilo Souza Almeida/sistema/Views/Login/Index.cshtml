@@ -2,24 +2,24 @@
     ViewData["Title"] = "Login";
 }
 
-<h2>Bem vindo</h2>
 
 @* seleciona qual o controller e o método do mesmo a ser acionado *@
-<form asp-controller="Login" asp-action="Logar" method="post">
-    <div>
-        <label>Email</label>
-        <input type="email" name="email" required/>
+<form asp-controller="Login" asp-action="Logar" method="post" class="w-50 mt-5 rounded d-flex flex-column align-items-center gap-4 shadow p-5 mx-auto">
+    <h2>Bem vindo</h2>
+    <div class="w-100">
+        <label class="form-label">Email</label>
+        <input class="form-control" type="email" name="email" required/>
     </div>
 
-    <div>
-        <label>Senha</label>
-        <input type="password" name="senha" required/>
+    <div class="w-100">
+        <label class="form-label">Senha</label>
+        <input class="form-control" type="password" name="senha" required />
     </div>
 
-    <button type="submit">Entrar</button>
+    <button class="btn btn-primary px-4" type="submit">Entrar</butto>
 </form>
 
 @if (TempData["Mensagem"] != null)
 {
-    <p style="color: red">@TempData["Mensagem"]</p>
+    <p class="text-center mt-5 text-danger">@TempData["Mensagem"]</p>
 }
